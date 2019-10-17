@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -16,6 +16,13 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@actions/*": ["app/app-state/actions/*"],
+      "@reducers/*": ["app/app-state/reducers/*"],
+      "@models/*": ["app/models/*"],
+      "@services/*": ["app/services/*"],
+      "@shared/*": ["app/shared/*"]
+    }
   }
 }

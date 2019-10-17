@@ -1,0 +1,48 @@
+<div [ngBusy]="{ busy: [ submittingForm ], message: 'Submitting Form...', minDuration: 1500 }" (busyStop)="onBusyStop()"></div>
+
+<section [formGroup]="form" *ngIf="loaded">
+  <div class="row">
+    <app-field class="col-lg-12" label="Activity" [required]="true"
+      [invalid]="checkInputInvalid('activity')"
+      errorMessage="Please select an activity to report">
+      <select id="activity" class="form-control" [class.is-invalid]="checkInputInvalid('activity')" formControlName="activity">
+        <option value="">Select an activity</option>
+        <option *ngFor="let activity of activities | async" [value]="activity.value">{{activity.name}}</option>
+      </select>
+    </app-field>
+  </div>
+
+  <div class="row">
+    <app-field class="col-lg-12" label="Location" [required]="true" [isFullWidth]="true"
+      [invalid]="checkInputInvalid('location')"
+      errorMessage="Please enter the location where the activity occurred">
+      <input id="location" class="form-control" [class.is-invalid]="checkInputInvalid('location')"
+        type="text" formControlName="location" autocomplete="off">
+    </app-field>
+  </div>
+
+  <div class="row">
+    <app-field class="col-lg-12" label="Details" [required]="false" [isFullWidth]="true">
+      <textarea id="details" class="form-control"
+        type="text" formControlName="details" autocomplete="off"></textarea>
+    </app-field>
+  </div>
+
+  <div class="row">
+    <app-field class="col-lg-12" label="Date" [required]="false" [isFullWidth]="false">
+      <div class="input-group">
+        <input id="date" formControlName="date"  class="form-control" placeholder="yyyy-mm-dd"
+          name="dp" ngbDatepicker #d="ngbDatepicker">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
+            <fa-icon [icon]="faCalendar"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </app-field>
+  </div>
+
+  <div class="float-right">
+      <button (click)="submit()" class="btn btn-primary mt-4">Submit</button>
+  </div>
+</section>
