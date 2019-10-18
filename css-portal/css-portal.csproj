@@ -10,7 +10,7 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <RootNamespace>Gov.Pssg.Csa.Public</RootNamespace>
+    <RootNamespace>Gov.Pssg.Css.Public</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
