@@ -6,7 +6,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Serilog;
 
-namespace Gov.Pssg.Csa.Public
+namespace Gov.Pssg.Css.Public
 {
     public class Program
     {

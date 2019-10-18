@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Gov.Pssg.Csa.Public
+namespace Gov.Pssg.Css.Public
 {
     public class Startup
     {

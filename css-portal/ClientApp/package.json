@@ -1,11 +1,11 @@
 {
-  "name": "csa_portal",
+  "name": "css_portal",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run csa_portal:server:dev",
+    "build:ssr": "ng run css_portal:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

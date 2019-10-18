@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "csa_portal": {
+    "css_portal": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "csa_portal:build"
+            "browserTarget": "css_portal:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "csa_portal:build:production"
+              "browserTarget": "css_portal:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "csa_portal:build"
+            "browserTarget": "css_portal:build"
           }
         },
         "test": {
@@ -143,7 +143,7 @@
         }
       }
     },
-    "csa_portal-e2e": {
+    "css_portal-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -151,7 +151,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "csa_portal:serve"
+            "devServerTarget": "css_portal:serve"
           }
         },
         "lint": {
@@ -166,7 +166,7 @@
       }
     }
   },
-  "defaultProject": "csa_portal",
+  "defaultProject": "css_portal",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
