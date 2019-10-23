@@ -1,6 +1,6 @@
 <section class="app-field">
   <span *ngIf="leadingText">{{leadingText}} <p></p> </span>
-  <label *ngIf="label">{{label}} <span *ngIf="!required">(optional)</span></label>
+  <label *ngIf="label">{{label}} <small class="text-muted ml-1" *ngIf="required">Required</small></label>
   
   <div *ngIf="afterLabelText">{{afterLabelText}}</div>
   <br *ngIf="label && !afterLabelText">
