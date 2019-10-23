@@ -1,4 +1,4 @@
-export class Activity {
+export class PropertyType {
     name: string;
     value: string;
 }

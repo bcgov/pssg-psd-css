@@ -1,0 +1,196 @@
+<div [ngBusy]="{ busy: [ submittingForm ], message: 'Submitting Form...', minDuration: 1500 }" (busyStop)="onBusyStop()"></div>
+
+<section [formGroup]="form" *ngIf="loaded">
+  <section formGroupName="property">
+    <h2>Property</h2>
+    <div class="form-group">
+      <app-field label="Name of Property (if applicable)" [isFullWidth]="true">
+        <input id="propertyName" class="form-control" type="text" formControlName="name">
+      </app-field>
+    </div>
+    <section class="form-group" formGroupName="address">
+      <h6>Address</h6>
+      <div class="row">
+        <div class="col-md-3">
+          <app-field label="Unit" [isFullWidth]="true">
+            <input id="propertyAddressUnit" class="form-control" type="text" formControlName="unit">
+          </app-field>
+        </div>
+        <div class="col-md-9">
+          <app-field label="Street Address" [isFullWidth]="true">
+            <input id="propertyAddressLine1" class="form-control" type="text" formControlName="line1">
+          </app-field>
+        </div>
+      </div>
+      <app-field label="Street Address (continued)" [isFullWidth]="true">
+        <input id="propertyAddressLine2" class="form-control" type="text" formControlName="line2">
+      </app-field>
+      <div class="row">
+        <div class="col-md-4">
+          <app-field label="City" [required]="true" [isFullWidth]="true"
+            [invalid]="checkInputInvalid('property.address.city')"
+            errorMessage="City is required">
+            <input id="propertyAddressCity" class="form-control" [class.is-invalid]="checkInputInvalid('property.address.city')" type="text" formControlName="city">
+          </app-field>
+        </div>
+        <div class="col-md-4">
+          <app-field label="Province" [isFullWidth]="true">
+            <input id="propertyAddressProvinceState" class="form-control" type="text" formControlName="provinceState">
+          </app-field>
+        </div>
+        <div class="col-md-4">
+          <app-field label="Country" [isFullWidth]="true">
+            <input id="propertyAddressCountry" class="form-control" type="text" formControlName="country">
+          </app-field>
+        </div>
+      </div>
+      <app-field label="Postal Code">
+        <input id="propertyAddressZipPostalCode" class="form-control" type="text" formControlName="zipPostalCode">
+      </app-field>
+    </section>
+    <app-field label="Description of Property" [isFullWidth]="true">
+      <div class="row">
+        <div class="col-sm-4">
+          <select id="propertyPropertyType" class="form-control" formControlName="propertyType">
+            <option value="">Make a selection</option>
+            <option *ngFor="let propertyType of propertyTypes | async" [value]="propertyType.value">{{propertyType.name}}</option>
+          </select>
+        </div>
+        <div class="col-sm-8">
+          <input id="propertyOtherPropertyType" class="form-control" type="text" formControlName="otherPropertyType"
+            [class.d-none]="this.form.get('property.propertyType').value !== 'other'" />
+        </div>
+      </div>
+    </app-field>
+    <app-field label="Details of Property (e.g. # of occupants, children, animals, vehicles, etc.)"
+      [required]="true" [isFullWidth]="true" [invalid]="checkInputInvalid('property.description')"
+      errorMessage="Details of Property are required">
+      <textarea id="propertyDescription" class="form-control" [class.is-invalid]="checkInputInvalid('property.description')"
+        type="text" formControlName="description"></textarea>
+    </app-field>
+    <app-field label="Details of Problems with the Property (e.g. possession/production/use/trafficking of illegal drugs/liquor, storage/possession of illegal firearms, gang or criminal organization activity, illegal gaming/gambling, storage/possession of stolen property, etc.). Please include details of the frequency of the activity and the effect it has on you or the neighbourhood."
+      [required]="true" [isFullWidth]="true" [invalid]="checkInputInvalid('property.problems')"
+      errorMessage="Details of Problems with the Property are required">
+      <textarea id="propertyProblems" class="form-control" [class.is-invalid]="checkInputInvalid('property.problems')"
+        type="text" formControlName="problems"></textarea>
+    </app-field>
+    <app-field label="Name of Occupant(s) (if known)" [isFullWidth]="true">
+      <input id="propertyOccupantName" class="form-control" type="text" formControlName="occupantName">
+    </app-field>
+    <app-field label="Name of Owner(s) (if known)" [isFullWidth]="true">
+      <input id="propertyOwnerName" class="form-control" type="text" formControlName="ownerName">
+    </app-field>
+  </section>
+  <div class="form-check">
+    <input id="includeComplainant" class="form-check-input" type="checkbox" formControlName="includeComplainant" (change)="updateComplainantEnabled()">
+    <label class="form-check-label" for="includeComplainant">Include Contact Info</label>
+  </div>
+  <section formGroupName="complainant" [class.d-none]="this.form.get('includeComplainant').value === false">
+    <h2>Contact Info</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <app-field label="First Name" [required]="true" [isFullWidth]="true"
+          [invalid]="checkInputInvalid('complainant.firstName')"
+          errorMessage="First Name is required">
+          <input id="complainantFirstName" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.firstName')"
+            type="text" formControlName="firstName">
+        </app-field>
+      </div>
+      <div class="col-sm-4">
+        <app-field label="Middle Name" [isFullWidth]="true">
+          <input id="complainantMiddleName" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.middleName')"
+            type="text" formControlName="middleName">
+        </app-field>
+      </div>
+      <div class="col-sm-4">
+        <app-field label="Last Name" [required]="true" [isFullWidth]="true"
+          [invalid]="checkInputInvalid('complainant.lastName')"
+          errorMessage="Last Name is required">
+          <input id="complainantLastName" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.lastName')"
+            type="text" formControlName="lastName">
+        </app-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <app-field label="Phone" [required]="true" [isFullWidth]="true"
+          [invalid]="checkInputInvalid('complainant.phone')"
+          errorMessage="Phone is required">
+          <input id="complainantPhone" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.phone')"
+            type="text" formControlName="phone">
+        </app-field>
+      </div>
+      <div class="col-sm-4">
+        <app-field label="Fax" [isFullWidth]="true">
+          <input id="complainantFax" class="form-control" type="text" formControlName="fax">
+        </app-field>
+      </div>
+      <div class="col-sm-4">
+        <app-field label="Email" [required]="true" [isFullWidth]="true"
+          [invalid]="checkInputInvalid('complainant.email')"
+          errorMessage="A valid email address is required">
+          <input id="complainantPhone" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.email')"
+            type="text" formControlName="email">
+        </app-field>
+      </div>
+    </div>
+    
+    <section class="form-group" formGroupName="address">
+      <h6>Address</h6>
+      <div class="row">
+        <div class="col-md-3">
+          <app-field label="Unit" [isFullWidth]="true">
+            <input id="complainantAddressUnit" class="form-control" type="text" formControlName="unit">
+          </app-field>
+        </div>
+        <div class="col-md-9">
+          <app-field label="Street Address" [isFullWidth]="true" [required]="true"
+            [invalid]="checkInputInvalid('complainant.address.line1')"
+            errorMessage="Street Address is required">
+            <input id="complainantAddressLine1" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.address.line1')"
+              type="text" formControlName="line1">
+          </app-field>
+        </div>
+      </div>
+      <app-field label="Street Address (continued)" [isFullWidth]="true">
+        <input id="complainantAddressLine2" class="form-control" type="text" formControlName="line2">
+      </app-field>
+      <div class="row">
+        <div class="col-md-4">
+          <app-field label="City" [required]="true" [isFullWidth]="true"
+            [invalid]="checkInputInvalid('complainant.address.city')"
+            errorMessage="City is required">
+            <input id="complainantAddressCity" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.address.city')"
+              type="text" formControlName="city">
+          </app-field>
+        </div>
+        <div class="col-md-4">
+          <app-field label="Province/State" [isFullWidth]="true" [required]="true"
+            [invalid]="checkInputInvalid('complainant.address.provinceState')"
+            errorMessage="Province/State is required">
+            <input id="complainantAddressProvinceState" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.address.provinceState')"
+              type="text" formControlName="provinceState">
+          </app-field>
+        </div>
+        <div class="col-md-4">
+          <app-field label="Country" [isFullWidth]="true" [required]="true"
+            [invalid]="checkInputInvalid('complainant.address.country')"
+            errorMessage="Country is required">
+            <input id="complainantAddressCountry" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.address.country')"
+              type="text" formControlName="country">
+          </app-field>
+        </div>
+      </div>
+      <app-field label="Postal Code/Zip Code" [required]="true"
+        [invalid]="checkInputInvalid('complainant.address.zipPostalCode')"
+        errorMessage="Postal Code/Zip Code is required">
+        <input id="complainantAddressZipPostalCode" class="form-control" [class.is-invalid]="checkInputInvalid('complainant.address.zipPostalCode')"
+          type="text" formControlName="zipPostalCode">
+      </app-field>
+    </section>
+  </section>
+
+  <div class="float-right">
+      <button (click)="submit()" class="btn btn-primary mt-4">Submit</button>
+  </div>
+</section>
