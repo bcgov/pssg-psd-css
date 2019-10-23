@@ -11,52 +11,52 @@ namespace Gov.Pssg.Css.Public.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FormController : ControllerBase
+    public class ComplaintController : ControllerBase
     {
-        private readonly ILogger<FormController> _logger;
+        private readonly ILogger<ComplaintController> _logger;
 
-        public FormController(ILogger<FormController> logger)
+        public ComplaintController(ILogger<ComplaintController> logger)
         {
             _logger = logger;
         }
 
-        // GET: form/activities
-        [Route("Activities")]
+        // GET: complaint/propertyTypes
+        [Route("PropertyTypes")]
         [HttpGet]
-        public async Task<IActionResult> GetActivities()
+        public async Task<IActionResult> GetPropertyTypes()
         {
             try
             {
-                var data = await Form.GetActivitiesAsync();
-                _logger.LogInformation("Successfully retrieved activities {@Activities}", data);
+                var data = await PropertyType.GetPropertyTypesAsync();
+                _logger.LogInformation("Successfully retrieved property types {@PropertyTypes}", data);
                 return new JsonResult(data);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to retrieve activities");
+                _logger.LogError(ex, "Failed to retrieve property types");
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Form form)
+        public async Task<IActionResult> Post([FromBody] Complaint complaint)
         {
             try
             {
-                // validate form
-                bool validationResult = await form.Validate();
+                // validate complaint
+                bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
-                    _logger.LogWarning("Validation failed for form {@Form}", form);
+                    _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
-                // TODO: submit form to Dynamics
+                // TODO: submit complaint to Dynamics
                 return StatusCode(StatusCodes.Status200OK);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to submit form {@Form}", form);
+                _logger.LogError(ex, "Failed to submit complaint {@Complaint}", complaint);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }

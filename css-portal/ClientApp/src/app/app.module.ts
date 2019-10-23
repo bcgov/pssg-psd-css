@@ -9,21 +9,23 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StoreModule } from '@ngrx/store';
 import { NgBusyModule } from 'ng-busy';
 
-import { activitiesReducer } from '@reducers/activities.reducer';
-import { FormDataService } from '@services/form-data.service';
+import { propertyTypesReducer } from '@reducers/property-types.reducer';
+import { ComplaintService } from '@services/form-data.service';
 
 import { FieldComponent } from '@shared/app-field/field.component';
 
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { FormSubmittedComponent } from './form-submitted/form-submitted.component';
+import { HomeComponent } from './home/home.component';
+import { CsaFormComponent } from './csa-form/csa-form.component';
+import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-submitted.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-    FormSubmittedComponent,
+    HomeComponent,
+    CsaFormComponent,
+    ComplaintSubmittedComponent,
     FieldComponent
   ],
   imports: [
@@ -36,13 +38,14 @@ import { FormSubmittedComponent } from './form-submitted/form-submitted.componen
     BrowserAnimationsModule,
     NgBusyModule,
     RouterModule.forRoot([
-      { path: '', component: FormComponent, pathMatch: 'full' },
-      { path: 'form-submitted', component: FormSubmittedComponent },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'csa-form', component: CsaFormComponent },
+      { path: 'complaint-submitted', component: ComplaintSubmittedComponent },
     ]),
-    StoreModule.forRoot({ activities: activitiesReducer })
+    StoreModule.forRoot({ propertyTypes: propertyTypesReducer })
   ],
   providers: [
-    FormDataService
+    ComplaintService
   ],
   bootstrap: [AppComponent]
 })

@@ -5,30 +5,30 @@ import { catchError } from 'rxjs/operators';
 
 import { DataService } from './data.service';
 
-import { Activity } from '@models/activity.model';
+import { PropertyType } from '@models/property-type.model';
 
 @Injectable()
-export class FormDataService extends DataService {
+export class ComplaintService extends DataService {
 
   constructor(private http: HttpClient) {
     super();
   }
 
   /**
-   * Retrieve activities from back-end
+   * Retrieve property types from back-end
    */
-  getActivities(): Observable<Activity[]> {
-    const path = `${this.apiPath}/form/activities`;
-    return this.http.get<Activity[]>(path, { headers: this.headers })
+  getPropertyTypes(): Observable<PropertyType[]> {
+    const path = `${this.apiPath}/complaint/propertyTypes`;
+    return this.http.get<PropertyType[]>(path, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
 
   /**
-   * Submit form to back-end
+   * Submit CSA form to back-end
    * @param data - form data
    */
-  submitForm(data: any) {
-    const path = `${this.apiPath}/form/`;
+  submitCsaForm(data: any) {
+    const path = `${this.apiPath}/complaint/`;
     return this.http.post<any>(path, data, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
