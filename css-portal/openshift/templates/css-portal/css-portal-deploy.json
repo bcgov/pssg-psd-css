@@ -203,111 +203,12 @@
                       }
                     }
                   },
-				  {
-                    "name": "SPLUNK_COLLECTOR_URL",
-					"valueFrom": {
-                      "secretKeyRef": {
-                        "key": "splunk-collector-url",
-						"name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },	
-					{
-                    "name": "SPLUNK_TOKEN",
-					"valueFrom": {
-                      "secretKeyRef": {
-                        "key": "splunk-token",
-						"name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },						  
-                  {
-                    "name": "DB_USER",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "database-user",
-                        "name": "${DATABASE_SERVICE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DB_PASSWORD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "database-password",
-                        "name": "${DATABASE_SERVICE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DB_ADMIN_PASSWORD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "database-admin-password",
-                        "name": "${DATABASE_SERVICE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DB_DATABASE",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "database-name",
-                        "name": "${DATABASE_SERVICE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DATABASE_SERVICE_NAME",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "database-service-name",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
                   
                   {
                     "name": "BASE_PATH",
                     "valueFrom": {
                       "secretKeyRef": {
                         "key": "base-path",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "SMTP_HOST",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "smtp-host",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "SSG_USERNAME",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "ssg-username",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "SSG_PASSWORD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "ssg-password",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "ENCRYPTION_KEY",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "encryption-key",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -320,83 +221,10 @@
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
-                  },
-                  
+                  },                  
                   {
                     "name": "SHAREPOINT_WEBNAME",
                     "value": "${SHAREPOINT_WEBNAME}"
-                  },
-                  {
-                    "name": "BCEID_SERVICE_SVCID",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bceid-service-svcid",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEID_SERVICE_URL",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bceid-service-url",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEID_SERVICE_USER",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bceid-service-user",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEID_SERVICE_PASSWD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bceid-service-passwd",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEP_SERVICE_URL",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bcep-service-url",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEP_MERCHANT_ID",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bcep-merchant-id",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEP_HASH_KEY",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bcep-hash-key",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "BCEP_CONF_PATH",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "bcep-conf-path",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
                   },
                   {
                     "name": "SHAREPOINT_ODATA_URI",
@@ -410,39 +238,6 @@
                   {
                     "name": "SITEMINDER_LOGOUT_URL",
                     "value": "${SITEMINDER_LOGOUT_URL}"
-                  },
-                  {
-                    "name": "PDF_SERVICE_BASE_URI",
-                    "value": "${PDF_SERVICE_BASE_URI}"
-                  },
-                  {
-                    "name": "PDF_JWT_TOKEN",
-                    "value": "${PDF_JWT_TOKEN}"
-                  },
-                  {
-                    "name": "BCEP_CONF_PATH_WORKER",
-                    "value": "${BCEP_CONF_PATH_WORKER}"
-                  },
-                  {
-                    "name": "MAPSERVER_URI",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "mapserver-uri",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "FEATURE_CRS_RENEWAL",
-                    "value": "1"
-                  },
-				  {
-                    "name": "FEATURE_INDIGENOUS_NATION",
-                    "value": "1"
-                  },
-				  {
-                    "name": "FEATURE_MARKETER",
-                    "value": "1"
                   }
                 ],
                 "resources": {
@@ -601,21 +396,21 @@
       "displayName": "Name",
       "description": "The name assigned to all of the resources defined in this template.",
       "required": true,
-      "value": "cllc-public"
+      "value": "css-portal"
     },
     {
       "name": "SOURCE_IMAGE_NAME",
       "displayName": "Source Image Name",
       "description": "The name of the image to use for this resource.",
       "required": true,
-      "value": "cllc-public"
+      "value": "css-portal"
     },
     {
       "name": "IMAGE_NAMESPACE",
       "displayName": "Image Namespace",
       "description": "The namespace of the OpenShift project containing the imagestream for the application.",
       "required": true,
-      "value": "lclb-cllc-tools"
+      "value": "sxluez-tools"
     },
     {
       "name": "TAG_NAME",
@@ -654,13 +449,7 @@
       "displayName": "Memory Request",
       "description": "Starting amount of memory the container can use.",
       "value": "2Gi"
-    },
-    {
-      "description": "The endpoint used for SiteMinder routed access to the application.",
-      "displayName": "SiteMinder Application Domain",
-      "name": "SITEMINDER_APPLICATION_DOMAIN",
-      "value": "cannabis-licensing-dev.pathfinder.bcgov"
-    },
+    },    
     {
       "description": "The exposed hostname that will route to the service, e.g., myappname.pathfinder.gov.bc.ca, if left blank a value will be defaulted.",
       "displayName": "Application Domain",
@@ -672,7 +461,7 @@
       "displayName": "Sharepoint Webname",
       "name": "SHAREPOINT_WEBNAME",
       "required": false,
-      "value": "cannabisdev"
+      "value": ""
     },
     {
       "description": "Sharepoint Tenant ID and Dynamics Tenant ID, e.g., bcgovtrial.onmicrosoft.com, if left blank a value will be defaulted.",
@@ -740,27 +529,6 @@
       "description": "Siteminder logout URL, e.g., https://logon.gov.bc.ca/clp-cgi/logoff.cgi, if left blank a value will be defaulted. Note this url is for prod and should be changed for dev and test.",
       "required": true,
       "value": "https://logon.gov.bc.ca/clp-cgi/logoff.cgi"
-    },
-    {
-      "name": "PDF_SERVICE_BASE_URI",
-      "displayName": "URI to PDF Service",
-      "description": "URI to PDF Service, e.g., http://pdf-service:8080, if left blank a value will be defaulted.",
-      "required": true,
-      "value": "http://pdf-service:8080"
-    },
-    {
-      "name": "PDF_JWT_TOKEN",
-      "displayName": "JWT for PDF service",
-      "description": "JWT for PDF service.",
-      "required": true,
-      "value": "changeme"
-    },
-    {
-      "name": "BCEP_CONF_PATH_WORKER",
-      "displayName": "Path to BCEP Conf",
-      "description": "Path to BCEP Conf, e.g., /worker-registration/payment-confirmation, if left blank a value will be defaulted.",
-      "required": true,
-      "value": "/worker-registration/payment-confirmation"
     },
     {
       "name": "KEY_RING_DIRECTORY",
