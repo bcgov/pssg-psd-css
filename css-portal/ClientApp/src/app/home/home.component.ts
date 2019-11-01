@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
-  constructor(private router: Router,
-  ) { }
+  constructor(
+    private titleService: Title
+  ) {
+    this.titleService.setTitle('Community Safety Unit Complaint Portal');
+   }
 }
