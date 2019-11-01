@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 $bcgov-font-path: '../node_modules/@bcgov/bootstrap-theme/dist/fonts/';
 @import '../node_modules/@bcgov/bootstrap-theme/dist/scss/bootstrap-theme';
+
+body {
+    background-color: #f1f1f1;
+}
