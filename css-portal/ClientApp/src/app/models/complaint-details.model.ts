@@ -1,6 +1,6 @@
 import { Address } from './address.model';
 
-export class Property {
+export class ComplaintDetails {
     name: string;
     address: Address;
     propertyType: string;

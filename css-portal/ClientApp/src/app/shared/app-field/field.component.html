@@ -1,17 +1,7 @@
-<section class="app-field">
-  <span *ngIf="leadingText">{{leadingText}} <p></p> </span>
-  <label *ngIf="label">{{label}} <small class="text-muted ml-1" *ngIf="required">Required</small></label>
-  
-  <div *ngIf="afterLabelText">{{afterLabelText}}</div>
-  <br *ngIf="label && !afterLabelText">
+<div class="app-field form-group">
+  <label class="control-label" [class.mb-0]="description" *ngIf="label">{{label}} <span class="text-danger ml-1" *ngIf="required">*</span></label>
 
-  <div style="display: flex; align-items: center;">
-    <section [ngClass]="{ 'fullWidth': isFullWidth }">
-      <ng-content></ng-content>
-    </section>
-  </div>
+  <ng-content></ng-content>
   
-  <div *ngIf="invalid" class="invalid-feedback d-block">
-    {{errorMessage}}
-  </div>
-</section>
+  <div *ngIf="invalid" class="invalid-feedback d-block">{{errorMessage}}</div>
+</div>

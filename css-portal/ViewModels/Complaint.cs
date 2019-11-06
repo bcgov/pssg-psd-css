@@ -8,20 +8,20 @@ namespace Gov.Pssg.Css.Public.ViewModels
 {
     public class Complaint
     {
-        public Property Property { get; set; }
+        public ComplaintDetails Details { get; set; }
 
         public Complainant Complainant { get; set; }
 
         public async Task<bool> Validate()
         {
-            if (Property == null)
+            if (Details == null)
             {
                 return false;
             }
 
             bool valid = true;
 
-            valid &= await Property.Validate();
+            valid &= await Details.Validate();
 
             if (Complainant != null)
             {
