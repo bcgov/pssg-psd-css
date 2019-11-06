@@ -1,8 +1,7 @@
 import { Complainant } from './complainant.model';
-import { Property } from './property.model';
+import { ComplaintDetails } from './complaint-details.model';
 
 export class Complaint {
-    property: Property;
-    includeComplainant: boolean;
+    details: ComplaintDetails;
     complainant: Complainant;
 }

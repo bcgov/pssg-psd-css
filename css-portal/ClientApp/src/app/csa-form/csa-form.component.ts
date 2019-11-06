@@ -15,13 +15,13 @@ import { FormBase } from '@shared/form-base';
 @Component({
   selector: 'app-csa-form',
   templateUrl: './csa-form.component.html',
+  styleUrls: ['./csa-form.component.scss'],
   providers: [
     { provide: NgbDateAdapter, useClass: NgbDateNativeAdapter },
   ]
 })
 export class CsaFormComponent extends FormBase implements OnInit {
   public propertyTypes: Observable<PropertyType[]>;
-  form: FormGroup;
   submittingForm: Subscription;
   submissionResult: Subject<boolean>;
   loaded: Boolean;
@@ -40,45 +40,49 @@ export class CsaFormComponent extends FormBase implements OnInit {
     this.propertyTypes = this.propertyTypesStore.pipe(select('propertyTypes'));
 
     this.form = this.formBuilder.group({
-      property: this.formBuilder.group({
+      complaintDetails: this.formBuilder.group({
+        propertyType: [''],
+        otherPropertyType: [''],
         name: [''],
         address: this.formBuilder.group({
           unit: [''],
           line1: [''],
-          line2: [''],
           city: ['', Validators.required],
           provinceState: [{ value: 'BC', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
           zipPostalCode: [''],
         }),
-        propertyType: [''],
-        otherPropertyType: [''],
-        description: ['', Validators.required],
-        problems: ['', Validators.required],
         occupantName: [''],
         ownerName: [''],
+        description: ['', Validators.required],
+        problems: ['', Validators.required],
       }),
-      includeComplainant: [false],
-      complainant: this.formBuilder.group({
+      complainantContactInfo: this.formBuilder.group({
         firstName: ['', Validators.required],
         middleName: [''],
         lastName: ['', Validators.required],
-        phone: ['', Validators.required],
+        phone: [''],
         fax: [''],
-        email: ['', [Validators.email, Validators.required]],
-        address: this.formBuilder.group({
-          unit: [''],
-          line1: ['', Validators.required],
-          line2: [''],
-          city: ['', Validators.required],
-          provinceState: ['BC', Validators.required],
-          country: ['Canada', Validators.required],
-          zipPostalCode: ['', Validators.required],
-        }),
+        email: ['', Validators.email],
       }),
+      complainantMailingAddress: this.formBuilder.group({
+        unit: [''],
+        line1: ['', Validators.required],
+        city: ['', Validators.required],
+        provinceState: ['BC', Validators.required],
+        country: ['Canada', Validators.required],
+        zipPostalCode: [''],
+      }),
+      acceptTerms: [''],
     });
-    
-    this.updateComplainantEnabled();
+
+    const complainantPhone = this.form.get('complainantContactInfo.phone');
+    const complainantEmail = this.form.get('complainantContactInfo.email');
+    const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
+    complainantPhone.setValidators(phoneEmailValidator);
+    complainantEmail.valueChanges.subscribe(email => {
+      complainantPhone.updateValueAndValidity();
+    });
 
     this.formDataService.getPropertyTypes().subscribe(result => {
       this.propertyTypesStore.dispatch(setPropertyTypes({ propertyTypes: result }));
@@ -86,35 +90,43 @@ export class CsaFormComponent extends FormBase implements OnInit {
     });
   }
 
+  checkTelephoneInvalid() {
+    const complainantPhone = this.form.get('complainantContactInfo.phone');
+    const complainantEmail = this.form.get('complainantContactInfo.email');
+    return (complainantPhone.touched || complainantEmail.touched) && !complainantPhone.valid;
+  }
+
   save(data: Complaint): Subject<boolean> {
     this.submissionResult = new Subject<boolean>();
 
-    this.submittingForm = this.formDataService.submitCsaForm(data).subscribe(
-      undefined,
-      err => this.submissionResult.error(err)
-    );
+    this.submittingForm = this.formDataService.submitCsaForm(data).subscribe({
+      error: err => this.submissionResult.error(err)
+    });
 
     return this.submissionResult;
   }
 
   submit() {
     if (this.form.valid) {
+      const formData = this.form.value;
       const data = <Complaint>{
-        ...this.form.value,
+        details: { ...formData.complaintDetails },
+        complainant: {
+          ...formData.complainantContactInfo,
+          address: formData.complainantMailingAddress,
+        },
       };
-      debugger;
 
-      this.save(data).subscribe(
-        undefined,
-        (err: any) => {
+      this.save(data).subscribe({
+        error: (err: any) => {
           console.error(err);
           // TODO: display error
           //this.router.navigate(['/error']);
         },
-        () => {
+        complete: () => {
           this.router.navigate(['/complaint-submitted']);
         }
-      );
+      });
     } else {
       this.form.markAllAsTouched();
     }
@@ -122,17 +134,5 @@ export class CsaFormComponent extends FormBase implements OnInit {
 
   onBusyStop() {
     this.submissionResult.complete();
-  }
-
-  updateComplainantEnabled() {
-    const includeComplainantControl = this.form.get('includeComplainant');
-    const complainantControl = this.form.get('complainant');
-    if (includeComplainantControl && complainantControl) {
-      if (includeComplainantControl.value === true) {
-        complainantControl.enable();
-      } else {
-        complainantControl.disable();
-      }
-    }
   }
 }

@@ -1,7 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
 $bcgov-font-path: '../node_modules/@bcgov/bootstrap-theme/dist/fonts/';
 @import '../node_modules/@bcgov/bootstrap-theme/dist/scss/bootstrap-theme';
 
+// set background colour for margins
 body {
     background-color: #f1f1f1;
+}
+
+// add vertical spacing for forms
+.row [class*="col-"] {
+    margin-bottom: $spacer;
+}
+
+// style legend for form sections
+legend {
+    color: white;
+    background-color: #38598a;
+    padding: 0.75rem;
+    margin: 2rem 0;
+}
+
+// fix busy overlay so it works when pages are scrolled down
+.ng-busy-default-sign {
+    position: fixed !important;
+    top: 0;
+    left: 50%;
+    width: 180px;
+    margin-left: -90px;
+}
+
+.ng-busy-backdrop {
+    position: fixed !important;
 }

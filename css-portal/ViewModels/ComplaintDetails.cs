@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
-    public class Property
+    public class ComplaintDetails
     {
         public string Name { get; set; }
 
