@@ -1,4 +1,13 @@
+@import "../../node_modules/@bcgov/bootstrap-theme/dist/scss/common";
+
 main {
-    max-width: 960px;
+    width: 960px;
     background-color: #fff;
+    flex-grow: 1;
+}
+
+@include media-breakpoint-down(md) {
+    main {
+        width: 100%;
+    }
 }
