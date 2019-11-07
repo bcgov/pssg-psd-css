@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
@@ -12,7 +13,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Complainant Complainant { get; set; }
 
-        public async Task<bool> Validate()
+        public async Task<bool> Validate(ComplaintType type)
         {
             if (Details == null)
             {
@@ -21,11 +22,20 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
             bool valid = true;
 
-            valid &= await Details.Validate();
+            valid &= await Details.Validate(type);
 
             if (Complainant != null)
             {
-                valid &= await Complainant.Validate();
+                bool complainantValid = await Complainant.Validate(type);
+                if (!complainantValid)
+                {
+                    Complainant = null;
+                }
+            }
+
+            if (Complainant == null && type == ComplaintType.CSA)
+            {
+                valid = false;
             }
 
             return valid;
