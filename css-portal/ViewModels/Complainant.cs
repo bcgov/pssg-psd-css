@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
@@ -22,7 +23,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Address Address { get; set; }
 
-        public async Task<bool> Validate()
+        public async Task<bool> Validate(ComplaintType type)
         {
             return true;
         }

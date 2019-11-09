@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, AbstractControl } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 import { Observable, Subject, Subscription } from 'rxjs';
@@ -13,14 +13,13 @@ import { ComplaintService } from '@services/form-data.service';
 import { FormBase } from '@shared/form-base';
 
 @Component({
-  selector: 'app-csa-form',
-  templateUrl: './csa-form.component.html',
-  styleUrls: ['./csa-form.component.scss'],
+  selector: 'app-ccla-form',
+  templateUrl: './ccla-form.component.html',
   providers: [
     { provide: NgbDateAdapter, useClass: NgbDateNativeAdapter },
   ]
 })
-export class CsaFormComponent extends FormBase implements OnInit {
+export class CclaFormComponent extends FormBase implements OnInit {
   public propertyTypes: Observable<PropertyType[]>;
   submittingForm: Subscription;
   submissionResult: Subject<boolean>;
@@ -41,8 +40,6 @@ export class CsaFormComponent extends FormBase implements OnInit {
 
     this.form = this.formBuilder.group({
       complaintDetails: this.formBuilder.group({
-        propertyType: [''],
-        otherPropertyType: [''],
         name: [''],
         address: this.formBuilder.group({
           unit: [''],
@@ -52,17 +49,16 @@ export class CsaFormComponent extends FormBase implements OnInit {
           country: [{ value: 'Canada', disabled: true }],
           zipPostalCode: [''],
         }),
-        occupantName: [''],
-        ownerName: [''],
-        description: ['', Validators.required],
         problems: ['', Validators.required],
       }),
+      anonymousComplainant: [false],
       complainantContactInfo: this.formBuilder.group({
         firstName: ['', Validators.required],
         middleName: [''],
         lastName: ['', Validators.required],
-        phone: [''],
         fax: [''],
+        governmentOrganization: [''],
+        phone: [''],
         email: ['', Validators.email],
       }),
       complainantMailingAddress: this.formBuilder.group({
@@ -73,7 +69,6 @@ export class CsaFormComponent extends FormBase implements OnInit {
         country: ['Canada', Validators.required],
         zipPostalCode: [''],
       }),
-      acceptTerms: [''],
     });
 
     const complainantPhone = this.form.get('complainantContactInfo.phone');
@@ -84,10 +79,27 @@ export class CsaFormComponent extends FormBase implements OnInit {
       complainantPhone.updateValueAndValidity();
     });
 
+    this.updateAnonymousComplainant();
+
     this.formDataService.getPropertyTypes().subscribe(result => {
       this.propertyTypesStore.dispatch(setPropertyTypes({ propertyTypes: result }));
       this.loaded = true;
     });
+  }
+
+  updateAnonymousComplainant() {
+    const includeComplainantControl = this.form.get('anonymousComplainant');
+    const complainantContactInfoControl = this.form.get('complainantContactInfo');
+    const complainantMailingAddressControl = this.form.get('complainantMailingAddress');
+    if (includeComplainantControl && complainantContactInfoControl && complainantMailingAddressControl) {
+      if (includeComplainantControl.value === true) {
+        complainantContactInfoControl.disable();
+        complainantMailingAddressControl.disable();
+      } else {
+        complainantContactInfoControl.enable();
+        complainantMailingAddressControl.enable();
+      }
+    }
   }
 
   checkTelephoneInvalid() {
@@ -99,7 +111,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
   save(data: Complaint): Subject<boolean> {
     this.submissionResult = new Subject<boolean>();
 
-    this.submittingForm = this.formDataService.submitCsaForm(data).subscribe({
+    this.submittingForm = this.formDataService.submitCclaForm(data).subscribe({
       error: err => this.submissionResult.error(err)
     });
 
@@ -111,7 +123,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
       const formData = this.form.value;
       const data = <Complaint>{
         details: { ...formData.complaintDetails },
-        complainant: {
+        complainant: formData.anonymousComplainant ? null : {
           ...formData.complainantContactInfo,
           address: formData.complainantMailingAddress,
         },

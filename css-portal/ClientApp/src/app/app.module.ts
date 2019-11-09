@@ -16,16 +16,20 @@ import { FieldComponent } from '@shared/app-field/field.component';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { CclaFormComponent } from './ccla-form/ccla-form.component';
 import { CsaFormComponent } from './csa-form/csa-form.component';
 import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-submitted.component';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    CclaFormComponent,
     CsaFormComponent,
     ComplaintSubmittedComponent,
+    ErrorComponent,
     FieldComponent
   ],
   imports: [
@@ -39,8 +43,11 @@ import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-sub
     NgBusyModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'ccla-form', component: CclaFormComponent },
       { path: 'csa-form', component: CsaFormComponent },
       { path: 'complaint-submitted', component: ComplaintSubmittedComponent },
+      { path: 'error', component: ErrorComponent },
+      { path: '**', redirectTo: '' },
     ]),
     StoreModule.forRoot({ propertyTypes: propertyTypesReducer })
   ],
