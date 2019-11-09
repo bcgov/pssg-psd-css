@@ -132,8 +132,7 @@ export class CclaFormComponent extends FormBase implements OnInit {
       this.save(data).subscribe({
         error: (err: any) => {
           console.error(err);
-          // TODO: display error
-          //this.router.navigate(['/error']);
+          this.router.navigate(['/error']);
         },
         complete: () => {
           this.router.navigate(['/complaint-submitted']);

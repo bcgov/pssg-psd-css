@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { CclaFormComponent } from './ccla-form/ccla-form.component';
 import { CsaFormComponent } from './csa-form/csa-form.component';
 import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-submitted.component';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-sub
     CclaFormComponent,
     CsaFormComponent,
     ComplaintSubmittedComponent,
+    ErrorComponent,
     FieldComponent
   ],
   imports: [
@@ -44,6 +46,7 @@ import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-sub
       { path: 'ccla-form', component: CclaFormComponent },
       { path: 'csa-form', component: CsaFormComponent },
       { path: 'complaint-submitted', component: ComplaintSubmittedComponent },
+      { path: 'error', component: ErrorComponent },
     ]),
     StoreModule.forRoot({ propertyTypes: propertyTypesReducer })
   ],
