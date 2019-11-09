@@ -47,6 +47,7 @@ import { ErrorComponent } from './error/error.component';
       { path: 'csa-form', component: CsaFormComponent },
       { path: 'complaint-submitted', component: ComplaintSubmittedComponent },
       { path: 'error', component: ErrorComponent },
+      { path: '**', redirectTo: '' },
     ]),
     StoreModule.forRoot({ propertyTypes: propertyTypesReducer })
   ],
