@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcustomeraddress class.
         /// </summary>
-        public MicrosoftDynamicsCRMcustomeraddress(System.Guid? _modifiedbyValue = default(System.Guid?), int? addresstypecode = default(int?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? customeraddressid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string line2 = default(string), int? utcconversiontimezonecode = default(int?), int? addressnumber = default(int?), string postofficebox = default(string), string telephone1 = default(string), int? utcoffset = default(int?), string line3 = default(string), System.Guid? _owninguserValue = default(System.Guid?), int? importsequencenumber = default(int?), string line1 = default(string), string versionnumber = default(string), System.Guid? _parentidValue = default(System.Guid?), string postalcode = default(string), int? freighttermscode = default(int?), decimal? exchangerate = default(decimal?), string country = default(string), string county = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _owningbusinessunitValue = default(System.Guid?), string stateorprovince = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? shippingmethodcode = default(int?), string primarycontactname = default(string), string city = default(string), string fax = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string objecttypecode = default(string), string telephone2 = default(string), string upszone = default(string), string composite = default(string), string longitude = default(string), int? timezoneruleversionnumber = default(int?), string telephone3 = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string latitude = default(string), string name = default(string), IList<MicrosoftDynamicsCRMcontract> customerAddressContractsAsBillingAddress = default(IList<MicrosoftDynamicsCRMcontract>), IList<MicrosoftDynamicsCRMcontract> customerAddressContractsAsServiceAddress = default(IList<MicrosoftDynamicsCRMcontract>), IList<MicrosoftDynamicsCRMcontractdetail> customerAddressContractLineItems = default(IList<MicrosoftDynamicsCRMcontractdetail>), IList<MicrosoftDynamicsCRMbulkdeletefailure> customerAddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMprocesssession> customerAddressProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMaccount parentidAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMcontact parentidContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> customerAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> customeraddressPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMasyncoperation> customerAddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>))
+        public MicrosoftDynamicsCRMcustomeraddress(string _modifiedbyValue = default(string), int? addresstypecode = default(int?), string _owneridValue = default(string), string customeraddressid = default(string), string _createdonbehalfbyValue = default(string), string line2 = default(string), int? utcconversiontimezonecode = default(int?), int? addressnumber = default(int?), string postofficebox = default(string), string telephone1 = default(string), int? utcoffset = default(int?), string line3 = default(string), string _owninguserValue = default(string), int? importsequencenumber = default(int?), string line1 = default(string), string versionnumber = default(string), string _parentidValue = default(string), string postalcode = default(string), int? freighttermscode = default(int?), decimal? exchangerate = default(decimal?), string country = default(string), string county = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _owningbusinessunitValue = default(string), string stateorprovince = default(string), string _createdbyValue = default(string), string _transactioncurrencyidValue = default(string), int? shippingmethodcode = default(int?), string primarycontactname = default(string), string city = default(string), string fax = default(string), string _modifiedonbehalfbyValue = default(string), string objecttypecode = default(string), string telephone2 = default(string), string upszone = default(string), string composite = default(string), string longitude = default(string), int? timezoneruleversionnumber = default(int?), string telephone3 = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string latitude = default(string), string name = default(string), IList<MicrosoftDynamicsCRMcontract> customerAddressContractsAsBillingAddress = default(IList<MicrosoftDynamicsCRMcontract>), IList<MicrosoftDynamicsCRMcontract> customerAddressContractsAsServiceAddress = default(IList<MicrosoftDynamicsCRMcontract>), IList<MicrosoftDynamicsCRMcontractdetail> customerAddressContractLineItems = default(IList<MicrosoftDynamicsCRMcontractdetail>), IList<MicrosoftDynamicsCRMbulkdeletefailure> customerAddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMprocesssession> customerAddressProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMaccount parentidAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMcontact parentidContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> customerAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> customeraddressPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMasyncoperation> customerAddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>))
         {
             this._modifiedbyValue = _modifiedbyValue;
             Addresstypecode = addresstypecode;
@@ -100,7 +100,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -110,17 +110,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "customeraddressid")]
-        public System.Guid? Customeraddressid { get; set; }
+        public string Customeraddressid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -180,7 +180,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentid_value")]
-        public System.Guid? _parentidValue { get; set; }
+        public string _parentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -215,7 +215,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -225,12 +225,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -255,7 +255,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

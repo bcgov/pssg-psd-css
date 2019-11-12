@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMpersonaldocumenttemplate class.
         /// </summary>
-        public MicrosoftDynamicsCRMpersonaldocumenttemplate(string versionnumber = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? personaldocumenttemplateid = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), string content = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), bool? status = default(bool?), string name = default(string), int? documenttype = default(int?), string clientdata = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), int? languagecode = default(int?), string description = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), string associatedentitytypecode = default(string), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMpersonaldocumenttemplate(string versionnumber = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string personaldocumenttemplateid = default(string), string _owninguserValue = default(string), string content = default(string), string _createdonbehalfbyValue = default(string), bool? status = default(bool?), string name = default(string), int? documenttype = default(int?), string clientdata = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string _modifiedbyValue = default(string), string _owneridValue = default(string), string _owningteamValue = default(string), int? languagecode = default(int?), string description = default(string), string _owningbusinessunitValue = default(string), string associatedentitytypecode = default(string), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Versionnumber = versionnumber;
             this._modifiedonbehalfbyValue = _modifiedonbehalfbyValue;
@@ -71,7 +71,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -81,12 +81,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "personaldocumenttemplateid")]
-        public System.Guid? Personaldocumenttemplateid { get; set; }
+        public string Personaldocumenttemplateid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -96,7 +96,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -126,22 +126,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>

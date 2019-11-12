@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMphonetocaseprocess class.
         /// </summary>
-        public MicrosoftDynamicsCRMphonetocaseprocess(int? timezoneruleversionnumber = default(int?), decimal? exchangerate = default(decimal?), string name = default(string), int? statuscode = default(int?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _activestageidValue = default(System.Guid?), System.DateTimeOffset? activestagestartedon = default(System.DateTimeOffset?), int? statecode = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? duration = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? businessprocessflowinstanceid = default(System.Guid?), System.Guid? _incidentidValue = default(System.Guid?), int? importsequencenumber = default(int?), System.DateTimeOffset? completedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string traversedpath = default(string), int? utcconversiontimezonecode = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), string versionnumber = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _processidValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMprocessstage activestageid = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMworkflow processid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMsyncerror> phoneToCaseProcessSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> phonetocaseprocessAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMworkflowlog> workflowlogsPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMworkflowlog>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> phonetocaseprocessMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> phonetocaseprocessProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> phonetocaseprocessBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> phonetocaseprocessPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMincident incidentid = default(MicrosoftDynamicsCRMincident))
+        public MicrosoftDynamicsCRMphonetocaseprocess(int? timezoneruleversionnumber = default(int?), decimal? exchangerate = default(decimal?), string name = default(string), int? statuscode = default(int?), string _transactioncurrencyidValue = default(string), string _activestageidValue = default(string), System.DateTimeOffset? activestagestartedon = default(System.DateTimeOffset?), int? statecode = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? duration = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string _modifiedbyValue = default(string), string businessprocessflowinstanceid = default(string), string _incidentidValue = default(string), int? importsequencenumber = default(int?), System.DateTimeOffset? completedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string traversedpath = default(string), int? utcconversiontimezonecode = default(int?), string _createdonbehalfbyValue = default(string), string _organizationidValue = default(string), string versionnumber = default(string), string _modifiedonbehalfbyValue = default(string), string _processidValue = default(string), MicrosoftDynamicsCRMsystemuser createdbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMprocessstage activestageid = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMworkflow processid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMsyncerror> phoneToCaseProcessSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> phonetocaseprocessAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMworkflowlog> workflowlogsPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMworkflowlog>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> phonetocaseprocessMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> phonetocaseprocessProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> phonetocaseprocessBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> phonetocaseprocessPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMincident incidentid = default(MicrosoftDynamicsCRMincident))
         {
             Timezoneruleversionnumber = timezoneruleversionnumber;
             Exchangerate = exchangerate;
@@ -103,12 +103,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_activestageid_value")]
-        public System.Guid? _activestageidValue { get; set; }
+        public string _activestageidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -138,22 +138,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "businessprocessflowinstanceid")]
-        public System.Guid? Businessprocessflowinstanceid { get; set; }
+        public string Businessprocessflowinstanceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_incidentid_value")]
-        public System.Guid? _incidentidValue { get; set; }
+        public string _incidentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -183,12 +183,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -198,12 +198,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_processid_value")]
-        public System.Guid? _processidValue { get; set; }
+        public string _processidValue { get; set; }
 
         /// <summary>
         /// </summary>

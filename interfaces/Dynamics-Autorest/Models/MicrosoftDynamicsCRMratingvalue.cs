@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMratingvalue
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMratingvalue(System.Guid? _ratingmodelValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? ratingvalueid = default(System.Guid?), int? statecode = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), int? value = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string name = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), int? statuscode = default(int?), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), System.Guid? _owninguserValue = default(System.Guid?), decimal? exchangerate = default(decimal?), int? timezoneruleversionnumber = default(int?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), string versionnumber = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> ratingValueSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> ratingvalueDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> ratingvalueDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> ratingvalueAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> ratingvalueMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> ratingvalueProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> ratingvalueBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> ratingvaluePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMratingmodel ratingModel = default(MicrosoftDynamicsCRMratingmodel), IList<MicrosoftDynamicsCRMbookableresourcecharacteristic> ratingvalueBookableresourcecharacteristicRatingValue = default(IList<MicrosoftDynamicsCRMbookableresourcecharacteristic>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMratingvalue(string _ratingmodelValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string ratingvalueid = default(string), int? statecode = default(int?), string _modifiedbyValue = default(string), string _owneridValue = default(string), int? value = default(int?), string _owningbusinessunitValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _owningteamValue = default(string), string _createdonbehalfbyValue = default(string), string name = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), int? statuscode = default(int?), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), string _owninguserValue = default(string), decimal? exchangerate = default(decimal?), int? timezoneruleversionnumber = default(int?), string _transactioncurrencyidValue = default(string), string versionnumber = default(string), string _modifiedonbehalfbyValue = default(string), MicrosoftDynamicsCRMsystemuser createdbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfbyname = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> ratingValueSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> ratingvalueDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> ratingvalueDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> ratingvalueAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> ratingvalueMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> ratingvalueProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> ratingvalueBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> ratingvaluePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMratingmodel ratingModel = default(MicrosoftDynamicsCRMratingmodel), IList<MicrosoftDynamicsCRMbookableresourcecharacteristic> ratingvalueBookableresourcecharacteristicRatingValue = default(IList<MicrosoftDynamicsCRMbookableresourcecharacteristic>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             this._ratingmodelValue = _ratingmodelValue;
             Overriddencreatedon = overriddencreatedon;
@@ -84,7 +84,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ratingmodel_value")]
-        public System.Guid? _ratingmodelValue { get; set; }
+        public string _ratingmodelValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -94,7 +94,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "ratingvalueid")]
-        public System.Guid? Ratingvalueid { get; set; }
+        public string Ratingvalueid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -104,12 +104,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,12 +129,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -169,7 +169,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -184,7 +184,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -194,7 +194,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

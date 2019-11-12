@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMknowledgearticle class.
         /// </summary>
-        public MicrosoftDynamicsCRMknowledgearticle(int? review = default(int?), System.Guid? knowledgearticleid = default(System.Guid?), int? publishstatusid = default(int?), int? expiredreviewoptions = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? knowledgearticleviewsDate = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string description = default(string), string versionnumber = default(string), string content = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? ratingDate = default(System.DateTimeOffset?), int? ratingState = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _parentarticlecontentidValue = default(System.Guid?), int? knowledgearticleviews = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), string keywords = default(string), bool? isprimary = default(bool?), System.Guid? _primaryauthoridValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), decimal? exchangerate = default(decimal?), bool? updatecontent = default(bool?), System.Guid? _languagelocaleidValue = default(System.Guid?), int? expirationstateid = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? knowledgearticleviewsState = default(int?), int? minorversionnumber = default(int?), System.Guid? stageid = default(System.Guid?), decimal? ratingSum = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? expirationstatusid = default(int?), int? statecode = default(int?), bool? isrootarticle = default(bool?), System.Guid? _subjectidValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), int? ratingCount = default(int?), bool? setproductassociations = default(bool?), bool? islatestversion = default(bool?), System.DateTimeOffset? publishon = default(System.DateTimeOffset?), bool? isinternal = default(bool?), System.Guid? processid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), int? scheduledstatusid = default(int?), System.Guid? _previousarticlecontentidValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? majorversionnumber = default(int?), string articlepublicnumber = default(string), string traversedpath = default(string), int? statuscode = default(int?), System.DateTimeOffset? expirationdate = default(System.DateTimeOffset?), System.Guid? _rootarticleidValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), decimal? rating = default(decimal?), string title = default(string), bool? readyforreview = default(bool?), bool? setcategoryassociations = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMconnection> knowledgearticleConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> knowledgearticleConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMduplicaterecord> knowledgearticleDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> knowledgearticleDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> knowledgearticleSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMqueueitem> knowledgearticleQueueItems = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMannotation> knowledgearticleAnnotations = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMteam> knowledgearticleTeams = default(IList<MicrosoftDynamicsCRMteam>), IList<MicrosoftDynamicsCRMasyncoperation> knowledgearticleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesssession> knowledgearticleProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> knowledgearticleBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> knowledgearticlePrincipalObjectAttributeAccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMbulkoperation> knowledgearticleBulkOperations = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMcampaignresponse> knowledgearticleCampaignResponses = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMincidentresolution> knowledgearticleIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> knowledgeArticleServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMknowledgearticleincident> incidentKnowledgearticles = default(IList<MicrosoftDynamicsCRMknowledgearticleincident>), IList<MicrosoftDynamicsCRMopportunityclose> knowledgearticleOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> knowledgearticleOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> knowledgearticleQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMcsuCasetask> knowledgearticleCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMexpiredprocess> knowledgearticleExpiredprocess = default(IList<MicrosoftDynamicsCRMexpiredprocess>), IList<MicrosoftDynamicsCRMtranslationprocess> knowledgearticleTranslationprocess = default(IList<MicrosoftDynamicsCRMtranslationprocess>), IList<MicrosoftDynamicsCRMsyncerror> knowledgeArticleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMlanguagelocale languagelocaleid = default(MicrosoftDynamicsCRMlanguagelocale), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> knowledgeArticleRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMletter> knowledgeArticleLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMsocialactivity> knowledgeArticleSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMactivitypointer> knowledgeArticleActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMnewprocess> knowledgearticleNewprocess = default(IList<MicrosoftDynamicsCRMnewprocess>), IList<MicrosoftDynamicsCRMfax> knowledgeArticleFaxes = default(IList<MicrosoftDynamicsCRMfax>), MicrosoftDynamicsCRMknowledgearticle previousArticleContentId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticlePreviousarticleContentid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMknowledgearticle rootArticleId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleRootarticleId = default(IList<MicrosoftDynamicsCRMknowledgearticle>), IList<MicrosoftDynamicsCRMknowledgearticleviews> knowledgearticleViews = default(IList<MicrosoftDynamicsCRMknowledgearticleviews>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMphonecall> knowledgeArticlePhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), MicrosoftDynamicsCRMknowledgearticle parentArticleContentId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleParentarticleContentid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), IList<MicrosoftDynamicsCRMcategory> knowledgearticleCategory = default(IList<MicrosoftDynamicsCRMcategory>), IList<MicrosoftDynamicsCRMactivityparty> knowledgearticleActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMemail> knowledgeArticleEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMtask> knowledgeArticleTasks = default(IList<MicrosoftDynamicsCRMtask>), MicrosoftDynamicsCRMsystemuser primaryauthorid = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappointment> knowledgeArticleAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMpostregarding> knowledgearticlePostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), IList<MicrosoftDynamicsCRMpostfollow> knowledgearticlePostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMfeedback> knowledgeArticleFeedback = default(IList<MicrosoftDynamicsCRMfeedback>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject))
+        public MicrosoftDynamicsCRMknowledgearticle(int? review = default(int?), string knowledgearticleid = default(string), int? publishstatusid = default(int?), int? expiredreviewoptions = default(int?), string _modifiedbyValue = default(string), System.DateTimeOffset? knowledgearticleviewsDate = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string description = default(string), string versionnumber = default(string), string content = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? ratingDate = default(System.DateTimeOffset?), int? ratingState = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _parentarticlecontentidValue = default(string), int? knowledgearticleviews = default(int?), string _owningbusinessunitValue = default(string), int? timezoneruleversionnumber = default(int?), string keywords = default(string), bool? isprimary = default(bool?), string _primaryauthoridValue = default(string), string _owneridValue = default(string), string _owningteamValue = default(string), decimal? exchangerate = default(decimal?), bool? updatecontent = default(bool?), string _languagelocaleidValue = default(string), int? expirationstateid = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? knowledgearticleviewsState = default(int?), int? minorversionnumber = default(int?), string stageid = default(string), decimal? ratingSum = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? expirationstatusid = default(int?), int? statecode = default(int?), bool? isrootarticle = default(bool?), string _subjectidValue = default(string), int? utcconversiontimezonecode = default(int?), int? ratingCount = default(int?), bool? setproductassociations = default(bool?), bool? islatestversion = default(bool?), System.DateTimeOffset? publishon = default(System.DateTimeOffset?), bool? isinternal = default(bool?), string processid = default(string), string _createdbyValue = default(string), int? scheduledstatusid = default(int?), string _previousarticlecontentidValue = default(string), string _transactioncurrencyidValue = default(string), string _createdonbehalfbyValue = default(string), int? majorversionnumber = default(int?), string articlepublicnumber = default(string), string traversedpath = default(string), int? statuscode = default(int?), System.DateTimeOffset? expirationdate = default(System.DateTimeOffset?), string _rootarticleidValue = default(string), string _owninguserValue = default(string), decimal? rating = default(decimal?), string title = default(string), bool? readyforreview = default(bool?), bool? setcategoryassociations = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMconnection> knowledgearticleConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> knowledgearticleConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMduplicaterecord> knowledgearticleDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> knowledgearticleDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> knowledgearticleSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMqueueitem> knowledgearticleQueueItems = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMannotation> knowledgearticleAnnotations = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMteam> knowledgearticleTeams = default(IList<MicrosoftDynamicsCRMteam>), IList<MicrosoftDynamicsCRMasyncoperation> knowledgearticleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesssession> knowledgearticleProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> knowledgearticleBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> knowledgearticlePrincipalObjectAttributeAccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMbulkoperation> knowledgearticleBulkOperations = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMcampaignresponse> knowledgearticleCampaignResponses = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMincidentresolution> knowledgearticleIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> knowledgeArticleServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMknowledgearticleincident> incidentKnowledgearticles = default(IList<MicrosoftDynamicsCRMknowledgearticleincident>), IList<MicrosoftDynamicsCRMopportunityclose> knowledgearticleOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> knowledgearticleOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> knowledgearticleQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMcsuCasetask> knowledgearticleCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMexpiredprocess> knowledgearticleExpiredprocess = default(IList<MicrosoftDynamicsCRMexpiredprocess>), IList<MicrosoftDynamicsCRMtranslationprocess> knowledgearticleTranslationprocess = default(IList<MicrosoftDynamicsCRMtranslationprocess>), IList<MicrosoftDynamicsCRMsyncerror> knowledgeArticleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMlanguagelocale languagelocaleid = default(MicrosoftDynamicsCRMlanguagelocale), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> knowledgeArticleRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMletter> knowledgeArticleLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMsocialactivity> knowledgeArticleSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMactivitypointer> knowledgeArticleActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMnewprocess> knowledgearticleNewprocess = default(IList<MicrosoftDynamicsCRMnewprocess>), IList<MicrosoftDynamicsCRMfax> knowledgeArticleFaxes = default(IList<MicrosoftDynamicsCRMfax>), MicrosoftDynamicsCRMknowledgearticle previousArticleContentId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticlePreviousarticleContentid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMknowledgearticle rootArticleId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleRootarticleId = default(IList<MicrosoftDynamicsCRMknowledgearticle>), IList<MicrosoftDynamicsCRMknowledgearticleviews> knowledgearticleViews = default(IList<MicrosoftDynamicsCRMknowledgearticleviews>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMphonecall> knowledgeArticlePhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), MicrosoftDynamicsCRMknowledgearticle parentArticleContentId = default(MicrosoftDynamicsCRMknowledgearticle), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleParentarticleContentid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), IList<MicrosoftDynamicsCRMcategory> knowledgearticleCategory = default(IList<MicrosoftDynamicsCRMcategory>), IList<MicrosoftDynamicsCRMactivityparty> knowledgearticleActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMemail> knowledgeArticleEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMtask> knowledgeArticleTasks = default(IList<MicrosoftDynamicsCRMtask>), MicrosoftDynamicsCRMsystemuser primaryauthorid = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappointment> knowledgeArticleAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMpostregarding> knowledgearticlePostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), IList<MicrosoftDynamicsCRMpostfollow> knowledgearticlePostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMfeedback> knowledgeArticleFeedback = default(IList<MicrosoftDynamicsCRMfeedback>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject))
         {
             Review = review;
             Knowledgearticleid = knowledgearticleid;
@@ -166,7 +166,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "knowledgearticleid")]
-        public System.Guid? Knowledgearticleid { get; set; }
+        public string Knowledgearticleid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -181,7 +181,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -211,7 +211,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -231,7 +231,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentarticlecontentid_value")]
-        public System.Guid? _parentarticlecontentidValue { get; set; }
+        public string _parentarticlecontentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -241,7 +241,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -261,17 +261,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_primaryauthorid_value")]
-        public System.Guid? _primaryauthoridValue { get; set; }
+        public string _primaryauthoridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -286,7 +286,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_languagelocaleid_value")]
-        public System.Guid? _languagelocaleidValue { get; set; }
+        public string _languagelocaleidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -311,7 +311,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -341,7 +341,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_subjectid_value")]
-        public System.Guid? _subjectidValue { get; set; }
+        public string _subjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -376,12 +376,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -391,17 +391,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_previousarticlecontentid_value")]
-        public System.Guid? _previousarticlecontentidValue { get; set; }
+        public string _previousarticlecontentidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -431,12 +431,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_rootarticleid_value")]
-        public System.Guid? _rootarticleidValue { get; set; }
+        public string _rootarticleidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>

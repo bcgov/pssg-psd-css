@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMnavigationsetting class.
         /// </summary>
-        public MicrosoftDynamicsCRMnavigationsetting(System.Guid? parentnavigationsettingid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? solutionid = default(System.Guid?), string name = default(string), int? componentstate = default(int?), int? settingtype = default(int?), System.Guid? appconfigidunique = default(System.Guid?), System.Guid? resourceid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? privileges = default(int?), int? importsequencenumber = default(int?), bool? ismanaged = default(bool?), int? advancedsettingorder = default(int?), System.Guid? _appconfigidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? iconresourceid = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? quicksettingorder = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string pageurl = default(string), string groupname = default(string), int? objecttypecode = default(int?), string introducedversion = default(string), string description = default(string), System.Guid? navigationsettingid = default(System.Guid?), System.Guid? navigationsettingidunique = default(System.Guid?), bool? progressstate = default(bool?), MicrosoftDynamicsCRMsystemuser navigationsettingModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser navigationsettingCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMappconfig navigationsettingAppconfig = default(MicrosoftDynamicsCRMappconfig), MicrosoftDynamicsCRMsystemuser navigationsettingModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser navigationsettingCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationNavigationsettingNavigationsetting = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMnavigationsetting(string parentnavigationsettingid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string solutionid = default(string), string name = default(string), int? componentstate = default(int?), int? settingtype = default(int?), string appconfigidunique = default(string), string resourceid = default(string), string _createdonbehalfbyValue = default(string), int? privileges = default(int?), int? importsequencenumber = default(int?), bool? ismanaged = default(bool?), int? advancedsettingorder = default(int?), string _appconfigidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string iconresourceid = default(string), string _modifiedonbehalfbyValue = default(string), string _organizationidValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? quicksettingorder = default(int?), string _modifiedbyValue = default(string), string _createdbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string pageurl = default(string), string groupname = default(string), int? objecttypecode = default(int?), string introducedversion = default(string), string description = default(string), string navigationsettingid = default(string), string navigationsettingidunique = default(string), bool? progressstate = default(bool?), MicrosoftDynamicsCRMsystemuser navigationsettingModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser navigationsettingCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMappconfig navigationsettingAppconfig = default(MicrosoftDynamicsCRMappconfig), MicrosoftDynamicsCRMsystemuser navigationsettingModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser navigationsettingCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationNavigationsettingNavigationsetting = default(MicrosoftDynamicsCRMorganization))
         {
             Parentnavigationsettingid = parentnavigationsettingid;
             Overwritetime = overwritetime;
@@ -77,7 +77,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "parentnavigationsettingid")]
-        public System.Guid? Parentnavigationsettingid { get; set; }
+        public string Parentnavigationsettingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,7 +87,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -107,17 +107,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appconfigidunique")]
-        public System.Guid? Appconfigidunique { get; set; }
+        public string Appconfigidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "resourceid")]
-        public System.Guid? Resourceid { get; set; }
+        public string Resourceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -142,7 +142,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_appconfigid_value")]
-        public System.Guid? _appconfigidValue { get; set; }
+        public string _appconfigidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -152,17 +152,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "iconresourceid")]
-        public System.Guid? Iconresourceid { get; set; }
+        public string Iconresourceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,12 +177,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -217,12 +217,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "navigationsettingid")]
-        public System.Guid? Navigationsettingid { get; set; }
+        public string Navigationsettingid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "navigationsettingidunique")]
-        public System.Guid? Navigationsettingidunique { get; set; }
+        public string Navigationsettingidunique { get; set; }
 
         /// <summary>
         /// </summary>

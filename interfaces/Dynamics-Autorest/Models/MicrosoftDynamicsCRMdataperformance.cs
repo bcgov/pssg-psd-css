@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMdataperformance class.
         /// </summary>
-        public MicrosoftDynamicsCRMdataperformance(System.Guid? _organizationidValue = default(System.Guid?), decimal? estimatedoptimizationimpact = default(decimal?), decimal? optimizationstorage = default(decimal?), string optimizationstatus = default(string), System.Guid? dataperformanceid = default(System.Guid?), string lastactionresult = default(string), string component = default(string), decimal? weight = default(decimal?), decimal? mediantime = default(decimal?), string entity = default(string), bool? anyoptimizationavailable = default(bool?), string solution = default(string), string executionperiod = default(string), int? count = default(int?), decimal? maxtime = default(decimal?), bool? anyoptimizationapplied = default(bool?), string realizedoptimizationimpact = default(string), System.DateTimeOffset? lastoptimizationdate = default(System.DateTimeOffset?), decimal? mintime = default(decimal?), string operation = default(string), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMdataperformance(string _organizationidValue = default(string), decimal? estimatedoptimizationimpact = default(decimal?), decimal? optimizationstorage = default(decimal?), string optimizationstatus = default(string), string dataperformanceid = default(string), string lastactionresult = default(string), string component = default(string), decimal? weight = default(decimal?), decimal? mediantime = default(decimal?), string entity = default(string), bool? anyoptimizationavailable = default(bool?), string solution = default(string), string executionperiod = default(string), int? count = default(int?), decimal? maxtime = default(decimal?), bool? anyoptimizationapplied = default(bool?), string realizedoptimizationimpact = default(string), System.DateTimeOffset? lastoptimizationdate = default(System.DateTimeOffset?), decimal? mintime = default(decimal?), string operation = default(string), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
         {
             this._organizationidValue = _organizationidValue;
             Estimatedoptimizationimpact = estimatedoptimizationimpact;
@@ -61,7 +61,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -81,7 +81,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "dataperformanceid")]
-        public System.Guid? Dataperformanceid { get; set; }
+        public string Dataperformanceid { get; set; }
 
         /// <summary>
         /// </summary>

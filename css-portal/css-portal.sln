@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "css-portal", "css-portal.csproj", "{DCAD27FB-BF9C-4686-89B1-E0D6575F5F41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "css-portal", "css-portal.csproj", "{DCAD27FB-BF9C-4686-89B1-E0D6575F5F41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsAutorest", "..\interfaces\Dynamics-Autorest\DynamicsAutorest.csproj", "{804E3087-4017-4F92-B475-D3C473F1F375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharePoint", "..\interfaces\SharePoint\SharePoint.csproj", "{92DA5873-B049-4D70-B3EB-33D1B27EC0EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DCAD27FB-BF9C-4686-89B1-E0D6575F5F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCAD27FB-BF9C-4686-89B1-E0D6575F5F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCAD27FB-BF9C-4686-89B1-E0D6575F5F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804E3087-4017-4F92-B475-D3C473F1F375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804E3087-4017-4F92-B475-D3C473F1F375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804E3087-4017-4F92-B475-D3C473F1F375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804E3087-4017-4F92-B475-D3C473F1F375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DA5873-B049-4D70-B3EB-33D1B27EC0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DA5873-B049-4D70-B3EB-33D1B27EC0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DA5873-B049-4D70-B3EB-33D1B27EC0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DA5873-B049-4D70-B3EB-33D1B27EC0EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

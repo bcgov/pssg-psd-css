@@ -21,6 +21,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <summary>
         /// Get entities from csu_casetasks
         /// </summary>
+        /// <param name='top'>
+        /// </param>
+        /// <param name='skip'>
+        /// </param>
+        /// <param name='search'>
+        /// </param>
+        /// <param name='filter'>
+        /// </param>
+        /// <param name='count'>
+        /// </param>
         /// <param name='orderby'>
         /// Order items by property values
         /// </param>
@@ -36,13 +46,13 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
         /// Thrown when unable to deserialize the response
         /// </exception>
-        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuCasetaskCollection>> GetWithHttpMessagesAsync(IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuCasetaskCollection>> GetWithHttpMessagesAsync(int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add new entity to csu_casetasks
         /// </summary>
@@ -59,7 +69,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
@@ -87,13 +97,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
         /// Thrown when unable to deserialize the response
         /// </exception>
-        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuCasetask>> CasetasksByKeyWithHttpMessagesAsync(System.Guid activityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuCasetask>> GetByKeyWithHttpMessagesAsync(string activityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update entity in csu_casetasks
         /// </summary>
@@ -109,13 +122,13 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.ValidationException">
         /// Thrown when a required parameter is null
         /// </exception>
-        Task<HttpOperationResponse> CasetasksByKey1WithHttpMessagesAsync(System.Guid activityid, MicrosoftDynamicsCRMcsuCasetask body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse> UpdateWithHttpMessagesAsync(string activityid, MicrosoftDynamicsCRMcsuCasetask body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete entity from csu_casetasks
         /// </summary>
@@ -131,9 +144,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
-        Task<HttpOperationResponse> CasetasksByKey2WithHttpMessagesAsync(System.Guid activityid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<HttpOperationResponse> DeleteWithHttpMessagesAsync(string activityid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

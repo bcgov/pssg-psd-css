@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuJudicialreviewCollection Get(this ICsujudicialreviews operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuJudicialreviewCollection Get(this ICsujudicialreviews operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuJudicialreviewCollection> GetAsync(this ICsujudicialreviews operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuJudicialreviewCollection> GetAsync(this ICsujudicialreviews operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuJudicialreviewCollection> GetWithHttpMessages(this ICsujudicialreviews operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuJudicialreviewCollection> GetWithHttpMessages(this ICsujudicialreviews operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuJudicialreview JudicialreviewsByKey(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuJudicialreview GetByKey(this ICsujudicialreviews operations, string csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.JudicialreviewsByKeyAsync(csuJudicialreviewid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuJudicialreviewid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuJudicialreview> JudicialreviewsByKeyAsync(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuJudicialreview> GetByKeyAsync(this ICsujudicialreviews operations, string csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.JudicialreviewsByKeyWithHttpMessagesAsync(csuJudicialreviewid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuJudicialreviewid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuJudicialreview> JudicialreviewsByKeyWithHttpMessages(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuJudicialreview> GetByKeyWithHttpMessages(this ICsujudicialreviews operations, string csuJudicialreviewid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.JudicialreviewsByKeyWithHttpMessagesAsync(csuJudicialreviewid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuJudicialreviewid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void JudicialreviewsByKey1(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body)
+            public static void Update(this ICsujudicialreviews operations, string csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body)
             {
-                operations.JudicialreviewsByKey1Async(csuJudicialreviewid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuJudicialreviewid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task JudicialreviewsByKey1Async(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsujudicialreviews operations, string csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.JudicialreviewsByKey1WithHttpMessagesAsync(csuJudicialreviewid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuJudicialreviewid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse JudicialreviewsByKey1WithHttpMessages(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsujudicialreviews operations, string csuJudicialreviewid, MicrosoftDynamicsCRMcsuJudicialreview body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.JudicialreviewsByKey1WithHttpMessagesAsync(csuJudicialreviewid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuJudicialreviewid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void JudicialreviewsByKey2(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, string ifMatch = default(string))
+            public static void Delete(this ICsujudicialreviews operations, string csuJudicialreviewid, string ifMatch = default(string))
             {
-                operations.JudicialreviewsByKey2Async(csuJudicialreviewid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuJudicialreviewid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task JudicialreviewsByKey2Async(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsujudicialreviews operations, string csuJudicialreviewid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.JudicialreviewsByKey2WithHttpMessagesAsync(csuJudicialreviewid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuJudicialreviewid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse JudicialreviewsByKey2WithHttpMessages(this ICsujudicialreviews operations, System.Guid csuJudicialreviewid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsujudicialreviews operations, string csuJudicialreviewid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.JudicialreviewsByKey2WithHttpMessagesAsync(csuJudicialreviewid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuJudicialreviewid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

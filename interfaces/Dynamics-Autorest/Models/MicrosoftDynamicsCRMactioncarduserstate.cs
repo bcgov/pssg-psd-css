@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMactioncarduserstate class.
         /// </summary>
-        public MicrosoftDynamicsCRMactioncarduserstate(System.Guid? actioncarduserstateid = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), decimal? exchangerate = default(decimal?), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), System.DateTimeOffset? startdate = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), System.Guid? _actioncardidValue = default(System.Guid?), int? state = default(int?), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMactioncard actioncardid = default(MicrosoftDynamicsCRMactioncard), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMactioncarduserstate(string actioncarduserstateid = default(string), string _transactioncurrencyidValue = default(string), string _owneridValue = default(string), decimal? exchangerate = default(decimal?), string _owningbusinessunitValue = default(string), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), System.DateTimeOffset? startdate = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string _actioncardidValue = default(string), int? state = default(int?), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMactioncard actioncardid = default(MicrosoftDynamicsCRMactioncard), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             Actioncarduserstateid = actioncarduserstateid;
             this._transactioncurrencyidValue = _transactioncurrencyidValue;
@@ -54,17 +54,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "actioncarduserstateid")]
-        public System.Guid? Actioncarduserstateid { get; set; }
+        public string Actioncarduserstateid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -74,7 +74,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -99,7 +99,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_actioncardid_value")]
-        public System.Guid? _actioncardidValue { get; set; }
+        public string _actioncardidValue { get; set; }
 
         /// <summary>
         /// </summary>

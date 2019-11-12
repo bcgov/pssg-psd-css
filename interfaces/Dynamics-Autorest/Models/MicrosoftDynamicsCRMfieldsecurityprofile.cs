@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMfieldsecurityprofile class.
         /// </summary>
-        public MicrosoftDynamicsCRMfieldsecurityprofile(System.Guid? _modifiedbyValue = default(System.Guid?), string versionnumber = default(string), string name = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? componentstate = default(int?), string description = default(string), System.Guid? _organizationidValue = default(System.Guid?), bool? ismanaged = default(bool?), System.Guid? solutionid = default(System.Guid?), System.Guid? fieldsecurityprofileidunique = default(System.Guid?), System.Guid? fieldsecurityprofileid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> fieldSecurityProfileSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsystemuser> systemuserprofilesAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMfieldpermission> lkFieldpermissionFieldsecurityprofileid = default(IList<MicrosoftDynamicsCRMfieldpermission>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMteam> teamprofilesAssociation = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMfieldsecurityprofile(string _modifiedbyValue = default(string), string versionnumber = default(string), string name = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? componentstate = default(int?), string description = default(string), string _organizationidValue = default(string), bool? ismanaged = default(bool?), string solutionid = default(string), string fieldsecurityprofileidunique = default(string), string fieldsecurityprofileid = default(string), string _createdbyValue = default(string), string _createdonbehalfbyValue = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> fieldSecurityProfileSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsystemuser> systemuserprofilesAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMfieldpermission> lkFieldpermissionFieldsecurityprofileid = default(IList<MicrosoftDynamicsCRMfieldpermission>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMteam> teamprofilesAssociation = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._modifiedbyValue = _modifiedbyValue;
             Versionnumber = versionnumber;
@@ -67,7 +67,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -82,7 +82,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -112,7 +112,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -122,27 +122,27 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "fieldsecurityprofileidunique")]
-        public System.Guid? Fieldsecurityprofileidunique { get; set; }
+        public string Fieldsecurityprofileidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "fieldsecurityprofileid")]
-        public System.Guid? Fieldsecurityprofileid { get; set; }
+        public string Fieldsecurityprofileid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

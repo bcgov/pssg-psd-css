@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMprincipalentitymap class.
         /// </summary>
-        public MicrosoftDynamicsCRMprincipalentitymap(string objecttypecode = default(string), System.Guid? principalid = default(System.Guid?), System.Guid? principalentitymapid = default(System.Guid?), string versionnumber = default(string), MicrosoftDynamicsCRMprincipal principalidOwner = default(MicrosoftDynamicsCRMprincipal))
+        public MicrosoftDynamicsCRMprincipalentitymap(string objecttypecode = default(string), string principalid = default(string), string principalentitymapid = default(string), string versionnumber = default(string), MicrosoftDynamicsCRMprincipal principalidOwner = default(MicrosoftDynamicsCRMprincipal))
         {
             Objecttypecode = objecttypecode;
             Principalid = principalid;
@@ -50,12 +50,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "principalid")]
-        public System.Guid? Principalid { get; set; }
+        public string Principalid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "principalentitymapid")]
-        public System.Guid? Principalentitymapid { get; set; }
+        public string Principalentitymapid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMgoalrollupquery class.
         /// </summary>
-        public MicrosoftDynamicsCRMgoalrollupquery(System.Guid? _owningteamValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), System.Guid? _createdbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string queryentitytype = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string fetchxml = default(string), string name = default(string), System.Guid? goalrollupqueryid = default(System.Guid?), int? statecode = default(int?), int? statuscode = default(int?), System.Guid? _owneridValue = default(System.Guid?), int? importsequencenumber = default(int?), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMgoal> goalrollupqueryActualint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryActualmoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryActualdecimal = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustomint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustommoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustomdecimal = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressmoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressdecimal = default(IList<MicrosoftDynamicsCRMgoal>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> goalRollupQueryDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMasyncoperation> goalrollupqueryAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMduplicaterecord> goalRollupQueryDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMprocesssession> goalrollupqueryProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMsyncerror> goalRollupQuerySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit))
+        public MicrosoftDynamicsCRMgoalrollupquery(string _owningteamValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), string _createdbyValue = default(string), int? timezoneruleversionnumber = default(int?), string _owningbusinessunitValue = default(string), string _owninguserValue = default(string), string _createdonbehalfbyValue = default(string), string queryentitytype = default(string), string _modifiedbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string fetchxml = default(string), string name = default(string), string goalrollupqueryid = default(string), int? statecode = default(int?), int? statuscode = default(int?), string _owneridValue = default(string), int? importsequencenumber = default(int?), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMgoal> goalrollupqueryActualint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryActualmoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryActualdecimal = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustomint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustommoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryCustomdecimal = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressint = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressmoney = default(IList<MicrosoftDynamicsCRMgoal>), IList<MicrosoftDynamicsCRMgoal> goalRollupqueryInprogressdecimal = default(IList<MicrosoftDynamicsCRMgoal>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> goalRollupQueryDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMasyncoperation> goalrollupqueryAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMduplicaterecord> goalRollupQueryDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMprocesssession> goalrollupqueryProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMsyncerror> goalRollupQuerySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit))
         {
             this._owningteamValue = _owningteamValue;
             Overriddencreatedon = overriddencreatedon;
@@ -84,7 +84,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -99,7 +99,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -109,17 +109,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -164,7 +164,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "goalrollupqueryid")]
-        public System.Guid? Goalrollupqueryid { get; set; }
+        public string Goalrollupqueryid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -179,7 +179,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>

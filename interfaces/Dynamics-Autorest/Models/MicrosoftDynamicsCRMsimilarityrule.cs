@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMsimilarityrule class.
         /// </summary>
-        public MicrosoftDynamicsCRMsimilarityrule(int? statuscode = default(int?), System.Guid? similarityruleid = default(System.Guid?), System.Guid? similarityruleidunique = default(System.Guid?), int? ngramsize = default(int?), int? baseentitytypecode = default(int?), int? statecode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), bool? excludeinactiverecords = default(bool?), string ruleconditionxml = default(string), int? maxkeywords = default(int?), string activerulefetchxml = default(string), decimal? exchangerate = default(decimal?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string name = default(string), int? componentstate = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string baseentityname = default(string), System.Guid? solutionid = default(System.Guid?), string introducedversion = default(string), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), string fetchxmllist = default(string), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string description = default(string), string versionnumber = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), bool? ismanaged = default(bool?), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string matchingentityname = default(string), int? matchingentitytypecode = default(int?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> similarityruleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMsimilarityrule(int? statuscode = default(int?), string similarityruleid = default(string), string similarityruleidunique = default(string), int? ngramsize = default(int?), int? baseentitytypecode = default(int?), int? statecode = default(int?), string _modifiedonbehalfbyValue = default(string), bool? excludeinactiverecords = default(bool?), string ruleconditionxml = default(string), int? maxkeywords = default(int?), string activerulefetchxml = default(string), decimal? exchangerate = default(decimal?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string name = default(string), int? componentstate = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string baseentityname = default(string), string solutionid = default(string), string introducedversion = default(string), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), string fetchxmllist = default(string), string _transactioncurrencyidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string description = default(string), string versionnumber = default(string), string _organizationidValue = default(string), string _createdonbehalfbyValue = default(string), bool? ismanaged = default(bool?), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string matchingentityname = default(string), int? matchingentitytypecode = default(int?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> similarityruleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             Statuscode = statuscode;
             Similarityruleid = similarityruleid;
@@ -85,12 +85,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "similarityruleid")]
-        public System.Guid? Similarityruleid { get; set; }
+        public string Similarityruleid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "similarityruleidunique")]
-        public System.Guid? Similarityruleidunique { get; set; }
+        public string Similarityruleidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -165,7 +165,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -190,7 +190,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -210,12 +210,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMpluginassembly class.
         /// </summary>
-        public MicrosoftDynamicsCRMpluginassembly(string url = default(string), string culture = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), string version = default(string), string description = default(string), bool? ispasswordset = default(bool?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string path = default(string), string publickeytoken = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string introducedversion = default(string), int? customizationlevel = default(int?), System.Guid? _organizationidValue = default(System.Guid?), string content = default(string), byte[] contentBinary = default(byte[]), System.Guid? pluginassemblyid = default(System.Guid?), string name = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? pluginassemblyidunique = default(System.Guid?), string password = default(string), string sourcehash = default(string), int? isolationmode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string iscustomizable = default(string), System.Guid? _createdbyValue = default(System.Guid?), int? major = default(int?), string username = default(string), int? minor = default(int?), int? componentstate = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), int? authtype = default(int?), int? sourcetype = default(int?), string ishidden = default(string), string versionnumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMplugintype> pluginassemblyPlugintype = default(IList<MicrosoftDynamicsCRMplugintype>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMpluginassembly(string url = default(string), string culture = default(string), string _modifiedbyValue = default(string), string version = default(string), string description = default(string), bool? ispasswordset = default(bool?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string path = default(string), string publickeytoken = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string introducedversion = default(string), int? customizationlevel = default(int?), string _organizationidValue = default(string), string content = default(string), byte[] contentBinary = default(byte[]), string pluginassemblyid = default(string), string name = default(string), string _createdonbehalfbyValue = default(string), string pluginassemblyidunique = default(string), string password = default(string), string sourcehash = default(string), int? isolationmode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string iscustomizable = default(string), string _createdbyValue = default(string), int? major = default(int?), string username = default(string), int? minor = default(int?), int? componentstate = default(int?), string _modifiedonbehalfbyValue = default(string), string solutionid = default(string), int? authtype = default(int?), int? sourcetype = default(int?), string ishidden = default(string), string versionnumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMplugintype> pluginassemblyPlugintype = default(IList<MicrosoftDynamicsCRMplugintype>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Url = url;
             Culture = culture;
@@ -96,7 +96,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -151,7 +151,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -167,7 +167,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "pluginassemblyid")]
-        public System.Guid? Pluginassemblyid { get; set; }
+        public string Pluginassemblyid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,12 +177,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "pluginassemblyidunique")]
-        public System.Guid? Pluginassemblyidunique { get; set; }
+        public string Pluginassemblyidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -212,7 +212,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -237,12 +237,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

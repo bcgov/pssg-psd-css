@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuAgencylistingCollection Get(this ICsuagencylistings operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuAgencylistingCollection Get(this ICsuagencylistings operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuAgencylistingCollection> GetAsync(this ICsuagencylistings operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuAgencylistingCollection> GetAsync(this ICsuagencylistings operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAgencylistingCollection> GetWithHttpMessages(this ICsuagencylistings operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAgencylistingCollection> GetWithHttpMessages(this ICsuagencylistings operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuAgencylisting AgencylistingsByKey(this ICsuagencylistings operations, System.Guid csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuAgencylisting GetByKey(this ICsuagencylistings operations, string csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.AgencylistingsByKeyAsync(csuAgencylistingid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuAgencylistingid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuAgencylisting> AgencylistingsByKeyAsync(this ICsuagencylistings operations, System.Guid csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuAgencylisting> GetByKeyAsync(this ICsuagencylistings operations, string csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.AgencylistingsByKeyWithHttpMessagesAsync(csuAgencylistingid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuAgencylistingid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAgencylisting> AgencylistingsByKeyWithHttpMessages(this ICsuagencylistings operations, System.Guid csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAgencylisting> GetByKeyWithHttpMessages(this ICsuagencylistings operations, string csuAgencylistingid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AgencylistingsByKeyWithHttpMessagesAsync(csuAgencylistingid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuAgencylistingid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void AgencylistingsByKey1(this ICsuagencylistings operations, System.Guid csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body)
+            public static void Update(this ICsuagencylistings operations, string csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body)
             {
-                operations.AgencylistingsByKey1Async(csuAgencylistingid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuAgencylistingid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task AgencylistingsByKey1Async(this ICsuagencylistings operations, System.Guid csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsuagencylistings operations, string csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.AgencylistingsByKey1WithHttpMessagesAsync(csuAgencylistingid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuAgencylistingid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse AgencylistingsByKey1WithHttpMessages(this ICsuagencylistings operations, System.Guid csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsuagencylistings operations, string csuAgencylistingid, MicrosoftDynamicsCRMcsuAgencylisting body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AgencylistingsByKey1WithHttpMessagesAsync(csuAgencylistingid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuAgencylistingid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void AgencylistingsByKey2(this ICsuagencylistings operations, System.Guid csuAgencylistingid, string ifMatch = default(string))
+            public static void Delete(this ICsuagencylistings operations, string csuAgencylistingid, string ifMatch = default(string))
             {
-                operations.AgencylistingsByKey2Async(csuAgencylistingid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuAgencylistingid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task AgencylistingsByKey2Async(this ICsuagencylistings operations, System.Guid csuAgencylistingid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsuagencylistings operations, string csuAgencylistingid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.AgencylistingsByKey2WithHttpMessagesAsync(csuAgencylistingid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuAgencylistingid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse AgencylistingsByKey2WithHttpMessages(this ICsuagencylistings operations, System.Guid csuAgencylistingid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsuagencylistings operations, string csuAgencylistingid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AgencylistingsByKey2WithHttpMessagesAsync(csuAgencylistingid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuAgencylistingid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

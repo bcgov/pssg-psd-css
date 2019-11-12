@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcontactleads
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcontactleads(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? leadid = default(System.Guid?), int? importsequencenumber = default(int?), string versionnumber = default(string), int? utcconversiontimezonecode = default(int?), System.Guid? contactid = default(System.Guid?), System.Guid? contactleadid = default(System.Guid?), int? timezoneruleversionnumber = default(int?), string name = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactleadsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactleadsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactleadsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactleadsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcontactleads(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string leadid = default(string), int? importsequencenumber = default(int?), string versionnumber = default(string), int? utcconversiontimezonecode = default(int?), string contactid = default(string), string contactleadid = default(string), int? timezoneruleversionnumber = default(int?), string name = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactleadsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactleadsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactleadsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactleadsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Overriddencreatedon = overriddencreatedon;
             Leadid = leadid;
@@ -60,7 +60,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "leadid")]
-        public System.Guid? Leadid { get; set; }
+        public string Leadid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -80,12 +80,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactleadid")]
-        public System.Guid? Contactleadid { get; set; }
+        public string Contactleadid { get; set; }
 
         /// <summary>
         /// </summary>

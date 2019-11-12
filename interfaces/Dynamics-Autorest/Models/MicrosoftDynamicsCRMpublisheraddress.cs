@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMpublisheraddress class.
         /// </summary>
-        public MicrosoftDynamicsCRMpublisheraddress(string postofficebox = default(string), string line3 = default(string), System.Guid? publisheraddressid = default(System.Guid?), string telephone1 = default(string), int? importsequencenumber = default(int?), string latitude = default(string), string line1 = default(string), string longitude = default(string), string primarycontactname = default(string), string versionnumber = default(string), int? shippingmethodcode = default(int?), int? utcconversiontimezonecode = default(int?), string country = default(string), int? addresstypecode = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? utcoffset = default(int?), string telephone3 = default(string), string name = default(string), string county = default(string), string line2 = default(string), string postalcode = default(string), System.Guid? _parentidValue = default(System.Guid?), string stateorprovince = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? freighttermscode = default(int?), int? timezoneruleversionnumber = default(int?), string fax = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), string city = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string telephone2 = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), string upszone = default(string), int? addressnumber = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMpublisher parentid = default(MicrosoftDynamicsCRMpublisher), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMpublisheraddress(string postofficebox = default(string), string line3 = default(string), string publisheraddressid = default(string), string telephone1 = default(string), int? importsequencenumber = default(int?), string latitude = default(string), string line1 = default(string), string longitude = default(string), string primarycontactname = default(string), string versionnumber = default(string), int? shippingmethodcode = default(int?), int? utcconversiontimezonecode = default(int?), string country = default(string), int? addresstypecode = default(int?), string _createdonbehalfbyValue = default(string), int? utcoffset = default(int?), string telephone3 = default(string), string name = default(string), string county = default(string), string line2 = default(string), string postalcode = default(string), string _parentidValue = default(string), string stateorprovince = default(string), string _modifiedonbehalfbyValue = default(string), int? freighttermscode = default(int?), int? timezoneruleversionnumber = default(int?), string fax = default(string), string _modifiedbyValue = default(string), string city = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string telephone2 = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string upszone = default(string), int? addressnumber = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMpublisher parentid = default(MicrosoftDynamicsCRMpublisher), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Postofficebox = postofficebox;
             Line3 = line3;
@@ -90,7 +90,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "publisheraddressid")]
-        public System.Guid? Publisheraddressid { get; set; }
+        public string Publisheraddressid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -150,7 +150,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -185,7 +185,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentid_value")]
-        public System.Guid? _parentidValue { get; set; }
+        public string _parentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -195,7 +195,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -215,7 +215,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -240,7 +240,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

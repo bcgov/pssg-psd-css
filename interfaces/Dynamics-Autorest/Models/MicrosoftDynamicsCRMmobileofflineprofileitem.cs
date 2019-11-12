@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMmobileofflineprofileitem class.
         /// </summary>
-        public MicrosoftDynamicsCRMmobileofflineprofileitem(string selectedentitymetadata = default(string), int? recorddistributioncriteria = default(int?), System.Guid? mobileofflineprofileitemidunique = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string versionnumber = default(string), int? entityobjecttypecode = default(int?), System.Guid? mobileofflineprofileitemid = default(System.Guid?), string introducedversion = default(string), System.Guid? _regardingobjectidValue = default(System.Guid?), string profileitementityfilter = default(string), int? componentstate = default(int?), bool? isvisibleingrid = default(bool?), bool? ismanaged = default(bool?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? recordsownedbymyteam = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), string traversedpath = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), bool? recordsownedbymybusinessunit = default(bool?), System.Guid? stageid = default(System.Guid?), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), bool? recordsownedbyme = default(bool?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string selectedentitytypecode = default(string), string relationshipdata = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? processid = default(System.Guid?), bool? isvalidated = default(bool?), System.Guid? solutionid = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMmobileofflineprofile regardingobjectid = default(MicrosoftDynamicsCRMmobileofflineprofile), IList<MicrosoftDynamicsCRMmobileofflineprofileitemassociation> mobileOfflineProfileItemMobileOfflineProfileItemAssociation = default(IList<MicrosoftDynamicsCRMmobileofflineprofileitemassociation>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsavedquery profileitemrule = default(MicrosoftDynamicsCRMsavedquery), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMmobileofflineprofileitem(string selectedentitymetadata = default(string), int? recorddistributioncriteria = default(int?), string mobileofflineprofileitemidunique = default(string), string _createdbyValue = default(string), string versionnumber = default(string), int? entityobjecttypecode = default(int?), string mobileofflineprofileitemid = default(string), string introducedversion = default(string), string _regardingobjectidValue = default(string), string profileitementityfilter = default(string), int? componentstate = default(int?), bool? isvisibleingrid = default(bool?), bool? ismanaged = default(bool?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? recordsownedbymyteam = default(bool?), string _modifiedbyValue = default(string), string traversedpath = default(string), string _modifiedonbehalfbyValue = default(string), bool? recordsownedbymybusinessunit = default(bool?), string stageid = default(string), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), bool? recordsownedbyme = default(bool?), string _createdonbehalfbyValue = default(string), string selectedentitytypecode = default(string), string relationshipdata = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _organizationidValue = default(string), string processid = default(string), bool? isvalidated = default(bool?), string solutionid = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMmobileofflineprofile regardingobjectid = default(MicrosoftDynamicsCRMmobileofflineprofile), IList<MicrosoftDynamicsCRMmobileofflineprofileitemassociation> mobileOfflineProfileItemMobileOfflineProfileItemAssociation = default(IList<MicrosoftDynamicsCRMmobileofflineprofileitemassociation>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsavedquery profileitemrule = default(MicrosoftDynamicsCRMsavedquery), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Selectedentitymetadata = selectedentitymetadata;
             Recorddistributioncriteria = recorddistributioncriteria;
@@ -92,12 +92,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "mobileofflineprofileitemidunique")]
-        public System.Guid? Mobileofflineprofileitemidunique { get; set; }
+        public string Mobileofflineprofileitemidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -112,7 +112,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "mobileofflineprofileitemid")]
-        public System.Guid? Mobileofflineprofileitemid { get; set; }
+        public string Mobileofflineprofileitemid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -122,7 +122,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -157,7 +157,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -167,7 +167,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,7 +177,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -192,7 +192,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -222,12 +222,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -237,7 +237,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

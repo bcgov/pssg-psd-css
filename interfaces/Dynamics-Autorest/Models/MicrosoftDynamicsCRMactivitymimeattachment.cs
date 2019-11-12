@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMactivitymimeattachment class.
         /// </summary>
-        public MicrosoftDynamicsCRMactivitymimeattachment(int? componentstate = default(int?), string versionnumber = default(string), System.Guid? _owneridValue = default(System.Guid?), string subject = default(string), int? filesize = default(int?), bool? isfollowed = default(bool?), bool? ismanaged = default(bool?), System.Guid? activitymimeattachmentid = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), string attachmentcontentid = default(string), System.Guid? _attachmentidValue = default(System.Guid?), string objecttypecode = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _objectidValue = default(System.Guid?), System.Guid? activitymimeattachmentidunique = default(System.Guid?), string mimetype = default(string), string activitysubject = default(string), System.Guid? solutionid = default(System.Guid?), int? attachmentnumber = default(int?), string anonymouslink = default(string), string filename = default(string), string body = default(string), byte[] bodyBinary = default(byte[]), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), IList<MicrosoftDynamicsCRMsyncerror> activityMimeAttachmentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMemail objectidEmail = default(MicrosoftDynamicsCRMemail), MicrosoftDynamicsCRMactivitypointer objectidActivitypointer = default(MicrosoftDynamicsCRMactivitypointer), MicrosoftDynamicsCRMtemplate objectidTemplate = default(MicrosoftDynamicsCRMtemplate), MicrosoftDynamicsCRMattachment attachmentid = default(MicrosoftDynamicsCRMattachment), MicrosoftDynamicsCRMappointment objectidAppointment = default(MicrosoftDynamicsCRMappointment), IList<MicrosoftDynamicsCRMasyncoperation> activityMimeAttachmentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> activityMimeAttachmentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
+        public MicrosoftDynamicsCRMactivitymimeattachment(int? componentstate = default(int?), string versionnumber = default(string), string _owneridValue = default(string), string subject = default(string), int? filesize = default(int?), bool? isfollowed = default(bool?), bool? ismanaged = default(bool?), string activitymimeattachmentid = default(string), string _owninguserValue = default(string), string attachmentcontentid = default(string), string _attachmentidValue = default(string), string objecttypecode = default(string), string _owningbusinessunitValue = default(string), string _objectidValue = default(string), string activitymimeattachmentidunique = default(string), string mimetype = default(string), string activitysubject = default(string), string solutionid = default(string), int? attachmentnumber = default(int?), string anonymouslink = default(string), string filename = default(string), string body = default(string), byte[] bodyBinary = default(byte[]), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), IList<MicrosoftDynamicsCRMsyncerror> activityMimeAttachmentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMemail objectidEmail = default(MicrosoftDynamicsCRMemail), MicrosoftDynamicsCRMactivitypointer objectidActivitypointer = default(MicrosoftDynamicsCRMactivitypointer), MicrosoftDynamicsCRMtemplate objectidTemplate = default(MicrosoftDynamicsCRMtemplate), MicrosoftDynamicsCRMattachment attachmentid = default(MicrosoftDynamicsCRMattachment), MicrosoftDynamicsCRMappointment objectidAppointment = default(MicrosoftDynamicsCRMappointment), IList<MicrosoftDynamicsCRMasyncoperation> activityMimeAttachmentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> activityMimeAttachmentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
         {
             Componentstate = componentstate;
             Versionnumber = versionnumber;
@@ -86,7 +86,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -111,12 +111,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "activitymimeattachmentid")]
-        public System.Guid? Activitymimeattachmentid { get; set; }
+        public string Activitymimeattachmentid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -126,7 +126,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_attachmentid_value")]
-        public System.Guid? _attachmentidValue { get; set; }
+        public string _attachmentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -136,17 +136,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_objectid_value")]
-        public System.Guid? _objectidValue { get; set; }
+        public string _objectidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "activitymimeattachmentidunique")]
-        public System.Guid? Activitymimeattachmentidunique { get; set; }
+        public string Activitymimeattachmentidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -161,7 +161,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

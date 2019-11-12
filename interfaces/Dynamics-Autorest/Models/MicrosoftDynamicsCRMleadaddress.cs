@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMleadaddress
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMleadaddress(System.Guid? _parentidValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), string versionnumber = default(string), string telephone2 = default(string), string line1 = default(string), string stateorprovince = default(string), string upszone = default(string), System.Guid? _createdbyValue = default(System.Guid?), string name = default(string), int? utcoffset = default(int?), int? addressnumber = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string country = default(string), decimal? exchangerate = default(decimal?), string line2 = default(string), string postalcode = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string postofficebox = default(string), string telephone3 = default(string), int? importsequencenumber = default(int?), string telephone1 = default(string), string fax = default(string), int? timezoneruleversionnumber = default(int?), string composite = default(string), System.Guid? leadaddressid = default(System.Guid?), int? addresstypecode = default(int?), int? shippingmethodcode = default(int?), string county = default(string), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), string line3 = default(string), string longitude = default(string), string city = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string latitude = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> leadAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> leadaddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> leadaddressMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> leadaddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> leadaddressPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMlead parentid = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMleadaddress(string _parentidValue = default(string), string _modifiedbyValue = default(string), string versionnumber = default(string), string telephone2 = default(string), string line1 = default(string), string stateorprovince = default(string), string upszone = default(string), string _createdbyValue = default(string), string name = default(string), int? utcoffset = default(int?), int? addressnumber = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), string country = default(string), decimal? exchangerate = default(decimal?), string line2 = default(string), string postalcode = default(string), string _modifiedonbehalfbyValue = default(string), string postofficebox = default(string), string telephone3 = default(string), int? importsequencenumber = default(int?), string telephone1 = default(string), string fax = default(string), int? timezoneruleversionnumber = default(int?), string composite = default(string), string leadaddressid = default(string), int? addresstypecode = default(int?), int? shippingmethodcode = default(int?), string county = default(string), string _transactioncurrencyidValue = default(string), int? utcconversiontimezonecode = default(int?), string line3 = default(string), string longitude = default(string), string city = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string latitude = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> leadAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> leadaddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> leadaddressMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> leadaddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> leadaddressPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMlead parentid = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             this._parentidValue = _parentidValue;
             this._modifiedbyValue = _modifiedbyValue;
@@ -90,12 +90,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentid_value")]
-        public System.Guid? _parentidValue { get; set; }
+        public string _parentidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -125,7 +125,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -150,7 +150,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -175,7 +175,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -215,7 +215,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "leadaddressid")]
-        public System.Guid? Leadaddressid { get; set; }
+        public string Leadaddressid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -235,7 +235,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>

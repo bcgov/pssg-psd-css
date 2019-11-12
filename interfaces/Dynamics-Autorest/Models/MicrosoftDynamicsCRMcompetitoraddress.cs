@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcompetitoraddress class.
         /// </summary>
-        public MicrosoftDynamicsCRMcompetitoraddress(string upszone = default(string), string telephone2 = default(string), string county = default(string), System.Guid? _parentidValue = default(System.Guid?), string fax = default(string), string telephone3 = default(string), int? importsequencenumber = default(int?), string city = default(string), int? shippingmethodcode = default(int?), string stateorprovince = default(string), string line1 = default(string), int? utcoffset = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string line2 = default(string), string country = default(string), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string postalcode = default(string), string telephone1 = default(string), int? utcconversiontimezonecode = default(int?), string postofficebox = default(string), string name = default(string), int? addressnumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string line3 = default(string), int? timezoneruleversionnumber = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? addresstypecode = default(int?), string latitude = default(string), string longitude = default(string), System.Guid? _createdbyValue = default(System.Guid?), string composite = default(string), System.Guid? competitoraddressid = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> competitorAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> competitoraddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitoraddressMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitoraddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitoraddressPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcompetitor parentid = default(MicrosoftDynamicsCRMcompetitor))
+        public MicrosoftDynamicsCRMcompetitoraddress(string upszone = default(string), string telephone2 = default(string), string county = default(string), string _parentidValue = default(string), string fax = default(string), string telephone3 = default(string), int? importsequencenumber = default(int?), string city = default(string), int? shippingmethodcode = default(int?), string stateorprovince = default(string), string line1 = default(string), int? utcoffset = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string line2 = default(string), string country = default(string), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string postalcode = default(string), string telephone1 = default(string), int? utcconversiontimezonecode = default(int?), string postofficebox = default(string), string name = default(string), int? addressnumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string line3 = default(string), int? timezoneruleversionnumber = default(int?), string _modifiedbyValue = default(string), string _createdonbehalfbyValue = default(string), string _modifiedonbehalfbyValue = default(string), int? addresstypecode = default(int?), string latitude = default(string), string longitude = default(string), string _createdbyValue = default(string), string composite = default(string), string competitoraddressid = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> competitorAddressSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> competitoraddressAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitoraddressMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitoraddressBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitoraddressPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcompetitor parentid = default(MicrosoftDynamicsCRMcompetitor))
         {
             Upszone = upszone;
             Telephone2 = telephone2;
@@ -102,7 +102,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentid_value")]
-        public System.Guid? _parentidValue { get; set; }
+        public string _parentidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -217,17 +217,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -247,7 +247,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -257,7 +257,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitoraddressid")]
-        public System.Guid? Competitoraddressid { get; set; }
+        public string Competitoraddressid { get; set; }
 
         /// <summary>
         /// </summary>

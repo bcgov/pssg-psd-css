@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCourtdateCollection Get(this ICsucourtdates operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCourtdateCollection Get(this ICsucourtdates operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCourtdateCollection> GetAsync(this ICsucourtdates operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCourtdateCollection> GetAsync(this ICsucourtdates operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCourtdateCollection> GetWithHttpMessages(this ICsucourtdates operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCourtdateCollection> GetWithHttpMessages(this ICsucourtdates operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCourtdate CourtdatesByKey(this ICsucourtdates operations, System.Guid csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCourtdate GetByKey(this ICsucourtdates operations, string csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.CourtdatesByKeyAsync(csuCourtdateid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuCourtdateid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCourtdate> CourtdatesByKeyAsync(this ICsucourtdates operations, System.Guid csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCourtdate> GetByKeyAsync(this ICsucourtdates operations, string csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.CourtdatesByKeyWithHttpMessagesAsync(csuCourtdateid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuCourtdateid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCourtdate> CourtdatesByKeyWithHttpMessages(this ICsucourtdates operations, System.Guid csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCourtdate> GetByKeyWithHttpMessages(this ICsucourtdates operations, string csuCourtdateid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CourtdatesByKeyWithHttpMessagesAsync(csuCourtdateid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuCourtdateid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void CourtdatesByKey1(this ICsucourtdates operations, System.Guid csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body)
+            public static void Update(this ICsucourtdates operations, string csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body)
             {
-                operations.CourtdatesByKey1Async(csuCourtdateid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuCourtdateid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CourtdatesByKey1Async(this ICsucourtdates operations, System.Guid csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsucourtdates operations, string csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CourtdatesByKey1WithHttpMessagesAsync(csuCourtdateid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuCourtdateid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CourtdatesByKey1WithHttpMessages(this ICsucourtdates operations, System.Guid csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsucourtdates operations, string csuCourtdateid, MicrosoftDynamicsCRMcsuCourtdate body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CourtdatesByKey1WithHttpMessagesAsync(csuCourtdateid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuCourtdateid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void CourtdatesByKey2(this ICsucourtdates operations, System.Guid csuCourtdateid, string ifMatch = default(string))
+            public static void Delete(this ICsucourtdates operations, string csuCourtdateid, string ifMatch = default(string))
             {
-                operations.CourtdatesByKey2Async(csuCourtdateid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuCourtdateid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CourtdatesByKey2Async(this ICsucourtdates operations, System.Guid csuCourtdateid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsucourtdates operations, string csuCourtdateid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CourtdatesByKey2WithHttpMessagesAsync(csuCourtdateid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuCourtdateid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CourtdatesByKey2WithHttpMessages(this ICsucourtdates operations, System.Guid csuCourtdateid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsucourtdates operations, string csuCourtdateid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CourtdatesByKey2WithHttpMessagesAsync(csuCourtdateid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuCourtdateid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

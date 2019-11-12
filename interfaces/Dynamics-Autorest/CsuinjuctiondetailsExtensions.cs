@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuInjuctiondetailCollection Get(this ICsuinjuctiondetails operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuInjuctiondetailCollection Get(this ICsuinjuctiondetails operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuInjuctiondetailCollection> GetAsync(this ICsuinjuctiondetails operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuInjuctiondetailCollection> GetAsync(this ICsuinjuctiondetails operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuInjuctiondetailCollection> GetWithHttpMessages(this ICsuinjuctiondetails operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuInjuctiondetailCollection> GetWithHttpMessages(this ICsuinjuctiondetails operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuInjuctiondetail InjuctiondetailsByKey(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuInjuctiondetail GetByKey(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.InjuctiondetailsByKeyAsync(csuInjuctiondetailid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuInjuctiondetailid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuInjuctiondetail> InjuctiondetailsByKeyAsync(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuInjuctiondetail> GetByKeyAsync(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.InjuctiondetailsByKeyWithHttpMessagesAsync(csuInjuctiondetailid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuInjuctiondetailid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuInjuctiondetail> InjuctiondetailsByKeyWithHttpMessages(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuInjuctiondetail> GetByKeyWithHttpMessages(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.InjuctiondetailsByKeyWithHttpMessagesAsync(csuInjuctiondetailid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuInjuctiondetailid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void InjuctiondetailsByKey1(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body)
+            public static void Update(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body)
             {
-                operations.InjuctiondetailsByKey1Async(csuInjuctiondetailid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuInjuctiondetailid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task InjuctiondetailsByKey1Async(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.InjuctiondetailsByKey1WithHttpMessagesAsync(csuInjuctiondetailid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuInjuctiondetailid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse InjuctiondetailsByKey1WithHttpMessages(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, MicrosoftDynamicsCRMcsuInjuctiondetail body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.InjuctiondetailsByKey1WithHttpMessagesAsync(csuInjuctiondetailid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuInjuctiondetailid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void InjuctiondetailsByKey2(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, string ifMatch = default(string))
+            public static void Delete(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, string ifMatch = default(string))
             {
-                operations.InjuctiondetailsByKey2Async(csuInjuctiondetailid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuInjuctiondetailid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task InjuctiondetailsByKey2Async(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.InjuctiondetailsByKey2WithHttpMessagesAsync(csuInjuctiondetailid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuInjuctiondetailid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse InjuctiondetailsByKey2WithHttpMessages(this ICsuinjuctiondetails operations, System.Guid csuInjuctiondetailid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsuinjuctiondetails operations, string csuInjuctiondetailid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.InjuctiondetailsByKey2WithHttpMessagesAsync(csuInjuctiondetailid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuInjuctiondetailid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

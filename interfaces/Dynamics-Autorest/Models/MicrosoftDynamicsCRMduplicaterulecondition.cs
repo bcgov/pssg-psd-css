@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMduplicaterulecondition class.
         /// </summary>
-        public MicrosoftDynamicsCRMduplicaterulecondition(System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? duplicateruleconditionid = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? owningbusinessunit = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? owninguser = default(System.Guid?), bool? ignoreblankvalues = default(bool?), string baseattributename = default(string), System.Guid? _owneridValue = default(System.Guid?), int? operatorcode = default(int?), int? operatorparam = default(int?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _regardingobjectidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string matchingattributename = default(string), IList<MicrosoftDynamicsCRMsyncerror> duplicateRuleConditionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMduplicaterule regardingobjectid = default(MicrosoftDynamicsCRMduplicaterule), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMduplicaterulecondition(string _modifiedbyValue = default(string), string duplicateruleconditionid = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string owningbusinessunit = default(string), string _createdonbehalfbyValue = default(string), string owninguser = default(string), bool? ignoreblankvalues = default(bool?), string baseattributename = default(string), string _owneridValue = default(string), int? operatorcode = default(int?), int? operatorparam = default(int?), string _createdbyValue = default(string), string _regardingobjectidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string matchingattributename = default(string), IList<MicrosoftDynamicsCRMsyncerror> duplicateRuleConditionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMduplicaterule regardingobjectid = default(MicrosoftDynamicsCRMduplicaterule), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._modifiedbyValue = _modifiedbyValue;
             Duplicateruleconditionid = duplicateruleconditionid;
@@ -64,12 +64,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "duplicateruleconditionid")]
-        public System.Guid? Duplicateruleconditionid { get; set; }
+        public string Duplicateruleconditionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -79,22 +79,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owningbusinessunit")]
-        public System.Guid? Owningbusinessunit { get; set; }
+        public string Owningbusinessunit { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owninguser")]
-        public System.Guid? Owninguser { get; set; }
+        public string Owninguser { get; set; }
 
         /// <summary>
         /// </summary>
@@ -109,7 +109,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -124,12 +124,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>

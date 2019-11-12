@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuAddresshistoryCollection Get(this ICsuaddresshistories operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuAddresshistoryCollection Get(this ICsuaddresshistories operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuAddresshistoryCollection> GetAsync(this ICsuaddresshistories operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuAddresshistoryCollection> GetAsync(this ICsuaddresshistories operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAddresshistoryCollection> GetWithHttpMessages(this ICsuaddresshistories operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAddresshistoryCollection> GetWithHttpMessages(this ICsuaddresshistories operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuAddresshistory AddresshistoriesByKey(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuAddresshistory GetByKey(this ICsuaddresshistories operations, string csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.AddresshistoriesByKeyAsync(csuAddresshistoryid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuAddresshistoryid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuAddresshistory> AddresshistoriesByKeyAsync(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuAddresshistory> GetByKeyAsync(this ICsuaddresshistories operations, string csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.AddresshistoriesByKeyWithHttpMessagesAsync(csuAddresshistoryid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuAddresshistoryid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAddresshistory> AddresshistoriesByKeyWithHttpMessages(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuAddresshistory> GetByKeyWithHttpMessages(this ICsuaddresshistories operations, string csuAddresshistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AddresshistoriesByKeyWithHttpMessagesAsync(csuAddresshistoryid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuAddresshistoryid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void AddresshistoriesByKey1(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body)
+            public static void Update(this ICsuaddresshistories operations, string csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body)
             {
-                operations.AddresshistoriesByKey1Async(csuAddresshistoryid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuAddresshistoryid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task AddresshistoriesByKey1Async(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsuaddresshistories operations, string csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.AddresshistoriesByKey1WithHttpMessagesAsync(csuAddresshistoryid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuAddresshistoryid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse AddresshistoriesByKey1WithHttpMessages(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsuaddresshistories operations, string csuAddresshistoryid, MicrosoftDynamicsCRMcsuAddresshistory body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AddresshistoriesByKey1WithHttpMessagesAsync(csuAddresshistoryid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuAddresshistoryid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void AddresshistoriesByKey2(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, string ifMatch = default(string))
+            public static void Delete(this ICsuaddresshistories operations, string csuAddresshistoryid, string ifMatch = default(string))
             {
-                operations.AddresshistoriesByKey2Async(csuAddresshistoryid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuAddresshistoryid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task AddresshistoriesByKey2Async(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsuaddresshistories operations, string csuAddresshistoryid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.AddresshistoriesByKey2WithHttpMessagesAsync(csuAddresshistoryid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuAddresshistoryid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse AddresshistoriesByKey2WithHttpMessages(this ICsuaddresshistories operations, System.Guid csuAddresshistoryid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsuaddresshistories operations, string csuAddresshistoryid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.AddresshistoriesByKey2WithHttpMessagesAsync(csuAddresshistoryid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuAddresshistoryid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMplugintracelog class.
         /// </summary>
-        public MicrosoftDynamicsCRMplugintracelog(string secureconfiguration = default(string), System.Guid? organizationid = default(System.Guid?), int? performanceexecutionduration = default(int?), System.Guid? plugintracelogid = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string primaryentity = default(string), System.DateTimeOffset? performanceconstructorstarttime = default(System.DateTimeOffset?), System.Guid? persistencekey = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? pluginstepid = default(System.Guid?), int? mode = default(int?), int? operationtype = default(int?), string messagename = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.DateTimeOffset? performanceexecutionstarttime = default(System.DateTimeOffset?), string configuration = default(string), string profile = default(string), int? performanceconstructorduration = default(int?), string typename = default(string), bool? issystemcreated = default(bool?), int? depth = default(int?), System.Guid? correlationid = default(System.Guid?), System.Guid? requestid = default(System.Guid?), string exceptiondetails = default(string), string messageblock = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMplugintracelog(string secureconfiguration = default(string), string organizationid = default(string), int? performanceexecutionduration = default(int?), string plugintracelogid = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string primaryentity = default(string), System.DateTimeOffset? performanceconstructorstarttime = default(System.DateTimeOffset?), string persistencekey = default(string), string _createdonbehalfbyValue = default(string), string pluginstepid = default(string), int? mode = default(int?), int? operationtype = default(int?), string messagename = default(string), string _createdbyValue = default(string), System.DateTimeOffset? performanceexecutionstarttime = default(System.DateTimeOffset?), string configuration = default(string), string profile = default(string), int? performanceconstructorduration = default(int?), string typename = default(string), bool? issystemcreated = default(bool?), int? depth = default(int?), string correlationid = default(string), string requestid = default(string), string exceptiondetails = default(string), string messageblock = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Secureconfiguration = secureconfiguration;
             Organizationid = organizationid;
@@ -72,7 +72,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "organizationid")]
-        public System.Guid? Organizationid { get; set; }
+        public string Organizationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -82,7 +82,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "plugintracelogid")]
-        public System.Guid? Plugintracelogid { get; set; }
+        public string Plugintracelogid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -102,17 +102,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "persistencekey")]
-        public System.Guid? Persistencekey { get; set; }
+        public string Persistencekey { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "pluginstepid")]
-        public System.Guid? Pluginstepid { get; set; }
+        public string Pluginstepid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -132,7 +132,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -172,12 +172,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "correlationid")]
-        public System.Guid? Correlationid { get; set; }
+        public string Correlationid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "requestid")]
-        public System.Guid? Requestid { get; set; }
+        public string Requestid { get; set; }
 
         /// <summary>
         /// </summary>

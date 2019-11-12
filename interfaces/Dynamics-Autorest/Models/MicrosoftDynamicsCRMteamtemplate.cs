@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMteamtemplate
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMteamtemplate(System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? objecttypecode = default(int?), string description = default(string), string teamtemplatename = default(string), int? defaultaccessrightsmask = default(int?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? teamtemplateid = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? issystem = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), IList<MicrosoftDynamicsCRMteam> teamtemplateTeams = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> teamTemplateSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>))
+        public MicrosoftDynamicsCRMteamtemplate(string _createdonbehalfbyValue = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? objecttypecode = default(int?), string description = default(string), string teamtemplatename = default(string), int? defaultaccessrightsmask = default(int?), string _createdbyValue = default(string), string teamtemplateid = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? issystem = default(bool?), string _modifiedbyValue = default(string), IList<MicrosoftDynamicsCRMteam> teamtemplateTeams = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> teamTemplateSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>))
         {
             this._createdonbehalfbyValue = _createdonbehalfbyValue;
             this._modifiedonbehalfbyValue = _modifiedonbehalfbyValue;
@@ -60,12 +60,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,12 +95,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "teamtemplateid")]
-        public System.Guid? Teamtemplateid { get; set; }
+        public string Teamtemplateid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

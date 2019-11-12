@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMwebresource
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMwebresource(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? isenabledformobileclient = default(bool?), int? componentstate = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? webresourcetype = default(int?), string ishidden = default(string), string description = default(string), string canbedeleted = default(string), string introducedversion = default(string), string content = default(string), byte[] contentBinary = default(byte[]), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? languagecode = default(int?), string contentjson = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? webresourceidunique = default(System.Guid?), System.Guid? webresourceid = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), string iscustomizable = default(string), string dependencyxml = default(string), System.Guid? solutionid = default(System.Guid?), string silverlightversion = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? isavailableformobileoffline = default(bool?), string displayname = default(string), string name = default(string), IList<MicrosoftDynamicsCRMsolution> solutionConfigurationWebresource = default(IList<MicrosoftDynamicsCRMsolution>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMuserqueryvisualization> webresourceUserqueryvisualizations = default(IList<MicrosoftDynamicsCRMuserqueryvisualization>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsavedqueryvisualization> webresourceSavedqueryvisualizations = default(IList<MicrosoftDynamicsCRMsavedqueryvisualization>), IList<MicrosoftDynamicsCRMtheme> lkThemeLogoid = default(IList<MicrosoftDynamicsCRMtheme>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMwebresource(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? isenabledformobileclient = default(bool?), int? componentstate = default(int?), string _modifiedonbehalfbyValue = default(string), string _modifiedbyValue = default(string), int? webresourcetype = default(int?), string ishidden = default(string), string description = default(string), string canbedeleted = default(string), string introducedversion = default(string), string content = default(string), byte[] contentBinary = default(byte[]), string _createdonbehalfbyValue = default(string), int? languagecode = default(int?), string contentjson = default(string), string _createdbyValue = default(string), string webresourceidunique = default(string), string webresourceid = default(string), string _organizationidValue = default(string), string iscustomizable = default(string), string dependencyxml = default(string), string solutionid = default(string), string silverlightversion = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? isavailableformobileoffline = default(bool?), string displayname = default(string), string name = default(string), IList<MicrosoftDynamicsCRMsolution> solutionConfigurationWebresource = default(IList<MicrosoftDynamicsCRMsolution>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMuserqueryvisualization> webresourceUserqueryvisualizations = default(IList<MicrosoftDynamicsCRMuserqueryvisualization>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsavedqueryvisualization> webresourceSavedqueryvisualizations = default(IList<MicrosoftDynamicsCRMsavedqueryvisualization>), IList<MicrosoftDynamicsCRMtheme> lkThemeLogoid = default(IList<MicrosoftDynamicsCRMtheme>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Overwritetime = overwritetime;
             Modifiedon = modifiedon;
@@ -108,12 +108,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -154,7 +154,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -169,22 +169,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "webresourceidunique")]
-        public System.Guid? Webresourceidunique { get; set; }
+        public string Webresourceidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "webresourceid")]
-        public System.Guid? Webresourceid { get; set; }
+        public string Webresourceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -199,7 +199,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

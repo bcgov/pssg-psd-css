@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMtimezonerule
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMtimezonerule(int? daylighthour = default(int?), int? daylightminute = default(int?), int? standardsecond = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? standardmonth = default(int?), int? standardhour = default(int?), int? bias = default(int?), System.Guid? _timezonedefinitionidValue = default(System.Guid?), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? standardday = default(int?), int? daylightbias = default(int?), int? standardminute = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? timezoneruleid = default(System.Guid?), int? daylightyear = default(int?), int? standardbias = default(int?), int? timezoneruleversionnumber = default(int?), int? standardyear = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), int? standarddayofweek = default(int?), int? daylightsecond = default(int?), int? daylightmonth = default(int?), System.Guid? _organizationidValue = default(System.Guid?), int? daylightdayofweek = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? daylightday = default(int?), System.DateTimeOffset? effectivedatetime = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtimezonedefinition timezonedefinitionid = default(MicrosoftDynamicsCRMtimezonedefinition), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMtimezonerule(int? daylighthour = default(int?), int? daylightminute = default(int?), int? standardsecond = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? standardmonth = default(int?), int? standardhour = default(int?), int? bias = default(int?), string _timezonedefinitionidValue = default(string), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? standardday = default(int?), int? daylightbias = default(int?), int? standardminute = default(int?), string _createdonbehalfbyValue = default(string), string timezoneruleid = default(string), int? daylightyear = default(int?), int? standardbias = default(int?), int? timezoneruleversionnumber = default(int?), int? standardyear = default(int?), string _modifiedonbehalfbyValue = default(string), string _createdbyValue = default(string), int? standarddayofweek = default(int?), int? daylightsecond = default(int?), int? daylightmonth = default(int?), string _organizationidValue = default(string), int? daylightdayofweek = default(int?), string _modifiedbyValue = default(string), int? daylightday = default(int?), System.DateTimeOffset? effectivedatetime = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtimezonedefinition timezonedefinitionid = default(MicrosoftDynamicsCRMtimezonedefinition), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Daylighthour = daylighthour;
             Daylightminute = daylightminute;
@@ -109,7 +109,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_timezonedefinitionid_value")]
-        public System.Guid? _timezonedefinitionidValue { get; set; }
+        public string _timezonedefinitionidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -139,12 +139,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "timezoneruleid")]
-        public System.Guid? Timezoneruleid { get; set; }
+        public string Timezoneruleid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -169,12 +169,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -194,7 +194,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -204,7 +204,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

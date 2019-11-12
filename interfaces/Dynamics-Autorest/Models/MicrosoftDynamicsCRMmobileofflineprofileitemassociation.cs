@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMmobileofflineprofileitemassociation class.
         /// </summary>
-        public MicrosoftDynamicsCRMmobileofflineprofileitemassociation(int? componentstate = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? processid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string introducedversion = default(string), System.Guid? mobileofflineprofileitemassociationidunique = default(System.Guid?), string name = default(string), System.Guid? stageid = default(System.Guid?), string relationshipdisplayname = default(string), string relationshipname = default(string), string traversedpath = default(string), string relationshipdata = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), bool? isvalidated = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _mobileofflineprofileitemidValue = default(System.Guid?), string versionnumber = default(string), System.Guid? relationshipid = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? mobileofflineprofileitemassociationid = default(System.Guid?), string profileitemassociationentityfilter = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? selectedrelationshipsschema = default(int?), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMmobileofflineprofileitem regardingobjectid = default(MicrosoftDynamicsCRMmobileofflineprofileitem), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMmobileofflineprofileitemassociation(int? componentstate = default(int?), string _modifiedbyValue = default(string), string processid = default(string), string _createdbyValue = default(string), string solutionid = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string introducedversion = default(string), string mobileofflineprofileitemassociationidunique = default(string), string name = default(string), string stageid = default(string), string relationshipdisplayname = default(string), string relationshipname = default(string), string traversedpath = default(string), string relationshipdata = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), bool? isvalidated = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _mobileofflineprofileitemidValue = default(string), string versionnumber = default(string), string relationshipid = default(string), string _organizationidValue = default(string), string mobileofflineprofileitemassociationid = default(string), string profileitemassociationentityfilter = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), int? selectedrelationshipsschema = default(int?), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMmobileofflineprofileitem regardingobjectid = default(MicrosoftDynamicsCRMmobileofflineprofileitem), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Componentstate = componentstate;
             this._modifiedbyValue = _modifiedbyValue;
@@ -79,22 +79,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -109,7 +109,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "mobileofflineprofileitemassociationidunique")]
-        public System.Guid? Mobileofflineprofileitemassociationidunique { get; set; }
+        public string Mobileofflineprofileitemassociationidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -119,7 +119,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -164,7 +164,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_mobileofflineprofileitemid_value")]
-        public System.Guid? _mobileofflineprofileitemidValue { get; set; }
+        public string _mobileofflineprofileitemidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -174,17 +174,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "relationshipid")]
-        public System.Guid? Relationshipid { get; set; }
+        public string Relationshipid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "mobileofflineprofileitemassociationid")]
-        public System.Guid? Mobileofflineprofileitemassociationid { get; set; }
+        public string Mobileofflineprofileitemassociationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -204,7 +204,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

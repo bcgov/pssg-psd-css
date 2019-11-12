@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsubject
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsubject(int? importsequencenumber = default(int?), string description = default(string), System.Guid? _createdbyexternalpartyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedbyexternalpartyValue = default(System.Guid?), System.Guid? _parentsubjectValue = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), string versionnumber = default(string), System.Guid? subjectid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string title = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? featuremask = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), IList<MicrosoftDynamicsCRMproduct> subjectProducts = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMincident> subjectIncidents = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMsalesliterature> subjectSalesLiterature = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMprocesssession> subjectProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsubject parentsubject = default(MicrosoftDynamicsCRMsubject), IList<MicrosoftDynamicsCRMsubject> subjectParentSubject = default(IList<MicrosoftDynamicsCRMsubject>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> subjectAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMsyncerror> subjectSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMkbarticle> subjectKbArticles = default(IList<MicrosoftDynamicsCRMkbarticle>), IList<MicrosoftDynamicsCRMknowledgearticle> subjectKnowledgearticles = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMbulkdeletefailure> subjectBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
+        public MicrosoftDynamicsCRMsubject(int? importsequencenumber = default(int?), string description = default(string), string _createdbyexternalpartyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedbyexternalpartyValue = default(string), string _parentsubjectValue = default(string), string _organizationidValue = default(string), string _modifiedbyValue = default(string), string versionnumber = default(string), string subjectid = default(string), string _createdonbehalfbyValue = default(string), string title = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? featuremask = default(int?), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), IList<MicrosoftDynamicsCRMproduct> subjectProducts = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMincident> subjectIncidents = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMsalesliterature> subjectSalesLiterature = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMprocesssession> subjectProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsubject parentsubject = default(MicrosoftDynamicsCRMsubject), IList<MicrosoftDynamicsCRMsubject> subjectParentSubject = default(IList<MicrosoftDynamicsCRMsubject>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> subjectAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMsyncerror> subjectSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMkbarticle> subjectKbArticles = default(IList<MicrosoftDynamicsCRMkbarticle>), IList<MicrosoftDynamicsCRMknowledgearticle> subjectKnowledgearticles = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMbulkdeletefailure> subjectBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
         {
             Importsequencenumber = importsequencenumber;
             Description = description;
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdbyexternalparty_value")]
-        public System.Guid? _createdbyexternalpartyValue { get; set; }
+        public string _createdbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,22 +95,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedbyexternalparty_value")]
-        public System.Guid? _modifiedbyexternalpartyValue { get; set; }
+        public string _modifiedbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentsubject_value")]
-        public System.Guid? _parentsubjectValue { get; set; }
+        public string _parentsubjectValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -120,12 +120,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "subjectid")]
-        public System.Guid? Subjectid { get; set; }
+        public string Subjectid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -145,7 +145,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

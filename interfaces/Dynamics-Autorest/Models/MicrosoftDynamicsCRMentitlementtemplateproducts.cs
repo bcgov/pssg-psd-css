@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMentitlementtemplateproducts class.
         /// </summary>
-        public MicrosoftDynamicsCRMentitlementtemplateproducts(int? importsequencenumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), System.Guid? entitlementtemplateproductid = default(System.Guid?), int? timezoneruleversionnumber = default(int?), string name = default(string), System.Guid? entitlementtemplateid = default(System.Guid?), string versionnumber = default(string), System.Guid? productid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> entitlementtemplateproductsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> entitlementtemplateproductsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> entitlementtemplateproductsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> entitlementtemplateproductsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMentitlementtemplateproducts(int? importsequencenumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), string entitlementtemplateproductid = default(string), int? timezoneruleversionnumber = default(int?), string name = default(string), string entitlementtemplateid = default(string), string versionnumber = default(string), string productid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> entitlementtemplateproductsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> entitlementtemplateproductsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> entitlementtemplateproductsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> entitlementtemplateproductsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Importsequencenumber = importsequencenumber;
             Overriddencreatedon = overriddencreatedon;
@@ -70,7 +70,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entitlementtemplateproductid")]
-        public System.Guid? Entitlementtemplateproductid { get; set; }
+        public string Entitlementtemplateproductid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entitlementtemplateid")]
-        public System.Guid? Entitlementtemplateid { get; set; }
+        public string Entitlementtemplateid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "productid")]
-        public System.Guid? Productid { get; set; }
+        public string Productid { get; set; }
 
         /// <summary>
         /// </summary>

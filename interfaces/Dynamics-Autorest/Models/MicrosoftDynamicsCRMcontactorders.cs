@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcontactorders
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcontactorders(System.Guid? contactorderid = default(System.Guid?), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? contactid = default(System.Guid?), string name = default(string), int? importsequencenumber = default(int?), System.Guid? salesorderid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> contactordersAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactordersMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactordersBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactordersPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcontactorders(string contactorderid = default(string), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), string contactid = default(string), string name = default(string), int? importsequencenumber = default(int?), string salesorderid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactordersAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactordersMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactordersBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactordersPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Contactorderid = contactorderid;
             Versionnumber = versionnumber;
@@ -55,7 +55,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactorderid")]
-        public System.Guid? Contactorderid { get; set; }
+        public string Contactorderid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -80,7 +80,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "salesorderid")]
-        public System.Guid? Salesorderid { get; set; }
+        public string Salesorderid { get; set; }
 
         /// <summary>
         /// </summary>

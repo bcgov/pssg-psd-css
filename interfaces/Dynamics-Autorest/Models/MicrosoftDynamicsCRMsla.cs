@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMsla class.
         /// </summary>
-        public MicrosoftDynamicsCRMsla(System.Guid? solutionid = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), string changedattributelist = default(string), System.Guid? _businesshoursidValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), bool? isdefault = default(bool?), System.Guid? slaid = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? objecttypecode = default(int?), int? slatype = default(int?), string versionnumber = default(string), decimal? exchangerate = default(decimal?), bool? ismanaged = default(bool?), int? statecode = default(int?), int? applicablefrompicklist = default(int?), System.Guid? _owninguserValue = default(System.Guid?), string applicablefrom = default(string), string name = default(string), string description = default(string), System.Guid? _workflowidValue = default(System.Guid?), int? primaryentityotc = default(int?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), int? statuscode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), bool? allowpauseresume = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? slaidunique = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), int? componentstate = default(int?), IList<MicrosoftDynamicsCRMlead> manualslaLead = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMlead> slaLead = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMbulkoperation> bulkoperationSlaSlaid = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMbulkoperation> bulkoperationSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitySlaSlaid = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitySlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignresponseSlaSlaid = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignresponseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMincident> manualslaCases = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincident> slaCases = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincidentresolution> incidentresolutionSlaSlaid = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMincidentresolution> incidentresolutionSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> manualslaServiceappointment = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMserviceappointment> slaServiceappointment = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMentitlement> slaEntitlement = default(IList<MicrosoftDynamicsCRMentitlement>), IList<MicrosoftDynamicsCRMentitlementtemplate> slaEntitlementtemplate = default(IList<MicrosoftDynamicsCRMentitlementtemplate>), IList<MicrosoftDynamicsCRMopportunityclose> opportunitycloseSlaSlaid = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMopportunityclose> opportunitycloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> ordercloseSlaSlaid = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMorderclose> ordercloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> quotecloseSlaSlaid = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMquoteclose> quotecloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMinvoice> slaInvoice = default(IList<MicrosoftDynamicsCRMinvoice>), IList<MicrosoftDynamicsCRMsalesorder> manualslaSalesorder = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMsalesorder> slaSalesorder = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMquote> manualslaQuote = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMquote> slaQuote = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMopportunity> manualslaOpportunity = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMopportunity> slaOpportunity = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMinvoice> manualslaInvoice = default(IList<MicrosoftDynamicsCRMinvoice>), IList<MicrosoftDynamicsCRMcsuCasetask> csuCasetaskSlaSlaid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuCasetask> csuCasetaskSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), MicrosoftDynamicsCRMworkflow workflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMaccount> manualslaAccount = default(IList<MicrosoftDynamicsCRMaccount>), IList<MicrosoftDynamicsCRMtask> manualslaTask = default(IList<MicrosoftDynamicsCRMtask>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcalendar businesshoursid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMemail> manualslaEmail = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMannotation> slaAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMsyncerror> sLASyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMphonecall> manualslaPhonecall = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMcontact> slaContact = default(IList<MicrosoftDynamicsCRMcontact>), IList<MicrosoftDynamicsCRMcontact> manualslaContact = default(IList<MicrosoftDynamicsCRMcontact>), IList<MicrosoftDynamicsCRMactivitypointer> manualslaActivitypointer = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMtask> slaTask = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMprocesssession> slabaseProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMfax> manualslaFax = default(IList<MicrosoftDynamicsCRMfax>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMletter> slaLetter = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMemail> slaEmail = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMsocialactivity> manualslaSocialactivity = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMfax> slaFax = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMaccount> slaAccount = default(IList<MicrosoftDynamicsCRMaccount>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMasyncoperation> slabaseAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMappointment> manualslaAppointment = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMphonecall> slaPhonecall = default(IList<MicrosoftDynamicsCRMphonecall>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsocialactivity> slaSocialactivity = default(IList<MicrosoftDynamicsCRMsocialactivity>), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMbulkdeletefailure> slabaseBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMappointment> slaAppointment = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMslaitem> slaSlaitemSlaId = default(IList<MicrosoftDynamicsCRMslaitem>), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMactivitypointer> slaActivitypointer = default(IList<MicrosoftDynamicsCRMactivitypointer>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMletter> manualslaLetter = default(IList<MicrosoftDynamicsCRMletter>))
+        public MicrosoftDynamicsCRMsla(string solutionid = default(string), string _modifiedbyValue = default(string), string changedattributelist = default(string), string _businesshoursidValue = default(string), string _owningbusinessunitValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), bool? isdefault = default(bool?), string slaid = default(string), string _transactioncurrencyidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? objecttypecode = default(int?), int? slatype = default(int?), string versionnumber = default(string), decimal? exchangerate = default(decimal?), bool? ismanaged = default(bool?), int? statecode = default(int?), int? applicablefrompicklist = default(int?), string _owninguserValue = default(string), string applicablefrom = default(string), string name = default(string), string description = default(string), string _workflowidValue = default(string), int? primaryentityotc = default(int?), string _owningteamValue = default(string), string _owneridValue = default(string), int? statuscode = default(int?), string _modifiedonbehalfbyValue = default(string), bool? allowpauseresume = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string slaidunique = default(string), string _createdbyValue = default(string), int? componentstate = default(int?), IList<MicrosoftDynamicsCRMlead> manualslaLead = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMlead> slaLead = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMbulkoperation> bulkoperationSlaSlaid = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMbulkoperation> bulkoperationSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMbulkoperation>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitySlaSlaid = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitySlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignresponseSlaSlaid = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignresponseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMincident> manualslaCases = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincident> slaCases = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincidentresolution> incidentresolutionSlaSlaid = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMincidentresolution> incidentresolutionSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> manualslaServiceappointment = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMserviceappointment> slaServiceappointment = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMentitlement> slaEntitlement = default(IList<MicrosoftDynamicsCRMentitlement>), IList<MicrosoftDynamicsCRMentitlementtemplate> slaEntitlementtemplate = default(IList<MicrosoftDynamicsCRMentitlementtemplate>), IList<MicrosoftDynamicsCRMopportunityclose> opportunitycloseSlaSlaid = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMopportunityclose> opportunitycloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> ordercloseSlaSlaid = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMorderclose> ordercloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> quotecloseSlaSlaid = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMquoteclose> quotecloseSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMinvoice> slaInvoice = default(IList<MicrosoftDynamicsCRMinvoice>), IList<MicrosoftDynamicsCRMsalesorder> manualslaSalesorder = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMsalesorder> slaSalesorder = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMquote> manualslaQuote = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMquote> slaQuote = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMopportunity> manualslaOpportunity = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMopportunity> slaOpportunity = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMinvoice> manualslaInvoice = default(IList<MicrosoftDynamicsCRMinvoice>), IList<MicrosoftDynamicsCRMcsuCasetask> csuCasetaskSlaSlaid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuCasetask> csuCasetaskSlaSlainvokedid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), MicrosoftDynamicsCRMworkflow workflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMaccount> manualslaAccount = default(IList<MicrosoftDynamicsCRMaccount>), IList<MicrosoftDynamicsCRMtask> manualslaTask = default(IList<MicrosoftDynamicsCRMtask>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcalendar businesshoursid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMemail> manualslaEmail = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMannotation> slaAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMsyncerror> sLASyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMphonecall> manualslaPhonecall = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMcontact> slaContact = default(IList<MicrosoftDynamicsCRMcontact>), IList<MicrosoftDynamicsCRMcontact> manualslaContact = default(IList<MicrosoftDynamicsCRMcontact>), IList<MicrosoftDynamicsCRMactivitypointer> manualslaActivitypointer = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMtask> slaTask = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMprocesssession> slabaseProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMfax> manualslaFax = default(IList<MicrosoftDynamicsCRMfax>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMletter> slaLetter = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMemail> slaEmail = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMsocialactivity> manualslaSocialactivity = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMfax> slaFax = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMaccount> slaAccount = default(IList<MicrosoftDynamicsCRMaccount>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMasyncoperation> slabaseAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMappointment> manualslaAppointment = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMphonecall> slaPhonecall = default(IList<MicrosoftDynamicsCRMphonecall>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsocialactivity> slaSocialactivity = default(IList<MicrosoftDynamicsCRMsocialactivity>), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMbulkdeletefailure> slabaseBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMappointment> slaAppointment = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMslaitem> slaSlaitemSlaId = default(IList<MicrosoftDynamicsCRMslaitem>), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMactivitypointer> slaActivitypointer = default(IList<MicrosoftDynamicsCRMactivitypointer>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMletter> manualslaLetter = default(IList<MicrosoftDynamicsCRMletter>))
         {
             Solutionid = solutionid;
             this._modifiedbyValue = _modifiedbyValue;
@@ -142,12 +142,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -157,12 +157,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businesshoursid_value")]
-        public System.Guid? _businesshoursidValue { get; set; }
+        public string _businesshoursidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -172,7 +172,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -182,12 +182,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "slaid")]
-        public System.Guid? Slaid { get; set; }
+        public string Slaid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -232,7 +232,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -252,7 +252,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_workflowid_value")]
-        public System.Guid? _workflowidValue { get; set; }
+        public string _workflowidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -262,12 +262,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -277,7 +277,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -292,12 +292,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "slaidunique")]
-        public System.Guid? Slaidunique { get; set; }
+        public string Slaidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

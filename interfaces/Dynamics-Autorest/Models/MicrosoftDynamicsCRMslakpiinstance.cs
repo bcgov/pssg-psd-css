@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMslakpiinstance class.
         /// </summary>
-        public MicrosoftDynamicsCRMslakpiinstance(string versionnumber = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.DateTimeOffset? computedfailuretime = default(System.DateTimeOffset?), System.Guid? _regardingValue = default(System.Guid?), string name = default(string), int? warningtimereached = default(int?), System.DateTimeOffset? warningtime = default(System.DateTimeOffset?), System.Guid? _owneridValue = default(System.Guid?), System.DateTimeOffset? succeededon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? exchangerate = default(decimal?), System.DateTimeOffset? failuretime = default(System.DateTimeOffset?), System.Guid? slakpiinstanceid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string description = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? status = default(int?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), System.DateTimeOffset? computedwarningtime = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), MicrosoftDynamicsCRMlead regardingLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMincident regarding = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMserviceappointment regardingServiceappointment = default(MicrosoftDynamicsCRMserviceappointment), IList<MicrosoftDynamicsCRMincident> slakpiinstanceIncidentFirstresponsebykpi = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincident> slakpiinstanceIncidentResolvebykpi = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMinvoice regardingInvoice = default(MicrosoftDynamicsCRMinvoice), MicrosoftDynamicsCRMopportunity regardingOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMquote regardingQuote = default(MicrosoftDynamicsCRMquote), MicrosoftDynamicsCRMsalesorder regardingSalesorder = default(MicrosoftDynamicsCRMsalesorder), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMletter regardingLetter = default(MicrosoftDynamicsCRMletter), MicrosoftDynamicsCRMtask regardingTask = default(MicrosoftDynamicsCRMtask), MicrosoftDynamicsCRMemail regardingEmail = default(MicrosoftDynamicsCRMemail), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsocialactivity regardingSocialactivity = default(MicrosoftDynamicsCRMsocialactivity), MicrosoftDynamicsCRMaccount regardingAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMappointment regardingAppointment = default(MicrosoftDynamicsCRMappointment), MicrosoftDynamicsCRMcontact regardingContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMfax regardingFax = default(MicrosoftDynamicsCRMfax), MicrosoftDynamicsCRMphonecall regardingPhonecall = default(MicrosoftDynamicsCRMphonecall), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMactivitypointer regardingActivitypointer = default(MicrosoftDynamicsCRMactivitypointer), IList<MicrosoftDynamicsCRMsyncerror> sLAKPIInstanceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMslakpiinstance(string versionnumber = default(string), string _owningbusinessunitValue = default(string), System.DateTimeOffset? computedfailuretime = default(System.DateTimeOffset?), string _regardingValue = default(string), string name = default(string), int? warningtimereached = default(int?), System.DateTimeOffset? warningtime = default(System.DateTimeOffset?), string _owneridValue = default(string), System.DateTimeOffset? succeededon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? exchangerate = default(decimal?), System.DateTimeOffset? failuretime = default(System.DateTimeOffset?), string slakpiinstanceid = default(string), string _createdbyValue = default(string), string description = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _transactioncurrencyidValue = default(string), int? status = default(int?), string _owninguserValue = default(string), string _owningteamValue = default(string), System.DateTimeOffset? computedwarningtime = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), MicrosoftDynamicsCRMlead regardingLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMincident regarding = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMserviceappointment regardingServiceappointment = default(MicrosoftDynamicsCRMserviceappointment), IList<MicrosoftDynamicsCRMincident> slakpiinstanceIncidentFirstresponsebykpi = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMincident> slakpiinstanceIncidentResolvebykpi = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMinvoice regardingInvoice = default(MicrosoftDynamicsCRMinvoice), MicrosoftDynamicsCRMopportunity regardingOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMquote regardingQuote = default(MicrosoftDynamicsCRMquote), MicrosoftDynamicsCRMsalesorder regardingSalesorder = default(MicrosoftDynamicsCRMsalesorder), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMletter regardingLetter = default(MicrosoftDynamicsCRMletter), MicrosoftDynamicsCRMtask regardingTask = default(MicrosoftDynamicsCRMtask), MicrosoftDynamicsCRMemail regardingEmail = default(MicrosoftDynamicsCRMemail), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsocialactivity regardingSocialactivity = default(MicrosoftDynamicsCRMsocialactivity), MicrosoftDynamicsCRMaccount regardingAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMappointment regardingAppointment = default(MicrosoftDynamicsCRMappointment), MicrosoftDynamicsCRMcontact regardingContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMfax regardingFax = default(MicrosoftDynamicsCRMfax), MicrosoftDynamicsCRMphonecall regardingPhonecall = default(MicrosoftDynamicsCRMphonecall), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMactivitypointer regardingActivitypointer = default(MicrosoftDynamicsCRMactivitypointer), IList<MicrosoftDynamicsCRMsyncerror> sLAKPIInstanceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             Versionnumber = versionnumber;
             this._owningbusinessunitValue = _owningbusinessunitValue;
@@ -98,7 +98,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -108,7 +108,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regarding_value")]
-        public System.Guid? _regardingValue { get; set; }
+        public string _regardingValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -128,7 +128,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -138,12 +138,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -163,12 +163,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "slakpiinstanceid")]
-        public System.Guid? Slakpiinstanceid { get; set; }
+        public string Slakpiinstanceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -183,7 +183,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -193,12 +193,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -208,7 +208,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

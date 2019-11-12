@@ -25,7 +25,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMaudit class.
         /// </summary>
-        public MicrosoftDynamicsCRMaudit(int? operation = default(int?), System.Guid? _regardingobjectidValue = default(System.Guid?), int? action = default(int?), string useradditionalinfo = default(string), string attributemask = default(string), System.Guid? _useridValue = default(System.Guid?), System.Guid? _callinguseridValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _objectidValue = default(System.Guid?), System.Guid? transactionid = default(System.Guid?), System.Guid? auditid = default(System.Guid?), MicrosoftDynamicsCRMsystemuser callinguserid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser userid = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMaudit(int? operation = default(int?), string _regardingobjectidValue = default(string), int? action = default(int?), string useradditionalinfo = default(string), string attributemask = default(string), string _useridValue = default(string), string _callinguseridValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _objectidValue = default(string), string transactionid = default(string), string auditid = default(string), MicrosoftDynamicsCRMsystemuser callinguserid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser userid = default(MicrosoftDynamicsCRMsystemuser))
         {
             Operation = operation;
             this._regardingobjectidValue = _regardingobjectidValue;
@@ -56,7 +56,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -76,12 +76,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_userid_value")]
-        public System.Guid? _useridValue { get; set; }
+        public string _useridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_callinguserid_value")]
-        public System.Guid? _callinguseridValue { get; set; }
+        public string _callinguseridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -91,17 +91,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_objectid_value")]
-        public System.Guid? _objectidValue { get; set; }
+        public string _objectidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "transactionid")]
-        public System.Guid? Transactionid { get; set; }
+        public string Transactionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "auditid")]
-        public System.Guid? Auditid { get; set; }
+        public string Auditid { get; set; }
 
         /// <summary>
         /// </summary>

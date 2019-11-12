@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMpost class.
         /// </summary>
-        public MicrosoftDynamicsCRMpost(System.Guid? _regardingobjectidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? type = default(int?), string text = default(string), System.Guid? _organizationidValue = default(System.Guid?), int? source = default(int?), System.Guid? _createdbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.Guid? _regardingobjectowningbusinessunitValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _regardingobjectowneridValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? postid = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> postAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> postBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMpostregarding postregardingid = default(MicrosoftDynamicsCRMpostregarding), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMpostcomment> postComments = default(IList<MicrosoftDynamicsCRMpostcomment>), IList<MicrosoftDynamicsCRMpostlike> postLikes = default(IList<MicrosoftDynamicsCRMpostlike>))
+        public MicrosoftDynamicsCRMpost(string _regardingobjectidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? type = default(int?), string text = default(string), string _organizationidValue = default(string), int? source = default(int?), string _createdbyValue = default(string), int? timezoneruleversionnumber = default(int?), string _regardingobjectowningbusinessunitValue = default(string), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _regardingobjectowneridValue = default(string), string _createdonbehalfbyValue = default(string), string _modifiedonbehalfbyValue = default(string), string _modifiedbyValue = default(string), string postid = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> postAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> postBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMpostregarding postregardingid = default(MicrosoftDynamicsCRMpostregarding), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMpostcomment> postComments = default(IList<MicrosoftDynamicsCRMpostcomment>), IList<MicrosoftDynamicsCRMpostlike> postLikes = default(IList<MicrosoftDynamicsCRMpostlike>))
         {
             this._regardingobjectidValue = _regardingobjectidValue;
             Createdon = createdon;
@@ -66,7 +66,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -86,7 +86,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -96,7 +96,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -106,7 +106,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectowningbusinessunit_value")]
-        public System.Guid? _regardingobjectowningbusinessunitValue { get; set; }
+        public string _regardingobjectowningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -121,27 +121,27 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectownerid_value")]
-        public System.Guid? _regardingobjectowneridValue { get; set; }
+        public string _regardingobjectowneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "postid")]
-        public System.Guid? Postid { get; set; }
+        public string Postid { get; set; }
 
         /// <summary>
         /// </summary>

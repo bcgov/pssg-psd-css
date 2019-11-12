@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcomplexcontrol class.
         /// </summary>
-        public MicrosoftDynamicsCRMcomplexcontrol(string versionnumber = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? complexcontrolid = default(System.Guid?), bool? ismanaged = default(bool?), int? version = default(int?), string name = default(string), int? componentstate = default(int?), int? type = default(int?), string complexcontrolxml = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string introducedversion = default(string), System.Guid? complexcontrolidunique = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), string description = default(string), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMcomplexcontrol(string versionnumber = default(string), string _organizationidValue = default(string), string complexcontrolid = default(string), bool? ismanaged = default(bool?), int? version = default(int?), string name = default(string), int? componentstate = default(int?), int? type = default(int?), string complexcontrolxml = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string introducedversion = default(string), string complexcontrolidunique = default(string), string solutionid = default(string), string description = default(string), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
         {
             Versionnumber = versionnumber;
             this._organizationidValue = _organizationidValue;
@@ -60,12 +60,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "complexcontrolid")]
-        public System.Guid? Complexcontrolid { get; set; }
+        public string Complexcontrolid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -110,12 +110,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "complexcontrolidunique")]
-        public System.Guid? Complexcontrolidunique { get; set; }
+        public string Complexcontrolidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

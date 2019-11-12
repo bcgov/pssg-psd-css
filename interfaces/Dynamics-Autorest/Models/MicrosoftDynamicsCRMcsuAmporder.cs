@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcsuAmporder
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuAmporder(decimal? exchangerate = default(decimal?), int? csuRemindersenteredinerrorState = default(int?), int? csuRemindersenteredinerror = default(int?), string csuCopysentby = default(string), decimal? csuPaidforthisorderBase = default(decimal?), int? csuMethodcopysent = default(int?), int? csuMethodofservice = default(int?), System.DateTimeOffset? csuPaidforthisorderDate = default(System.DateTimeOffset?), string csuMailtrackingnumber = default(string), decimal? csuAmountpaidforpreviousordersBase = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _owningteamValue = default(System.Guid?), decimal? csuAmountremaining = default(decimal?), System.Guid? _csuCasetaskamporderorderduedateidValue = default(System.Guid?), System.DateTimeOffset? csuLatestpaiddatecopy = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? statuscode = default(int?), System.DateTimeOffset? csuLatestpaiddateDate = default(System.DateTimeOffset?), int? csuPaidforthisorderState = default(int?), System.Guid? _csuCasetaskamporderdateorderservedidValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? csuOrderduedate = default(System.DateTimeOffset?), decimal? csuPaidforthisorder = default(decimal?), System.DateTimeOffset? csuSystemsetnextreminderdate = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? importsequencenumber = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), decimal? csuAmountremainingBase = default(decimal?), decimal? csuTotalamountowing = default(decimal?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), int? csuOrdertype = default(int?), System.DateTimeOffset? csuDatesenttocollections = default(System.DateTimeOffset?), System.Guid? csuAmporderid = default(System.Guid?), System.Guid? _csuDeliveredbycsuofficerValue = default(System.Guid?), decimal? csuOrderamount = default(decimal?), int? csuLatestpaiddateState = default(int?), decimal? csuAmpassessedamount = default(decimal?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), decimal? csuAmountpaidforpreviousorders = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _owningbusinessunitValue = default(System.Guid?), decimal? csuAmpassessedamountBase = default(decimal?), System.Guid? _csuAmpValue = default(System.Guid?), System.DateTimeOffset? csuRemindersenteredinerrorDate = default(System.DateTimeOffset?), decimal? csuTotalamountowingBase = default(decimal?), decimal? csuOrderamountBase = default(decimal?), System.DateTimeOffset? csuLatestpaiddate = default(System.DateTimeOffset?), string versionnumber = default(string), string csuName = default(string), System.DateTimeOffset? csuDateorderserved = default(System.DateTimeOffset?), int? statecode = default(int?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _csuCasetaskamporderremindernextremidValue = default(System.Guid?), string csuOrdersequencenumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuAmporderSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuAmporderAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuAmporderMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuAmporderProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuAmporderBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuAmporderPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMcsuPayment> csuCsuAmporderCsuPaymentAMPOrder = default(IList<MicrosoftDynamicsCRMcsuPayment>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMcsuAmp csuAMP = default(MicrosoftDynamicsCRMcsuAmp), MicrosoftDynamicsCRMsystemuser csuDeliveredbyCSUOfficer = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcsuAmporderreminders> csuCsuAmporderCsuAmporderreminders = default(IList<MicrosoftDynamicsCRMcsuAmporderreminders>), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderDateOrderServedId = default(MicrosoftDynamicsCRMcsuCasetask), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderOrderDueDateId = default(MicrosoftDynamicsCRMcsuCasetask), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderReminderNextRemId = default(MicrosoftDynamicsCRMcsuCasetask), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuAmporderCsuCasetask = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
+        public MicrosoftDynamicsCRMcsuAmporder(decimal? exchangerate = default(decimal?), int? csuRemindersenteredinerrorState = default(int?), int? csuRemindersenteredinerror = default(int?), string csuCopysentby = default(string), decimal? csuPaidforthisorderBase = default(decimal?), int? csuMethodcopysent = default(int?), int? csuMethodofservice = default(int?), System.DateTimeOffset? csuPaidforthisorderDate = default(System.DateTimeOffset?), string csuMailtrackingnumber = default(string), decimal? csuAmountpaidforpreviousordersBase = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _owningteamValue = default(string), decimal? csuAmountremaining = default(decimal?), string _csuCasetaskamporderorderduedateidValue = default(string), System.DateTimeOffset? csuLatestpaiddatecopy = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? statuscode = default(int?), System.DateTimeOffset? csuLatestpaiddateDate = default(System.DateTimeOffset?), int? csuPaidforthisorderState = default(int?), string _csuCasetaskamporderdateorderservedidValue = default(string), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? csuOrderduedate = default(System.DateTimeOffset?), decimal? csuPaidforthisorder = default(decimal?), System.DateTimeOffset? csuSystemsetnextreminderdate = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? importsequencenumber = default(int?), string _createdonbehalfbyValue = default(string), decimal? csuAmountremainingBase = default(decimal?), decimal? csuTotalamountowing = default(decimal?), string _owneridValue = default(string), string _modifiedbyValue = default(string), string _transactioncurrencyidValue = default(string), string _owninguserValue = default(string), int? csuOrdertype = default(int?), System.DateTimeOffset? csuDatesenttocollections = default(System.DateTimeOffset?), string csuAmporderid = default(string), string _csuDeliveredbycsuofficerValue = default(string), decimal? csuOrderamount = default(decimal?), int? csuLatestpaiddateState = default(int?), decimal? csuAmpassessedamount = default(decimal?), string _modifiedonbehalfbyValue = default(string), decimal? csuAmountpaidforpreviousorders = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _owningbusinessunitValue = default(string), decimal? csuAmpassessedamountBase = default(decimal?), string _csuAmpValue = default(string), System.DateTimeOffset? csuRemindersenteredinerrorDate = default(System.DateTimeOffset?), decimal? csuTotalamountowingBase = default(decimal?), decimal? csuOrderamountBase = default(decimal?), System.DateTimeOffset? csuLatestpaiddate = default(System.DateTimeOffset?), string versionnumber = default(string), string csuName = default(string), System.DateTimeOffset? csuDateorderserved = default(System.DateTimeOffset?), int? statecode = default(int?), string _createdbyValue = default(string), string _csuCasetaskamporderremindernextremidValue = default(string), string csuOrdersequencenumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuAmporderSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuAmporderAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuAmporderMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuAmporderProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuAmporderBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuAmporderPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMcsuPayment> csuCsuAmporderCsuPaymentAMPOrder = default(IList<MicrosoftDynamicsCRMcsuPayment>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMcsuAmp csuAMP = default(MicrosoftDynamicsCRMcsuAmp), MicrosoftDynamicsCRMsystemuser csuDeliveredbyCSUOfficer = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcsuAmporderreminders> csuCsuAmporderCsuAmporderreminders = default(IList<MicrosoftDynamicsCRMcsuAmporderreminders>), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderDateOrderServedId = default(MicrosoftDynamicsCRMcsuCasetask), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderOrderDueDateId = default(MicrosoftDynamicsCRMcsuCasetask), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskAMPOrderReminderNextRemId = default(MicrosoftDynamicsCRMcsuCasetask), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuAmporderCsuCasetask = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
         {
             Exchangerate = exchangerate;
             CsuRemindersenteredinerrorState = csuRemindersenteredinerrorState;
@@ -179,7 +179,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -189,7 +189,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_casetaskamporderorderduedateid_value")]
-        public System.Guid? _csuCasetaskamporderorderduedateidValue { get; set; }
+        public string _csuCasetaskamporderorderduedateidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -219,7 +219,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_casetaskamporderdateorderservedid_value")]
-        public System.Guid? _csuCasetaskamporderdateorderservedidValue { get; set; }
+        public string _csuCasetaskamporderdateorderservedidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -254,7 +254,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -269,22 +269,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -299,12 +299,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_amporderid")]
-        public System.Guid? CsuAmporderid { get; set; }
+        public string CsuAmporderid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_deliveredbycsuofficer_value")]
-        public System.Guid? _csuDeliveredbycsuofficerValue { get; set; }
+        public string _csuDeliveredbycsuofficerValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -324,7 +324,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -339,7 +339,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -349,7 +349,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_amp_value")]
-        public System.Guid? _csuAmpValue { get; set; }
+        public string _csuAmpValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -394,12 +394,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_casetaskamporderremindernextremid_value")]
-        public System.Guid? _csuCasetaskamporderremindernextremidValue { get; set; }
+        public string _csuCasetaskamporderremindernextremidValue { get; set; }
 
         /// <summary>
         /// </summary>

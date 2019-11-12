@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMannualfiscalcalendar class.
         /// </summary>
-        public MicrosoftDynamicsCRMannualfiscalcalendar(decimal? annual = default(decimal?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _businessunitidValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _salespersonidValue = default(System.Guid?), System.DateTimeOffset? effectiveon = default(System.DateTimeOffset?), int? fiscalperiodtype = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? userfiscalcalendarid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), decimal? annualBase = default(decimal?), decimal? exchangerate = default(decimal?), System.Guid? _createdbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), IList<MicrosoftDynamicsCRMbulkdeletefailure> annualFiscalCalendarBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMasyncoperation> annualFiscalCalendarAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser salespersonid = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMannualfiscalcalendar(decimal? annual = default(decimal?), string _modifiedbyValue = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _businessunitidValue = default(string), string _transactioncurrencyidValue = default(string), string _salespersonidValue = default(string), System.DateTimeOffset? effectiveon = default(System.DateTimeOffset?), int? fiscalperiodtype = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), string userfiscalcalendarid = default(string), int? utcconversiontimezonecode = default(int?), decimal? annualBase = default(decimal?), decimal? exchangerate = default(decimal?), string _createdbyValue = default(string), int? timezoneruleversionnumber = default(int?), IList<MicrosoftDynamicsCRMbulkdeletefailure> annualFiscalCalendarBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMasyncoperation> annualFiscalCalendarAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser salespersonid = default(MicrosoftDynamicsCRMsystemuser))
         {
             Annual = annual;
             this._modifiedbyValue = _modifiedbyValue;
@@ -72,12 +72,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,17 +87,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businessunitid_value")]
-        public System.Guid? _businessunitidValue { get; set; }
+        public string _businessunitidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_salespersonid_value")]
-        public System.Guid? _salespersonidValue { get; set; }
+        public string _salespersonidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -117,12 +117,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "userfiscalcalendarid")]
-        public System.Guid? Userfiscalcalendarid { get; set; }
+        public string Userfiscalcalendarid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -142,7 +142,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

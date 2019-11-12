@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMappconfigmaster class.
         /// </summary>
-        public MicrosoftDynamicsCRMappconfigmaster(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), string configtype = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string defaultvalue = default(string), int? isnavigationsetting = default(int?), string versionnumber = default(string), string name = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string validator = default(string), System.Guid? _organizationidValue = default(System.Guid?), string parentappconfigmasterid = default(string), System.Guid? appconfigmasterid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), IList<MicrosoftDynamicsCRMappconfiginstance> appconfigmasterAppconfiginstance = default(IList<MicrosoftDynamicsCRMappconfiginstance>), MicrosoftDynamicsCRMsystemuser appconfigmasterCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigmasterCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppconfigmasterAppconfigmaster = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser appconfigmasterModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigmasterModifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMappconfigmaster(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), string configtype = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string defaultvalue = default(string), int? isnavigationsetting = default(int?), string versionnumber = default(string), string name = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string validator = default(string), string _organizationidValue = default(string), string parentappconfigmasterid = default(string), string appconfigmasterid = default(string), string _createdbyValue = default(string), IList<MicrosoftDynamicsCRMappconfiginstance> appconfigmasterAppconfiginstance = default(IList<MicrosoftDynamicsCRMappconfiginstance>), MicrosoftDynamicsCRMsystemuser appconfigmasterCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigmasterCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppconfigmasterAppconfigmaster = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser appconfigmasterModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigmasterModifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Overriddencreatedon = overriddencreatedon;
             this._modifiedbyValue = _modifiedbyValue;
@@ -70,7 +70,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -130,7 +130,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -140,12 +140,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appconfigmasterid")]
-        public System.Guid? Appconfigmasterid { get; set; }
+        public string Appconfigmasterid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

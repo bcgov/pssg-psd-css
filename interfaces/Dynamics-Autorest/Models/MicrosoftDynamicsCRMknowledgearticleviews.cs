@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMknowledgearticleviews class.
         /// </summary>
-        public MicrosoftDynamicsCRMknowledgearticleviews(int? location = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? owningbusinessunit = default(System.Guid?), int? statecode = default(int?), System.Guid? knowledgearticleviewsid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), decimal? exchangerate = default(decimal?), int? statuscode = default(int?), System.Guid? owninguser = default(System.Guid?), System.DateTimeOffset? viewdate = default(System.DateTimeOffset?), int? knowledgearticleview = default(int?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _knowledgearticleidValue = default(System.Guid?), IList<MicrosoftDynamicsCRMsyncerror> knowledgeArticleViewsSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMknowledgearticle knowledgearticleid = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> knowledgearticleviewsPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMknowledgearticleviews(int? location = default(int?), int? utcconversiontimezonecode = default(int?), string _modifiedbyValue = default(string), int? timezoneruleversionnumber = default(int?), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string owningbusinessunit = default(string), int? statecode = default(int?), string knowledgearticleviewsid = default(string), string _createdonbehalfbyValue = default(string), decimal? exchangerate = default(decimal?), int? statuscode = default(int?), string owninguser = default(string), System.DateTimeOffset? viewdate = default(System.DateTimeOffset?), int? knowledgearticleview = default(int?), string _transactioncurrencyidValue = default(string), int? importsequencenumber = default(int?), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _owneridValue = default(string), string _knowledgearticleidValue = default(string), IList<MicrosoftDynamicsCRMsyncerror> knowledgeArticleViewsSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMknowledgearticle knowledgearticleid = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> knowledgearticleviewsPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Location = location;
             Utcconversiontimezonecode = utcconversiontimezonecode;
@@ -83,7 +83,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -103,12 +103,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owningbusinessunit")]
-        public System.Guid? Owningbusinessunit { get; set; }
+        public string Owningbusinessunit { get; set; }
 
         /// <summary>
         /// </summary>
@@ -118,12 +118,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "knowledgearticleviewsid")]
-        public System.Guid? Knowledgearticleviewsid { get; set; }
+        public string Knowledgearticleviewsid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -138,7 +138,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owninguser")]
-        public System.Guid? Owninguser { get; set; }
+        public string Owninguser { get; set; }
 
         /// <summary>
         /// </summary>
@@ -153,7 +153,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -163,7 +163,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -178,12 +178,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_knowledgearticleid_value")]
-        public System.Guid? _knowledgearticleidValue { get; set; }
+        public string _knowledgearticleidValue { get; set; }
 
         /// <summary>
         /// </summary>

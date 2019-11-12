@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcampaign
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcampaign(System.DateTimeOffset? actualstart = default(System.DateTimeOffset?), string description = default(string), string codename = default(string), int? expectedresponse = default(int?), string message = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), decimal? totalactualcost = default(decimal?), decimal? othercost = default(decimal?), int? typecode = default(int?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? processid = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), byte[] entityimage = default(byte[]), System.Guid? _transactioncurrencyidValue = default(System.Guid?), decimal? budgetedcost = default(decimal?), int? utcconversiontimezonecode = default(int?), System.Guid? stageid = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string entityimageUrl = default(string), decimal? totalcampaignactivityactualcostBase = default(decimal?), string versionnumber = default(string), decimal? totalactualcostBase = default(decimal?), long? entityimageTimestamp = default(long?), decimal? budgetedcostBase = default(decimal?), int? statuscode = default(int?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? statecode = default(int?), System.Guid? campaignid = default(System.Guid?), int? timezoneruleversionnumber = default(int?), decimal? exchangerate = default(decimal?), decimal? totalcampaignactivityactualcost = default(decimal?), System.DateTimeOffset? proposedstart = default(System.DateTimeOffset?), string promotioncodename = default(string), string traversedpath = default(string), System.Guid? entityimageid = default(System.Guid?), string emailaddress = default(string), string objective = default(string), System.Guid? _pricelistidValue = default(System.Guid?), System.DateTimeOffset? proposedend = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), decimal? expectedrevenue = default(decimal?), System.DateTimeOffset? actualend = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), System.Guid? _owneridValue = default(System.Guid?), decimal? othercostBase = default(decimal?), bool? istemplate = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), decimal? expectedrevenueBase = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> campaignActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> campaignSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> campaignActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> campaignDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> campaignDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> campaignAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> campaignMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> campaignProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> campaignBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> campaignPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMappointment> campaignAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> campaignEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> campaignFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> campaignLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> campaignPhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> campaignTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> campaignRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> campaignSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> campaignConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> campaignConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> campaignAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignCampaignActivities = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignCampaignResponses = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMcampaign> campaigncampaignAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMcampaign> campaigncampaignAssociationReferenced = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMproduct> campaignproductAssociation = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMlead> campaignLeads = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMlist> campaignlistAssociation = default(IList<MicrosoftDynamicsCRMlist>), MicrosoftDynamicsCRMpricelevel pricelistid = default(MicrosoftDynamicsCRMpricelevel), IList<MicrosoftDynamicsCRMincidentresolution> campaignIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> campaignServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMopportunityclose> campaignOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> campaignOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> campaignQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMopportunity> campaignOpportunities = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMsalesorder> campaignOrders = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMquote> campaignQuotes = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMsalesliterature> campaignsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMcsuCasetask> campaignCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
+        public MicrosoftDynamicsCRMcampaign(System.DateTimeOffset? actualstart = default(System.DateTimeOffset?), string description = default(string), string codename = default(string), int? expectedresponse = default(int?), string message = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), decimal? totalactualcost = default(decimal?), decimal? othercost = default(decimal?), int? typecode = default(int?), string _owninguserValue = default(string), string processid = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), string _owningbusinessunitValue = default(string), byte[] entityimage = default(byte[]), string _transactioncurrencyidValue = default(string), decimal? budgetedcost = default(decimal?), int? utcconversiontimezonecode = default(int?), string stageid = default(string), string _modifiedonbehalfbyValue = default(string), string entityimageUrl = default(string), decimal? totalcampaignactivityactualcostBase = default(decimal?), string versionnumber = default(string), decimal? totalactualcostBase = default(decimal?), long? entityimageTimestamp = default(long?), decimal? budgetedcostBase = default(decimal?), int? statuscode = default(int?), string _owningteamValue = default(string), string _modifiedbyValue = default(string), int? statecode = default(int?), string campaignid = default(string), int? timezoneruleversionnumber = default(int?), decimal? exchangerate = default(decimal?), decimal? totalcampaignactivityactualcost = default(decimal?), System.DateTimeOffset? proposedstart = default(System.DateTimeOffset?), string promotioncodename = default(string), string traversedpath = default(string), string entityimageid = default(string), string emailaddress = default(string), string objective = default(string), string _pricelistidValue = default(string), System.DateTimeOffset? proposedend = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), decimal? expectedrevenue = default(decimal?), System.DateTimeOffset? actualend = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string _owneridValue = default(string), decimal? othercostBase = default(decimal?), bool? istemplate = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdbyValue = default(string), decimal? expectedrevenueBase = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> campaignActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> campaignSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> campaignActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> campaignDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> campaignDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> campaignAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> campaignMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> campaignProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> campaignBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> campaignPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMappointment> campaignAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> campaignEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> campaignFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> campaignLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> campaignPhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> campaignTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> campaignRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> campaignSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> campaignConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> campaignConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> campaignAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMcampaignactivity> campaignCampaignActivities = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaignresponse> campaignCampaignResponses = default(IList<MicrosoftDynamicsCRMcampaignresponse>), IList<MicrosoftDynamicsCRMcampaign> campaigncampaignAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMcampaign> campaigncampaignAssociationReferenced = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMproduct> campaignproductAssociation = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMlead> campaignLeads = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMlist> campaignlistAssociation = default(IList<MicrosoftDynamicsCRMlist>), MicrosoftDynamicsCRMpricelevel pricelistid = default(MicrosoftDynamicsCRMpricelevel), IList<MicrosoftDynamicsCRMincidentresolution> campaignIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMserviceappointment> campaignServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMopportunityclose> campaignOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> campaignOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> campaignQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMopportunity> campaignOpportunities = default(IList<MicrosoftDynamicsCRMopportunity>), IList<MicrosoftDynamicsCRMsalesorder> campaignOrders = default(IList<MicrosoftDynamicsCRMsalesorder>), IList<MicrosoftDynamicsCRMquote> campaignQuotes = default(IList<MicrosoftDynamicsCRMquote>), IList<MicrosoftDynamicsCRMsalesliterature> campaignsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMcsuCasetask> campaignCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
         {
             Actualstart = actualstart;
             Description = description;
@@ -190,12 +190,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -210,7 +210,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -221,7 +221,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -236,12 +236,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -281,12 +281,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -296,7 +296,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "campaignid")]
-        public System.Guid? Campaignid { get; set; }
+        public string Campaignid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -331,7 +331,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -346,7 +346,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_pricelistid_value")]
-        public System.Guid? _pricelistidValue { get; set; }
+        public string _pricelistidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -356,7 +356,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -376,7 +376,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -396,7 +396,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

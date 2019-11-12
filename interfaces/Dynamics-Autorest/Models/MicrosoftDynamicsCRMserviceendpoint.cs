@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMserviceendpoint class.
         /// </summary>
-        public MicrosoftDynamicsCRMserviceendpoint(string sastoken = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? solutionid = default(System.Guid?), string url = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string authvalue = default(string), bool? ismanaged = default(bool?), string iscustomizable = default(string), int? userclaim = default(int?), string name = default(string), System.Guid? serviceendpointid = default(System.Guid?), bool? issaskeyset = default(bool?), int? connectionmode = default(int?), System.Guid? serviceendpointidunique = default(System.Guid?), bool? issastokenset = default(bool?), string solutionnamespace = default(string), string saskey = default(string), int? namespaceformat = default(int?), System.Guid? _createdbyValue = default(System.Guid?), string introducedversion = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string namespaceaddress = default(string), int? authtype = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? componentstate = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? contract = default(int?), string description = default(string), int? messageformat = default(int?), System.Guid? _organizationidValue = default(System.Guid?), bool? isauthvalueset = default(bool?), string path = default(string), string saskeyname = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsdkmessageprocessingstep> serviceendpointSdkmessageprocessingstep = default(IList<MicrosoftDynamicsCRMsdkmessageprocessingstep>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMserviceendpoint(string sastoken = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string solutionid = default(string), string url = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string authvalue = default(string), bool? ismanaged = default(bool?), string iscustomizable = default(string), int? userclaim = default(int?), string name = default(string), string serviceendpointid = default(string), bool? issaskeyset = default(bool?), int? connectionmode = default(int?), string serviceendpointidunique = default(string), bool? issastokenset = default(bool?), string solutionnamespace = default(string), string saskey = default(string), int? namespaceformat = default(int?), string _createdbyValue = default(string), string introducedversion = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string namespaceaddress = default(string), int? authtype = default(int?), string _modifiedbyValue = default(string), int? componentstate = default(int?), string _modifiedonbehalfbyValue = default(string), int? contract = default(int?), string description = default(string), int? messageformat = default(int?), string _organizationidValue = default(string), bool? isauthvalueset = default(bool?), string path = default(string), string saskeyname = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsdkmessageprocessingstep> serviceendpointSdkmessageprocessingstep = default(IList<MicrosoftDynamicsCRMsdkmessageprocessingstep>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Sastoken = sastoken;
             Overwritetime = overwritetime;
@@ -92,7 +92,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -102,7 +102,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -137,7 +137,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "serviceendpointid")]
-        public System.Guid? Serviceendpointid { get; set; }
+        public string Serviceendpointid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -152,7 +152,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "serviceendpointidunique")]
-        public System.Guid? Serviceendpointidunique { get; set; }
+        public string Serviceendpointidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,7 +177,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -202,7 +202,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -212,7 +212,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -232,7 +232,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>

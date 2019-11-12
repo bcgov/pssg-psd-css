@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMproduct
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMproduct(decimal? standardcost = default(decimal?), string hierarchypath = default(string), System.Guid? _createdbyexternalpartyValue = default(System.Guid?), System.Guid? _defaultuomscheduleidValue = default(System.Guid?), int? productstructure = default(int?), decimal? currentcostBase = default(decimal?), decimal? standardcostBase = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), System.Guid? _defaultuomidValue = default(System.Guid?), int? dmtimportstate = default(int?), System.DateTime? validtodate = default(System.DateTime?), decimal? currentcost = default(decimal?), int? timezoneruleversionnumber = default(int?), decimal? price = default(decimal?), int? quantitydecimal = default(int?), int? importsequencenumber = default(int?), System.Guid? _subjectidValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), string suppliername = default(string), System.DateTime? validfromdate = default(System.DateTime?), int? statuscode = default(int?), int? statecode = default(int?), string traversedpath = default(string), string productnumber = default(string), System.Guid? _organizationidValue = default(System.Guid?), string description = default(string), System.Guid? _modifiedbyexternalpartyValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), decimal? exchangerate = default(decimal?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? stageid = default(System.Guid?), System.Guid? _parentproductidValue = default(System.Guid?), System.Guid? _pricelevelidValue = default(System.Guid?), string producturl = default(string), string size = default(string), string vendorname = default(string), int? producttypecode = default(int?), decimal? stockweight = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string name = default(string), System.Guid? processid = default(System.Guid?), bool? iskit = default(bool?), decimal? priceBase = default(decimal?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? entityimageid = default(System.Guid?), bool? isstockitem = default(bool?), string vendorid = default(string), string vendorpartnumber = default(string), System.Guid? productid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), byte[] entityimage = default(byte[]), string entityimageUrl = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), long? entityimageTimestamp = default(long?), int? utcconversiontimezonecode = default(int?), decimal? quantityonhand = default(decimal?), decimal? stockvolume = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> productSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> productSharepointDocumentLocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> productAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> productMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> productProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> productBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> productPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMconnection> productConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> productConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> productAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMpricelevel pricelevelid = default(MicrosoftDynamicsCRMpricelevel), IList<MicrosoftDynamicsCRMdynamicproperty> productDynamicProperty = default(IList<MicrosoftDynamicsCRMdynamicproperty>), IList<MicrosoftDynamicsCRMdynamicpropertyassociation> productDynamicPropertyAssociation = default(IList<MicrosoftDynamicsCRMdynamicpropertyassociation>), MicrosoftDynamicsCRMproduct parentproductid = default(MicrosoftDynamicsCRMproduct), IList<MicrosoftDynamicsCRMproduct> productParentProduct = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMproductassociation> productProductAssociationAssocProd = default(IList<MicrosoftDynamicsCRMproductassociation>), IList<MicrosoftDynamicsCRMproductassociation> productProductAssociationProd = default(IList<MicrosoftDynamicsCRMproductassociation>), IList<MicrosoftDynamicsCRMproductsubstitute> productProductSubstituteSubstitutedproductid = default(IList<MicrosoftDynamicsCRMproductsubstitute>), IList<MicrosoftDynamicsCRMproductsubstitute> productProductSubstituteProductid = default(IList<MicrosoftDynamicsCRMproductsubstitute>), IList<MicrosoftDynamicsCRMproductpricelevel> productPriceLevels = default(IList<MicrosoftDynamicsCRMproductpricelevel>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject), MicrosoftDynamicsCRMuom defaultuomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMuomschedule defaultuomscheduleid = default(MicrosoftDynamicsCRMuomschedule), IList<MicrosoftDynamicsCRMcampaign> campaignproductAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMcontractdetail> productContractLineItems = default(IList<MicrosoftDynamicsCRMcontractdetail>), IList<MicrosoftDynamicsCRMincident> productIncidents = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMentitlement> productEntitlementAssociation = default(IList<MicrosoftDynamicsCRMentitlement>), IList<MicrosoftDynamicsCRMentitlementtemplate> productEntitlementtemplateAssociation = default(IList<MicrosoftDynamicsCRMentitlementtemplate>), IList<MicrosoftDynamicsCRMlead> leadproductAssociation = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityProducts = default(IList<MicrosoftDynamicsCRMopportunityproduct>), IList<MicrosoftDynamicsCRMinvoicedetail> productInvoiceDetails = default(IList<MicrosoftDynamicsCRMinvoicedetail>), IList<MicrosoftDynamicsCRMsalesorderdetail> productOrderDetails = default(IList<MicrosoftDynamicsCRMsalesorderdetail>), IList<MicrosoftDynamicsCRMquotedetail> productQuoteDetails = default(IList<MicrosoftDynamicsCRMquotedetail>), IList<MicrosoftDynamicsCRMsalesliterature> productsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMcompetitor> competitorproductAssociation = default(IList<MicrosoftDynamicsCRMcompetitor>))
+        public MicrosoftDynamicsCRMproduct(decimal? standardcost = default(decimal?), string hierarchypath = default(string), string _createdbyexternalpartyValue = default(string), string _defaultuomscheduleidValue = default(string), int? productstructure = default(int?), decimal? currentcostBase = default(decimal?), decimal? standardcostBase = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), string _defaultuomidValue = default(string), int? dmtimportstate = default(int?), System.DateTime? validtodate = default(System.DateTime?), decimal? currentcost = default(decimal?), int? timezoneruleversionnumber = default(int?), decimal? price = default(decimal?), int? quantitydecimal = default(int?), int? importsequencenumber = default(int?), string _subjectidValue = default(string), string _transactioncurrencyidValue = default(string), string suppliername = default(string), System.DateTime? validfromdate = default(System.DateTime?), int? statuscode = default(int?), int? statecode = default(int?), string traversedpath = default(string), string productnumber = default(string), string _organizationidValue = default(string), string description = default(string), string _modifiedbyexternalpartyValue = default(string), string _createdbyValue = default(string), decimal? exchangerate = default(decimal?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string stageid = default(string), string _parentproductidValue = default(string), string _pricelevelidValue = default(string), string producturl = default(string), string size = default(string), string vendorname = default(string), int? producttypecode = default(int?), decimal? stockweight = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string name = default(string), string processid = default(string), bool? iskit = default(bool?), decimal? priceBase = default(decimal?), string _modifiedonbehalfbyValue = default(string), string entityimageid = default(string), bool? isstockitem = default(bool?), string vendorid = default(string), string vendorpartnumber = default(string), string productid = default(string), string _createdonbehalfbyValue = default(string), byte[] entityimage = default(byte[]), string entityimageUrl = default(string), string _modifiedbyValue = default(string), long? entityimageTimestamp = default(long?), int? utcconversiontimezonecode = default(int?), decimal? quantityonhand = default(decimal?), decimal? stockvolume = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> productSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> productSharepointDocumentLocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> productAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> productMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> productProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> productBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> productPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMconnection> productConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> productConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> productAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMpricelevel pricelevelid = default(MicrosoftDynamicsCRMpricelevel), IList<MicrosoftDynamicsCRMdynamicproperty> productDynamicProperty = default(IList<MicrosoftDynamicsCRMdynamicproperty>), IList<MicrosoftDynamicsCRMdynamicpropertyassociation> productDynamicPropertyAssociation = default(IList<MicrosoftDynamicsCRMdynamicpropertyassociation>), MicrosoftDynamicsCRMproduct parentproductid = default(MicrosoftDynamicsCRMproduct), IList<MicrosoftDynamicsCRMproduct> productParentProduct = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMproductassociation> productProductAssociationAssocProd = default(IList<MicrosoftDynamicsCRMproductassociation>), IList<MicrosoftDynamicsCRMproductassociation> productProductAssociationProd = default(IList<MicrosoftDynamicsCRMproductassociation>), IList<MicrosoftDynamicsCRMproductsubstitute> productProductSubstituteSubstitutedproductid = default(IList<MicrosoftDynamicsCRMproductsubstitute>), IList<MicrosoftDynamicsCRMproductsubstitute> productProductSubstituteProductid = default(IList<MicrosoftDynamicsCRMproductsubstitute>), IList<MicrosoftDynamicsCRMproductpricelevel> productPriceLevels = default(IList<MicrosoftDynamicsCRMproductpricelevel>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject), MicrosoftDynamicsCRMuom defaultuomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMuomschedule defaultuomscheduleid = default(MicrosoftDynamicsCRMuomschedule), IList<MicrosoftDynamicsCRMcampaign> campaignproductAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), IList<MicrosoftDynamicsCRMcontractdetail> productContractLineItems = default(IList<MicrosoftDynamicsCRMcontractdetail>), IList<MicrosoftDynamicsCRMincident> productIncidents = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMentitlement> productEntitlementAssociation = default(IList<MicrosoftDynamicsCRMentitlement>), IList<MicrosoftDynamicsCRMentitlementtemplate> productEntitlementtemplateAssociation = default(IList<MicrosoftDynamicsCRMentitlementtemplate>), IList<MicrosoftDynamicsCRMlead> leadproductAssociation = default(IList<MicrosoftDynamicsCRMlead>), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityProducts = default(IList<MicrosoftDynamicsCRMopportunityproduct>), IList<MicrosoftDynamicsCRMinvoicedetail> productInvoiceDetails = default(IList<MicrosoftDynamicsCRMinvoicedetail>), IList<MicrosoftDynamicsCRMsalesorderdetail> productOrderDetails = default(IList<MicrosoftDynamicsCRMsalesorderdetail>), IList<MicrosoftDynamicsCRMquotedetail> productQuoteDetails = default(IList<MicrosoftDynamicsCRMquotedetail>), IList<MicrosoftDynamicsCRMsalesliterature> productsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMsalesliterature>), IList<MicrosoftDynamicsCRMcompetitor> competitorproductAssociation = default(IList<MicrosoftDynamicsCRMcompetitor>))
         {
             Standardcost = standardcost;
             Hierarchypath = hierarchypath;
@@ -154,12 +154,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdbyexternalparty_value")]
-        public System.Guid? _createdbyexternalpartyValue { get; set; }
+        public string _createdbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_defaultuomscheduleid_value")]
-        public System.Guid? _defaultuomscheduleidValue { get; set; }
+        public string _defaultuomscheduleidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -189,7 +189,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_defaultuomid_value")]
-        public System.Guid? _defaultuomidValue { get; set; }
+        public string _defaultuomidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -230,12 +230,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_subjectid_value")]
-        public System.Guid? _subjectidValue { get; set; }
+        public string _subjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -271,7 +271,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -281,12 +281,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedbyexternalparty_value")]
-        public System.Guid? _modifiedbyexternalpartyValue { get; set; }
+        public string _modifiedbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -301,17 +301,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentproductid_value")]
-        public System.Guid? _parentproductidValue { get; set; }
+        public string _parentproductidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_pricelevelid_value")]
-        public System.Guid? _pricelevelidValue { get; set; }
+        public string _pricelevelidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -351,7 +351,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -366,12 +366,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -391,12 +391,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "productid")]
-        public System.Guid? Productid { get; set; }
+        public string Productid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -412,7 +412,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

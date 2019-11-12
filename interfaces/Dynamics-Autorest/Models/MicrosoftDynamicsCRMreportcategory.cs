@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMreportcategory class.
         /// </summary>
-        public MicrosoftDynamicsCRMreportcategory(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), string iscustomizable = default(string), bool? ismanaged = default(bool?), System.Guid? reportcategoryid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? reportcategoryidunique = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _owneridValue = default(System.Guid?), decimal? exchangerate = default(decimal?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _reportidValue = default(System.Guid?), int? componentstate = default(int?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.Guid? owningbusinessunit = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), System.Guid? owninguser = default(System.Guid?), int? categorycode = default(int?), MicrosoftDynamicsCRMreport reportid = default(MicrosoftDynamicsCRMreport), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> reportcategoryPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> reportCategorySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
+        public MicrosoftDynamicsCRMreportcategory(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), string iscustomizable = default(string), bool? ismanaged = default(bool?), string reportcategoryid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), string _createdonbehalfbyValue = default(string), string reportcategoryidunique = default(string), int? importsequencenumber = default(int?), string _owneridValue = default(string), decimal? exchangerate = default(decimal?), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string _reportidValue = default(string), int? componentstate = default(int?), string _transactioncurrencyidValue = default(string), int? timezoneruleversionnumber = default(int?), string owningbusinessunit = default(string), string solutionid = default(string), string owninguser = default(string), int? categorycode = default(int?), MicrosoftDynamicsCRMreport reportid = default(MicrosoftDynamicsCRMreport), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> reportcategoryPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> reportCategorySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency))
         {
             Modifiedon = modifiedon;
             Utcconversiontimezonecode = utcconversiontimezonecode;
@@ -99,7 +99,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "reportcategoryid")]
-        public System.Guid? Reportcategoryid { get; set; }
+        public string Reportcategoryid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -109,17 +109,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "reportcategoryidunique")]
-        public System.Guid? Reportcategoryidunique { get; set; }
+        public string Reportcategoryidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -139,7 +139,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,12 +149,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_reportid_value")]
-        public System.Guid? _reportidValue { get; set; }
+        public string _reportidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -164,7 +164,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -174,17 +174,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owningbusinessunit")]
-        public System.Guid? Owningbusinessunit { get; set; }
+        public string Owningbusinessunit { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owninguser")]
-        public System.Guid? Owninguser { get; set; }
+        public string Owninguser { get; set; }
 
         /// <summary>
         /// </summary>

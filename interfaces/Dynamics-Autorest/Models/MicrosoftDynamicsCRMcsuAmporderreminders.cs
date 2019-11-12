@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcsuAmporderreminders class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuAmporderreminders(string csuName = default(string), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _csuDeliveredbycsuofficerValue = default(System.Guid?), int? csuRemindertype = default(int?), System.DateTimeOffset? csuNextreminderdate = default(System.DateTimeOffset?), string csuAdditionalnotes = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? statecode = default(int?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), string csuMailcouriertrackingnumber = default(string), int? statuscode = default(int?), int? timezoneruleversionnumber = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _csuAmporderidValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), int? importsequencenumber = default(int?), System.Guid? csuAmporderremindersid = default(System.Guid?), System.DateTimeOffset? csuDateremindersent = default(System.DateTimeOffset?), int? csuMethodofdelivery = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuAmporderremindersSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderremindersDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderremindersDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuAmporderremindersAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuAmporderremindersMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuAmporderremindersProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuAmporderremindersBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuAmporderremindersPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser csuDeliveredbyCSUOfficer = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcsuAmporder csuAMPOrderId = default(MicrosoftDynamicsCRMcsuAmporder))
+        public MicrosoftDynamicsCRMcsuAmporderreminders(string csuName = default(string), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _owningbusinessunitValue = default(string), string _csuDeliveredbycsuofficerValue = default(string), int? csuRemindertype = default(int?), System.DateTimeOffset? csuNextreminderdate = default(System.DateTimeOffset?), string csuAdditionalnotes = default(string), string _createdbyValue = default(string), string _modifiedbyValue = default(string), int? statecode = default(int?), string _owneridValue = default(string), string _owninguserValue = default(string), string csuMailcouriertrackingnumber = default(string), int? statuscode = default(int?), int? timezoneruleversionnumber = default(int?), string _createdonbehalfbyValue = default(string), string _csuAmporderidValue = default(string), string _owningteamValue = default(string), string _modifiedonbehalfbyValue = default(string), string versionnumber = default(string), int? importsequencenumber = default(int?), string csuAmporderremindersid = default(string), System.DateTimeOffset? csuDateremindersent = default(System.DateTimeOffset?), int? csuMethodofdelivery = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuAmporderremindersSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderremindersDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuAmporderremindersDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuAmporderremindersAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuAmporderremindersMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuAmporderremindersProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuAmporderremindersBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuAmporderremindersPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser csuDeliveredbyCSUOfficer = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcsuAmporder csuAMPOrderId = default(MicrosoftDynamicsCRMcsuAmporder))
         {
             CsuName = csuName;
             Utcconversiontimezonecode = utcconversiontimezonecode;
@@ -107,12 +107,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_deliveredbycsuofficer_value")]
-        public System.Guid? _csuDeliveredbycsuofficerValue { get; set; }
+        public string _csuDeliveredbycsuofficerValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -132,12 +132,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -147,12 +147,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -172,22 +172,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_amporderid_value")]
-        public System.Guid? _csuAmporderidValue { get; set; }
+        public string _csuAmporderidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -202,7 +202,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_amporderremindersid")]
-        public System.Guid? CsuAmporderremindersid { get; set; }
+        public string CsuAmporderremindersid { get; set; }
 
         /// <summary>
         /// </summary>

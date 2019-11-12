@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMbulkdeleteoperation class.
         /// </summary>
-        public MicrosoftDynamicsCRMbulkdeleteoperation(System.Guid? _createdbyValue = default(System.Guid?), System.DateTimeOffset? nextrun = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _asyncoperationidValue = default(System.Guid?), System.Guid? bulkdeleteoperationid = default(System.Guid?), int? successcount = default(int?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? failurecount = default(int?), int? processingqeindex = default(int?), int? utcconversiontimezonecode = default(int?), int? timezoneruleversionnumber = default(int?), string name = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? statecode = default(int?), System.Guid? _owneridValue = default(System.Guid?), bool? isrecurring = default(bool?), int? statuscode = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string orderedquerysetxml = default(string), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMasyncoperation asyncoperationid = default(MicrosoftDynamicsCRMasyncoperation), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMbulkdeletefailure> bulkDeleteOperationBulkDeleteFailure = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMbulkdeleteoperation(string _createdbyValue = default(string), System.DateTimeOffset? nextrun = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _asyncoperationidValue = default(string), string bulkdeleteoperationid = default(string), int? successcount = default(int?), string _owninguserValue = default(string), string _modifiedbyValue = default(string), int? failurecount = default(int?), int? processingqeindex = default(int?), int? utcconversiontimezonecode = default(int?), int? timezoneruleversionnumber = default(int?), string name = default(string), string _owningbusinessunitValue = default(string), int? statecode = default(int?), string _owneridValue = default(string), bool? isrecurring = default(bool?), int? statuscode = default(int?), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string orderedquerysetxml = default(string), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMasyncoperation asyncoperationid = default(MicrosoftDynamicsCRMasyncoperation), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMbulkdeletefailure> bulkDeleteOperationBulkDeleteFailure = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._createdbyValue = _createdbyValue;
             Nextrun = nextrun;
@@ -71,7 +71,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -81,7 +81,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -91,12 +91,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_asyncoperationid_value")]
-        public System.Guid? _asyncoperationidValue { get; set; }
+        public string _asyncoperationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "bulkdeleteoperationid")]
-        public System.Guid? Bulkdeleteoperationid { get; set; }
+        public string Bulkdeleteoperationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -106,12 +106,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -141,7 +141,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -151,7 +151,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -166,7 +166,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

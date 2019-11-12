@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcsuComplaints
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuComplaints(int? csuLegislation = default(int?), string csuPropertydetails = default(string), System.Guid? _createdbyValue = default(System.Guid?), decimal? csuTotalequivalencyamountfromallseizures = default(decimal?), string csuRole = default(string), System.DateTimeOffset? csuSeizuredate = default(System.DateTimeOffset?), string traversedpath = default(string), System.Guid? _csuAssociatedcomplaintsidValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? csuSubjectofcomplaintenteredinerror = default(int?), string csuName = default(string), string csuStateprovince = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string csuFax = default(string), int? csuSecondarysource = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.DateTimeOffset? csuSubjectofcomplaintenteredinerrorDate = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), string csuCity = default(string), string csuAddress3 = default(string), System.DateTimeOffset? csuReportdataandtime = default(System.DateTimeOffset?), System.Guid? _owninguserValue = default(System.Guid?), int? csuNonactionablereason = default(int?), string csuZippostalcode = default(string), int? csuComplainttype = default(int?), string csuAddress2 = default(string), string csuNonactionableotherreason = default(string), int? statuscode = default(int?), System.DateTimeOffset? csuIncidentdateandtime = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string csuAddressdescription = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? csuComplaintsid = default(System.Guid?), string csuComplaintreportdetail = default(string), System.Guid? processid = default(System.Guid?), string csuMiddlename = default(string), string csuProvince = default(string), int? csuSubjectofcomplaintenteredinerrorState = default(int?), int? csuNumberofcsaspecifiedactivities = default(int?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _stageidValue = default(System.Guid?), string csuLastname = default(string), System.Guid? _csuInternalinvestigatorValue = default(System.Guid?), string csuExhibitnumber = default(string), int? csuUpdates = default(int?), string versionnumber = default(string), string csuDescribeothernature = default(string), string csuFirstname = default(string), int? csuType = default(int?), System.Guid? _csuAgencyValue = default(System.Guid?), System.DateTimeOffset? csuTotalequivalencyamountfromallseizuresDate = default(System.DateTimeOffset?), string csuEmail = default(string), string csuPrimaryphone = default(string), int? csu106report = default(int?), string csuAddress1 = default(string), string csuOtheragency = default(string), System.Guid? _owneridValue = default(System.Guid?), string csuCountry = default(string), System.DateTimeOffset? csuNumberofcsaspecifiedactivitiesDate = default(System.DateTimeOffset?), int? csuRegion = default(int?), string csuBadgenumber = default(string), int? csuPreferredcontactmethod = default(int?), int? csuSourcetype = default(int?), int? statecode = default(int?), int? csuNumberofcsaspecifiedactivitiesState = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? csuTotalequivalencyamountfromallseizuresState = default(int?), int? csuNatureofcomplaint = default(int?), string csuAgencyfilenumber = default(string), string emailaddress = default(string), bool? csuAnonymouscomplainant = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> csuComplaintsActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> csuComplaintsSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> csuComplaintsActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> csuComplaintsDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuComplaintsDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> csuComplaintsSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> csuComplaintsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuComplaintsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuComplaintsProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuComplaintsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuComplaintsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMappointment> csuComplaintsAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> csuComplaintsEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> csuComplaintsFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> csuComplaintsLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> csuComplaintsPhoneCalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> csuComplaintsTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> csuComplaintsRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> csuComplaintsSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMannotation> csuComplaintsAnnotations = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMserviceappointment> csuComplaintsServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMcsuAgencylisting csuAgency = default(MicrosoftDynamicsCRMcsuAgencylisting), IList<MicrosoftDynamicsCRMcsuSubjectofcomplaint> csuCsuComplaintsCsuSubjectofcomplaintComplaint = default(IList<MicrosoftDynamicsCRMcsuSubjectofcomplaint>), IList<MicrosoftDynamicsCRMcsuSeizuredetails> csuCsuComplaintsCsuSeizuredetailsComplaint = default(IList<MicrosoftDynamicsCRMcsuSeizuredetails>), MicrosoftDynamicsCRMsystemuser csuInternalInvestigator = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMincident> csuCsuComplaintsIncident = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMprocessstage stageid = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMincident csuAssociatedComplaintsId = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuComplaintsCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuComplaintseizure> csuCsuComplaintsCsuComplaintseizurePrimaryComplaint = default(IList<MicrosoftDynamicsCRMcsuComplaintseizure>), IList<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> csuCsuComplaintsCsuCsaspecifiedactivity = default(IList<MicrosoftDynamicsCRMcsuCsaspecifiedactivity>))
+        public MicrosoftDynamicsCRMcsuComplaints(int? csuLegislation = default(int?), string csuPropertydetails = default(string), string _createdbyValue = default(string), decimal? csuTotalequivalencyamountfromallseizures = default(decimal?), string csuRole = default(string), System.DateTimeOffset? csuSeizuredate = default(System.DateTimeOffset?), string traversedpath = default(string), string _csuAssociatedcomplaintsidValue = default(string), string _createdonbehalfbyValue = default(string), int? csuSubjectofcomplaintenteredinerror = default(int?), string csuName = default(string), string csuStateprovince = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string csuFax = default(string), int? csuSecondarysource = default(int?), string _owningbusinessunitValue = default(string), System.DateTimeOffset? csuSubjectofcomplaintenteredinerrorDate = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), string csuCity = default(string), string csuAddress3 = default(string), System.DateTimeOffset? csuReportdataandtime = default(System.DateTimeOffset?), string _owninguserValue = default(string), int? csuNonactionablereason = default(int?), string csuZippostalcode = default(string), int? csuComplainttype = default(int?), string csuAddress2 = default(string), string csuNonactionableotherreason = default(string), int? statuscode = default(int?), System.DateTimeOffset? csuIncidentdateandtime = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string csuAddressdescription = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string csuComplaintsid = default(string), string csuComplaintreportdetail = default(string), string processid = default(string), string csuMiddlename = default(string), string csuProvince = default(string), int? csuSubjectofcomplaintenteredinerrorState = default(int?), int? csuNumberofcsaspecifiedactivities = default(int?), string _owningteamValue = default(string), string _modifiedonbehalfbyValue = default(string), string _stageidValue = default(string), string csuLastname = default(string), string _csuInternalinvestigatorValue = default(string), string csuExhibitnumber = default(string), int? csuUpdates = default(int?), string versionnumber = default(string), string csuDescribeothernature = default(string), string csuFirstname = default(string), int? csuType = default(int?), string _csuAgencyValue = default(string), System.DateTimeOffset? csuTotalequivalencyamountfromallseizuresDate = default(System.DateTimeOffset?), string csuEmail = default(string), string csuPrimaryphone = default(string), int? csu106report = default(int?), string csuAddress1 = default(string), string csuOtheragency = default(string), string _owneridValue = default(string), string csuCountry = default(string), System.DateTimeOffset? csuNumberofcsaspecifiedactivitiesDate = default(System.DateTimeOffset?), int? csuRegion = default(int?), string csuBadgenumber = default(string), int? csuPreferredcontactmethod = default(int?), int? csuSourcetype = default(int?), int? statecode = default(int?), int? csuNumberofcsaspecifiedactivitiesState = default(int?), string _modifiedbyValue = default(string), int? csuTotalequivalencyamountfromallseizuresState = default(int?), int? csuNatureofcomplaint = default(int?), string csuAgencyfilenumber = default(string), string emailaddress = default(string), bool? csuAnonymouscomplainant = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> csuComplaintsActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> csuComplaintsSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> csuComplaintsActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> csuComplaintsDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuComplaintsDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> csuComplaintsSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> csuComplaintsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuComplaintsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuComplaintsProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuComplaintsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuComplaintsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMappointment> csuComplaintsAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> csuComplaintsEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> csuComplaintsFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> csuComplaintsLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> csuComplaintsPhoneCalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> csuComplaintsTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> csuComplaintsRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> csuComplaintsSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMannotation> csuComplaintsAnnotations = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMserviceappointment> csuComplaintsServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMcsuAgencylisting csuAgency = default(MicrosoftDynamicsCRMcsuAgencylisting), IList<MicrosoftDynamicsCRMcsuSubjectofcomplaint> csuCsuComplaintsCsuSubjectofcomplaintComplaint = default(IList<MicrosoftDynamicsCRMcsuSubjectofcomplaint>), IList<MicrosoftDynamicsCRMcsuSeizuredetails> csuCsuComplaintsCsuSeizuredetailsComplaint = default(IList<MicrosoftDynamicsCRMcsuSeizuredetails>), MicrosoftDynamicsCRMsystemuser csuInternalInvestigator = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMincident> csuCsuComplaintsIncident = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMprocessstage stageid = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMincident csuAssociatedComplaintsId = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuComplaintsCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuComplaintseizure> csuCsuComplaintsCsuComplaintseizurePrimaryComplaint = default(IList<MicrosoftDynamicsCRMcsuComplaintseizure>), IList<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> csuCsuComplaintsCsuCsaspecifiedactivity = default(IList<MicrosoftDynamicsCRMcsuCsaspecifiedactivity>))
         {
             CsuLegislation = csuLegislation;
             CsuPropertydetails = csuPropertydetails;
@@ -165,7 +165,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -190,12 +190,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_associatedcomplaintsid_value")]
-        public System.Guid? _csuAssociatedcomplaintsidValue { get; set; }
+        public string _csuAssociatedcomplaintsidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -230,7 +230,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -260,7 +260,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -325,7 +325,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_complaintsid")]
-        public System.Guid? CsuComplaintsid { get; set; }
+        public string CsuComplaintsid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -335,7 +335,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -360,17 +360,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_stageid_value")]
-        public System.Guid? _stageidValue { get; set; }
+        public string _stageidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -380,7 +380,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_internalinvestigator_value")]
-        public System.Guid? _csuInternalinvestigatorValue { get; set; }
+        public string _csuInternalinvestigatorValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -415,7 +415,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_agency_value")]
-        public System.Guid? _csuAgencyValue { get; set; }
+        public string _csuAgencyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -450,7 +450,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -495,7 +495,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

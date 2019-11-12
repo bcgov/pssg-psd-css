@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcompetitorsalesliterature class.
         /// </summary>
-        public MicrosoftDynamicsCRMcompetitorsalesliterature(int? timezoneruleversionnumber = default(int?), System.Guid? competitorsalesliteratureid = default(System.Guid?), string name = default(string), string versionnumber = default(string), System.Guid? competitorid = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? salesliteratureid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> competitorsalesliteratureAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitorsalesliteratureMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitorsalesliteratureBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitorsalesliteraturePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcompetitorsalesliterature(int? timezoneruleversionnumber = default(int?), string competitorsalesliteratureid = default(string), string name = default(string), string versionnumber = default(string), string competitorid = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), int? utcconversiontimezonecode = default(int?), string salesliteratureid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> competitorsalesliteratureAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitorsalesliteratureMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitorsalesliteratureBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitorsalesliteraturePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Timezoneruleversionnumber = timezoneruleversionnumber;
             Competitorsalesliteratureid = competitorsalesliteratureid;
@@ -60,7 +60,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorsalesliteratureid")]
-        public System.Guid? Competitorsalesliteratureid { get; set; }
+        public string Competitorsalesliteratureid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -75,7 +75,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorid")]
-        public System.Guid? Competitorid { get; set; }
+        public string Competitorid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "salesliteratureid")]
-        public System.Guid? Salesliteratureid { get; set; }
+        public string Salesliteratureid { get; set; }
 
         /// <summary>
         /// </summary>

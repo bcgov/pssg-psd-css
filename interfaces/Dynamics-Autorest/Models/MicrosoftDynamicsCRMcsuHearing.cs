@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcsuHearing
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuHearing(System.Guid? _owneridValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? csuAmpappforreconhearingreceived = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), string csuName = default(string), System.DateTimeOffset? csuPublishingampaspersection32cannabiscontro = default(System.DateTimeOffset?), System.Guid? _csuRelatedhearingsidValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _csuCaseValue = default(System.Guid?), int? csuPublishinghearingdecisionstothewebsite = default(int?), System.Guid? _owningteamValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), int? statecode = default(int?), int? csuJudicialreviewtype = default(int?), int? statuscode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? csuHearingdecisiondate = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? csuDisclosuredeadline = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? csuPostingsignsrelatingtoampaspersection33cc = default(System.DateTimeOffset?), int? csuHearingmethod = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? _owninguserValue = default(System.Guid?), int? csuApplicationforhearingreceived = default(int?), System.Guid? _csuCasetaskdisclosuredeadlinedateidValue = default(System.Guid?), System.Guid? csuHearingid = default(System.Guid?), System.DateTimeOffset? csuHearingdate = default(System.DateTimeOffset?), System.DateTimeOffset? csuDisclosuredate = default(System.DateTimeOffset?), int? csuReasonfororalhearing = default(int?), int? csuHearingresult = default(int?), string versionnumber = default(string), string csuOther = default(string), System.Guid? _createdbyValue = default(System.Guid?), int? importsequencenumber = default(int?), int? csuHearingtype = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuHearingSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuHearingDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuHearingDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuHearingAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuHearingMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuHearingProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuHearingBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuHearingPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuAmp csuRelatedHearingsId = default(MicrosoftDynamicsCRMcsuAmp), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuCsuHearingCsuJudicialreviewHearingUnderDispute = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>), MicrosoftDynamicsCRMincident csuCase = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskDisclosureDeadlineDateId = default(MicrosoftDynamicsCRMcsuCasetask), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuHearingCsuCasetaskHearing = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
+        public MicrosoftDynamicsCRMcsuHearing(string _owneridValue = default(string), string _createdonbehalfbyValue = default(string), int? csuAmpappforreconhearingreceived = default(int?), string _owningbusinessunitValue = default(string), string csuName = default(string), System.DateTimeOffset? csuPublishingampaspersection32cannabiscontro = default(System.DateTimeOffset?), string _csuRelatedhearingsidValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _csuCaseValue = default(string), int? csuPublishinghearingdecisionstothewebsite = default(int?), string _owningteamValue = default(string), int? timezoneruleversionnumber = default(int?), int? statecode = default(int?), int? csuJudicialreviewtype = default(int?), int? statuscode = default(int?), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? csuHearingdecisiondate = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? csuDisclosuredeadline = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), System.DateTimeOffset? csuPostingsignsrelatingtoampaspersection33cc = default(System.DateTimeOffset?), int? csuHearingmethod = default(int?), int? utcconversiontimezonecode = default(int?), string _owninguserValue = default(string), int? csuApplicationforhearingreceived = default(int?), string _csuCasetaskdisclosuredeadlinedateidValue = default(string), string csuHearingid = default(string), System.DateTimeOffset? csuHearingdate = default(System.DateTimeOffset?), System.DateTimeOffset? csuDisclosuredate = default(System.DateTimeOffset?), int? csuReasonfororalhearing = default(int?), int? csuHearingresult = default(int?), string versionnumber = default(string), string csuOther = default(string), string _createdbyValue = default(string), int? importsequencenumber = default(int?), int? csuHearingtype = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuHearingSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuHearingDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuHearingDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuHearingAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuHearingMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuHearingProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuHearingBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuHearingPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuAmp csuRelatedHearingsId = default(MicrosoftDynamicsCRMcsuAmp), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuCsuHearingCsuJudicialreviewHearingUnderDispute = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>), MicrosoftDynamicsCRMincident csuCase = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMcsuCasetask csuCaseTaskDisclosureDeadlineDateId = default(MicrosoftDynamicsCRMcsuCasetask), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuHearingCsuCasetaskHearing = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
         {
             this._owneridValue = _owneridValue;
             this._createdonbehalfbyValue = _createdonbehalfbyValue;
@@ -100,12 +100,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -130,7 +130,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_relatedhearingsid_value")]
-        public System.Guid? _csuRelatedhearingsidValue { get; set; }
+        public string _csuRelatedhearingsidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -145,7 +145,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_case_value")]
-        public System.Guid? _csuCaseValue { get; set; }
+        public string _csuCaseValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -180,7 +180,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -200,7 +200,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -220,7 +220,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -230,12 +230,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_casetaskdisclosuredeadlinedateid_value")]
-        public System.Guid? _csuCasetaskdisclosuredeadlinedateidValue { get; set; }
+        public string _csuCasetaskdisclosuredeadlinedateidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_hearingid")]
-        public System.Guid? CsuHearingid { get; set; }
+        public string CsuHearingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -270,7 +270,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

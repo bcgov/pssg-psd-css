@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMmsdynSolutioncomponentdatasource class.
         /// </summary>
-        public MicrosoftDynamicsCRMmsdynSolutioncomponentdatasource(System.Guid? msdynSolutioncomponentdatasourceid = default(System.Guid?), string msdynName = default(string), IList<MicrosoftDynamicsCRMannotation> msdynSolutioncomponentdatasourceAnnotations = default(IList<MicrosoftDynamicsCRMannotation>))
+        public MicrosoftDynamicsCRMmsdynSolutioncomponentdatasource(string msdynSolutioncomponentdatasourceid = default(string), string msdynName = default(string), IList<MicrosoftDynamicsCRMannotation> msdynSolutioncomponentdatasourceAnnotations = default(IList<MicrosoftDynamicsCRMannotation>))
         {
             MsdynSolutioncomponentdatasourceid = msdynSolutioncomponentdatasourceid;
             MsdynName = msdynName;
@@ -45,7 +45,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "msdyn_solutioncomponentdatasourceid")]
-        public System.Guid? MsdynSolutioncomponentdatasourceid { get; set; }
+        public string MsdynSolutioncomponentdatasourceid { get; set; }
 
         /// <summary>
         /// </summary>

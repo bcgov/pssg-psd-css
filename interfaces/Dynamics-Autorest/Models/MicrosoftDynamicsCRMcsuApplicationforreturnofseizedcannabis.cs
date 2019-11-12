@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis(int? csuSeizeditemsenteredinerror = default(int?), System.DateTimeOffset? csuNumberofitemsDate = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), int? importsequencenumber = default(int?), string csuName = default(string), System.Guid? csuApplicationforreturnofseizedcannabisid = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? csuCountdirectorsdecisionpartiallyallowed = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? csuNumberofitems = default(int?), int? timezoneruleversionnumber = default(int?), int? csuReturn = default(int?), System.Guid? _csuApplicantnamebusinessValue = default(System.Guid?), System.DateTimeOffset? csuDatereturned = default(System.DateTimeOffset?), System.DateTimeOffset? csuDatesentbycourier = default(System.DateTimeOffset?), System.DateTimeOffset? csuCountdirectorsdecisionnotallowedDate = default(System.DateTimeOffset?), int? csuCountcompensateyesState = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? csuCountdirectorsdecisionallowedState = default(int?), System.DateTimeOffset? csuDatecompensated = default(System.DateTimeOffset?), int? csuDirectorsdecisiononapplication = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionnotallowed = default(int?), int? csuJudicialreviewtype = default(int?), int? csuAmountingramsState = default(int?), int? csuIsexternalseizure = default(int?), decimal? exchangerate = default(decimal?), decimal? csuCompensationdetermined = default(decimal?), System.DateTimeOffset? csuCountdirectorsdecisionallowedDate = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionnotallowedState = default(int?), System.DateTimeOffset? csuDateexternalagencynotified = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionpartiallyallowedState = default(int?), int? csuCompensate = default(int?), int? csuCountcompensateyes = default(int?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? csuSeizeditemsenteredinerrorDate = default(System.DateTimeOffset?), string csuRollupitemtype = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? csuAmountingramsDate = default(System.DateTimeOffset?), int? statuscode = default(int?), string csuCouriertrackingnumber = default(string), System.Guid? _csuApplicantnamepersonValue = default(System.Guid?), System.Guid? _csuDeliveredbyValue = default(System.Guid?), System.DateTimeOffset? csuCountcompensateyesDate = default(System.DateTimeOffset?), string csuDeliverycourier = default(string), System.DateTimeOffset? csuCountdirectorsdecisionpartiallyallowedDate = default(System.DateTimeOffset?), decimal? csuAmountingrams = default(decimal?), System.DateTimeOffset? csuApplicationreceiveddate = default(System.DateTimeOffset?), int? statecode = default(int?), int? csuCountdirectorsdecisionallowed = default(int?), int? csuTestmax = default(int?), string versionnumber = default(string), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), System.DateTimeOffset? csuCompensationdeterminedDate = default(System.DateTimeOffset?), System.Guid? _owneridValue = default(System.Guid?), int? csuMethodofdelivery = default(int?), int? csuCompensationdeterminedState = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? csuSeizeditemsenteredinerrorState = default(int?), int? csuNumberofitemsState = default(int?), decimal? csuCompensationdeterminedBase = default(decimal?), System.Guid? _csuCaseidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuApplicationforreturnofseizedcannabisSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuApplicationforreturnofseizedcannabisDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuApplicationforreturnofseizedcannabisDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuApplicationforreturnofseizedcannabisAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuApplicationforreturnofseizedcannabisMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuApplicationforreturnofseizedcannabisProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuApplicationforreturnofseizedcannabisBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuApplicationforreturnofseizedcannabisPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails csuApplicantNameBusiness = default(MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails), MicrosoftDynamicsCRMcsuCasepersondetails csuApplicantNamePerson = default(MicrosoftDynamicsCRMcsuCasepersondetails), MicrosoftDynamicsCRMsystemuser csuDeliveredBy = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> csuCsuApplicationforreturnSeizeditems = default(IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn>), MicrosoftDynamicsCRMincident csuCaseId = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuApplicationforreturnofseizedcannabisCsuCasetaskApplicationforReturn = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuCsuApplicationforreturnCsuJudicialreviewApplicationforReturnsec105UnderDispute = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>))
+        public MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis(int? csuSeizeditemsenteredinerror = default(int?), System.DateTimeOffset? csuNumberofitemsDate = default(System.DateTimeOffset?), string _createdbyValue = default(string), int? importsequencenumber = default(int?), string csuName = default(string), string csuApplicationforreturnofseizedcannabisid = default(string), string _owningbusinessunitValue = default(string), int? csuCountdirectorsdecisionpartiallyallowed = default(int?), string _createdonbehalfbyValue = default(string), int? csuNumberofitems = default(int?), int? timezoneruleversionnumber = default(int?), int? csuReturn = default(int?), string _csuApplicantnamebusinessValue = default(string), System.DateTimeOffset? csuDatereturned = default(System.DateTimeOffset?), System.DateTimeOffset? csuDatesentbycourier = default(System.DateTimeOffset?), System.DateTimeOffset? csuCountdirectorsdecisionnotallowedDate = default(System.DateTimeOffset?), int? csuCountcompensateyesState = default(int?), string _modifiedbyValue = default(string), int? csuCountdirectorsdecisionallowedState = default(int?), System.DateTimeOffset? csuDatecompensated = default(System.DateTimeOffset?), int? csuDirectorsdecisiononapplication = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionnotallowed = default(int?), int? csuJudicialreviewtype = default(int?), int? csuAmountingramsState = default(int?), int? csuIsexternalseizure = default(int?), decimal? exchangerate = default(decimal?), decimal? csuCompensationdetermined = default(decimal?), System.DateTimeOffset? csuCountdirectorsdecisionallowedDate = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionnotallowedState = default(int?), System.DateTimeOffset? csuDateexternalagencynotified = default(System.DateTimeOffset?), int? csuCountdirectorsdecisionpartiallyallowedState = default(int?), int? csuCompensate = default(int?), int? csuCountcompensateyes = default(int?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? csuSeizeditemsenteredinerrorDate = default(System.DateTimeOffset?), string csuRollupitemtype = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? csuAmountingramsDate = default(System.DateTimeOffset?), int? statuscode = default(int?), string csuCouriertrackingnumber = default(string), string _csuApplicantnamepersonValue = default(string), string _csuDeliveredbyValue = default(string), System.DateTimeOffset? csuCountcompensateyesDate = default(System.DateTimeOffset?), string csuDeliverycourier = default(string), System.DateTimeOffset? csuCountdirectorsdecisionpartiallyallowedDate = default(System.DateTimeOffset?), decimal? csuAmountingrams = default(decimal?), System.DateTimeOffset? csuApplicationreceiveddate = default(System.DateTimeOffset?), int? statecode = default(int?), int? csuCountdirectorsdecisionallowed = default(int?), int? csuTestmax = default(int?), string versionnumber = default(string), string _transactioncurrencyidValue = default(string), string _owningteamValue = default(string), string _owninguserValue = default(string), System.DateTimeOffset? csuCompensationdeterminedDate = default(System.DateTimeOffset?), string _owneridValue = default(string), int? csuMethodofdelivery = default(int?), int? csuCompensationdeterminedState = default(int?), string _modifiedonbehalfbyValue = default(string), int? csuSeizeditemsenteredinerrorState = default(int?), int? csuNumberofitemsState = default(int?), decimal? csuCompensationdeterminedBase = default(decimal?), string _csuCaseidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuApplicationforreturnofseizedcannabisSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuApplicationforreturnofseizedcannabisDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuApplicationforreturnofseizedcannabisDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuApplicationforreturnofseizedcannabisAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuApplicationforreturnofseizedcannabisMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuApplicationforreturnofseizedcannabisProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuApplicationforreturnofseizedcannabisBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuApplicationforreturnofseizedcannabisPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails csuApplicantNameBusiness = default(MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails), MicrosoftDynamicsCRMcsuCasepersondetails csuApplicantNamePerson = default(MicrosoftDynamicsCRMcsuCasepersondetails), MicrosoftDynamicsCRMsystemuser csuDeliveredBy = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> csuCsuApplicationforreturnSeizeditems = default(IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn>), MicrosoftDynamicsCRMincident csuCaseId = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuApplicationforreturnofseizedcannabisCsuCasetaskApplicationforReturn = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuCsuApplicationforreturnCsuJudicialreviewApplicationforReturnsec105UnderDispute = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>))
         {
             CsuSeizeditemsenteredinerror = csuSeizeditemsenteredinerror;
             CsuNumberofitemsDate = csuNumberofitemsDate;
@@ -141,7 +141,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -156,12 +156,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_applicationforreturnofseizedcannabisid")]
-        public System.Guid? CsuApplicationforreturnofseizedcannabisid { get; set; }
+        public string CsuApplicationforreturnofseizedcannabisid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -171,7 +171,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -191,7 +191,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_applicantnamebusiness_value")]
-        public System.Guid? _csuApplicantnamebusinessValue { get; set; }
+        public string _csuApplicantnamebusinessValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -216,7 +216,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -336,12 +336,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_applicantnameperson_value")]
-        public System.Guid? _csuApplicantnamepersonValue { get; set; }
+        public string _csuApplicantnamepersonValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_deliveredby_value")]
-        public System.Guid? _csuDeliveredbyValue { get; set; }
+        public string _csuDeliveredbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -391,17 +391,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -411,7 +411,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -426,7 +426,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -446,7 +446,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_caseid_value")]
-        public System.Guid? _csuCaseidValue { get; set; }
+        public string _csuCaseidValue { get; set; }
 
         /// <summary>
         /// </summary>

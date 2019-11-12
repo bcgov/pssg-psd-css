@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcustomcontrol
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcustomcontrol(bool? ismanaged = default(bool?), string manifest = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), string clientjson = default(string), System.Guid? customcontrolid = default(System.Guid?), string compatibledatatypes = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string version = default(string), System.Guid? customcontrolidunique = default(System.Guid?), int? componentstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string name = default(string), string versionnumber = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string introducedversion = default(string), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcustomcontrolresource> customcontrolResourceId = default(IList<MicrosoftDynamicsCRMcustomcontrolresource>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMcustomcontrol(bool? ismanaged = default(bool?), string manifest = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string solutionid = default(string), string _modifiedbyValue = default(string), string clientjson = default(string), string customcontrolid = default(string), string compatibledatatypes = default(string), string _organizationidValue = default(string), string _createdbyValue = default(string), string version = default(string), string customcontrolidunique = default(string), int? componentstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string name = default(string), string versionnumber = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string introducedversion = default(string), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcustomcontrolresource> customcontrolResourceId = default(IList<MicrosoftDynamicsCRMcustomcontrolresource>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Ismanaged = ismanaged;
             Manifest = manifest;
@@ -78,7 +78,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -88,17 +88,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -108,7 +108,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "customcontrolid")]
-        public System.Guid? Customcontrolid { get; set; }
+        public string Customcontrolid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -118,12 +118,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -133,7 +133,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "customcontrolidunique")]
-        public System.Guid? Customcontrolidunique { get; set; }
+        public string Customcontrolidunique { get; set; }
 
         /// <summary>
         /// </summary>

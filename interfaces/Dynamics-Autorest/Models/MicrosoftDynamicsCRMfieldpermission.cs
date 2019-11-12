@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMfieldpermission class.
         /// </summary>
-        public MicrosoftDynamicsCRMfieldpermission(bool? ismanaged = default(bool?), int? componentstate = default(int?), int? canupdate = default(int?), System.Guid? fieldpermissionid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? solutionid = default(System.Guid?), string entityname = default(string), int? canread = default(int?), System.Guid? _organizationidValue = default(System.Guid?), int? cancreate = default(int?), System.Guid? _fieldsecurityprofileidValue = default(System.Guid?), string versionnumber = default(string), System.Guid? fieldpermissionidunique = default(System.Guid?), string attributelogicalname = default(string), IList<MicrosoftDynamicsCRMsyncerror> fieldPermissionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMfieldsecurityprofile fieldsecurityprofileid = default(MicrosoftDynamicsCRMfieldsecurityprofile))
+        public MicrosoftDynamicsCRMfieldpermission(bool? ismanaged = default(bool?), int? componentstate = default(int?), int? canupdate = default(int?), string fieldpermissionid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string solutionid = default(string), string entityname = default(string), int? canread = default(int?), string _organizationidValue = default(string), int? cancreate = default(int?), string _fieldsecurityprofileidValue = default(string), string versionnumber = default(string), string fieldpermissionidunique = default(string), string attributelogicalname = default(string), IList<MicrosoftDynamicsCRMsyncerror> fieldPermissionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMfieldsecurityprofile fieldsecurityprofileid = default(MicrosoftDynamicsCRMfieldsecurityprofile))
         {
             Ismanaged = ismanaged;
             Componentstate = componentstate;
@@ -73,7 +73,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "fieldpermissionid")]
-        public System.Guid? Fieldpermissionid { get; set; }
+        public string Fieldpermissionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -83,7 +83,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -98,7 +98,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -108,7 +108,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_fieldsecurityprofileid_value")]
-        public System.Guid? _fieldsecurityprofileidValue { get; set; }
+        public string _fieldsecurityprofileidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -118,7 +118,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "fieldpermissionidunique")]
-        public System.Guid? Fieldpermissionidunique { get; set; }
+        public string Fieldpermissionidunique { get; set; }
 
         /// <summary>
         /// </summary>

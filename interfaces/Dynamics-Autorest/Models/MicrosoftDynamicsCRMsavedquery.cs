@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsavedquery
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsavedquery(string offlinesqlquery = default(string), bool? ismanaged = default(bool?), string versionnumber = default(string), int? statecode = default(int?), System.Guid? _createdbyValue = default(System.Guid?), bool? isuserdefined = default(bool?), string columnsetxml = default(string), int? organizationtaborder = default(int?), bool? isdefault = default(bool?), int? querytype = default(int?), string conditionalformatting = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), string queryapi = default(string), string advancedgroupby = default(string), string layoutxml = default(string), int? statuscode = default(int?), System.Guid? solutionid = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), string introducedversion = default(string), string fetchxml = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? savedqueryidunique = default(System.Guid?), bool? isquickfindquery = default(bool?), string layoutjson = default(string), string returnedtypecode = default(string), string name = default(string), string description = default(string), int? queryappusage = default(int?), int? componentstate = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? savedqueryid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string iscustomizable = default(string), bool? iscustom = default(bool?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string canbedeleted = default(string), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> savedQuerySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> savedQueryAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> savedQueryBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMmobileofflineprofileitem> lkMobileofflineprofileitemSavedquery = default(IList<MicrosoftDynamicsCRMmobileofflineprofileitem>))
+        public MicrosoftDynamicsCRMsavedquery(string offlinesqlquery = default(string), bool? ismanaged = default(bool?), string versionnumber = default(string), int? statecode = default(int?), string _createdbyValue = default(string), bool? isuserdefined = default(bool?), string columnsetxml = default(string), int? organizationtaborder = default(int?), bool? isdefault = default(bool?), int? querytype = default(int?), string conditionalformatting = default(string), string _modifiedbyValue = default(string), string queryapi = default(string), string advancedgroupby = default(string), string layoutxml = default(string), int? statuscode = default(int?), string solutionid = default(string), string _organizationidValue = default(string), string introducedversion = default(string), string fetchxml = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string savedqueryidunique = default(string), bool? isquickfindquery = default(bool?), string layoutjson = default(string), string returnedtypecode = default(string), string name = default(string), string description = default(string), int? queryappusage = default(int?), int? componentstate = default(int?), string _modifiedonbehalfbyValue = default(string), string savedqueryid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string iscustomizable = default(string), bool? iscustom = default(bool?), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string canbedeleted = default(string), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> savedQuerySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> savedQueryAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> savedQueryBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMmobileofflineprofileitem> lkMobileofflineprofileitemSavedquery = default(IList<MicrosoftDynamicsCRMmobileofflineprofileitem>))
         {
             Offlinesqlquery = offlinesqlquery;
             Ismanaged = ismanaged;
@@ -108,7 +108,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -143,7 +143,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -168,12 +168,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -193,7 +193,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "savedqueryidunique")]
-        public System.Guid? Savedqueryidunique { get; set; }
+        public string Savedqueryidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -233,12 +233,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "savedqueryid")]
-        public System.Guid? Savedqueryid { get; set; }
+        public string Savedqueryid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -258,7 +258,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

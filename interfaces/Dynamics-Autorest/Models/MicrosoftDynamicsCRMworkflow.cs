@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMworkflow
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMworkflow(int? deletestage = default(int?), string xaml = default(string), string iscustomizable = default(string), string name = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), byte[] entityimage = default(byte[]), int? scope = default(int?), string inputparameters = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), int? componentstate = default(int?), int? runas = default(int?), bool? ondemand = default(bool?), System.Guid? workflowid = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), long? entityimageTimestamp = default(long?), bool? syncworkflowlogonfailure = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? iscrmuiworkflow = default(bool?), string uniquename = default(string), string processroleassignment = default(string), int? businessprocesstype = default(int?), System.Guid? formid = default(System.Guid?), int? updatestage = default(int?), int? rank = default(int?), int? type = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), bool? triggeroncreate = default(bool?), string uidata = default(string), System.Guid? _plugintypeidValue = default(System.Guid?), int? category = default(int?), int? statecode = default(int?), string rendererobjecttypecode = default(string), System.Guid? _owningteamValue = default(System.Guid?), bool? asyncautodelete = default(bool?), string triggeronupdateattributelist = default(string), string description = default(string), int? statuscode = default(int?), bool? ismanaged = default(bool?), System.Guid? workflowidunique = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _parentworkflowidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), bool? subprocess = default(bool?), string entityimageUrl = default(string), System.Guid? solutionid = default(System.Guid?), int? languagecode = default(int?), string introducedversion = default(string), System.Guid? _activeworkflowidValue = default(System.Guid?), int? processorder = default(int?), bool? istransacted = default(bool?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string clientdata = default(string), int? mode = default(int?), bool? triggerondelete = default(bool?), System.Guid? entityimageid = default(System.Guid?), int? createstage = default(int?), string primaryentity = default(string), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _sdkmessageidValue = default(System.Guid?), IList<MicrosoftDynamicsCRMphonetocaseprocess> workflowPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMphonetocaseprocess>), IList<MicrosoftDynamicsCRMleadtoopportunitysalesprocess> workflowLeadtoopportunitysalesprocess = default(IList<MicrosoftDynamicsCRMleadtoopportunitysalesprocess>), IList<MicrosoftDynamicsCRMopportunitysalesprocess> workflowOpportunitysalesprocess = default(IList<MicrosoftDynamicsCRMopportunitysalesprocess>), IList<MicrosoftDynamicsCRMsla> slabaseWorkflowid = default(IList<MicrosoftDynamicsCRMsla>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMasyncoperation> lkAsyncoperationWorkflowactivationid = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMworkflow parentworkflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMworkflow> workflowParentWorkflow = default(IList<MicrosoftDynamicsCRMworkflow>), IList<MicrosoftDynamicsCRMexpiredprocess> workflowExpiredprocess = default(IList<MicrosoftDynamicsCRMexpiredprocess>), IList<MicrosoftDynamicsCRMslaitem> slaitembaseWorkflowid = default(IList<MicrosoftDynamicsCRMslaitem>), IList<MicrosoftDynamicsCRMtranslationprocess> workflowTranslationprocess = default(IList<MicrosoftDynamicsCRMtranslationprocess>), IList<MicrosoftDynamicsCRMprocesstrigger> processProcesstrigger = default(IList<MicrosoftDynamicsCRMprocesstrigger>), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMannotation> workflowAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMprocesssession> lkProcesssessionProcessid = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMprocessstage> processProcessstage = default(IList<MicrosoftDynamicsCRMprocessstage>), IList<MicrosoftDynamicsCRMsyncerror> workflowSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMnewprocess> workflowNewprocess = default(IList<MicrosoftDynamicsCRMnewprocess>), MicrosoftDynamicsCRMworkflow activeworkflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMworkflow> workflowActiveWorkflow = default(IList<MicrosoftDynamicsCRMworkflow>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMworkflow(int? deletestage = default(int?), string xaml = default(string), string iscustomizable = default(string), string name = default(string), string _createdonbehalfbyValue = default(string), string versionnumber = default(string), byte[] entityimage = default(byte[]), int? scope = default(int?), string inputparameters = default(string), string _modifiedbyValue = default(string), int? componentstate = default(int?), int? runas = default(int?), bool? ondemand = default(bool?), string workflowid = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), long? entityimageTimestamp = default(long?), bool? syncworkflowlogonfailure = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), bool? iscrmuiworkflow = default(bool?), string uniquename = default(string), string processroleassignment = default(string), int? businessprocesstype = default(int?), string formid = default(string), int? updatestage = default(int?), int? rank = default(int?), int? type = default(int?), string _owningbusinessunitValue = default(string), bool? triggeroncreate = default(bool?), string uidata = default(string), string _plugintypeidValue = default(string), int? category = default(int?), int? statecode = default(int?), string rendererobjecttypecode = default(string), string _owningteamValue = default(string), bool? asyncautodelete = default(bool?), string triggeronupdateattributelist = default(string), string description = default(string), int? statuscode = default(int?), bool? ismanaged = default(bool?), string workflowidunique = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string _owninguserValue = default(string), string _parentworkflowidValue = default(string), string _createdbyValue = default(string), bool? subprocess = default(bool?), string entityimageUrl = default(string), string solutionid = default(string), int? languagecode = default(int?), string introducedversion = default(string), string _activeworkflowidValue = default(string), int? processorder = default(int?), bool? istransacted = default(bool?), string _modifiedonbehalfbyValue = default(string), string clientdata = default(string), int? mode = default(int?), bool? triggerondelete = default(bool?), string entityimageid = default(string), int? createstage = default(int?), string primaryentity = default(string), string _owneridValue = default(string), string _sdkmessageidValue = default(string), IList<MicrosoftDynamicsCRMphonetocaseprocess> workflowPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMphonetocaseprocess>), IList<MicrosoftDynamicsCRMleadtoopportunitysalesprocess> workflowLeadtoopportunitysalesprocess = default(IList<MicrosoftDynamicsCRMleadtoopportunitysalesprocess>), IList<MicrosoftDynamicsCRMopportunitysalesprocess> workflowOpportunitysalesprocess = default(IList<MicrosoftDynamicsCRMopportunitysalesprocess>), IList<MicrosoftDynamicsCRMsla> slabaseWorkflowid = default(IList<MicrosoftDynamicsCRMsla>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), IList<MicrosoftDynamicsCRMasyncoperation> lkAsyncoperationWorkflowactivationid = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMworkflow parentworkflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMworkflow> workflowParentWorkflow = default(IList<MicrosoftDynamicsCRMworkflow>), IList<MicrosoftDynamicsCRMexpiredprocess> workflowExpiredprocess = default(IList<MicrosoftDynamicsCRMexpiredprocess>), IList<MicrosoftDynamicsCRMslaitem> slaitembaseWorkflowid = default(IList<MicrosoftDynamicsCRMslaitem>), IList<MicrosoftDynamicsCRMtranslationprocess> workflowTranslationprocess = default(IList<MicrosoftDynamicsCRMtranslationprocess>), IList<MicrosoftDynamicsCRMprocesstrigger> processProcesstrigger = default(IList<MicrosoftDynamicsCRMprocesstrigger>), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMannotation> workflowAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMprocesssession> lkProcesssessionProcessid = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMprocessstage> processProcessstage = default(IList<MicrosoftDynamicsCRMprocessstage>), IList<MicrosoftDynamicsCRMsyncerror> workflowSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMnewprocess> workflowNewprocess = default(IList<MicrosoftDynamicsCRMnewprocess>), MicrosoftDynamicsCRMworkflow activeworkflowid = default(MicrosoftDynamicsCRMworkflow), IList<MicrosoftDynamicsCRMworkflow> workflowActiveWorkflow = default(IList<MicrosoftDynamicsCRMworkflow>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser))
         {
             Deletestage = deletestage;
             Xaml = xaml;
@@ -151,7 +151,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,7 +177,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -197,7 +197,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "workflowid")]
-        public System.Guid? Workflowid { get; set; }
+        public string Workflowid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -242,7 +242,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "formid")]
-        public System.Guid? Formid { get; set; }
+        public string Formid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -262,7 +262,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -277,7 +277,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_plugintypeid_value")]
-        public System.Guid? _plugintypeidValue { get; set; }
+        public string _plugintypeidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -297,7 +297,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -327,7 +327,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "workflowidunique")]
-        public System.Guid? Workflowidunique { get; set; }
+        public string Workflowidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -337,17 +337,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentworkflowid_value")]
-        public System.Guid? _parentworkflowidValue { get; set; }
+        public string _parentworkflowidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -362,7 +362,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -377,7 +377,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_activeworkflowid_value")]
-        public System.Guid? _activeworkflowidValue { get; set; }
+        public string _activeworkflowidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -392,7 +392,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -412,7 +412,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -427,12 +427,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_sdkmessageid_value")]
-        public System.Guid? _sdkmessageidValue { get; set; }
+        public string _sdkmessageidValue { get; set; }
 
         /// <summary>
         /// </summary>

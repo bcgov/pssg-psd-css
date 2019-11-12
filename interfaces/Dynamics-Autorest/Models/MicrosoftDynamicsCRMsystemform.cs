@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsystemform
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsystemform(string formjson = default(string), int? formactivationstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string canbedeleted = default(string), int? type = default(int?), int? componentstate = default(int?), System.Guid? _organizationidValue = default(System.Guid?), int? version = default(int?), string description = default(string), bool? istabletenabled = default(bool?), bool? isdefault = default(bool?), string introducedversion = default(string), string objecttypecode = default(string), bool? ismanaged = default(bool?), string versionnumber = default(string), System.Guid? formidunique = default(System.Guid?), int? formpresentation = default(int?), System.Guid? formid = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), string name = default(string), string uniquename = default(string), string formxml = default(string), bool? isdesktopenabled = default(bool?), string iscustomizable = default(string), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), System.Guid? _ancestorformidValue = default(System.Guid?), bool? isairmerged = default(bool?), IList<MicrosoftDynamicsCRMasyncoperation> systemFormAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesstrigger> processtriggerSystemform = default(IList<MicrosoftDynamicsCRMprocesstrigger>), IList<MicrosoftDynamicsCRMbulkdeletefailure> systemFormBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemform ancestorformid = default(MicrosoftDynamicsCRMsystemform), IList<MicrosoftDynamicsCRMsystemform> formAncestorForm = default(IList<MicrosoftDynamicsCRMsystemform>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMsystemform(string formjson = default(string), int? formactivationstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string canbedeleted = default(string), int? type = default(int?), int? componentstate = default(int?), string _organizationidValue = default(string), int? version = default(int?), string description = default(string), bool? istabletenabled = default(bool?), bool? isdefault = default(bool?), string introducedversion = default(string), string objecttypecode = default(string), bool? ismanaged = default(bool?), string versionnumber = default(string), string formidunique = default(string), int? formpresentation = default(int?), string formid = default(string), string solutionid = default(string), string name = default(string), string uniquename = default(string), string formxml = default(string), bool? isdesktopenabled = default(bool?), string iscustomizable = default(string), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), string _ancestorformidValue = default(string), bool? isairmerged = default(bool?), IList<MicrosoftDynamicsCRMasyncoperation> systemFormAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesstrigger> processtriggerSystemform = default(IList<MicrosoftDynamicsCRMprocesstrigger>), IList<MicrosoftDynamicsCRMbulkdeletefailure> systemFormBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemform ancestorformid = default(MicrosoftDynamicsCRMsystemform), IList<MicrosoftDynamicsCRMsystemform> formAncestorForm = default(IList<MicrosoftDynamicsCRMsystemform>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
         {
             Formjson = formjson;
             Formactivationstate = formactivationstate;
@@ -105,7 +105,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -150,7 +150,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "formidunique")]
-        public System.Guid? Formidunique { get; set; }
+        public string Formidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -160,12 +160,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "formid")]
-        public System.Guid? Formid { get; set; }
+        public string Formid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -200,7 +200,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ancestorformid_value")]
-        public System.Guid? _ancestorformidValue { get; set; }
+        public string _ancestorformidValue { get; set; }
 
         /// <summary>
         /// </summary>

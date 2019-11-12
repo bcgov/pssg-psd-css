@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcsuInspectionsearch class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuInspectionsearch(int? statecode = default(int?), System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _csuInspectedlocationValue = default(System.Guid?), string csuOtherlocation = default(string), System.Guid? _csuRelatedinspectionssearchesidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), string csuName = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), string csuRequiredaction = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? csuInspectiondate = default(System.DateTimeOffset?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _csuCaseValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? csuType = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), string csuObservations = default(string), int? statuscode = default(int?), System.Guid? _owningteamValue = default(System.Guid?), System.Guid? csuInspectionsearchid = default(System.Guid?), int? importsequencenumber = default(int?), int? csuOpsplancompleted = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _csuRelateddemandandorderValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuInspectionsearchSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuInspectionsearchDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuInspectionsearchDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuInspectionsearchAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuInspectionsearchMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuInspectionsearchProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuInspectionsearchBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuInspectionsearchPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails csuInspectedLocation = default(MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails), MicrosoftDynamicsCRMincident csuRelatedInspectionsSearchesId = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMincident csuCase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuInspectionsearchCsuCasetaskInspectionSearchid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), MicrosoftDynamicsCRMcsuDemandandorder csuRelatedDemandandOrder = default(MicrosoftDynamicsCRMcsuDemandandorder))
+        public MicrosoftDynamicsCRMcsuInspectionsearch(int? statecode = default(int?), string _owninguserValue = default(string), string _csuInspectedlocationValue = default(string), string csuOtherlocation = default(string), string _csuRelatedinspectionssearchesidValue = default(string), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), string csuName = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), string csuRequiredaction = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? csuInspectiondate = default(System.DateTimeOffset?), string _owneridValue = default(string), string _csuCaseValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? csuType = default(int?), string _modifiedbyValue = default(string), string csuObservations = default(string), int? statuscode = default(int?), string _owningteamValue = default(string), string csuInspectionsearchid = default(string), int? importsequencenumber = default(int?), int? csuOpsplancompleted = default(int?), string _createdonbehalfbyValue = default(string), string _owningbusinessunitValue = default(string), string _createdbyValue = default(string), string _csuRelateddemandandorderValue = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuInspectionsearchSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuInspectionsearchDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuInspectionsearchDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuInspectionsearchAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuInspectionsearchMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuInspectionsearchProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuInspectionsearchBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuInspectionsearchPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails csuInspectedLocation = default(MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails), MicrosoftDynamicsCRMincident csuRelatedInspectionsSearchesId = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMincident csuCase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMcsuCasetask> csuCsuInspectionsearchCsuCasetaskInspectionSearchid = default(IList<MicrosoftDynamicsCRMcsuCasetask>), MicrosoftDynamicsCRMcsuDemandandorder csuRelatedDemandandOrder = default(MicrosoftDynamicsCRMcsuDemandandorder))
         {
             Statecode = statecode;
             this._owninguserValue = _owninguserValue;
@@ -97,12 +97,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_inspectedlocation_value")]
-        public System.Guid? _csuInspectedlocationValue { get; set; }
+        public string _csuInspectedlocationValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -112,7 +112,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_relatedinspectionssearchesid_value")]
-        public System.Guid? _csuRelatedinspectionssearchesidValue { get; set; }
+        public string _csuRelatedinspectionssearchesidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -147,7 +147,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -157,12 +157,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_case_value")]
-        public System.Guid? _csuCaseValue { get; set; }
+        public string _csuCaseValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -182,7 +182,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -197,12 +197,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_inspectionsearchid")]
-        public System.Guid? CsuInspectionsearchid { get; set; }
+        public string CsuInspectionsearchid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -217,22 +217,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_relateddemandandorder_value")]
-        public System.Guid? _csuRelateddemandandorderValue { get; set; }
+        public string _csuRelateddemandandorderValue { get; set; }
 
         /// <summary>
         /// </summary>

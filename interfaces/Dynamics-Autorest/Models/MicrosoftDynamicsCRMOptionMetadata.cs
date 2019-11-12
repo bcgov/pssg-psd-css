@@ -30,7 +30,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMOptionMetadata class.
         /// </summary>
-        public MicrosoftDynamicsCRMOptionMetadata(int? value = default(int?), string label = default(string), string description = default(string), string color = default(string), bool? isManaged = default(bool?), string externalValue = default(string), System.Guid? metadataId = default(System.Guid?), bool? hasChanged = default(bool?))
+        public MicrosoftDynamicsCRMOptionMetadata(int? value = default(int?), string label = default(string), string description = default(string), string color = default(string), bool? isManaged = default(bool?), string externalValue = default(string), string metadataId = default(string), bool? hasChanged = default(bool?))
         {
             Value = value;
             Label = label;
@@ -81,7 +81,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "MetadataId")]
-        public System.Guid? MetadataId { get; set; }
+        public string MetadataId { get; set; }
 
         /// <summary>
         /// </summary>

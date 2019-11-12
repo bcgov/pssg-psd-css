@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsolution
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsolution(System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string description = default(string), long? pinpointsolutionid = default(long?), System.Guid? _configurationpageidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? installedon = default(System.DateTimeOffset?), string friendlyname = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string pinpointsolutiondefaultlocale = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string uniquename = default(string), string version = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _parentsolutionidValue = default(System.Guid?), long? pinpointpublisherid = default(long?), System.Guid? _modifiedbyValue = default(System.Guid?), int? solutiontype = default(int?), System.Guid? solutionid = default(System.Guid?), bool? isvisible = default(bool?), System.DateTimeOffset? updatedon = default(System.DateTimeOffset?), System.Guid? _publisheridValue = default(System.Guid?), bool? ismanaged = default(bool?), string versionnumber = default(string), string pinpointassetid = default(string), string solutionpackageversion = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMwebresource configurationpageid = default(MicrosoftDynamicsCRMwebresource), IList<MicrosoftDynamicsCRMsolutioncomponent> solutionSolutioncomponent = default(IList<MicrosoftDynamicsCRMsolutioncomponent>), MicrosoftDynamicsCRMpublisher publisherid = default(MicrosoftDynamicsCRMpublisher), IList<MicrosoftDynamicsCRMsyncerror> solutionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsolution parentsolutionid = default(MicrosoftDynamicsCRMsolution), IList<MicrosoftDynamicsCRMsolution> solutionParentSolution = default(IList<MicrosoftDynamicsCRMsolution>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMsolution(string _modifiedonbehalfbyValue = default(string), string description = default(string), long? pinpointsolutionid = default(long?), string _configurationpageidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? installedon = default(System.DateTimeOffset?), string friendlyname = default(string), string _organizationidValue = default(string), string _createdbyValue = default(string), string pinpointsolutiondefaultlocale = default(string), string _createdonbehalfbyValue = default(string), string uniquename = default(string), string version = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _parentsolutionidValue = default(string), long? pinpointpublisherid = default(long?), string _modifiedbyValue = default(string), int? solutiontype = default(int?), string solutionid = default(string), bool? isvisible = default(bool?), System.DateTimeOffset? updatedon = default(System.DateTimeOffset?), string _publisheridValue = default(string), bool? ismanaged = default(bool?), string versionnumber = default(string), string pinpointassetid = default(string), string solutionpackageversion = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMwebresource configurationpageid = default(MicrosoftDynamicsCRMwebresource), IList<MicrosoftDynamicsCRMsolutioncomponent> solutionSolutioncomponent = default(IList<MicrosoftDynamicsCRMsolutioncomponent>), MicrosoftDynamicsCRMpublisher publisherid = default(MicrosoftDynamicsCRMpublisher), IList<MicrosoftDynamicsCRMsyncerror> solutionSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsolution parentsolutionid = default(MicrosoftDynamicsCRMsolution), IList<MicrosoftDynamicsCRMsolution> solutionParentSolution = default(IList<MicrosoftDynamicsCRMsolution>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._modifiedonbehalfbyValue = _modifiedonbehalfbyValue;
             Description = description;
@@ -79,7 +79,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -94,7 +94,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_configurationpageid_value")]
-        public System.Guid? _configurationpageidValue { get; set; }
+        public string _configurationpageidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -114,12 +114,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentsolutionid_value")]
-        public System.Guid? _parentsolutionidValue { get; set; }
+        public string _parentsolutionidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -159,7 +159,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -169,7 +169,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -184,7 +184,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_publisherid_value")]
-        public System.Guid? _publisheridValue { get; set; }
+        public string _publisheridValue { get; set; }
 
         /// <summary>
         /// </summary>

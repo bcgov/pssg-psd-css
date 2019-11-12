@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection Get(this ICsuapplicationforreturnofseizedcannabises operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection Get(this ICsuapplicationforreturnofseizedcannabises operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection> GetAsync(this ICsuapplicationforreturnofseizedcannabises operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection> GetAsync(this ICsuapplicationforreturnofseizedcannabises operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection> GetWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabisCollection> GetWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -166,9 +196,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis ApplicationforreturnofseizedcannabisesByKey(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis GetByKey(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.ApplicationforreturnofseizedcannabisesByKeyAsync(csuApplicationforreturnofseizedcannabisid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuApplicationforreturnofseizedcannabisid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -190,9 +220,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> ApplicationforreturnofseizedcannabisesByKeyAsync(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> GetByKeyAsync(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.ApplicationforreturnofseizedcannabisesByKeyWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -217,9 +247,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> ApplicationforreturnofseizedcannabisesByKeyWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> GetByKeyWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.ApplicationforreturnofseizedcannabisesByKeyWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -235,9 +265,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void ApplicationforreturnofseizedcannabisesByKey1(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body)
+            public static void Update(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body)
             {
-                operations.ApplicationforreturnofseizedcannabisesByKey1Async(csuApplicationforreturnofseizedcannabisid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuApplicationforreturnofseizedcannabisid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -256,9 +286,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task ApplicationforreturnofseizedcannabisesByKey1Async(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.ApplicationforreturnofseizedcannabisesByKey1WithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -277,9 +307,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse ApplicationforreturnofseizedcannabisesByKey1WithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.ApplicationforreturnofseizedcannabisesByKey1WithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -295,9 +325,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void ApplicationforreturnofseizedcannabisesByKey2(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string))
+            public static void Delete(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string))
             {
-                operations.ApplicationforreturnofseizedcannabisesByKey2Async(csuApplicationforreturnofseizedcannabisid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuApplicationforreturnofseizedcannabisid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -316,9 +346,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task ApplicationforreturnofseizedcannabisesByKey2Async(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.ApplicationforreturnofseizedcannabisesByKey2WithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -337,9 +367,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse ApplicationforreturnofseizedcannabisesByKey2WithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, System.Guid csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsuapplicationforreturnofseizedcannabises operations, string csuApplicationforreturnofseizedcannabisid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.ApplicationforreturnofseizedcannabisesByKey2WithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuApplicationforreturnofseizedcannabisid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

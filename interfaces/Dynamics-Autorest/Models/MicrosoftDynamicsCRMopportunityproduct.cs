@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMopportunityproduct class.
         /// </summary>
-        public MicrosoftDynamicsCRMopportunityproduct(int? propertyconfigurationstatus = default(int?), byte[] entityimage = default(byte[]), System.Guid? _owningteamValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? taxBase = default(decimal?), string opportunityproductname = default(string), decimal? extendedamount = default(decimal?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), decimal? volumediscountamountBase = default(decimal?), decimal? quantity = default(decimal?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _parentbundleidrefValue = default(System.Guid?), string versionnumber = default(string), System.Guid? parentbundleid = default(System.Guid?), System.Guid? _uomidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), string entityimageUrl = default(string), int? pricingerrorcode = default(int?), int? importsequencenumber = default(int?), int? lineitemnumber = default(int?), decimal? extendedamountBase = default(decimal?), string productdescription = default(string), System.Guid? _productidValue = default(System.Guid?), decimal? volumediscountamount = default(decimal?), System.Guid? productassociationid = default(System.Guid?), decimal? baseamount = default(decimal?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string description = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? manualdiscountamountBase = default(decimal?), long? entityimageTimestamp = default(long?), decimal? manualdiscountamount = default(decimal?), int? sequencenumber = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), bool? isproductoverridden = default(bool?), decimal? tax = default(decimal?), bool? ispriceoverridden = default(bool?), int? producttypecode = default(int?), decimal? baseamountBase = default(decimal?), string productname = default(string), decimal? priceperunitBase = default(decimal?), System.Guid? entityimageid = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), decimal? priceperunit = default(decimal?), System.Guid? _opportunityidValue = default(System.Guid?), System.Guid? opportunityproductid = default(System.Guid?), decimal? exchangerate = default(decimal?), System.Guid? _owninguserValue = default(System.Guid?), int? opportunitystatecode = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMsyncerror> opportunityProductSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> opportunityProductAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> opportunityproductMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> opportunityProductProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> opportunityProductBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> opportunityproductPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMopportunity opportunityid = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMopportunityproduct parentbundleidOpportunityproduct = default(MicrosoftDynamicsCRMopportunityproduct), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityproductParentOpportunityproduct = default(IList<MicrosoftDynamicsCRMopportunityproduct>), IList<MicrosoftDynamicsCRMdynamicpropertyinstance> opportunityProductDynamicpropertyinstance = default(IList<MicrosoftDynamicsCRMdynamicpropertyinstance>), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMproductassociation productassociationidProductassociation = default(MicrosoftDynamicsCRMproductassociation), MicrosoftDynamicsCRMuom uomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMopportunityproduct parentbundleidrefOpportunityproduct = default(MicrosoftDynamicsCRMopportunityproduct), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityproductParentrefOpportunityproduct = default(IList<MicrosoftDynamicsCRMopportunityproduct>))
+        public MicrosoftDynamicsCRMopportunityproduct(int? propertyconfigurationstatus = default(int?), byte[] entityimage = default(byte[]), string _owningteamValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? taxBase = default(decimal?), string opportunityproductname = default(string), decimal? extendedamount = default(decimal?), string _owneridValue = default(string), string _createdonbehalfbyValue = default(string), decimal? volumediscountamountBase = default(decimal?), decimal? quantity = default(decimal?), string _createdbyValue = default(string), string _parentbundleidrefValue = default(string), string versionnumber = default(string), string parentbundleid = default(string), string _uomidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _transactioncurrencyidValue = default(string), string entityimageUrl = default(string), int? pricingerrorcode = default(int?), int? importsequencenumber = default(int?), int? lineitemnumber = default(int?), decimal? extendedamountBase = default(decimal?), string productdescription = default(string), string _productidValue = default(string), decimal? volumediscountamount = default(decimal?), string productassociationid = default(string), decimal? baseamount = default(decimal?), string _modifiedonbehalfbyValue = default(string), string description = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? manualdiscountamountBase = default(decimal?), long? entityimageTimestamp = default(long?), decimal? manualdiscountamount = default(decimal?), int? sequencenumber = default(int?), string _modifiedbyValue = default(string), bool? isproductoverridden = default(bool?), decimal? tax = default(decimal?), bool? ispriceoverridden = default(bool?), int? producttypecode = default(int?), decimal? baseamountBase = default(decimal?), string productname = default(string), decimal? priceperunitBase = default(decimal?), string entityimageid = default(string), string _owningbusinessunitValue = default(string), int? timezoneruleversionnumber = default(int?), decimal? priceperunit = default(decimal?), string _opportunityidValue = default(string), string opportunityproductid = default(string), decimal? exchangerate = default(decimal?), string _owninguserValue = default(string), int? opportunitystatecode = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMsyncerror> opportunityProductSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> opportunityProductAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> opportunityproductMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> opportunityProductProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> opportunityProductBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> opportunityproductPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMopportunity opportunityid = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMopportunityproduct parentbundleidOpportunityproduct = default(MicrosoftDynamicsCRMopportunityproduct), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityproductParentOpportunityproduct = default(IList<MicrosoftDynamicsCRMopportunityproduct>), IList<MicrosoftDynamicsCRMdynamicpropertyinstance> opportunityProductDynamicpropertyinstance = default(IList<MicrosoftDynamicsCRMdynamicpropertyinstance>), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMproductassociation productassociationidProductassociation = default(MicrosoftDynamicsCRMproductassociation), MicrosoftDynamicsCRMuom uomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMopportunityproduct parentbundleidrefOpportunityproduct = default(MicrosoftDynamicsCRMopportunityproduct), IList<MicrosoftDynamicsCRMopportunityproduct> opportunityproductParentrefOpportunityproduct = default(IList<MicrosoftDynamicsCRMopportunityproduct>))
         {
             Propertyconfigurationstatus = propertyconfigurationstatus;
             Entityimage = entityimage;
@@ -130,7 +130,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -160,12 +160,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -180,12 +180,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentbundleidref_value")]
-        public System.Guid? _parentbundleidrefValue { get; set; }
+        public string _parentbundleidrefValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -195,12 +195,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "parentbundleid")]
-        public System.Guid? Parentbundleid { get; set; }
+        public string Parentbundleid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_uomid_value")]
-        public System.Guid? _uomidValue { get; set; }
+        public string _uomidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -210,7 +210,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -245,7 +245,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_productid_value")]
-        public System.Guid? _productidValue { get; set; }
+        public string _productidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -255,7 +255,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "productassociationid")]
-        public System.Guid? Productassociationid { get; set; }
+        public string Productassociationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -265,7 +265,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -300,7 +300,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -340,12 +340,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -360,12 +360,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_opportunityid_value")]
-        public System.Guid? _opportunityidValue { get; set; }
+        public string _opportunityidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "opportunityproductid")]
-        public System.Guid? Opportunityproductid { get; set; }
+        public string Opportunityproductid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -375,7 +375,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>

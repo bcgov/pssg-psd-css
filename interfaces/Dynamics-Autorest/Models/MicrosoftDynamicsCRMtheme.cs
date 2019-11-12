@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMtheme class.
         /// </summary>
-        public MicrosoftDynamicsCRMtheme(string headercolor = default(string), string name = default(string), string controlborder = default(string), string globallinkcolor = default(string), string navbarbackgroundcolor = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), string backgroundcolor = default(string), System.Guid? _logoidValue = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), bool? isdefaulttheme = default(bool?), decimal? exchangerate = default(decimal?), int? importsequencenumber = default(int?), string pageheaderbackgroundcolor = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string processcontrolcolor = default(string), string panelheaderbackgroundcolor = default(string), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? statuscode = default(int?), bool? type = default(bool?), string hoverlinkeffect = default(string), int? utcconversiontimezonecode = default(int?), string accentcolor = default(string), string logotooltip = default(string), int? timezoneruleversionnumber = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? themeid = default(System.Guid?), string defaultcustomentitycolor = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string defaultentitycolor = default(string), string selectedlinkeffect = default(string), string navbarshelfcolor = default(string), int? statecode = default(int?), string maincolor = default(string), string versionnumber = default(string), System.Guid? _createdbyValue = default(System.Guid?), string controlshade = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMasyncoperation> themeAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesssession> themeProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> themeBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMwebresource logoimage = default(MicrosoftDynamicsCRMwebresource))
+        public MicrosoftDynamicsCRMtheme(string headercolor = default(string), string name = default(string), string controlborder = default(string), string globallinkcolor = default(string), string navbarbackgroundcolor = default(string), string _modifiedbyValue = default(string), string backgroundcolor = default(string), string _logoidValue = default(string), string _organizationidValue = default(string), bool? isdefaulttheme = default(bool?), decimal? exchangerate = default(decimal?), int? importsequencenumber = default(int?), string pageheaderbackgroundcolor = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string processcontrolcolor = default(string), string panelheaderbackgroundcolor = default(string), string _transactioncurrencyidValue = default(string), int? statuscode = default(int?), bool? type = default(bool?), string hoverlinkeffect = default(string), int? utcconversiontimezonecode = default(int?), string accentcolor = default(string), string logotooltip = default(string), int? timezoneruleversionnumber = default(int?), string _createdonbehalfbyValue = default(string), string themeid = default(string), string defaultcustomentitycolor = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string defaultentitycolor = default(string), string selectedlinkeffect = default(string), string navbarshelfcolor = default(string), int? statecode = default(int?), string maincolor = default(string), string versionnumber = default(string), string _createdbyValue = default(string), string controlshade = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMasyncoperation> themeAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMprocesssession> themeProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> themeBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMwebresource logoimage = default(MicrosoftDynamicsCRMwebresource))
         {
             Headercolor = headercolor;
             Name = name;
@@ -113,7 +113,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -123,12 +123,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_logoid_value")]
-        public System.Guid? _logoidValue { get; set; }
+        public string _logoidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -168,7 +168,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -208,12 +208,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "themeid")]
-        public System.Guid? Themeid { get; set; }
+        public string Themeid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -258,7 +258,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -268,7 +268,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

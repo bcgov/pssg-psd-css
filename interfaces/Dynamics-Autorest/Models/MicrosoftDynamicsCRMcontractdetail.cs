@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcontractdetail class.
         /// </summary>
-        public MicrosoftDynamicsCRMcontractdetail(System.Guid? _owninguserValue = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.DateTimeOffset? expireson = default(System.DateTimeOffset?), System.Guid? _uomscheduleidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _productidValue = default(System.Guid?), decimal? rate = default(decimal?), int? statuscode = default(int?), int? allotmentsoverage = default(int?), int? allotmentsused = default(int?), int? lineitemorder = default(int?), int? allotmentsremaining = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), int? servicecontractunitscode = default(int?), System.Guid? _uomidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), decimal? netBase = default(decimal?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _owningteamValue = default(System.Guid?), string title = default(string), string effectivitycalendar = default(string), int? contractstatecode = default(int?), System.Guid? _serviceaddressValue = default(System.Guid?), decimal? price = default(decimal?), int? initialquantity = default(int?), int? statecode = default(int?), int? totalallotments = default(int?), decimal? net = default(decimal?), System.Guid? _owneridValue = default(System.Guid?), decimal? rateBase = default(decimal?), decimal? exchangerate = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _contractidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), decimal? discountpercentage = default(decimal?), System.Guid? _accountidValue = default(System.Guid?), System.Guid? contractdetailid = default(System.Guid?), System.Guid? _contactidValue = default(System.Guid?), decimal? discount = default(decimal?), decimal? priceBase = default(decimal?), System.DateTimeOffset? activeon = default(System.DateTimeOffset?), System.Guid? _customeridValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), decimal? discountBase = default(decimal?), string versionnumber = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string productserialnumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMsyncerror> contractDetailSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> contractDetailAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contractdetailMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> contractDetailProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contractDetailBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contractdetailPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMannotation> contractDetailAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontract contractid = default(MicrosoftDynamicsCRMcontract), IList<MicrosoftDynamicsCRMincident> contractDetailCases = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMcustomeraddress serviceaddress = default(MicrosoftDynamicsCRMcustomeraddress), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMuom uomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMuomschedule uomscheduleid = default(MicrosoftDynamicsCRMuomschedule))
+        public MicrosoftDynamicsCRMcontractdetail(string _owninguserValue = default(string), string _transactioncurrencyidValue = default(string), System.DateTimeOffset? expireson = default(System.DateTimeOffset?), string _uomscheduleidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _productidValue = default(string), decimal? rate = default(decimal?), int? statuscode = default(int?), int? allotmentsoverage = default(int?), int? allotmentsused = default(int?), int? lineitemorder = default(int?), int? allotmentsremaining = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), int? servicecontractunitscode = default(int?), string _uomidValue = default(string), int? timezoneruleversionnumber = default(int?), decimal? netBase = default(decimal?), string _createdonbehalfbyValue = default(string), string _owningbusinessunitValue = default(string), int? importsequencenumber = default(int?), string _owningteamValue = default(string), string title = default(string), string effectivitycalendar = default(string), int? contractstatecode = default(int?), string _serviceaddressValue = default(string), decimal? price = default(decimal?), int? initialquantity = default(int?), int? statecode = default(int?), int? totalallotments = default(int?), decimal? net = default(decimal?), string _owneridValue = default(string), decimal? rateBase = default(decimal?), decimal? exchangerate = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _contractidValue = default(string), string _createdbyValue = default(string), decimal? discountpercentage = default(decimal?), string _accountidValue = default(string), string contractdetailid = default(string), string _contactidValue = default(string), decimal? discount = default(decimal?), decimal? priceBase = default(decimal?), System.DateTimeOffset? activeon = default(System.DateTimeOffset?), string _customeridValue = default(string), string _modifiedbyValue = default(string), decimal? discountBase = default(decimal?), string versionnumber = default(string), string _modifiedonbehalfbyValue = default(string), string productserialnumber = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMsyncerror> contractDetailSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> contractDetailAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contractdetailMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> contractDetailProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contractDetailBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contractdetailPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMannotation> contractDetailAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontract contractid = default(MicrosoftDynamicsCRMcontract), IList<MicrosoftDynamicsCRMincident> contractDetailCases = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMcustomeraddress serviceaddress = default(MicrosoftDynamicsCRMcustomeraddress), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMuom uomid = default(MicrosoftDynamicsCRMuom), MicrosoftDynamicsCRMuomschedule uomscheduleid = default(MicrosoftDynamicsCRMuomschedule))
         {
             this._owninguserValue = _owninguserValue;
             this._transactioncurrencyidValue = _transactioncurrencyidValue;
@@ -114,12 +114,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_uomscheduleid_value")]
-        public System.Guid? _uomscheduleidValue { get; set; }
+        public string _uomscheduleidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -139,7 +139,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_productid_value")]
-        public System.Guid? _productidValue { get; set; }
+        public string _productidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -189,7 +189,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_uomid_value")]
-        public System.Guid? _uomidValue { get; set; }
+        public string _uomidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -204,12 +204,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -219,7 +219,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -239,7 +239,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_serviceaddress_value")]
-        public System.Guid? _serviceaddressValue { get; set; }
+        public string _serviceaddressValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -269,7 +269,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -289,12 +289,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contractid_value")]
-        public System.Guid? _contractidValue { get; set; }
+        public string _contractidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -304,17 +304,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_accountid_value")]
-        public System.Guid? _accountidValue { get; set; }
+        public string _accountidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contractdetailid")]
-        public System.Guid? Contractdetailid { get; set; }
+        public string Contractdetailid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contactid_value")]
-        public System.Guid? _contactidValue { get; set; }
+        public string _contactidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -334,12 +334,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_customerid_value")]
-        public System.Guid? _customeridValue { get; set; }
+        public string _customeridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -354,7 +354,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

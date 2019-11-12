@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMappmodulecomponent class.
         /// </summary>
-        public MicrosoftDynamicsCRMappmodulecomponent(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? appmodulecomponentidunique = default(System.Guid?), int? rootcomponentbehavior = default(int?), string introducedversion = default(string), System.Guid? rootappmodulecomponentid = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), bool? isdefault = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? exchangerate = default(decimal?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? objectid = default(System.Guid?), int? componenttype = default(int?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? appmodulecomponentid = default(System.Guid?), System.Guid? _appmoduleiduniqueValue = default(System.Guid?), bool? ismetadata = default(bool?), MicrosoftDynamicsCRMsystemuser appmodulecomponentModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appmodulecomponentCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMappmodule appmoduleid = default(MicrosoftDynamicsCRMappmodule))
+        public MicrosoftDynamicsCRMappmodulecomponent(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string appmodulecomponentidunique = default(string), int? rootcomponentbehavior = default(int?), string introducedversion = default(string), string rootappmodulecomponentid = default(string), string _modifiedonbehalfbyValue = default(string), int? timezoneruleversionnumber = default(int?), bool? isdefault = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? exchangerate = default(decimal?), string _createdonbehalfbyValue = default(string), string _modifiedbyValue = default(string), string objectid = default(string), int? componenttype = default(int?), string _createdbyValue = default(string), string appmodulecomponentid = default(string), string _appmoduleiduniqueValue = default(string), bool? ismetadata = default(bool?), MicrosoftDynamicsCRMsystemuser appmodulecomponentModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appmodulecomponentCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMappmodule appmoduleid = default(MicrosoftDynamicsCRMappmodule))
         {
             Overwritetime = overwritetime;
             Appmodulecomponentidunique = appmodulecomponentidunique;
@@ -71,7 +71,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appmodulecomponentidunique")]
-        public System.Guid? Appmodulecomponentidunique { get; set; }
+        public string Appmodulecomponentidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -86,12 +86,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "rootappmodulecomponentid")]
-        public System.Guid? Rootappmodulecomponentid { get; set; }
+        public string Rootappmodulecomponentid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -131,17 +131,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "objectid")]
-        public System.Guid? Objectid { get; set; }
+        public string Objectid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -151,17 +151,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appmodulecomponentid")]
-        public System.Guid? Appmodulecomponentid { get; set; }
+        public string Appmodulecomponentid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_appmoduleidunique_value")]
-        public System.Guid? _appmoduleiduniqueValue { get; set; }
+        public string _appmoduleiduniqueValue { get; set; }
 
         /// <summary>
         /// </summary>

@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMincident
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMincident(System.Guid? _resolvebykpiidValue = default(System.Guid?), int? csuCasecomplexity = default(int?), int? casetypecode = default(int?), System.Guid? _csuPrimaryinvestigatorValue = default(System.Guid?), bool? customercontacted = default(bool?), int? csuCasevehicleenteredinerror = default(int?), System.Guid? _accountidValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? prioritycode = default(int?), string entityimageUrl = default(string), int? caseorigincode = default(int?), System.Guid? _csuFilecoordinatorValue = default(System.Guid?), System.Guid? _parentcaseidValue = default(System.Guid?), bool? isescalated = default(bool?), bool? checkemail = default(bool?), System.Guid? _entitlementidValue = default(System.Guid?), string csuCasesummary = default(string), bool? firstresponsesent = default(bool?), System.DateTimeOffset? followupby = default(System.DateTimeOffset?), string ticketnumber = default(string), System.Guid? _slainvokedidValue = default(System.Guid?), bool? decremententitlementterm = default(bool?), System.Guid? entityimageid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? onholdtime = default(int?), System.DateTimeOffset? resolveby = default(System.DateTimeOffset?), System.DateTimeOffset? csuCasecomplexityDate = default(System.DateTimeOffset?), System.Guid? _csuTeamleadValue = default(System.Guid?), int? messagetypecode = default(int?), System.DateTimeOffset? csuCasepersonenteredinerrorDate = default(System.DateTimeOffset?), string csuActivechildcaselist = default(string), bool? merged = default(bool?), string description = default(string), int? billedserviceunits = default(int?), int? contractservicelevelcode = default(int?), string traversedpath = default(string), System.Guid? _owninguserValue = default(System.Guid?), int? csuResolvecase = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _contactidValue = default(System.Guid?), System.Guid? _existingcaseValue = default(System.Guid?), System.Guid? _primarycontactidValue = default(System.Guid?), int? severitycode = default(int?), int? csuCasevehicleenteredinerrorState = default(int?), string productserialnumber = default(string), int? customersatisfactioncode = default(int?), System.Guid? _productidValue = default(System.Guid?), System.Guid? _socialprofileidValue = default(System.Guid?), string title = default(string), System.DateTimeOffset? csuCaselocationenteredinerrorDate = default(System.DateTimeOffset?), System.Guid? _contractidValue = default(System.Guid?), System.Guid? _masteridValue = default(System.Guid?), System.DateTimeOffset? csuSeizuredate = default(System.DateTimeOffset?), System.Guid? _subjectidValue = default(System.Guid?), int? csuCasecomplexityState = default(int?), string csuKnowledgearticleautosearch = default(string), bool? routecase = default(bool?), int? csuRegion = default(int?), bool? blockedprofile = default(bool?), string emailaddress = default(string), string csuCaseconclusionresult = default(string), int? firstresponseslastatus = default(int?), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), System.Guid? _customeridValue = default(System.Guid?), byte[] entityimage = default(byte[]), int? csuSeizurenoticeposted = default(int?), System.DateTimeOffset? csuCasevehicleenteredinerrorDate = default(System.DateTimeOffset?), bool? activitiescomplete = default(bool?), System.Guid? stageid = default(System.Guid?), int? statuscode = default(int?), long? entityimageTimestamp = default(long?), System.DateTimeOffset? escalatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? csuCaseresolution = default(int?), System.Guid? _contractdetailidValue = default(System.Guid?), bool? followuptaskcreated = default(bool?), System.DateTimeOffset? responseby = default(System.DateTimeOffset?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _createdbyexternalpartyValue = default(System.Guid?), string sentimentvalue = default(string), System.Guid? _slaidValue = default(System.Guid?), System.Guid? _modifiedbyexternalpartyValue = default(System.Guid?), int? csuCasepersonenteredinerrorState = default(int?), string influencescore = default(string), System.Guid? _firstresponsebykpiidValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), int? actualserviceunits = default(int?), int? numberofchildincidents = default(int?), int? statecode = default(int?), System.Guid? processid = default(System.Guid?), System.Guid? _csuComplaintidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? resolvebyslastatus = default(int?), System.Guid? _csuPrimarycaseValue = default(System.Guid?), int? csuNumberoftaskscreated = default(int?), decimal? exchangerate = default(decimal?), System.Guid? _owneridValue = default(System.Guid?), int? servicestage = default(int?), int? csuCaselocationenteredinerror = default(int?), System.Guid? incidentid = default(System.Guid?), System.DateTimeOffset? lastonholdtime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? csuCaselocationenteredinerrorState = default(int?), int? csuCasepersonenteredinerror = default(int?), int? timezoneruleversionnumber = default(int?), bool? isdecrementing = default(bool?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _kbarticleidValue = default(System.Guid?), int? incidentstagecode = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> incidentActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> incidentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> incidentActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> incidentDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> incidentDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> incidentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> incidentMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> incidentProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> incidentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> incidentPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMappointment> incidentAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> incidentEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> incidentFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> incidentLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> incidentPhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> incidentTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> incidentRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> incidentSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> incidentConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> incidentConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMqueueitem> incidentQueueItem = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMannotation> incidentAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMsla slaidSla = default(MicrosoftDynamicsCRMsla), MicrosoftDynamicsCRMsla slainvokedidSla = default(MicrosoftDynamicsCRMsla), IList<MicrosoftDynamicsCRMslakpiinstance> slakpiinstanceIncident = default(IList<MicrosoftDynamicsCRMslakpiinstance>), IList<MicrosoftDynamicsCRMserviceappointment> incidentServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMactioncard> incidentActioncard = default(IList<MicrosoftDynamicsCRMactioncard>), MicrosoftDynamicsCRMcontact responsiblecontactid = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontact primarycontactid = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontract contractid = default(MicrosoftDynamicsCRMcontract), MicrosoftDynamicsCRMcontractdetail contractdetailid = default(MicrosoftDynamicsCRMcontractdetail), MicrosoftDynamicsCRMentitlement entitlementid = default(MicrosoftDynamicsCRMentitlement), IList<MicrosoftDynamicsCRMincidentresolution> incidentIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMpostfollow> incidentPostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMpostregarding> incidentPostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), MicrosoftDynamicsCRMincident existingcase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentExistingcase = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMincident masterid = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentMasterIncident = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMincident parentcaseid = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentParentIncident = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMlead> originatingCaseLead = default(IList<MicrosoftDynamicsCRMlead>), MicrosoftDynamicsCRMkbarticle kbarticleid = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMknowledgearticleincident> knowledgearticleIncidents = default(IList<MicrosoftDynamicsCRMknowledgearticleincident>), IList<MicrosoftDynamicsCRMknowledgebaserecord> knowledgeBaseRecordIncident = default(IList<MicrosoftDynamicsCRMknowledgebaserecord>), IList<MicrosoftDynamicsCRMphonetocaseprocess> incidentPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMphonetocaseprocess>), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMslakpiinstance firstresponsebykpiid = default(MicrosoftDynamicsCRMslakpiinstance), MicrosoftDynamicsCRMslakpiinstance resolvebykpiid = default(MicrosoftDynamicsCRMslakpiinstance), MicrosoftDynamicsCRMsocialprofile socialprofileid = default(MicrosoftDynamicsCRMsocialprofile), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMopportunityclose> incidentOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> incidentOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> incidentQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), MicrosoftDynamicsCRMcsuComplaints csuComplaintId = default(MicrosoftDynamicsCRMcsuComplaints), MicrosoftDynamicsCRMsystemuser csuTeamLead = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser csuPrimaryInvestigator = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser csuFileCoordinator = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcsuComplaints> csuIncidentCsuComplaints = default(IList<MicrosoftDynamicsCRMcsuComplaints>), IList<MicrosoftDynamicsCRMcsuCasepersondetails> csuIncidentCsuCasepersondetails = default(IList<MicrosoftDynamicsCRMcsuCasepersondetails>), IList<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> csuIncidentCsuCasebusinessandlocationdetai = default(IList<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails>), IList<MicrosoftDynamicsCRMcsuCasetask> incidentCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> incidentSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMcsuInspectionsearch> csuIncidentCsuInspectionsearch = default(IList<MicrosoftDynamicsCRMcsuInspectionsearch>), IList<MicrosoftDynamicsCRMcsuSeizuredetails> csuIncidentCsuSeizuredetailsCase = default(IList<MicrosoftDynamicsCRMcsuSeizuredetails>), IList<MicrosoftDynamicsCRMcsuInspectionsearch> csuIncidentCsuInspectionsearchCase = default(IList<MicrosoftDynamicsCRMcsuInspectionsearch>), IList<MicrosoftDynamicsCRMcsuViolation> csuIncidentCsuViolationCase = default(IList<MicrosoftDynamicsCRMcsuViolation>), IList<MicrosoftDynamicsCRMcsuAmp> csuIncidentCsuAmp = default(IList<MicrosoftDynamicsCRMcsuAmp>), IList<MicrosoftDynamicsCRMcsuDemandandorder> csuIncidentCsuDemandandorderCase = default(IList<MicrosoftDynamicsCRMcsuDemandandorder>), IList<MicrosoftDynamicsCRMcsuInjuctiondetail> csuIncidentCsuInjuctiondetailCase = default(IList<MicrosoftDynamicsCRMcsuInjuctiondetail>), IList<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> csuIncidentCsuApplicationforreturnofseized = default(IList<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis>), IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> csuIncidentCsuSeizeditemsrequestedforretur = default(IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn>), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuIncidentCsuJudicialreview = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>), IList<MicrosoftDynamicsCRMcsuHearing> csuIncidentCsuHearingCase = default(IList<MicrosoftDynamicsCRMcsuHearing>), MicrosoftDynamicsCRMincident csuPrimaryCase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> csuIncidentIncidentPrimaryCase = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMcsuCasevehicledetail> csuIncidentCsuCasevehicledetail = default(IList<MicrosoftDynamicsCRMcsuCasevehicledetail>))
+        public MicrosoftDynamicsCRMincident(string _resolvebykpiidValue = default(string), int? csuCasecomplexity = default(int?), int? casetypecode = default(int?), string _csuPrimaryinvestigatorValue = default(string), bool? customercontacted = default(bool?), int? csuCasevehicleenteredinerror = default(int?), string _accountidValue = default(string), string _modifiedbyValue = default(string), int? prioritycode = default(int?), string entityimageUrl = default(string), int? caseorigincode = default(int?), string _csuFilecoordinatorValue = default(string), string _parentcaseidValue = default(string), bool? isescalated = default(bool?), bool? checkemail = default(bool?), string _entitlementidValue = default(string), string csuCasesummary = default(string), bool? firstresponsesent = default(bool?), System.DateTimeOffset? followupby = default(System.DateTimeOffset?), string ticketnumber = default(string), string _slainvokedidValue = default(string), bool? decremententitlementterm = default(bool?), string entityimageid = default(string), string _createdbyValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? onholdtime = default(int?), System.DateTimeOffset? resolveby = default(System.DateTimeOffset?), System.DateTimeOffset? csuCasecomplexityDate = default(System.DateTimeOffset?), string _csuTeamleadValue = default(string), int? messagetypecode = default(int?), System.DateTimeOffset? csuCasepersonenteredinerrorDate = default(System.DateTimeOffset?), string csuActivechildcaselist = default(string), bool? merged = default(bool?), string description = default(string), int? billedserviceunits = default(int?), int? contractservicelevelcode = default(int?), string traversedpath = default(string), string _owninguserValue = default(string), int? csuResolvecase = default(int?), string _owningbusinessunitValue = default(string), string _contactidValue = default(string), string _existingcaseValue = default(string), string _primarycontactidValue = default(string), int? severitycode = default(int?), int? csuCasevehicleenteredinerrorState = default(int?), string productserialnumber = default(string), int? customersatisfactioncode = default(int?), string _productidValue = default(string), string _socialprofileidValue = default(string), string title = default(string), System.DateTimeOffset? csuCaselocationenteredinerrorDate = default(System.DateTimeOffset?), string _contractidValue = default(string), string _masteridValue = default(string), System.DateTimeOffset? csuSeizuredate = default(System.DateTimeOffset?), string _subjectidValue = default(string), int? csuCasecomplexityState = default(int?), string csuKnowledgearticleautosearch = default(string), bool? routecase = default(bool?), int? csuRegion = default(int?), bool? blockedprofile = default(bool?), string emailaddress = default(string), string csuCaseconclusionresult = default(string), int? firstresponseslastatus = default(int?), int? utcconversiontimezonecode = default(int?), string versionnumber = default(string), string _customeridValue = default(string), byte[] entityimage = default(byte[]), int? csuSeizurenoticeposted = default(int?), System.DateTimeOffset? csuCasevehicleenteredinerrorDate = default(System.DateTimeOffset?), bool? activitiescomplete = default(bool?), string stageid = default(string), int? statuscode = default(int?), long? entityimageTimestamp = default(long?), System.DateTimeOffset? escalatedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string _modifiedonbehalfbyValue = default(string), int? csuCaseresolution = default(int?), string _contractdetailidValue = default(string), bool? followuptaskcreated = default(bool?), System.DateTimeOffset? responseby = default(System.DateTimeOffset?), string _transactioncurrencyidValue = default(string), string _createdbyexternalpartyValue = default(string), string sentimentvalue = default(string), string _slaidValue = default(string), string _modifiedbyexternalpartyValue = default(string), int? csuCasepersonenteredinerrorState = default(int?), string influencescore = default(string), string _firstresponsebykpiidValue = default(string), string _owningteamValue = default(string), int? actualserviceunits = default(int?), int? numberofchildincidents = default(int?), int? statecode = default(int?), string processid = default(string), string _csuComplaintidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? resolvebyslastatus = default(int?), string _csuPrimarycaseValue = default(string), int? csuNumberoftaskscreated = default(int?), decimal? exchangerate = default(decimal?), string _owneridValue = default(string), int? servicestage = default(int?), int? csuCaselocationenteredinerror = default(int?), string incidentid = default(string), System.DateTimeOffset? lastonholdtime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? csuCaselocationenteredinerrorState = default(int?), int? csuCasepersonenteredinerror = default(int?), int? timezoneruleversionnumber = default(int?), bool? isdecrementing = default(bool?), string _createdonbehalfbyValue = default(string), string _kbarticleidValue = default(string), int? incidentstagecode = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> incidentActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> incidentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> incidentActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMduplicaterecord> incidentDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> incidentDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> incidentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> incidentMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> incidentProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> incidentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> incidentPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMappointment> incidentAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> incidentEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> incidentFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> incidentLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> incidentPhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> incidentTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> incidentRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> incidentSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> incidentConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> incidentConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMqueueitem> incidentQueueItem = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMannotation> incidentAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), MicrosoftDynamicsCRMsla slaidSla = default(MicrosoftDynamicsCRMsla), MicrosoftDynamicsCRMsla slainvokedidSla = default(MicrosoftDynamicsCRMsla), IList<MicrosoftDynamicsCRMslakpiinstance> slakpiinstanceIncident = default(IList<MicrosoftDynamicsCRMslakpiinstance>), IList<MicrosoftDynamicsCRMserviceappointment> incidentServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMactioncard> incidentActioncard = default(IList<MicrosoftDynamicsCRMactioncard>), MicrosoftDynamicsCRMcontact responsiblecontactid = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontact primarycontactid = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMcontract contractid = default(MicrosoftDynamicsCRMcontract), MicrosoftDynamicsCRMcontractdetail contractdetailid = default(MicrosoftDynamicsCRMcontractdetail), MicrosoftDynamicsCRMentitlement entitlementid = default(MicrosoftDynamicsCRMentitlement), IList<MicrosoftDynamicsCRMincidentresolution> incidentIncidentResolutions = default(IList<MicrosoftDynamicsCRMincidentresolution>), IList<MicrosoftDynamicsCRMpostfollow> incidentPostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMpostregarding> incidentPostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), MicrosoftDynamicsCRMincident existingcase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentExistingcase = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMincident masterid = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentMasterIncident = default(IList<MicrosoftDynamicsCRMincident>), MicrosoftDynamicsCRMincident parentcaseid = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> incidentParentIncident = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMlead> originatingCaseLead = default(IList<MicrosoftDynamicsCRMlead>), MicrosoftDynamicsCRMkbarticle kbarticleid = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMknowledgearticleincident> knowledgearticleIncidents = default(IList<MicrosoftDynamicsCRMknowledgearticleincident>), IList<MicrosoftDynamicsCRMknowledgebaserecord> knowledgeBaseRecordIncident = default(IList<MicrosoftDynamicsCRMknowledgebaserecord>), IList<MicrosoftDynamicsCRMphonetocaseprocess> incidentPhonetocaseprocess = default(IList<MicrosoftDynamicsCRMphonetocaseprocess>), MicrosoftDynamicsCRMproduct productid = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMslakpiinstance firstresponsebykpiid = default(MicrosoftDynamicsCRMslakpiinstance), MicrosoftDynamicsCRMslakpiinstance resolvebykpiid = default(MicrosoftDynamicsCRMslakpiinstance), MicrosoftDynamicsCRMsocialprofile socialprofileid = default(MicrosoftDynamicsCRMsocialprofile), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMopportunityclose> incidentOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> incidentOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> incidentQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), MicrosoftDynamicsCRMcsuComplaints csuComplaintId = default(MicrosoftDynamicsCRMcsuComplaints), MicrosoftDynamicsCRMsystemuser csuTeamLead = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser csuPrimaryInvestigator = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser csuFileCoordinator = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMcsuComplaints> csuIncidentCsuComplaints = default(IList<MicrosoftDynamicsCRMcsuComplaints>), IList<MicrosoftDynamicsCRMcsuCasepersondetails> csuIncidentCsuCasepersondetails = default(IList<MicrosoftDynamicsCRMcsuCasepersondetails>), IList<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> csuIncidentCsuCasebusinessandlocationdetai = default(IList<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails>), IList<MicrosoftDynamicsCRMcsuCasetask> incidentCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> incidentSharePointDocumentLocations = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMcsuInspectionsearch> csuIncidentCsuInspectionsearch = default(IList<MicrosoftDynamicsCRMcsuInspectionsearch>), IList<MicrosoftDynamicsCRMcsuSeizuredetails> csuIncidentCsuSeizuredetailsCase = default(IList<MicrosoftDynamicsCRMcsuSeizuredetails>), IList<MicrosoftDynamicsCRMcsuInspectionsearch> csuIncidentCsuInspectionsearchCase = default(IList<MicrosoftDynamicsCRMcsuInspectionsearch>), IList<MicrosoftDynamicsCRMcsuViolation> csuIncidentCsuViolationCase = default(IList<MicrosoftDynamicsCRMcsuViolation>), IList<MicrosoftDynamicsCRMcsuAmp> csuIncidentCsuAmp = default(IList<MicrosoftDynamicsCRMcsuAmp>), IList<MicrosoftDynamicsCRMcsuDemandandorder> csuIncidentCsuDemandandorderCase = default(IList<MicrosoftDynamicsCRMcsuDemandandorder>), IList<MicrosoftDynamicsCRMcsuInjuctiondetail> csuIncidentCsuInjuctiondetailCase = default(IList<MicrosoftDynamicsCRMcsuInjuctiondetail>), IList<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis> csuIncidentCsuApplicationforreturnofseized = default(IList<MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis>), IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> csuIncidentCsuSeizeditemsrequestedforretur = default(IList<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn>), IList<MicrosoftDynamicsCRMcsuJudicialreview> csuIncidentCsuJudicialreview = default(IList<MicrosoftDynamicsCRMcsuJudicialreview>), IList<MicrosoftDynamicsCRMcsuHearing> csuIncidentCsuHearingCase = default(IList<MicrosoftDynamicsCRMcsuHearing>), MicrosoftDynamicsCRMincident csuPrimaryCase = default(MicrosoftDynamicsCRMincident), IList<MicrosoftDynamicsCRMincident> csuIncidentIncidentPrimaryCase = default(IList<MicrosoftDynamicsCRMincident>), IList<MicrosoftDynamicsCRMcsuCasevehicledetail> csuIncidentCsuCasevehicledetail = default(IList<MicrosoftDynamicsCRMcsuCasevehicledetail>))
         {
             this._resolvebykpiidValue = _resolvebykpiidValue;
             CsuCasecomplexity = csuCasecomplexity;
@@ -245,7 +245,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_resolvebykpiid_value")]
-        public System.Guid? _resolvebykpiidValue { get; set; }
+        public string _resolvebykpiidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -260,7 +260,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_primaryinvestigator_value")]
-        public System.Guid? _csuPrimaryinvestigatorValue { get; set; }
+        public string _csuPrimaryinvestigatorValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -275,12 +275,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_accountid_value")]
-        public System.Guid? _accountidValue { get; set; }
+        public string _accountidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -300,12 +300,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_filecoordinator_value")]
-        public System.Guid? _csuFilecoordinatorValue { get; set; }
+        public string _csuFilecoordinatorValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentcaseid_value")]
-        public System.Guid? _parentcaseidValue { get; set; }
+        public string _parentcaseidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -320,7 +320,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_entitlementid_value")]
-        public System.Guid? _entitlementidValue { get; set; }
+        public string _entitlementidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -345,7 +345,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_slainvokedid_value")]
-        public System.Guid? _slainvokedidValue { get; set; }
+        public string _slainvokedidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -355,12 +355,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -385,7 +385,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_teamlead_value")]
-        public System.Guid? _csuTeamleadValue { get; set; }
+        public string _csuTeamleadValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -430,7 +430,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -440,22 +440,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contactid_value")]
-        public System.Guid? _contactidValue { get; set; }
+        public string _contactidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_existingcase_value")]
-        public System.Guid? _existingcaseValue { get; set; }
+        public string _existingcaseValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_primarycontactid_value")]
-        public System.Guid? _primarycontactidValue { get; set; }
+        public string _primarycontactidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -480,12 +480,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_productid_value")]
-        public System.Guid? _productidValue { get; set; }
+        public string _productidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_socialprofileid_value")]
-        public System.Guid? _socialprofileidValue { get; set; }
+        public string _socialprofileidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -500,12 +500,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contractid_value")]
-        public System.Guid? _contractidValue { get; set; }
+        public string _contractidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_masterid_value")]
-        public System.Guid? _masteridValue { get; set; }
+        public string _masteridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -515,7 +515,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_subjectid_value")]
-        public System.Guid? _subjectidValue { get; set; }
+        public string _subjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -570,7 +570,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_customerid_value")]
-        public System.Guid? _customeridValue { get; set; }
+        public string _customeridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -596,7 +596,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -621,7 +621,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -631,7 +631,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contractdetailid_value")]
-        public System.Guid? _contractdetailidValue { get; set; }
+        public string _contractdetailidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -646,12 +646,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdbyexternalparty_value")]
-        public System.Guid? _createdbyexternalpartyValue { get; set; }
+        public string _createdbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -661,12 +661,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_slaid_value")]
-        public System.Guid? _slaidValue { get; set; }
+        public string _slaidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedbyexternalparty_value")]
-        public System.Guid? _modifiedbyexternalpartyValue { get; set; }
+        public string _modifiedbyexternalpartyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -681,12 +681,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_firstresponsebykpiid_value")]
-        public System.Guid? _firstresponsebykpiidValue { get; set; }
+        public string _firstresponsebykpiidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -706,12 +706,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_complaintid_value")]
-        public System.Guid? _csuComplaintidValue { get; set; }
+        public string _csuComplaintidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -726,7 +726,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_primarycase_value")]
-        public System.Guid? _csuPrimarycaseValue { get; set; }
+        public string _csuPrimarycaseValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -741,7 +741,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -756,7 +756,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "incidentid")]
-        public System.Guid? Incidentid { get; set; }
+        public string Incidentid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -791,12 +791,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_kbarticleid_value")]
-        public System.Guid? _kbarticleidValue { get; set; }
+        public string _kbarticleidValue { get; set; }
 
         /// <summary>
         /// </summary>

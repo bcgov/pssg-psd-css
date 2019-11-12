@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection Get(this ICsuseizeditemsrequestedforreturns operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection Get(this ICsuseizeditemsrequestedforreturns operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection> GetAsync(this ICsuseizeditemsrequestedforreturns operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection> GetAsync(this ICsuseizeditemsrequestedforreturns operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection> GetWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturnCollection> GetWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -166,9 +196,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn SeizeditemsrequestedforreturnsByKey(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn GetByKey(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.SeizeditemsrequestedforreturnsByKeyAsync(csuSeizeditemsrequestedforreturnid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuSeizeditemsrequestedforreturnid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -190,9 +220,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> SeizeditemsrequestedforreturnsByKeyAsync(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> GetByKeyAsync(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SeizeditemsrequestedforreturnsByKeyWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -217,9 +247,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> SeizeditemsrequestedforreturnsByKeyWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn> GetByKeyWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SeizeditemsrequestedforreturnsByKeyWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -235,9 +265,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void SeizeditemsrequestedforreturnsByKey1(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body)
+            public static void Update(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body)
             {
-                operations.SeizeditemsrequestedforreturnsByKey1Async(csuSeizeditemsrequestedforreturnid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuSeizeditemsrequestedforreturnid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -256,9 +286,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task SeizeditemsrequestedforreturnsByKey1Async(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.SeizeditemsrequestedforreturnsByKey1WithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -277,9 +307,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse SeizeditemsrequestedforreturnsByKey1WithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SeizeditemsrequestedforreturnsByKey1WithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -295,9 +325,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void SeizeditemsrequestedforreturnsByKey2(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, string ifMatch = default(string))
+            public static void Delete(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, string ifMatch = default(string))
             {
-                operations.SeizeditemsrequestedforreturnsByKey2Async(csuSeizeditemsrequestedforreturnid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuSeizeditemsrequestedforreturnid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -316,9 +346,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task SeizeditemsrequestedforreturnsByKey2Async(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.SeizeditemsrequestedforreturnsByKey2WithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -337,9 +367,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse SeizeditemsrequestedforreturnsByKey2WithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, System.Guid csuSeizeditemsrequestedforreturnid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsuseizeditemsrequestedforreturns operations, string csuSeizeditemsrequestedforreturnid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SeizeditemsrequestedforreturnsByKey2WithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuSeizeditemsrequestedforreturnid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

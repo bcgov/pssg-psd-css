@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMplugintypestatistic class.
         /// </summary>
-        public MicrosoftDynamicsCRMplugintypestatistic(System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? crashcount = default(int?), int? executecount = default(int?), int? terminatememorycontributionpercent = default(int?), int? terminateothercontributionpercent = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? terminatecpucontributionpercent = default(int?), int? failurepercent = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? averageexecutetimeinmilliseconds = default(int?), System.Guid? _plugintypeidValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? plugintypestatisticid = default(System.Guid?), int? terminatehandlescontributionpercent = default(int?), int? crashpercent = default(int?), int? failurecount = default(int?), int? crashcontributionpercent = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMplugintype plugintypeid = default(MicrosoftDynamicsCRMplugintype), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMplugintypestatistic(string _organizationidValue = default(string), string _createdbyValue = default(string), string _modifiedbyValue = default(string), int? crashcount = default(int?), int? executecount = default(int?), int? terminatememorycontributionpercent = default(int?), int? terminateothercontributionpercent = default(int?), string _modifiedonbehalfbyValue = default(string), int? terminatecpucontributionpercent = default(int?), int? failurepercent = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? averageexecutetimeinmilliseconds = default(int?), string _plugintypeidValue = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string plugintypestatisticid = default(string), int? terminatehandlescontributionpercent = default(int?), int? crashpercent = default(int?), int? failurecount = default(int?), int? crashcontributionpercent = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMplugintype plugintypeid = default(MicrosoftDynamicsCRMplugintype), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._organizationidValue = _organizationidValue;
             this._createdbyValue = _createdbyValue;
@@ -66,17 +66,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -101,7 +101,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -126,12 +126,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_plugintypeid_value")]
-        public System.Guid? _plugintypeidValue { get; set; }
+        public string _plugintypeidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -141,7 +141,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "plugintypestatisticid")]
-        public System.Guid? Plugintypestatisticid { get; set; }
+        public string Plugintypestatisticid { get; set; }
 
         /// <summary>
         /// </summary>

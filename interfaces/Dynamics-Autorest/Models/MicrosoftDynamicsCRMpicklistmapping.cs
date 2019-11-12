@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMpicklistmapping class.
         /// </summary>
-        public MicrosoftDynamicsCRMpicklistmapping(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? picklistmappingid = default(System.Guid?), int? statuscode = default(int?), string sourcevalue = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? componentstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? targetvalue = default(int?), System.Guid? _columnmappingidValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), System.Guid? picklistmappingidunique = default(System.Guid?), int? processcode = default(int?), bool? ismanaged = default(bool?), string introducedversion = default(string), System.Guid? _createdbyValue = default(System.Guid?), int? statecode = default(int?), MicrosoftDynamicsCRMcolumnmapping columnmappingid = default(MicrosoftDynamicsCRMcolumnmapping), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMpicklistmapping(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string picklistmappingid = default(string), int? statuscode = default(int?), string sourcevalue = default(string), string _createdonbehalfbyValue = default(string), string _modifiedonbehalfbyValue = default(string), int? componentstate = default(int?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? targetvalue = default(int?), string _columnmappingidValue = default(string), string _modifiedbyValue = default(string), string solutionid = default(string), string picklistmappingidunique = default(string), int? processcode = default(int?), bool? ismanaged = default(bool?), string introducedversion = default(string), string _createdbyValue = default(string), int? statecode = default(int?), MicrosoftDynamicsCRMcolumnmapping columnmappingid = default(MicrosoftDynamicsCRMcolumnmapping), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Modifiedon = modifiedon;
             Createdon = createdon;
@@ -74,7 +74,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "picklistmappingid")]
-        public System.Guid? Picklistmappingid { get; set; }
+        public string Picklistmappingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -89,12 +89,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -114,22 +114,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_columnmappingid_value")]
-        public System.Guid? _columnmappingidValue { get; set; }
+        public string _columnmappingidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "picklistmappingidunique")]
-        public System.Guid? Picklistmappingidunique { get; set; }
+        public string Picklistmappingidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

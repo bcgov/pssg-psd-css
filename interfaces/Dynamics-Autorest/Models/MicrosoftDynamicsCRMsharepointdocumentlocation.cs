@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMsharepointdocumentlocation class.
         /// </summary>
-        public MicrosoftDynamicsCRMsharepointdocumentlocation(string description = default(string), System.Guid? _owneridValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? statuscode = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? userid = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), int? locationtype = default(int?), System.Guid? _owninguserValue = default(System.Guid?), string absoluteurl = default(string), int? importsequencenumber = default(int?), System.Guid? _createdbyValue = default(System.Guid?), string name = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _regardingobjectidValue = default(System.Guid?), System.Guid? _parentsiteorlocationValue = default(System.Guid?), string versionnumber = default(string), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), int? statecode = default(int?), System.Guid? _owningteamValue = default(System.Guid?), decimal? exchangerate = default(decimal?), System.Guid? sitecollectionid = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string relativeurl = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? sharepointdocumentlocationid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? servicetype = default(int?), MicrosoftDynamicsCRMknowledgearticle regardingobjectidKnowledgearticle = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMlead regardingobjectidLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMproduct regardingobjectidProduct = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMopportunity regardingobjectidOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMquote regardingobjectidQuote = default(MicrosoftDynamicsCRMquote), MicrosoftDynamicsCRMsalesliterature regardingobjectidSalesliterature = default(MicrosoftDynamicsCRMsalesliterature), MicrosoftDynamicsCRMcsuComplaints regardingobjectidCsuComplaints = default(MicrosoftDynamicsCRMcsuComplaints), MicrosoftDynamicsCRMincident regardingobjectidIncident = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMaccount regardingobjectidAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> sharepointdocumentlocationPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsharepointdocumentlocation parentsiteorlocationSharepointdocumentlocation = default(MicrosoftDynamicsCRMsharepointdocumentlocation), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> sharepointdocumentlocationParentSharepointdocumentlocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> sharePointDocumentLocationDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsharepointsite parentsiteorlocationSharepointsite = default(MicrosoftDynamicsCRMsharepointsite), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMkbarticle regardingobjectidKbarticle = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMduplicaterecord> sharePointDocumentLocationDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMprocesssession> sharePointDocumentLocationProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMsyncerror> sharePointDocumentLocationSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> sharePointDocumentLocationAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>))
+        public MicrosoftDynamicsCRMsharepointdocumentlocation(string description = default(string), string _owneridValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? statuscode = default(int?), string _owningbusinessunitValue = default(string), string userid = default(string), string _transactioncurrencyidValue = default(string), int? locationtype = default(int?), string _owninguserValue = default(string), string absoluteurl = default(string), int? importsequencenumber = default(int?), string _createdbyValue = default(string), string name = default(string), string _modifiedonbehalfbyValue = default(string), string _regardingobjectidValue = default(string), string _parentsiteorlocationValue = default(string), string versionnumber = default(string), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), int? statecode = default(int?), string _owningteamValue = default(string), decimal? exchangerate = default(decimal?), string sitecollectionid = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string relativeurl = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), string sharepointdocumentlocationid = default(string), string _createdonbehalfbyValue = default(string), int? servicetype = default(int?), MicrosoftDynamicsCRMknowledgearticle regardingobjectidKnowledgearticle = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMlead regardingobjectidLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMproduct regardingobjectidProduct = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMopportunity regardingobjectidOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMquote regardingobjectidQuote = default(MicrosoftDynamicsCRMquote), MicrosoftDynamicsCRMsalesliterature regardingobjectidSalesliterature = default(MicrosoftDynamicsCRMsalesliterature), MicrosoftDynamicsCRMcsuComplaints regardingobjectidCsuComplaints = default(MicrosoftDynamicsCRMcsuComplaints), MicrosoftDynamicsCRMincident regardingobjectidIncident = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMaccount regardingobjectidAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> sharepointdocumentlocationPrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsharepointdocumentlocation parentsiteorlocationSharepointdocumentlocation = default(MicrosoftDynamicsCRMsharepointdocumentlocation), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> sharepointdocumentlocationParentSharepointdocumentlocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> sharePointDocumentLocationDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsharepointsite parentsiteorlocationSharepointsite = default(MicrosoftDynamicsCRMsharepointsite), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMkbarticle regardingobjectidKbarticle = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMduplicaterecord> sharePointDocumentLocationDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMprocesssession> sharePointDocumentLocationProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMsyncerror> sharePointDocumentLocationSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> sharePointDocumentLocationAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>))
         {
             Description = description;
             this._owneridValue = _owneridValue;
@@ -105,7 +105,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -120,17 +120,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "userid")]
-        public System.Guid? Userid { get; set; }
+        public string Userid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -140,7 +140,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -165,17 +165,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentsiteorlocation_value")]
-        public System.Guid? _parentsiteorlocationValue { get; set; }
+        public string _parentsiteorlocationValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -200,7 +200,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -210,7 +210,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sitecollectionid")]
-        public System.Guid? Sitecollectionid { get; set; }
+        public string Sitecollectionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -230,17 +230,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sharepointdocumentlocationid")]
-        public System.Guid? Sharepointdocumentlocationid { get; set; }
+        public string Sharepointdocumentlocationid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

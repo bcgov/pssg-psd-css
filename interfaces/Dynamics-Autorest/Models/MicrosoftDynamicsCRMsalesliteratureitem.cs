@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMsalesliteratureitem class.
         /// </summary>
-        public MicrosoftDynamicsCRMsalesliteratureitem(string filename = default(string), System.Guid? organizationid = default(System.Guid?), string documentbody = default(string), byte[] documentbodyBinary = default(byte[]), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? iscustomerviewable = default(bool?), string attacheddocumenturl = default(string), string mimetype = default(string), string keywords = default(string), string abstractProperty = default(string), string authorname = default(string), int? filesize = default(int?), System.Guid? salesliteratureitemid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), int? filetypecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string title = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _salesliteratureidValue = default(System.Guid?), string mode = default(string), int? timezoneruleversionnumber = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> salesliteratureitemSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> salesLiteratureItemAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> salesliteratureitemMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> salesLiteratureItemProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> salesLiteratureItemBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> salesliteratureitemPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsalesliterature salesliteratureid = default(MicrosoftDynamicsCRMsalesliterature))
+        public MicrosoftDynamicsCRMsalesliteratureitem(string filename = default(string), string organizationid = default(string), string documentbody = default(string), byte[] documentbodyBinary = default(byte[]), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? iscustomerviewable = default(bool?), string attacheddocumenturl = default(string), string mimetype = default(string), string keywords = default(string), string abstractProperty = default(string), string authorname = default(string), int? filesize = default(int?), string salesliteratureitemid = default(string), string _createdbyValue = default(string), string _modifiedbyValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), int? utcconversiontimezonecode = default(int?), int? filetypecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string title = default(string), string _modifiedonbehalfbyValue = default(string), string _salesliteratureidValue = default(string), string mode = default(string), int? timezoneruleversionnumber = default(int?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> salesliteratureitemSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> salesLiteratureItemAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> salesliteratureitemMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> salesLiteratureItemProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> salesLiteratureItemBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> salesliteratureitemPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsalesliterature salesliteratureid = default(MicrosoftDynamicsCRMsalesliterature))
         {
             Filename = filename;
             Organizationid = organizationid;
@@ -87,7 +87,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "organizationid")]
-        public System.Guid? Organizationid { get; set; }
+        public string Organizationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -148,17 +148,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "salesliteratureitemid")]
-        public System.Guid? Salesliteratureitemid { get; set; }
+        public string Salesliteratureitemid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -168,7 +168,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -198,12 +198,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_salesliteratureid_value")]
-        public System.Guid? _salesliteratureidValue { get; set; }
+        public string _salesliteratureidValue { get; set; }
 
         /// <summary>
         /// </summary>

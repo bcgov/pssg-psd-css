@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMappconfig
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMappconfig(int? componentstate = default(int?), System.Guid? solutionid = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), string versionnumber = default(string), bool? ismanaged = default(bool?), string appconfigimportxml = default(string), System.Guid? appconfigidunique = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string introducedversion = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _appmoduleidValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? appconfigid = default(System.Guid?), int? statecode = default(int?), int? statuscode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), MicrosoftDynamicsCRMappmodule appmoduleAppconfig = default(MicrosoftDynamicsCRMappmodule), MicrosoftDynamicsCRMsystemuser appconfigModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMnavigationsetting> appconfigNavigationsetting = default(IList<MicrosoftDynamicsCRMnavigationsetting>), MicrosoftDynamicsCRMsystemuser appconfigCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappconfiginstance> appconfigAppconfiginstance = default(IList<MicrosoftDynamicsCRMappconfiginstance>), MicrosoftDynamicsCRMsystemuser appconfigCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppconfig = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMappconfig(int? componentstate = default(int?), string solutionid = default(string), string _organizationidValue = default(string), string versionnumber = default(string), bool? ismanaged = default(bool?), string appconfigimportxml = default(string), string appconfigidunique = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), string introducedversion = default(string), string _modifiedbyValue = default(string), string _appmoduleidValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string appconfigid = default(string), int? statecode = default(int?), int? statuscode = default(int?), string _modifiedonbehalfbyValue = default(string), MicrosoftDynamicsCRMappmodule appmoduleAppconfig = default(MicrosoftDynamicsCRMappmodule), MicrosoftDynamicsCRMsystemuser appconfigModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appconfigModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMnavigationsetting> appconfigNavigationsetting = default(IList<MicrosoftDynamicsCRMnavigationsetting>), MicrosoftDynamicsCRMsystemuser appconfigCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappconfiginstance> appconfigAppconfiginstance = default(IList<MicrosoftDynamicsCRMappconfiginstance>), MicrosoftDynamicsCRMsystemuser appconfigCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppconfig = default(MicrosoftDynamicsCRMorganization))
         {
             Componentstate = componentstate;
             Solutionid = solutionid;
@@ -76,12 +76,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -101,7 +101,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appconfigidunique")]
-        public System.Guid? Appconfigidunique { get; set; }
+        public string Appconfigidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -116,12 +116,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -141,12 +141,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_appmoduleid_value")]
-        public System.Guid? _appmoduleidValue { get; set; }
+        public string _appmoduleidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appconfigid")]
-        public System.Guid? Appconfigid { get; set; }
+        public string Appconfigid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -171,7 +171,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

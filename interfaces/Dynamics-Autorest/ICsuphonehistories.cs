@@ -21,6 +21,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <summary>
         /// Get entities from csu_phonehistories
         /// </summary>
+        /// <param name='top'>
+        /// </param>
+        /// <param name='skip'>
+        /// </param>
+        /// <param name='search'>
+        /// </param>
+        /// <param name='filter'>
+        /// </param>
+        /// <param name='count'>
+        /// </param>
         /// <param name='orderby'>
         /// Order items by property values
         /// </param>
@@ -36,13 +46,13 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
         /// Thrown when unable to deserialize the response
         /// </exception>
-        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuPhonehistoryCollection>> GetWithHttpMessagesAsync(IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuPhonehistoryCollection>> GetWithHttpMessagesAsync(int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Add new entity to csu_phonehistories
         /// </summary>
@@ -59,7 +69,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
@@ -87,13 +97,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.SerializationException">
         /// Thrown when unable to deserialize the response
         /// </exception>
-        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuPhonehistory>> PhonehistoriesByKeyWithHttpMessagesAsync(System.Guid csuPhonehistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<HttpOperationResponse<MicrosoftDynamicsCRMcsuPhonehistory>> GetByKeyWithHttpMessagesAsync(string csuPhonehistoryid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Update entity in csu_phonehistories
         /// </summary>
@@ -109,13 +122,13 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
         /// <exception cref="Microsoft.Rest.ValidationException">
         /// Thrown when a required parameter is null
         /// </exception>
-        Task<HttpOperationResponse> PhonehistoriesByKey1WithHttpMessagesAsync(System.Guid csuPhonehistoryid, MicrosoftDynamicsCRMcsuPhonehistory body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<HttpOperationResponse> UpdateWithHttpMessagesAsync(string csuPhonehistoryid, MicrosoftDynamicsCRMcsuPhonehistory body, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Delete entity from csu_phonehistories
         /// </summary>
@@ -131,9 +144,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <param name='cancellationToken'>
         /// The cancellation token.
         /// </param>
-        /// <exception cref="OdataerrorException">
+        /// <exception cref="Microsoft.Rest.HttpOperationException">
         /// Thrown when the operation returned an invalid status code
         /// </exception>
-        Task<HttpOperationResponse> PhonehistoriesByKey2WithHttpMessagesAsync(System.Guid csuPhonehistoryid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<HttpOperationResponse> DeleteWithHttpMessagesAsync(string csuPhonehistoryid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

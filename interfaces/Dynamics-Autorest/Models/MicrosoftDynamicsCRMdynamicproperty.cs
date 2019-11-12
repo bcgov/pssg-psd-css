@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMdynamicproperty class.
         /// </summary>
-        public MicrosoftDynamicsCRMdynamicproperty(System.Guid? _basedynamicpropertyidValue = default(System.Guid?), bool? isreadonly = default(bool?), string versionnumber = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), int? defaultvalueinteger = default(int?), int? dmtimportstate = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? statecode = default(int?), int? maxvalueinteger = default(int?), string maxvaluedouble = default(string), int? utcconversiontimezonecode = default(int?), string name = default(string), decimal? minvaluedecimal = default(decimal?), decimal? defaultvaluedecimal = default(decimal?), System.Guid? rootdynamicpropertyid = default(System.Guid?), int? maxlengthstring = default(int?), string description = default(string), decimal? maxvaluedecimal = default(decimal?), string defaultvaluedouble = default(string), System.Guid? overwrittendynamicpropertyid = default(System.Guid?), string defaultvaluestring = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _defaultvalueoptionsetValue = default(System.Guid?), int? statuscode = default(int?), bool? ishidden = default(bool?), bool? isrequired = default(bool?), int? precision = default(int?), System.Guid? dynamicpropertyid = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _regardingobjectidValue = default(System.Guid?), int? minvalueinteger = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string minvaluedouble = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? datatype = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> dynamicpropertySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> dynamicpropertyAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> dynamicpropertyMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> dynamicpropertyBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> dynamicpropertyPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMdynamicproperty basedynamicpropertyid = default(MicrosoftDynamicsCRMdynamicproperty), IList<MicrosoftDynamicsCRMdynamicproperty> dynamicpropertyBaseDynamicproperty = default(IList<MicrosoftDynamicsCRMdynamicproperty>), MicrosoftDynamicsCRMdynamicpropertyoptionsetitem dynamicpropertyoptionsetvalueid = default(MicrosoftDynamicsCRMdynamicpropertyoptionsetitem), IList<MicrosoftDynamicsCRMdynamicpropertyassociation> dynamicpropertyDynamicPropertyAssociation = default(IList<MicrosoftDynamicsCRMdynamicpropertyassociation>), IList<MicrosoftDynamicsCRMdynamicpropertyinstance> dynamicPropertyDynamicPropertyInstance = default(IList<MicrosoftDynamicsCRMdynamicpropertyinstance>), IList<MicrosoftDynamicsCRMdynamicpropertyoptionsetitem> dynamicPropertyDynamicPropertyOptionSetItem = default(IList<MicrosoftDynamicsCRMdynamicpropertyoptionsetitem>), MicrosoftDynamicsCRMproduct regardingobjectidProduct = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMproductassociation regardingobjectidProductassociation = default(MicrosoftDynamicsCRMproductassociation))
+        public MicrosoftDynamicsCRMdynamicproperty(string _basedynamicpropertyidValue = default(string), bool? isreadonly = default(bool?), string versionnumber = default(string), string _createdonbehalfbyValue = default(string), string _organizationidValue = default(string), int? defaultvalueinteger = default(int?), int? dmtimportstate = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? statecode = default(int?), int? maxvalueinteger = default(int?), string maxvaluedouble = default(string), int? utcconversiontimezonecode = default(int?), string name = default(string), decimal? minvaluedecimal = default(decimal?), decimal? defaultvaluedecimal = default(decimal?), string rootdynamicpropertyid = default(string), int? maxlengthstring = default(int?), string description = default(string), decimal? maxvaluedecimal = default(decimal?), string defaultvaluedouble = default(string), string overwrittendynamicpropertyid = default(string), string defaultvaluestring = default(string), string _createdbyValue = default(string), string _defaultvalueoptionsetValue = default(string), int? statuscode = default(int?), bool? ishidden = default(bool?), bool? isrequired = default(bool?), int? precision = default(int?), string dynamicpropertyid = default(string), string _modifiedbyValue = default(string), int? importsequencenumber = default(int?), string _regardingobjectidValue = default(string), int? minvalueinteger = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string minvaluedouble = default(string), string _modifiedonbehalfbyValue = default(string), int? datatype = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> dynamicpropertySyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> dynamicpropertyAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> dynamicpropertyMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> dynamicpropertyBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> dynamicpropertyPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMdynamicproperty basedynamicpropertyid = default(MicrosoftDynamicsCRMdynamicproperty), IList<MicrosoftDynamicsCRMdynamicproperty> dynamicpropertyBaseDynamicproperty = default(IList<MicrosoftDynamicsCRMdynamicproperty>), MicrosoftDynamicsCRMdynamicpropertyoptionsetitem dynamicpropertyoptionsetvalueid = default(MicrosoftDynamicsCRMdynamicpropertyoptionsetitem), IList<MicrosoftDynamicsCRMdynamicpropertyassociation> dynamicpropertyDynamicPropertyAssociation = default(IList<MicrosoftDynamicsCRMdynamicpropertyassociation>), IList<MicrosoftDynamicsCRMdynamicpropertyinstance> dynamicPropertyDynamicPropertyInstance = default(IList<MicrosoftDynamicsCRMdynamicpropertyinstance>), IList<MicrosoftDynamicsCRMdynamicpropertyoptionsetitem> dynamicPropertyDynamicPropertyOptionSetItem = default(IList<MicrosoftDynamicsCRMdynamicpropertyoptionsetitem>), MicrosoftDynamicsCRMproduct regardingobjectidProduct = default(MicrosoftDynamicsCRMproduct), MicrosoftDynamicsCRMproductassociation regardingobjectidProductassociation = default(MicrosoftDynamicsCRMproductassociation))
         {
             this._basedynamicpropertyidValue = _basedynamicpropertyidValue;
             Isreadonly = isreadonly;
@@ -99,7 +99,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_basedynamicpropertyid_value")]
-        public System.Guid? _basedynamicpropertyidValue { get; set; }
+        public string _basedynamicpropertyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -114,12 +114,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -179,7 +179,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "rootdynamicpropertyid")]
-        public System.Guid? Rootdynamicpropertyid { get; set; }
+        public string Rootdynamicpropertyid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -204,7 +204,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "overwrittendynamicpropertyid")]
-        public System.Guid? Overwrittendynamicpropertyid { get; set; }
+        public string Overwrittendynamicpropertyid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -214,12 +214,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_defaultvalueoptionset_value")]
-        public System.Guid? _defaultvalueoptionsetValue { get; set; }
+        public string _defaultvalueoptionsetValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -244,12 +244,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "dynamicpropertyid")]
-        public System.Guid? Dynamicpropertyid { get; set; }
+        public string Dynamicpropertyid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -259,7 +259,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -279,7 +279,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn class.
         /// </summary>
-        public MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string csuItemnumber = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), int? statuscode = default(int?), int? importsequencenumber = default(int?), System.DateTimeOffset? csuDirectorsdecisiondate = default(System.DateTimeOffset?), System.Guid? _csuReferencedseizureValue = default(System.Guid?), int? csuCompensate = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), int? csuIspartialrequest = default(int?), string versionnumber = default(string), decimal? csuEquivalencyamountingramsseizure = default(decimal?), string csuName = default(string), decimal? csuAmountingrams = default(decimal?), int? csuItemtype = default(int?), decimal? csuCompensationdeterminedBase = default(decimal?), System.Guid? _csuAssociatedseizeditemsidValue = default(System.Guid?), System.Guid? _owninguserValue = default(System.Guid?), decimal? csuEquivalencyamountingramsreturncalculated = default(decimal?), int? csuDirectorsdecision = default(int?), int? statecode = default(int?), System.DateTimeOffset? csuApplicationduedate = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? csuEquivalencyamountingrams = default(decimal?), System.Guid? _owningteamValue = default(System.Guid?), string csuItemdescription = default(string), System.Guid? csuSeizeditemsrequestedforreturnid = default(System.Guid?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), decimal? exchangerate = default(decimal?), decimal? csuAmountingramsseizure = default(decimal?), int? csuNumberofitems = default(int?), decimal? csuNumberofitemsseizure = default(decimal?), System.Guid? _csuCaseidValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? csuReturn = default(int?), decimal? csuCompensationdetermined = default(decimal?), decimal? csuEquivalencyamountingramscalculated = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuSeizeditemsrequestedforreturnSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuSeizeditemsrequestedforreturnDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuSeizeditemsrequestedforreturnDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuSeizeditemsrequestedforreturnAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuSeizeditemsrequestedforreturnMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuSeizeditemsrequestedforreturnProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuSeizeditemsrequestedforreturnBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuSeizeditemsrequestedforreturnPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuSeizuredetails csuReferencedSeizure = default(MicrosoftDynamicsCRMcsuSeizuredetails), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis csuAssociatedSeizedItemsId = default(MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis), MicrosoftDynamicsCRMincident csuCaseId = default(MicrosoftDynamicsCRMincident))
+        public MicrosoftDynamicsCRMcsuSeizeditemsrequestedforreturn(System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string csuItemnumber = default(string), string _modifiedbyValue = default(string), int? statuscode = default(int?), int? importsequencenumber = default(int?), System.DateTimeOffset? csuDirectorsdecisiondate = default(System.DateTimeOffset?), string _csuReferencedseizureValue = default(string), int? csuCompensate = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string _owneridValue = default(string), int? csuIspartialrequest = default(int?), string versionnumber = default(string), decimal? csuEquivalencyamountingramsseizure = default(decimal?), string csuName = default(string), decimal? csuAmountingrams = default(decimal?), int? csuItemtype = default(int?), decimal? csuCompensationdeterminedBase = default(decimal?), string _csuAssociatedseizeditemsidValue = default(string), string _owninguserValue = default(string), decimal? csuEquivalencyamountingramsreturncalculated = default(decimal?), int? csuDirectorsdecision = default(int?), int? statecode = default(int?), System.DateTimeOffset? csuApplicationduedate = default(System.DateTimeOffset?), int? utcconversiontimezonecode = default(int?), decimal? csuEquivalencyamountingrams = default(decimal?), string _owningteamValue = default(string), string csuItemdescription = default(string), string csuSeizeditemsrequestedforreturnid = default(string), string _transactioncurrencyidValue = default(string), string _createdbyValue = default(string), string _createdonbehalfbyValue = default(string), string _owningbusinessunitValue = default(string), decimal? exchangerate = default(decimal?), decimal? csuAmountingramsseizure = default(decimal?), int? csuNumberofitems = default(int?), decimal? csuNumberofitemsseizure = default(decimal?), string _csuCaseidValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), int? csuReturn = default(int?), decimal? csuCompensationdetermined = default(decimal?), decimal? csuEquivalencyamountingramscalculated = default(decimal?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> csuSeizeditemsrequestedforreturnSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMduplicaterecord> csuSeizeditemsrequestedforreturnDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> csuSeizeditemsrequestedforreturnDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMasyncoperation> csuSeizeditemsrequestedforreturnAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> csuSeizeditemsrequestedforreturnMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> csuSeizeditemsrequestedforreturnProcessSession = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> csuSeizeditemsrequestedforreturnBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> csuSeizeditemsrequestedforreturnPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMcsuSeizuredetails csuReferencedSeizure = default(MicrosoftDynamicsCRMcsuSeizuredetails), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis csuAssociatedSeizedItemsId = default(MicrosoftDynamicsCRMcsuApplicationforreturnofseizedcannabis), MicrosoftDynamicsCRMincident csuCaseId = default(MicrosoftDynamicsCRMincident))
         {
             Modifiedon = modifiedon;
             CsuItemnumber = csuItemnumber;
@@ -115,7 +115,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -135,7 +135,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_referencedseizure_value")]
-        public System.Guid? _csuReferencedseizureValue { get; set; }
+        public string _csuReferencedseizureValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -150,12 +150,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -195,12 +195,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_associatedseizeditemsid_value")]
-        public System.Guid? _csuAssociatedseizeditemsidValue { get; set; }
+        public string _csuAssociatedseizeditemsidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -235,7 +235,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -245,27 +245,27 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "csu_seizeditemsrequestedforreturnid")]
-        public System.Guid? CsuSeizeditemsrequestedforreturnid { get; set; }
+        public string CsuSeizeditemsrequestedforreturnid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -290,7 +290,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_csu_caseid_value")]
-        public System.Guid? _csuCaseidValue { get; set; }
+        public string _csuCaseidValue { get; set; }
 
         /// <summary>
         /// </summary>

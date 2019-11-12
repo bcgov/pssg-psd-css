@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsitemap
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsitemap(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string sitemapxml = default(string), string sitemapnameunique = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? sitemapidunique = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? componentstate = default(int?), bool? isappaware = default(bool?), string sitemapname = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), System.Guid? sitemapid = default(System.Guid?), bool? ismanaged = default(bool?), MicrosoftDynamicsCRMsystemuser siteMapModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser siteMapModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser siteMapCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser siteMapCreatedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMsitemap(System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string sitemapxml = default(string), string sitemapnameunique = default(string), string _createdbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string versionnumber = default(string), string _createdonbehalfbyValue = default(string), string sitemapidunique = default(string), string _modifiedbyValue = default(string), int? componentstate = default(int?), bool? isappaware = default(bool?), string sitemapname = default(string), string _organizationidValue = default(string), string solutionid = default(string), string sitemapid = default(string), bool? ismanaged = default(bool?), MicrosoftDynamicsCRMsystemuser siteMapModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser siteMapModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser siteMapCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser siteMapCreatedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Overwritetime = overwritetime;
             Modifiedon = modifiedon;
@@ -83,7 +83,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -93,7 +93,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -103,17 +103,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sitemapidunique")]
-        public System.Guid? Sitemapidunique { get; set; }
+        public string Sitemapidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -133,17 +133,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sitemapid")]
-        public System.Guid? Sitemapid { get; set; }
+        public string Sitemapid { get; set; }
 
         /// <summary>
         /// </summary>

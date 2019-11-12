@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection Get(this ICsucsaspecifiedactivities operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection Get(this ICsucsaspecifiedactivities operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection> GetAsync(this ICsucsaspecifiedactivities operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection> GetAsync(this ICsucsaspecifiedactivities operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection> GetWithHttpMessages(this ICsucsaspecifiedactivities operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCsaspecifiedactivityCollection> GetWithHttpMessages(this ICsucsaspecifiedactivities operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCsaspecifiedactivity CsaspecifiedactivitiesByKey(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCsaspecifiedactivity GetByKey(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.CsaspecifiedactivitiesByKeyAsync(csuCsaspecifiedactivityid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuCsaspecifiedactivityid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> CsaspecifiedactivitiesByKeyAsync(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> GetByKeyAsync(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.CsaspecifiedactivitiesByKeyWithHttpMessagesAsync(csuCsaspecifiedactivityid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuCsaspecifiedactivityid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> CsaspecifiedactivitiesByKeyWithHttpMessages(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCsaspecifiedactivity> GetByKeyWithHttpMessages(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CsaspecifiedactivitiesByKeyWithHttpMessagesAsync(csuCsaspecifiedactivityid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuCsaspecifiedactivityid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void CsaspecifiedactivitiesByKey1(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body)
+            public static void Update(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body)
             {
-                operations.CsaspecifiedactivitiesByKey1Async(csuCsaspecifiedactivityid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuCsaspecifiedactivityid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CsaspecifiedactivitiesByKey1Async(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CsaspecifiedactivitiesByKey1WithHttpMessagesAsync(csuCsaspecifiedactivityid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuCsaspecifiedactivityid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CsaspecifiedactivitiesByKey1WithHttpMessages(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, MicrosoftDynamicsCRMcsuCsaspecifiedactivity body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CsaspecifiedactivitiesByKey1WithHttpMessagesAsync(csuCsaspecifiedactivityid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuCsaspecifiedactivityid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void CsaspecifiedactivitiesByKey2(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, string ifMatch = default(string))
+            public static void Delete(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, string ifMatch = default(string))
             {
-                operations.CsaspecifiedactivitiesByKey2Async(csuCsaspecifiedactivityid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuCsaspecifiedactivityid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CsaspecifiedactivitiesByKey2Async(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CsaspecifiedactivitiesByKey2WithHttpMessagesAsync(csuCsaspecifiedactivityid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuCsaspecifiedactivityid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CsaspecifiedactivitiesByKey2WithHttpMessages(this ICsucsaspecifiedactivities operations, System.Guid csuCsaspecifiedactivityid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsucsaspecifiedactivities operations, string csuCsaspecifiedactivityid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CsaspecifiedactivitiesByKey2WithHttpMessagesAsync(csuCsaspecifiedactivityid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuCsaspecifiedactivityid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

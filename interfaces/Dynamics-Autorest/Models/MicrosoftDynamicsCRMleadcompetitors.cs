@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMleadcompetitors class.
         /// </summary>
-        public MicrosoftDynamicsCRMleadcompetitors(System.Guid? leadcompetitorid = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? competitorid = default(System.Guid?), string versionnumber = default(string), System.Guid? leadid = default(System.Guid?), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> leadcompetitorsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> leadcompetitorsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> leadcompetitorsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> leadcompetitorsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMleadcompetitors(string leadcompetitorid = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), int? timezoneruleversionnumber = default(int?), int? utcconversiontimezonecode = default(int?), string competitorid = default(string), string versionnumber = default(string), string leadid = default(string), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> leadcompetitorsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> leadcompetitorsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> leadcompetitorsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> leadcompetitorsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Leadcompetitorid = leadcompetitorid;
             Overriddencreatedon = overriddencreatedon;
@@ -55,7 +55,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "leadcompetitorid")]
-        public System.Guid? Leadcompetitorid { get; set; }
+        public string Leadcompetitorid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -80,7 +80,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorid")]
-        public System.Guid? Competitorid { get; set; }
+        public string Competitorid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -90,7 +90,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "leadid")]
-        public System.Guid? Leadid { get; set; }
+        public string Leadid { get; set; }
 
         /// <summary>
         /// </summary>

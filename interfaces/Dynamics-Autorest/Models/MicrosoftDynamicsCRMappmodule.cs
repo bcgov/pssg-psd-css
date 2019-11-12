@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMappmodule
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMappmodule(string versionnumber = default(string), System.Guid? solutionid = default(System.Guid?), string appmoduleversion = default(string), string description = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _publisheridValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? componentstate = default(int?), string configxml = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? appmoduleid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? appmoduleidunique = default(System.Guid?), int? importsequencenumber = default(int?), string descriptor = default(string), string url = default(string), string appmodulexmlmanaged = default(string), bool? isdefault = default(bool?), int? formfactor = default(int?), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), System.Guid? webresourceid = default(System.Guid?), string name = default(string), string uniquename = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), bool? ismanaged = default(bool?), string introducedversion = default(string), System.Guid? welcomepageid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? isfeatured = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? clienttype = default(int?), IList<MicrosoftDynamicsCRMrole> appmodulerolesAssociation = default(IList<MicrosoftDynamicsCRMrole>), MicrosoftDynamicsCRMsystemuser appmoduleModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappconfig> appmoduleAppconfig = default(IList<MicrosoftDynamicsCRMappconfig>), MicrosoftDynamicsCRMsystemuser appmoduleCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMpublisher publisherAppmoduleAppmodule = default(MicrosoftDynamicsCRMpublisher), IList<MicrosoftDynamicsCRMappmodulecomponent> appmoduleAppmodulecomponent = default(IList<MicrosoftDynamicsCRMappmodulecomponent>), MicrosoftDynamicsCRMsystemuser appmoduleModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appmoduleCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppmoduleAppmodule = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMappmodule(string versionnumber = default(string), string solutionid = default(string), string appmoduleversion = default(string), string description = default(string), string _organizationidValue = default(string), string _publisheridValue = default(string), string _modifiedonbehalfbyValue = default(string), int? componentstate = default(int?), string configxml = default(string), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string appmoduleid = default(string), string _createdbyValue = default(string), string appmoduleidunique = default(string), int? importsequencenumber = default(int?), string descriptor = default(string), string url = default(string), string appmodulexmlmanaged = default(string), bool? isdefault = default(bool?), int? formfactor = default(int?), System.DateTimeOffset? publishedon = default(System.DateTimeOffset?), string webresourceid = default(string), string name = default(string), string uniquename = default(string), string _modifiedbyValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), bool? ismanaged = default(bool?), string introducedversion = default(string), string welcomepageid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? isfeatured = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? clienttype = default(int?), IList<MicrosoftDynamicsCRMrole> appmodulerolesAssociation = default(IList<MicrosoftDynamicsCRMrole>), MicrosoftDynamicsCRMsystemuser appmoduleModifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMappconfig> appmoduleAppconfig = default(IList<MicrosoftDynamicsCRMappconfig>), MicrosoftDynamicsCRMsystemuser appmoduleCreatedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMpublisher publisherAppmoduleAppmodule = default(MicrosoftDynamicsCRMpublisher), IList<MicrosoftDynamicsCRMappmodulecomponent> appmoduleAppmodulecomponent = default(IList<MicrosoftDynamicsCRMappmodulecomponent>), MicrosoftDynamicsCRMsystemuser appmoduleModifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser appmoduleCreatedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationAppmoduleAppmodule = default(MicrosoftDynamicsCRMorganization))
         {
             Versionnumber = versionnumber;
             Solutionid = solutionid;
@@ -89,7 +89,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -104,17 +104,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_publisherid_value")]
-        public System.Guid? _publisheridValue { get; set; }
+        public string _publisheridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,7 +129,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -139,17 +139,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appmoduleid")]
-        public System.Guid? Appmoduleid { get; set; }
+        public string Appmoduleid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "appmoduleidunique")]
-        public System.Guid? Appmoduleidunique { get; set; }
+        public string Appmoduleidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -189,7 +189,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "webresourceid")]
-        public System.Guid? Webresourceid { get; set; }
+        public string Webresourceid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -204,7 +204,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -224,7 +224,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "welcomepageid")]
-        public System.Guid? Welcomepageid { get; set; }
+        public string Welcomepageid { get; set; }
 
         /// <summary>
         /// </summary>

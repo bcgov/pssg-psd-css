@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMtimezonelocalizedname class.
         /// </summary>
-        public MicrosoftDynamicsCRMtimezonelocalizedname(System.Guid? _timezonedefinitionidValue = default(System.Guid?), string daylightname = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? timezonelocalizednameid = default(System.Guid?), string standardname = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string userinterfacename = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? cultureid = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtimezonedefinition timezonedefinitionid = default(MicrosoftDynamicsCRMtimezonedefinition), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMtimezonelocalizedname(string _timezonedefinitionidValue = default(string), string daylightname = default(string), string _modifiedbyValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string timezonelocalizednameid = default(string), string standardname = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string userinterfacename = default(string), string _modifiedonbehalfbyValue = default(string), int? cultureid = default(int?), string _createdonbehalfbyValue = default(string), string versionnumber = default(string), string _organizationidValue = default(string), string _createdbyValue = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtimezonedefinition timezonedefinitionid = default(MicrosoftDynamicsCRMtimezonedefinition), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._timezonedefinitionidValue = _timezonedefinitionidValue;
             Daylightname = daylightname;
@@ -59,7 +59,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_timezonedefinitionid_value")]
-        public System.Guid? _timezonedefinitionidValue { get; set; }
+        public string _timezonedefinitionidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -69,7 +69,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -79,7 +79,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "timezonelocalizednameid")]
-        public System.Guid? Timezonelocalizednameid { get; set; }
+        public string Timezonelocalizednameid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -99,7 +99,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -109,7 +109,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -119,12 +119,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

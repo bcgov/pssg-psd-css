@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMkbarticlecomment class.
         /// </summary>
-        public MicrosoftDynamicsCRMkbarticlecomment(System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? organizationid = default(System.Guid?), System.Guid? kbarticlecommentid = default(System.Guid?), string commenttext = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _kbarticleidValue = default(System.Guid?), string title = default(string), string versionnumber = default(string), System.Guid? _createdbyValue = default(System.Guid?), IList<MicrosoftDynamicsCRMbulkdeletefailure> kbArticleCommentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> kbArticleCommentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMkbarticle kbarticleid = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMprocesssession> kbArticleCommentProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMkbarticlecomment(string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), string organizationid = default(string), string kbarticlecommentid = default(string), string commenttext = default(string), string _createdonbehalfbyValue = default(string), string _kbarticleidValue = default(string), string title = default(string), string versionnumber = default(string), string _createdbyValue = default(string), IList<MicrosoftDynamicsCRMbulkdeletefailure> kbArticleCommentBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> kbArticleCommentAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMkbarticle kbarticleid = default(MicrosoftDynamicsCRMkbarticle), IList<MicrosoftDynamicsCRMprocesssession> kbArticleCommentProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._modifiedonbehalfbyValue = _modifiedonbehalfbyValue;
             Createdon = createdon;
@@ -62,7 +62,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -77,17 +77,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "organizationid")]
-        public System.Guid? Organizationid { get; set; }
+        public string Organizationid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "kbarticlecommentid")]
-        public System.Guid? Kbarticlecommentid { get; set; }
+        public string Kbarticlecommentid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -97,12 +97,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_kbarticleid_value")]
-        public System.Guid? _kbarticleidValue { get; set; }
+        public string _kbarticleidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -117,7 +117,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

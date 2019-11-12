@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMroletemplate
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMroletemplate(string name = default(string), System.Guid? roletemplateid = default(System.Guid?), IList<MicrosoftDynamicsCRMprivilege> roletemplateprivilegesAssociation = default(IList<MicrosoftDynamicsCRMprivilege>), IList<MicrosoftDynamicsCRMrole> roleTemplateRoles = default(IList<MicrosoftDynamicsCRMrole>))
+        public MicrosoftDynamicsCRMroletemplate(string name = default(string), string roletemplateid = default(string), IList<MicrosoftDynamicsCRMprivilege> roletemplateprivilegesAssociation = default(IList<MicrosoftDynamicsCRMprivilege>), IList<MicrosoftDynamicsCRMrole> roleTemplateRoles = default(IList<MicrosoftDynamicsCRMrole>))
         {
             Name = name;
             Roletemplateid = roletemplateid;
@@ -51,7 +51,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "roletemplateid")]
-        public System.Guid? Roletemplateid { get; set; }
+        public string Roletemplateid { get; set; }
 
         /// <summary>
         /// </summary>

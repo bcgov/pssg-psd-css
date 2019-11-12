@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMprocesstrigger class.
         /// </summary>
-        public MicrosoftDynamicsCRMprocesstrigger(System.Guid? processtriggerid = default(System.Guid?), System.Guid? _formidValue = default(System.Guid?), System.Guid? methodid = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), int? scope = default(int?), int? componentstate = default(int?), System.Guid? owninguser = default(System.Guid?), int? pipelinestage = default(int?), System.Guid? processtriggeridunique = default(System.Guid?), System.Guid? _processidValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), string primaryentitytypecode = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string iscustomizable = default(string), string controlname = default(string), System.Guid? owningbusinessunit = default(System.Guid?), int? controltype = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), string eventProperty = default(string), bool? ismanaged = default(bool?), System.Guid? solutionid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> processTriggerSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemform formid = default(MicrosoftDynamicsCRMsystemform), MicrosoftDynamicsCRMworkflow processid = default(MicrosoftDynamicsCRMworkflow), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMprocesstrigger(string processtriggerid = default(string), string _formidValue = default(string), string methodid = default(string), string _owneridValue = default(string), int? scope = default(int?), int? componentstate = default(int?), string owninguser = default(string), int? pipelinestage = default(int?), string processtriggeridunique = default(string), string _processidValue = default(string), string _modifiedbyValue = default(string), string primaryentitytypecode = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), string iscustomizable = default(string), string controlname = default(string), string owningbusinessunit = default(string), int? controltype = default(int?), string _modifiedonbehalfbyValue = default(string), string versionnumber = default(string), string eventProperty = default(string), bool? ismanaged = default(bool?), string solutionid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdbyValue = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsyncerror> processTriggerSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemform formid = default(MicrosoftDynamicsCRMsystemform), MicrosoftDynamicsCRMworkflow processid = default(MicrosoftDynamicsCRMworkflow), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Processtriggerid = processtriggerid;
             this._formidValue = _formidValue;
@@ -75,22 +75,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processtriggerid")]
-        public System.Guid? Processtriggerid { get; set; }
+        public string Processtriggerid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_formid_value")]
-        public System.Guid? _formidValue { get; set; }
+        public string _formidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "methodid")]
-        public System.Guid? Methodid { get; set; }
+        public string Methodid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -105,7 +105,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owninguser")]
-        public System.Guid? Owninguser { get; set; }
+        public string Owninguser { get; set; }
 
         /// <summary>
         /// </summary>
@@ -115,17 +115,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processtriggeridunique")]
-        public System.Guid? Processtriggeridunique { get; set; }
+        public string Processtriggeridunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_processid_value")]
-        public System.Guid? _processidValue { get; set; }
+        public string _processidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -140,7 +140,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owningbusinessunit")]
-        public System.Guid? Owningbusinessunit { get; set; }
+        public string Owningbusinessunit { get; set; }
 
         /// <summary>
         /// </summary>
@@ -165,7 +165,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -185,7 +185,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -200,7 +200,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

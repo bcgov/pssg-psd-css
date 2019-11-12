@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMlanguagelocale class.
         /// </summary>
-        public MicrosoftDynamicsCRMlanguagelocale(System.Guid? languagelocaleid = default(System.Guid?), string region = default(string), string name = default(string), string language = default(string), string code = default(string), string versionnumber = default(string), int? statecode = default(int?), int? statuscode = default(int?), System.Guid? _organizationidValue = default(System.Guid?), int? localeid = default(int?), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleLanguagelocaleid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMlanguagelocale(string languagelocaleid = default(string), string region = default(string), string name = default(string), string language = default(string), string code = default(string), string versionnumber = default(string), int? statecode = default(int?), int? statuscode = default(int?), string _organizationidValue = default(string), int? localeid = default(int?), IList<MicrosoftDynamicsCRMknowledgearticle> knowledgearticleLanguagelocaleid = default(IList<MicrosoftDynamicsCRMknowledgearticle>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
         {
             Languagelocaleid = languagelocaleid;
             Region = region;
@@ -54,7 +54,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "languagelocaleid")]
-        public System.Guid? Languagelocaleid { get; set; }
+        public string Languagelocaleid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -94,7 +94,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>

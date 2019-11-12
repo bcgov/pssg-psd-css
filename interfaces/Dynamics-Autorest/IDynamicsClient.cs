@@ -33,27 +33,27 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
         /// <summary>
         /// Show only the first n items
         /// </summary>
-        int? Top { get; set; }
+        int? Top40 { get; set; }
 
         /// <summary>
         /// Skip the first n items
         /// </summary>
-        int? Skip { get; set; }
+        int? Skip40 { get; set; }
 
         /// <summary>
         /// Include count of items
         /// </summary>
-        bool? Count { get; set; }
+        bool? Count40 { get; set; }
 
         /// <summary>
         /// Filter items by property values
         /// </summary>
-        string Filter { get; set; }
+        string Filter40 { get; set; }
 
         /// <summary>
         /// Search items by search phrases
         /// </summary>
-        string Search { get; set; }
+        string Search40 { get; set; }
 
         /// <summary>
         /// Subscription credentials which uniquely identify client

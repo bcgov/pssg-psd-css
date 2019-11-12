@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMpostregarding
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMpostregarding(System.Guid? postregardingid = default(System.Guid?), System.DateTimeOffset? latestmanualpostmodifiedon = default(System.DateTimeOffset?), string regardingobjecttypecodeforsharing = default(string), System.Guid? _regardingobjectidValue = default(System.Guid?), System.Guid? _regardingobjectowneridValue = default(System.Guid?), System.DateTimeOffset? latestautopostmodifiedon = default(System.DateTimeOffset?), System.Guid? _regardingobjectowningbusinessunitValue = default(System.Guid?), MicrosoftDynamicsCRMtask regardingobjectidTask = default(MicrosoftDynamicsCRMtask), MicrosoftDynamicsCRMappointment regardingobjectidAppointment = default(MicrosoftDynamicsCRMappointment), MicrosoftDynamicsCRMphonecall regardingobjectidPhonecall = default(MicrosoftDynamicsCRMphonecall), MicrosoftDynamicsCRMrecurringappointmentmaster regardingobjectidRecurringappointmentmaster = default(MicrosoftDynamicsCRMrecurringappointmentmaster), MicrosoftDynamicsCRMlead regardingobjectidLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMincident regardingobjectidIncident = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMopportunity regardingobjectidOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMcompetitor regardingobjectidCompetitor = default(MicrosoftDynamicsCRMcompetitor), MicrosoftDynamicsCRMcsuVehicledetail regardingobjectidCsuVehicledetail = default(MicrosoftDynamicsCRMcsuVehicledetail), IList<MicrosoftDynamicsCRMpost> postPostRegardings = default(IList<MicrosoftDynamicsCRMpost>), MicrosoftDynamicsCRMaccount regardingobjectidAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMsystemuser regardingobjectidSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit regardingobjectowningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMcontact regardingobjectidContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMteam regardingobjectidTeam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMknowledgearticle regardingobjectidKnowledgearticle = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMqueue regardingobjectidQueue = default(MicrosoftDynamicsCRMqueue), MicrosoftDynamicsCRMprocesssession regardingobjectidProcesssession = default(MicrosoftDynamicsCRMprocesssession))
+        public MicrosoftDynamicsCRMpostregarding(string postregardingid = default(string), System.DateTimeOffset? latestmanualpostmodifiedon = default(System.DateTimeOffset?), string regardingobjecttypecodeforsharing = default(string), string _regardingobjectidValue = default(string), string _regardingobjectowneridValue = default(string), System.DateTimeOffset? latestautopostmodifiedon = default(System.DateTimeOffset?), string _regardingobjectowningbusinessunitValue = default(string), MicrosoftDynamicsCRMtask regardingobjectidTask = default(MicrosoftDynamicsCRMtask), MicrosoftDynamicsCRMappointment regardingobjectidAppointment = default(MicrosoftDynamicsCRMappointment), MicrosoftDynamicsCRMphonecall regardingobjectidPhonecall = default(MicrosoftDynamicsCRMphonecall), MicrosoftDynamicsCRMrecurringappointmentmaster regardingobjectidRecurringappointmentmaster = default(MicrosoftDynamicsCRMrecurringappointmentmaster), MicrosoftDynamicsCRMlead regardingobjectidLead = default(MicrosoftDynamicsCRMlead), MicrosoftDynamicsCRMincident regardingobjectidIncident = default(MicrosoftDynamicsCRMincident), MicrosoftDynamicsCRMopportunity regardingobjectidOpportunity = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMcompetitor regardingobjectidCompetitor = default(MicrosoftDynamicsCRMcompetitor), MicrosoftDynamicsCRMcsuVehicledetail regardingobjectidCsuVehicledetail = default(MicrosoftDynamicsCRMcsuVehicledetail), IList<MicrosoftDynamicsCRMpost> postPostRegardings = default(IList<MicrosoftDynamicsCRMpost>), MicrosoftDynamicsCRMaccount regardingobjectidAccount = default(MicrosoftDynamicsCRMaccount), MicrosoftDynamicsCRMsystemuser regardingobjectidSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit regardingobjectowningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMcontact regardingobjectidContact = default(MicrosoftDynamicsCRMcontact), MicrosoftDynamicsCRMteam regardingobjectidTeam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMknowledgearticle regardingobjectidKnowledgearticle = default(MicrosoftDynamicsCRMknowledgearticle), MicrosoftDynamicsCRMqueue regardingobjectidQueue = default(MicrosoftDynamicsCRMqueue), MicrosoftDynamicsCRMprocesssession regardingobjectidProcesssession = default(MicrosoftDynamicsCRMprocesssession))
         {
             Postregardingid = postregardingid;
             Latestmanualpostmodifiedon = latestmanualpostmodifiedon;
@@ -67,7 +67,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "postregardingid")]
-        public System.Guid? Postregardingid { get; set; }
+        public string Postregardingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -82,12 +82,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectid_value")]
-        public System.Guid? _regardingobjectidValue { get; set; }
+        public string _regardingobjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectownerid_value")]
-        public System.Guid? _regardingobjectowneridValue { get; set; }
+        public string _regardingobjectowneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -97,7 +97,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_regardingobjectowningbusinessunit_value")]
-        public System.Guid? _regardingobjectowningbusinessunitValue { get; set; }
+        public string _regardingobjectowningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>

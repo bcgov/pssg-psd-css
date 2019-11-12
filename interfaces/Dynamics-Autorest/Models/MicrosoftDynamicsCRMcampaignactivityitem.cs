@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcampaignactivityitem class.
         /// </summary>
-        public MicrosoftDynamicsCRMcampaignactivityitem(int? utcconversiontimezonecode = default(int?), System.Guid? owninguser = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string itemobjecttypecode = default(string), System.Guid? itemid = default(System.Guid?), System.Guid? campaignactivityitemid = default(System.Guid?), string versionnumber = default(string), System.Guid? _campaignactivityidValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.Guid? owningbusinessunit = default(System.Guid?), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> campaignactivityitemAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> campaignactivityitemMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> campaignactivityitemBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> campaignactivityitemPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMactivitypointer campaignactivityid = default(MicrosoftDynamicsCRMactivitypointer))
+        public MicrosoftDynamicsCRMcampaignactivityitem(int? utcconversiontimezonecode = default(int?), string owninguser = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string itemobjecttypecode = default(string), string itemid = default(string), string campaignactivityitemid = default(string), string versionnumber = default(string), string _campaignactivityidValue = default(string), string _owneridValue = default(string), int? timezoneruleversionnumber = default(int?), string owningbusinessunit = default(string), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> campaignactivityitemAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> campaignactivityitemMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> campaignactivityitemBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> campaignactivityitemPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMactivitypointer campaignactivityid = default(MicrosoftDynamicsCRMactivitypointer))
         {
             Utcconversiontimezonecode = utcconversiontimezonecode;
             Owninguser = owninguser;
@@ -65,7 +65,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owninguser")]
-        public System.Guid? Owninguser { get; set; }
+        public string Owninguser { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,12 +85,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "itemid")]
-        public System.Guid? Itemid { get; set; }
+        public string Itemid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "campaignactivityitemid")]
-        public System.Guid? Campaignactivityitemid { get; set; }
+        public string Campaignactivityitemid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -100,12 +100,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_campaignactivityid_value")]
-        public System.Guid? _campaignactivityidValue { get; set; }
+        public string _campaignactivityidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "owningbusinessunit")]
-        public System.Guid? Owningbusinessunit { get; set; }
+        public string Owningbusinessunit { get; set; }
 
         /// <summary>
         /// </summary>

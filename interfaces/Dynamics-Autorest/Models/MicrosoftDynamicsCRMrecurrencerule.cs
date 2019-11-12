@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMrecurrencerule class.
         /// </summary>
-        public MicrosoftDynamicsCRMrecurrencerule(System.DateTimeOffset? patternenddate = default(System.DateTimeOffset?), System.Guid? _objectidValue = default(System.Guid?), int? dayofmonth = default(int?), System.Guid? _createdbyValue = default(System.Guid?), int? monthofyear = default(int?), int? instance = default(int?), System.Guid? _owninguserValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? starttime = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), bool? isnthmonthly = default(bool?), bool? isnthyearly = default(bool?), int? occurrences = default(int?), int? duration = default(int?), int? patternendtype = default(int?), System.Guid? _owningteamValue = default(System.Guid?), bool? isregenerate = default(bool?), bool? isweekdaypattern = default(bool?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? daysofweekmask = default(int?), int? interval = default(int?), System.DateTimeOffset? effectivestartdate = default(System.DateTimeOffset?), System.DateTimeOffset? endtime = default(System.DateTimeOffset?), string versionnumber = default(string), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.DateTimeOffset? patternstartdate = default(System.DateTimeOffset?), int? firstdayofweek = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? recurrencepatterntype = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? ruleid = default(System.Guid?), System.DateTimeOffset? effectiveenddate = default(System.DateTimeOffset?), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> recurrenceruleRecurringappointmentmaster = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), MicrosoftDynamicsCRMactivitypointer objectid = default(MicrosoftDynamicsCRMactivitypointer))
+        public MicrosoftDynamicsCRMrecurrencerule(System.DateTimeOffset? patternenddate = default(System.DateTimeOffset?), string _objectidValue = default(string), int? dayofmonth = default(int?), string _createdbyValue = default(string), int? monthofyear = default(int?), int? instance = default(int?), string _owninguserValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? starttime = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), bool? isnthmonthly = default(bool?), bool? isnthyearly = default(bool?), int? occurrences = default(int?), int? duration = default(int?), int? patternendtype = default(int?), string _owningteamValue = default(string), bool? isregenerate = default(bool?), bool? isweekdaypattern = default(bool?), string _createdonbehalfbyValue = default(string), int? daysofweekmask = default(int?), int? interval = default(int?), System.DateTimeOffset? effectivestartdate = default(System.DateTimeOffset?), System.DateTimeOffset? endtime = default(System.DateTimeOffset?), string versionnumber = default(string), string _owningbusinessunitValue = default(string), System.DateTimeOffset? patternstartdate = default(System.DateTimeOffset?), int? firstdayofweek = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? recurrencepatterntype = default(int?), string _modifiedonbehalfbyValue = default(string), string _owneridValue = default(string), string ruleid = default(string), System.DateTimeOffset? effectiveenddate = default(System.DateTimeOffset?), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> recurrenceruleRecurringappointmentmaster = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), MicrosoftDynamicsCRMactivitypointer objectid = default(MicrosoftDynamicsCRMactivitypointer))
         {
             Patternenddate = patternenddate;
             this._objectidValue = _objectidValue;
@@ -88,7 +88,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_objectid_value")]
-        public System.Guid? _objectidValue { get; set; }
+        public string _objectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -98,7 +98,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -113,7 +113,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -128,7 +128,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -158,7 +158,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -173,7 +173,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -203,7 +203,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -228,17 +228,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "ruleid")]
-        public System.Guid? Ruleid { get; set; }
+        public string Ruleid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMresource
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMresource(int? utcconversiontimezonecode = default(int?), bool? isdisabled = default(bool?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string objecttypecode = default(string), System.Guid? _organizationidValue = default(System.Guid?), bool? displayinserviceviews = default(bool?), int? importsequencenumber = default(int?), long? entityimageTimestamp = default(long?), string entityimageUrl = default(string), byte[] entityimage = default(byte[]), System.Guid? _siteidValue = default(System.Guid?), System.Guid? calendarid = default(System.Guid?), System.Guid? entityimageid = default(System.Guid?), string versionnumber = default(string), System.Guid? _businessunitidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.Guid? resourceid = default(System.Guid?), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> resourceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> resourceAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> resourceMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> resourceBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> resourcePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMequipment resourceidEquipment = default(MicrosoftDynamicsCRMequipment), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMresourcespec resourceidResourcespec = default(MicrosoftDynamicsCRMresourcespec), MicrosoftDynamicsCRMsystemuser resourceidSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsite siteid = default(MicrosoftDynamicsCRMsite))
+        public MicrosoftDynamicsCRMresource(int? utcconversiontimezonecode = default(int?), bool? isdisabled = default(bool?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string objecttypecode = default(string), string _organizationidValue = default(string), bool? displayinserviceviews = default(bool?), int? importsequencenumber = default(int?), long? entityimageTimestamp = default(long?), string entityimageUrl = default(string), byte[] entityimage = default(byte[]), string _siteidValue = default(string), string calendarid = default(string), string entityimageid = default(string), string versionnumber = default(string), string _businessunitidValue = default(string), int? timezoneruleversionnumber = default(int?), string resourceid = default(string), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> resourceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> resourceAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> resourceMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> resourceBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> resourcePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMequipment resourceidEquipment = default(MicrosoftDynamicsCRMequipment), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMresourcespec resourceidResourcespec = default(MicrosoftDynamicsCRMresourcespec), MicrosoftDynamicsCRMsystemuser resourceidSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsite siteid = default(MicrosoftDynamicsCRMsite))
         {
             Utcconversiontimezonecode = utcconversiontimezonecode;
             Isdisabled = isdisabled;
@@ -98,7 +98,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,17 +129,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_siteid_value")]
-        public System.Guid? _siteidValue { get; set; }
+        public string _siteidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "calendarid")]
-        public System.Guid? Calendarid { get; set; }
+        public string Calendarid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -149,7 +149,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businessunitid_value")]
-        public System.Guid? _businessunitidValue { get; set; }
+        public string _businessunitidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -159,7 +159,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "resourceid")]
-        public System.Guid? Resourceid { get; set; }
+        public string Resourceid { get; set; }
 
         /// <summary>
         /// </summary>

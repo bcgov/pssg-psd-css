@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMimportfile
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMimportfile(System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _importmapidValue = default(System.Guid?), int? partialfailurecount = default(int?), bool? usesystemmap = default(bool?), int? successcount = default(int?), System.Guid? _owneridValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), string headerrow = default(string), string name = default(string), string targetentityname = default(string), System.Guid? importfileid = default(System.Guid?), System.Guid? _recordsowneridValue = default(System.Guid?), System.Guid? _owningteamValue = default(System.Guid?), string relatedentitycolumns = default(string), string additionalheaderrow = default(string), int? parsedtablecolumnsnumber = default(int?), int? upsertmodecode = default(int?), System.Guid? entitykeyid = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? failurecount = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), string parsedtablename = default(string), bool? isfirstrowheader = default(bool?), int? datadelimitercode = default(int?), int? processcode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? fielddelimitercode = default(int?), string content = default(string), int? progresscounter = default(int?), System.Guid? _importidValue = default(System.Guid?), int? statecode = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? totalcount = default(int?), int? statuscode = default(int?), string sourceentityname = default(string), string parsedtablecolumnprefix = default(string), bool? enableduplicatedetection = default(bool?), System.DateTimeOffset? completedon = default(System.DateTimeOffset?), int? processingstatus = default(int?), int? filetypecode = default(int?), System.Guid? _owninguserValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), string source = default(string), string size = default(string), IList<MicrosoftDynamicsCRMasyncoperation> importFileAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> importFileBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMteam recordsowneridTeam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMimportdata> importFileImportData = default(IList<MicrosoftDynamicsCRMimportdata>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMimport importid = default(MicrosoftDynamicsCRMimport), MicrosoftDynamicsCRMsystemuser recordsowneridSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMimportlog> importLogImportFile = default(IList<MicrosoftDynamicsCRMimportlog>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap))
+        public MicrosoftDynamicsCRMimportfile(string _createdbyValue = default(string), string _importmapidValue = default(string), int? partialfailurecount = default(int?), bool? usesystemmap = default(bool?), int? successcount = default(int?), string _owneridValue = default(string), string _owningbusinessunitValue = default(string), string headerrow = default(string), string name = default(string), string targetentityname = default(string), string importfileid = default(string), string _recordsowneridValue = default(string), string _owningteamValue = default(string), string relatedentitycolumns = default(string), string additionalheaderrow = default(string), int? parsedtablecolumnsnumber = default(int?), int? upsertmodecode = default(int?), string entitykeyid = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? failurecount = default(int?), string _modifiedbyValue = default(string), int? timezoneruleversionnumber = default(int?), string parsedtablename = default(string), bool? isfirstrowheader = default(bool?), int? datadelimitercode = default(int?), int? processcode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? fielddelimitercode = default(int?), string content = default(string), int? progresscounter = default(int?), string _importidValue = default(string), int? statecode = default(int?), string _createdonbehalfbyValue = default(string), int? totalcount = default(int?), int? statuscode = default(int?), string sourceentityname = default(string), string parsedtablecolumnprefix = default(string), bool? enableduplicatedetection = default(bool?), System.DateTimeOffset? completedon = default(System.DateTimeOffset?), int? processingstatus = default(int?), int? filetypecode = default(int?), string _owninguserValue = default(string), int? utcconversiontimezonecode = default(int?), string source = default(string), string size = default(string), IList<MicrosoftDynamicsCRMasyncoperation> importFileAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> importFileBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMteam recordsowneridTeam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), IList<MicrosoftDynamicsCRMimportdata> importFileImportData = default(IList<MicrosoftDynamicsCRMimportdata>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMimport importid = default(MicrosoftDynamicsCRMimport), MicrosoftDynamicsCRMsystemuser recordsowneridSystemuser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMimportlog> importLogImportFile = default(IList<MicrosoftDynamicsCRMimportlog>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap))
         {
             this._createdbyValue = _createdbyValue;
             this._importmapidValue = _importmapidValue;
@@ -104,12 +104,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_importmapid_value")]
-        public System.Guid? _importmapidValue { get; set; }
+        public string _importmapidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -129,12 +129,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -154,17 +154,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "importfileid")]
-        public System.Guid? Importfileid { get; set; }
+        public string Importfileid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_recordsownerid_value")]
-        public System.Guid? _recordsowneridValue { get; set; }
+        public string _recordsowneridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -189,12 +189,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entitykeyid")]
-        public System.Guid? Entitykeyid { get; set; }
+        public string Entitykeyid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -209,7 +209,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -259,7 +259,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_importid_value")]
-        public System.Guid? _importidValue { get; set; }
+        public string _importidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -269,7 +269,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -314,7 +314,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>

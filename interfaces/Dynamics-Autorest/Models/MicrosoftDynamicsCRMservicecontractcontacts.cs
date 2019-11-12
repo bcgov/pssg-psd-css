@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMservicecontractcontacts class.
         /// </summary>
-        public MicrosoftDynamicsCRMservicecontractcontacts(System.Guid? contractid = default(System.Guid?), int? servicelevel = default(int?), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), System.Guid? contactid = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string name = default(string), string versionnumber = default(string), System.Guid? servicecontractcontactid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> servicecontractcontactsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> servicecontractcontactsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> servicecontractcontactsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> servicecontractcontactsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMservicecontractcontacts(string contractid = default(string), int? servicelevel = default(int?), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), string contactid = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string name = default(string), string versionnumber = default(string), string servicecontractcontactid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> servicecontractcontactsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> servicecontractcontactsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> servicecontractcontactsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> servicecontractcontactsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Contractid = contractid;
             Servicelevel = servicelevel;
@@ -56,7 +56,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contractid")]
-        public System.Guid? Contractid { get; set; }
+        public string Contractid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -76,7 +76,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -101,7 +101,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "servicecontractcontactid")]
-        public System.Guid? Servicecontractcontactid { get; set; }
+        public string Servicecontractcontactid { get; set; }
 
         /// <summary>
         /// </summary>

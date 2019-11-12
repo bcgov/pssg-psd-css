@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMinvoice
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMinvoice(string shiptoName = default(string), System.Guid? _contactidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), int? statuscode = default(int?), decimal? exchangerate = default(decimal?), System.Guid? _modifiedbyValue = default(System.Guid?), int? onholdtime = default(int?), bool? ispricelocked = default(bool?), decimal? discountamountBase = default(decimal?), System.Guid? stageid = default(System.Guid?), decimal? totalamountlessfreightBase = default(decimal?), decimal? totalamountBase = default(decimal?), string versionnumber = default(string), int? pricingerrorcode = default(int?), decimal? discountpercentage = default(decimal?), decimal? totallineitemdiscountamountBase = default(decimal?), System.Guid? _accountidValue = default(System.Guid?), decimal? freightamount = default(decimal?), string billtoLine2 = default(string), string shiptoPostalcode = default(string), string shiptoLine2 = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string description = default(string), int? statecode = default(int?), System.Guid? _opportunityidValue = default(System.Guid?), string billtoPostalcode = default(string), decimal? totalamount = default(decimal?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), string shiptoStateorprovince = default(string), decimal? totallineitemdiscountamount = default(decimal?), System.Guid? entityimageid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), string shiptoComposite = default(string), decimal? totaltaxBase = default(decimal?), int? paymenttermscode = default(int?), string name = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string shiptoTelephone = default(string), string billtoLine3 = default(string), System.Guid? processid = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string billtoTelephone = default(string), string shiptoCountry = default(string), int? prioritycode = default(int?), string billtoComposite = default(string), System.Guid? _salesorderidValue = default(System.Guid?), System.DateTimeOffset? lastonholdtime = default(System.DateTimeOffset?), string emailaddress = default(string), string shiptoLine1 = default(string), System.Guid? _slaidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), bool? willcall = default(bool?), string shiptoCity = default(string), System.Guid? _pricelevelidValue = default(System.Guid?), string shiptoLine3 = default(string), decimal? totaldiscountamount = default(decimal?), System.Guid? _owningteamValue = default(System.Guid?), System.DateTimeOffset? lastbackofficesubmit = default(System.DateTimeOffset?), long? entityimageTimestamp = default(long?), string billtoLine1 = default(string), string entityimageUrl = default(string), System.Guid? _owninguserValue = default(System.Guid?), decimal? totalamountlessfreight = default(decimal?), System.Guid? _slainvokedidValue = default(System.Guid?), decimal? freightamountBase = default(decimal?), string invoicenumber = default(string), string billtoFax = default(string), string billtoCity = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? invoiceid = default(System.Guid?), decimal? totallineitemamount = default(decimal?), string billtoCountry = default(string), string shiptoFax = default(string), System.Guid? _owneridValue = default(System.Guid?), System.DateTimeOffset? datedelivered = default(System.DateTimeOffset?), decimal? discountamount = default(decimal?), string billtoName = default(string), string billtoStateorprovince = default(string), decimal? totallineitemamountBase = default(decimal?), decimal? totaldiscountamountBase = default(decimal?), byte[] entityimage = default(byte[]), int? shiptoFreighttermscode = default(int?), string traversedpath = default(string), System.Guid? _createdbyValue = default(System.Guid?), int? shippingmethodcode = default(int?), System.Guid? _customeridValue = default(System.Guid?), decimal? totaltax = default(decimal?), System.DateTime? duedate = default(System.DateTime?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> invoiceActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> invoiceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> invoiceActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMasyncoperation> invoiceAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> invoiceMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> invoiceProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> invoiceBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> invoicePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMappointment> invoiceAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> invoiceEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> invoiceFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> invoiceLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> invoicePhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> invoiceTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> invoiceRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> invoiceSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> invoiceConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> invoiceConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> invoiceAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMserviceappointment> invoiceServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMcontact> contactinvoicesAssociation = default(IList<MicrosoftDynamicsCRMcontact>), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), IList<MicrosoftDynamicsCRMinvoicedetail> invoiceDetails = default(IList<MicrosoftDynamicsCRMinvoicedetail>), IList<MicrosoftDynamicsCRMslakpiinstance> slakpiinstanceInvoice = default(IList<MicrosoftDynamicsCRMslakpiinstance>), MicrosoftDynamicsCRMopportunity opportunityid = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMpricelevel pricelevelid = default(MicrosoftDynamicsCRMpricelevel), MicrosoftDynamicsCRMsalesorder salesorderid = default(MicrosoftDynamicsCRMsalesorder), MicrosoftDynamicsCRMsla slainvokedidInvoiceSla = default(MicrosoftDynamicsCRMsla), MicrosoftDynamicsCRMsla slaInvoiceSla = default(MicrosoftDynamicsCRMsla), IList<MicrosoftDynamicsCRMcsuCasetask> invoiceCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
+        public MicrosoftDynamicsCRMinvoice(string shiptoName = default(string), string _contactidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? importsequencenumber = default(int?), int? statuscode = default(int?), decimal? exchangerate = default(decimal?), string _modifiedbyValue = default(string), int? onholdtime = default(int?), bool? ispricelocked = default(bool?), decimal? discountamountBase = default(decimal?), string stageid = default(string), decimal? totalamountlessfreightBase = default(decimal?), decimal? totalamountBase = default(decimal?), string versionnumber = default(string), int? pricingerrorcode = default(int?), decimal? discountpercentage = default(decimal?), decimal? totallineitemdiscountamountBase = default(decimal?), string _accountidValue = default(string), decimal? freightamount = default(decimal?), string billtoLine2 = default(string), string shiptoPostalcode = default(string), string shiptoLine2 = default(string), string _modifiedonbehalfbyValue = default(string), string description = default(string), int? statecode = default(int?), string _opportunityidValue = default(string), string billtoPostalcode = default(string), decimal? totalamount = default(decimal?), string _transactioncurrencyidValue = default(string), string shiptoStateorprovince = default(string), decimal? totallineitemdiscountamount = default(decimal?), string entityimageid = default(string), int? utcconversiontimezonecode = default(int?), string shiptoComposite = default(string), decimal? totaltaxBase = default(decimal?), int? paymenttermscode = default(int?), string name = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string shiptoTelephone = default(string), string billtoLine3 = default(string), string processid = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string billtoTelephone = default(string), string shiptoCountry = default(string), int? prioritycode = default(int?), string billtoComposite = default(string), string _salesorderidValue = default(string), System.DateTimeOffset? lastonholdtime = default(System.DateTimeOffset?), string emailaddress = default(string), string shiptoLine1 = default(string), string _slaidValue = default(string), int? timezoneruleversionnumber = default(int?), bool? willcall = default(bool?), string shiptoCity = default(string), string _pricelevelidValue = default(string), string shiptoLine3 = default(string), decimal? totaldiscountamount = default(decimal?), string _owningteamValue = default(string), System.DateTimeOffset? lastbackofficesubmit = default(System.DateTimeOffset?), long? entityimageTimestamp = default(long?), string billtoLine1 = default(string), string entityimageUrl = default(string), string _owninguserValue = default(string), decimal? totalamountlessfreight = default(decimal?), string _slainvokedidValue = default(string), decimal? freightamountBase = default(decimal?), string invoicenumber = default(string), string billtoFax = default(string), string billtoCity = default(string), string _createdonbehalfbyValue = default(string), string _owningbusinessunitValue = default(string), string invoiceid = default(string), decimal? totallineitemamount = default(decimal?), string billtoCountry = default(string), string shiptoFax = default(string), string _owneridValue = default(string), System.DateTimeOffset? datedelivered = default(System.DateTimeOffset?), decimal? discountamount = default(decimal?), string billtoName = default(string), string billtoStateorprovince = default(string), decimal? totallineitemamountBase = default(decimal?), decimal? totaldiscountamountBase = default(decimal?), byte[] entityimage = default(byte[]), int? shiptoFreighttermscode = default(int?), string traversedpath = default(string), string _createdbyValue = default(string), int? shippingmethodcode = default(int?), string _customeridValue = default(string), decimal? totaltax = default(decimal?), System.DateTime? duedate = default(System.DateTime?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser owninguser = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMteam owningteam = default(MicrosoftDynamicsCRMteam), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMactivitypointer> invoiceActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> invoiceSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivityparty> invoiceActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMasyncoperation> invoiceAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> invoiceMailboxTrackingFolder = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> invoiceProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> invoiceBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> invoicePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMappointment> invoiceAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> invoiceEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> invoiceFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> invoiceLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> invoicePhonecalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> invoiceTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> invoiceRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> invoiceSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMconnection> invoiceConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> invoiceConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMannotation> invoiceAnnotation = default(IList<MicrosoftDynamicsCRMannotation>), IList<MicrosoftDynamicsCRMserviceappointment> invoiceServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), MicrosoftDynamicsCRMaccount customeridAccount = default(MicrosoftDynamicsCRMaccount), IList<MicrosoftDynamicsCRMcontact> contactinvoicesAssociation = default(IList<MicrosoftDynamicsCRMcontact>), MicrosoftDynamicsCRMcontact customeridContact = default(MicrosoftDynamicsCRMcontact), IList<MicrosoftDynamicsCRMinvoicedetail> invoiceDetails = default(IList<MicrosoftDynamicsCRMinvoicedetail>), IList<MicrosoftDynamicsCRMslakpiinstance> slakpiinstanceInvoice = default(IList<MicrosoftDynamicsCRMslakpiinstance>), MicrosoftDynamicsCRMopportunity opportunityid = default(MicrosoftDynamicsCRMopportunity), MicrosoftDynamicsCRMpricelevel pricelevelid = default(MicrosoftDynamicsCRMpricelevel), MicrosoftDynamicsCRMsalesorder salesorderid = default(MicrosoftDynamicsCRMsalesorder), MicrosoftDynamicsCRMsla slainvokedidInvoiceSla = default(MicrosoftDynamicsCRMsla), MicrosoftDynamicsCRMsla slaInvoiceSla = default(MicrosoftDynamicsCRMsla), IList<MicrosoftDynamicsCRMcsuCasetask> invoiceCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
         {
             ShiptoName = shiptoName;
             this._contactidValue = _contactidValue;
@@ -180,7 +180,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_contactid_value")]
-        public System.Guid? _contactidValue { get; set; }
+        public string _contactidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -205,7 +205,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -225,7 +225,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -260,7 +260,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_accountid_value")]
-        public System.Guid? _accountidValue { get; set; }
+        public string _accountidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -285,7 +285,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -300,7 +300,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_opportunityid_value")]
-        public System.Guid? _opportunityidValue { get; set; }
+        public string _opportunityidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -315,7 +315,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -330,7 +330,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -375,7 +375,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -405,7 +405,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_salesorderid_value")]
-        public System.Guid? _salesorderidValue { get; set; }
+        public string _salesorderidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -425,7 +425,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_slaid_value")]
-        public System.Guid? _slaidValue { get; set; }
+        public string _slaidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -445,7 +445,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_pricelevelid_value")]
-        public System.Guid? _pricelevelidValue { get; set; }
+        public string _pricelevelidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -460,7 +460,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -485,7 +485,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -495,7 +495,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_slainvokedid_value")]
-        public System.Guid? _slainvokedidValue { get; set; }
+        public string _slainvokedidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -520,17 +520,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "invoiceid")]
-        public System.Guid? Invoiceid { get; set; }
+        public string Invoiceid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -550,7 +550,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -601,7 +601,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -611,7 +611,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_customerid_value")]
-        public System.Guid? _customeridValue { get; set; }
+        public string _customeridValue { get; set; }
 
         /// <summary>
         /// </summary>

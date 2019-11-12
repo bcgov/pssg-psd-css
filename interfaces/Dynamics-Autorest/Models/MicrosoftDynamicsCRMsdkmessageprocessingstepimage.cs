@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMsdkmessageprocessingstepimage class.
         /// </summary>
-        public MicrosoftDynamicsCRMsdkmessageprocessingstepimage(int? componentstate = default(int?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string entityalias = default(string), string introducedversion = default(string), string attributes = default(string), bool? ismanaged = default(bool?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? sdkmessageprocessingstepimageidunique = default(System.Guid?), string name = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), string description = default(string), string iscustomizable = default(string), System.Guid? _organizationidValue = default(System.Guid?), string versionnumber = default(string), string messagepropertyname = default(string), System.Guid? sdkmessageprocessingstepimageid = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _sdkmessageprocessingstepidValue = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? solutionid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? imagetype = default(int?), int? customizationlevel = default(int?), string relatedattributename = default(string), System.Guid? _createdbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsdkmessageprocessingstep sdkmessageprocessingstepid = default(MicrosoftDynamicsCRMsdkmessageprocessingstep))
+        public MicrosoftDynamicsCRMsdkmessageprocessingstepimage(int? componentstate = default(int?), string _createdonbehalfbyValue = default(string), string entityalias = default(string), string introducedversion = default(string), string attributes = default(string), bool? ismanaged = default(bool?), string _modifiedonbehalfbyValue = default(string), string sdkmessageprocessingstepimageidunique = default(string), string name = default(string), string _modifiedbyValue = default(string), string description = default(string), string iscustomizable = default(string), string _organizationidValue = default(string), string versionnumber = default(string), string messagepropertyname = default(string), string sdkmessageprocessingstepimageid = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _sdkmessageprocessingstepidValue = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string solutionid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? imagetype = default(int?), int? customizationlevel = default(int?), string relatedattributename = default(string), string _createdbyValue = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsdkmessageprocessingstep sdkmessageprocessingstepid = default(MicrosoftDynamicsCRMsdkmessageprocessingstep))
         {
             Componentstate = componentstate;
             this._createdonbehalfbyValue = _createdonbehalfbyValue;
@@ -76,7 +76,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -101,12 +101,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sdkmessageprocessingstepimageidunique")]
-        public System.Guid? Sdkmessageprocessingstepimageidunique { get; set; }
+        public string Sdkmessageprocessingstepimageidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -116,7 +116,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -131,7 +131,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -146,7 +146,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sdkmessageprocessingstepimageid")]
-        public System.Guid? Sdkmessageprocessingstepimageid { get; set; }
+        public string Sdkmessageprocessingstepimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -156,7 +156,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_sdkmessageprocessingstepid_value")]
-        public System.Guid? _sdkmessageprocessingstepidValue { get; set; }
+        public string _sdkmessageprocessingstepidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -166,7 +166,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -191,7 +191,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

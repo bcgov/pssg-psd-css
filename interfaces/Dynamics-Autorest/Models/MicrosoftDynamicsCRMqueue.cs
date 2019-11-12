@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMqueue class.
         /// </summary>
-        public MicrosoftDynamicsCRMqueue(long? entityimageTimestamp = default(long?), string versionnumber = default(string), string name = default(string), int? queueviewtype = default(int?), string entityimageUrl = default(string), int? outgoingemaildeliverymethod = default(int?), System.Guid? _owningbusinessunitValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), bool? ignoreunsolicitedemail = default(bool?), string emailaddress = default(string), int? incomingemaildeliverymethod = default(int?), System.Guid? _owneridValue = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _owninguserValue = default(System.Guid?), string description = default(string), byte[] entityimage = default(byte[]), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? statecode = default(int?), System.Guid? _organizationidValue = default(System.Guid?), int? statuscode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), decimal? exchangerate = default(decimal?), System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? entityimageid = default(System.Guid?), System.Guid? queueid = default(System.Guid?), int? emailrouteraccessapproval = default(int?), System.Guid? _defaultmailboxValue = default(System.Guid?), bool? isemailaddressapprovedbyo365admin = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? numberofmembers = default(int?), System.Guid? _owningteamValue = default(System.Guid?), int? queuetypecode = default(int?), int? incomingemailfilteringmethod = default(int?), int? numberofitems = default(int?), MicrosoftDynamicsCRMmailbox defaultmailbox = default(MicrosoftDynamicsCRMmailbox), IList<MicrosoftDynamicsCRMprocesssession> queueProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> queueBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMpostfollow> queuePostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMmailbox> mailboxRegardingQueue = default(IList<MicrosoftDynamicsCRMmailbox>), IList<MicrosoftDynamicsCRMteam> queueTeam = default(IList<MicrosoftDynamicsCRMteam>), IList<MicrosoftDynamicsCRMqueueitem> queueEntries = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMactivityparty> queueActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMasyncoperation> queueAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser primaryuserid = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMemail> queueEmailEmailSender = default(IList<MicrosoftDynamicsCRMemail>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsystemuser> queuemembershipAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMsyncerror> queueSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsystemuser> queueSystemUser = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMpostregarding> queuePostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> queuePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> queueDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> queueDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>))
+        public MicrosoftDynamicsCRMqueue(long? entityimageTimestamp = default(long?), string versionnumber = default(string), string name = default(string), int? queueviewtype = default(int?), string entityimageUrl = default(string), int? outgoingemaildeliverymethod = default(int?), string _owningbusinessunitValue = default(string), string _modifiedbyValue = default(string), bool? ignoreunsolicitedemail = default(bool?), string emailaddress = default(string), int? incomingemaildeliverymethod = default(int?), string _owneridValue = default(string), int? importsequencenumber = default(int?), string _owninguserValue = default(string), string description = default(string), byte[] entityimage = default(byte[]), string _createdbyValue = default(string), string _createdonbehalfbyValue = default(string), int? statecode = default(int?), string _organizationidValue = default(string), int? statuscode = default(int?), string _modifiedonbehalfbyValue = default(string), decimal? exchangerate = default(decimal?), string _transactioncurrencyidValue = default(string), string entityimageid = default(string), string queueid = default(string), int? emailrouteraccessapproval = default(int?), string _defaultmailboxValue = default(string), bool? isemailaddressapprovedbyo365admin = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? numberofmembers = default(int?), string _owningteamValue = default(string), int? queuetypecode = default(int?), int? incomingemailfilteringmethod = default(int?), int? numberofitems = default(int?), MicrosoftDynamicsCRMmailbox defaultmailbox = default(MicrosoftDynamicsCRMmailbox), IList<MicrosoftDynamicsCRMprocesssession> queueProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> queueBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMpostfollow> queuePostFollows = default(IList<MicrosoftDynamicsCRMpostfollow>), IList<MicrosoftDynamicsCRMmailbox> mailboxRegardingQueue = default(IList<MicrosoftDynamicsCRMmailbox>), IList<MicrosoftDynamicsCRMteam> queueTeam = default(IList<MicrosoftDynamicsCRMteam>), IList<MicrosoftDynamicsCRMqueueitem> queueEntries = default(IList<MicrosoftDynamicsCRMqueueitem>), IList<MicrosoftDynamicsCRMactivityparty> queueActivityParties = default(IList<MicrosoftDynamicsCRMactivityparty>), IList<MicrosoftDynamicsCRMasyncoperation> queueAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMbusinessunit owningbusinessunit = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMprincipal ownerid = default(MicrosoftDynamicsCRMprincipal), MicrosoftDynamicsCRMsystemuser primaryuserid = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMemail> queueEmailEmailSender = default(IList<MicrosoftDynamicsCRMemail>), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsystemuser> queuemembershipAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMsyncerror> queueSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsystemuser> queueSystemUser = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMpostregarding> queuePostRegardings = default(IList<MicrosoftDynamicsCRMpostregarding>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> queuePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMduplicaterecord> queueDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> queueDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>))
         {
             EntityimageTimestamp = entityimageTimestamp;
             Versionnumber = versionnumber;
@@ -136,12 +136,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningbusinessunit_value")]
-        public System.Guid? _owningbusinessunitValue { get; set; }
+        public string _owningbusinessunitValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -161,7 +161,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_ownerid_value")]
-        public System.Guid? _owneridValue { get; set; }
+        public string _owneridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -171,7 +171,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owninguser_value")]
-        public System.Guid? _owninguserValue { get; set; }
+        public string _owninguserValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -187,12 +187,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -202,7 +202,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -212,7 +212,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -222,17 +222,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "queueid")]
-        public System.Guid? Queueid { get; set; }
+        public string Queueid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -242,7 +242,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_defaultmailbox_value")]
-        public System.Guid? _defaultmailboxValue { get; set; }
+        public string _defaultmailboxValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -272,7 +272,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_owningteam_value")]
-        public System.Guid? _owningteamValue { get; set; }
+        public string _owningteamValue { get; set; }
 
         /// <summary>
         /// </summary>

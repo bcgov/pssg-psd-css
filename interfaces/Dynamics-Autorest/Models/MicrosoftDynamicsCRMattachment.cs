@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMattachment
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMattachment(System.Guid? attachmentid = default(System.Guid?), string mimetype = default(string), string body = default(string), byte[] bodyBinary = default(byte[]), string subject = default(string), string filename = default(string), int? filesize = default(int?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMsyncerror> attachmentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivitymimeattachment> attachmentActivityMimeAttachments = default(IList<MicrosoftDynamicsCRMactivitymimeattachment>))
+        public MicrosoftDynamicsCRMattachment(string attachmentid = default(string), string mimetype = default(string), string body = default(string), byte[] bodyBinary = default(byte[]), string subject = default(string), string filename = default(string), int? filesize = default(int?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMsyncerror> attachmentSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMactivitymimeattachment> attachmentActivityMimeAttachments = default(IList<MicrosoftDynamicsCRMactivitymimeattachment>))
         {
             Attachmentid = attachmentid;
             Mimetype = mimetype;
@@ -54,7 +54,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "attachmentid")]
-        public System.Guid? Attachmentid { get; set; }
+        public string Attachmentid { get; set; }
 
         /// <summary>
         /// </summary>

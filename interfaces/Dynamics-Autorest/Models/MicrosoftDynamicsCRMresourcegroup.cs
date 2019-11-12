@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMresourcegroup
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMresourcegroup(string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string name = default(string), int? importsequencenumber = default(int?), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? _businessunitidValue = default(System.Guid?), System.Guid? resourcegroupid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), string objecttypecode = default(string), int? grouptypecode = default(int?), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> resourceGroupSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> resourceGroupAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> resourcegroupMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> resourceGroupBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> resourcegroupPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMconnection> resourcegroupConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> resourcegroupConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), MicrosoftDynamicsCRMconstraintbasedgroup resourcegroupidConstraintbasedgroup = default(MicrosoftDynamicsCRMconstraintbasedgroup), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMduplicaterecord> resourceGroupDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> resourceGroupDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMteam resourcegroupidTeam = default(MicrosoftDynamicsCRMteam))
+        public MicrosoftDynamicsCRMresourcegroup(string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? timezoneruleversionnumber = default(int?), string name = default(string), int? importsequencenumber = default(int?), string _organizationidValue = default(string), string _businessunitidValue = default(string), string resourcegroupid = default(string), int? utcconversiontimezonecode = default(int?), string objecttypecode = default(string), int? grouptypecode = default(int?), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), IList<MicrosoftDynamicsCRMsyncerror> resourceGroupSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> resourceGroupAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> resourcegroupMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> resourceGroupBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> resourcegroupPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMconnection> resourcegroupConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnection> resourcegroupConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), MicrosoftDynamicsCRMconstraintbasedgroup resourcegroupidConstraintbasedgroup = default(MicrosoftDynamicsCRMconstraintbasedgroup), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMduplicaterecord> resourceGroupDuplicateBaseRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), IList<MicrosoftDynamicsCRMduplicaterecord> resourceGroupDuplicateMatchingRecord = default(IList<MicrosoftDynamicsCRMduplicaterecord>), MicrosoftDynamicsCRMteam resourcegroupidTeam = default(MicrosoftDynamicsCRMteam))
         {
             Versionnumber = versionnumber;
             Overriddencreatedon = overriddencreatedon;
@@ -91,17 +91,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businessunitid_value")]
-        public System.Guid? _businessunitidValue { get; set; }
+        public string _businessunitidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "resourcegroupid")]
-        public System.Guid? Resourcegroupid { get; set; }
+        public string Resourcegroupid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMsite class.
         /// </summary>
-        public MicrosoftDynamicsCRMsite(string address1Telephone2 = default(string), int? timezoneruleversionnumber = default(int?), string address2Latitude = default(string), string address2Line2 = default(string), int? importsequencenumber = default(int?), int? timezonecode = default(int?), System.Guid? _organizationidValue = default(System.Guid?), string address2Line3 = default(string), string address2Line1 = default(string), string address2Name = default(string), string address2Stateorprovince = default(string), string address1Telephone3 = default(string), string emailaddress = default(string), string address1Postalcode = default(string), int? address1Utcoffset = default(int?), string address2Postofficebox = default(string), string address1City = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? address2Addresstypecode = default(int?), string address2City = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), int? utcconversiontimezonecode = default(int?), int? address1Addresstypecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string address1Line1 = default(string), string address2Telephone3 = default(string), string address2Telephone2 = default(string), string name = default(string), string address1Line2 = default(string), string address1Latitude = default(string), string address1Line3 = default(string), string address1Fax = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string address1Country = default(string), string address1County = default(string), System.Guid? siteid = default(System.Guid?), int? address2Shippingmethodcode = default(int?), string address2Postalcode = default(string), string address2Upszone = default(string), string address1Stateorprovince = default(string), System.Guid? address2Addressid = default(System.Guid?), string address1Upszone = default(string), string address2County = default(string), int? address1Shippingmethodcode = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string address2Country = default(string), string address2Telephone1 = default(string), string address1Telephone1 = default(string), string address1Name = default(string), string address1Longitude = default(string), System.Guid? address1Addressid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string versionnumber = default(string), string address2Fax = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? address2Utcoffset = default(int?), string address2Longitude = default(string), string address1Postofficebox = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationidOrganization = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMactivitypointer> siteActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> siteSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> siteAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> siteMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> siteProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> siteBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> sitePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMappointment> siteAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> siteEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> siteFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> siteLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> sitePhoneCalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> siteTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> siteRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> siteSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMserviceappointment> siteServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMequipment> siteEquipment = default(IList<MicrosoftDynamicsCRMequipment>), IList<MicrosoftDynamicsCRMresource> siteResources = default(IList<MicrosoftDynamicsCRMresource>), IList<MicrosoftDynamicsCRMsystemuser> siteSystemUsers = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMserviceappointment> siteServiceAppointments1 = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMopportunityclose> siteOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> siteOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> siteQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMcsuCasetask> siteCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
+        public MicrosoftDynamicsCRMsite(string address1Telephone2 = default(string), int? timezoneruleversionnumber = default(int?), string address2Latitude = default(string), string address2Line2 = default(string), int? importsequencenumber = default(int?), int? timezonecode = default(int?), string _organizationidValue = default(string), string address2Line3 = default(string), string address2Line1 = default(string), string address2Name = default(string), string address2Stateorprovince = default(string), string address1Telephone3 = default(string), string emailaddress = default(string), string address1Postalcode = default(string), int? address1Utcoffset = default(int?), string address2Postofficebox = default(string), string address1City = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), int? address2Addresstypecode = default(int?), string address2City = default(string), string _modifiedbyValue = default(string), int? utcconversiontimezonecode = default(int?), int? address1Addresstypecode = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string address1Line1 = default(string), string address2Telephone3 = default(string), string address2Telephone2 = default(string), string name = default(string), string address1Line2 = default(string), string address1Latitude = default(string), string address1Line3 = default(string), string address1Fax = default(string), string _createdonbehalfbyValue = default(string), string address1Country = default(string), string address1County = default(string), string siteid = default(string), int? address2Shippingmethodcode = default(int?), string address2Postalcode = default(string), string address2Upszone = default(string), string address1Stateorprovince = default(string), string address2Addressid = default(string), string address1Upszone = default(string), string address2County = default(string), int? address1Shippingmethodcode = default(int?), string _modifiedonbehalfbyValue = default(string), string address2Country = default(string), string address2Telephone1 = default(string), string address1Telephone1 = default(string), string address1Name = default(string), string address1Longitude = default(string), string address1Addressid = default(string), string _createdbyValue = default(string), string versionnumber = default(string), string address2Fax = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? address2Utcoffset = default(int?), string address2Longitude = default(string), string address1Postofficebox = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationidOrganization = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMactivitypointer> siteActivityPointers = default(IList<MicrosoftDynamicsCRMactivitypointer>), IList<MicrosoftDynamicsCRMsyncerror> siteSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMasyncoperation> siteAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> siteMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> siteProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> siteBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> sitePrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), IList<MicrosoftDynamicsCRMappointment> siteAppointments = default(IList<MicrosoftDynamicsCRMappointment>), IList<MicrosoftDynamicsCRMemail> siteEmails = default(IList<MicrosoftDynamicsCRMemail>), IList<MicrosoftDynamicsCRMfax> siteFaxes = default(IList<MicrosoftDynamicsCRMfax>), IList<MicrosoftDynamicsCRMletter> siteLetters = default(IList<MicrosoftDynamicsCRMletter>), IList<MicrosoftDynamicsCRMphonecall> sitePhoneCalls = default(IList<MicrosoftDynamicsCRMphonecall>), IList<MicrosoftDynamicsCRMtask> siteTasks = default(IList<MicrosoftDynamicsCRMtask>), IList<MicrosoftDynamicsCRMrecurringappointmentmaster> siteRecurringAppointmentMasters = default(IList<MicrosoftDynamicsCRMrecurringappointmentmaster>), IList<MicrosoftDynamicsCRMsocialactivity> siteSocialActivities = default(IList<MicrosoftDynamicsCRMsocialactivity>), IList<MicrosoftDynamicsCRMserviceappointment> siteServiceAppointments = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMequipment> siteEquipment = default(IList<MicrosoftDynamicsCRMequipment>), IList<MicrosoftDynamicsCRMresource> siteResources = default(IList<MicrosoftDynamicsCRMresource>), IList<MicrosoftDynamicsCRMsystemuser> siteSystemUsers = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMserviceappointment> siteServiceAppointments1 = default(IList<MicrosoftDynamicsCRMserviceappointment>), IList<MicrosoftDynamicsCRMopportunityclose> siteOpportunityCloses = default(IList<MicrosoftDynamicsCRMopportunityclose>), IList<MicrosoftDynamicsCRMorderclose> siteOrderCloses = default(IList<MicrosoftDynamicsCRMorderclose>), IList<MicrosoftDynamicsCRMquoteclose> siteQuoteCloses = default(IList<MicrosoftDynamicsCRMquoteclose>), IList<MicrosoftDynamicsCRMcsuCasetask> siteCsuCasetasks = default(IList<MicrosoftDynamicsCRMcsuCasetask>))
         {
             Address1Telephone2 = address1Telephone2;
             Timezoneruleversionnumber = timezoneruleversionnumber;
@@ -157,7 +157,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -227,7 +227,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -287,7 +287,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -302,7 +302,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "siteid")]
-        public System.Guid? Siteid { get; set; }
+        public string Siteid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -327,7 +327,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "address2_addressid")]
-        public System.Guid? Address2Addressid { get; set; }
+        public string Address2Addressid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -347,7 +347,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -377,12 +377,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "address1_addressid")]
-        public System.Guid? Address1Addressid { get; set; }
+        public string Address1Addressid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

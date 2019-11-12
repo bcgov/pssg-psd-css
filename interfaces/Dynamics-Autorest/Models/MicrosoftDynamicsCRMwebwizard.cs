@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMwebwizard
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMwebwizard(string name = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), int? componentstate = default(int?), System.Guid? webwizardidunique = default(System.Guid?), System.Guid? _organizationidValue = default(System.Guid?), int? wizardpageheight = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? isstaticpagesequence = default(bool?), bool? ismanaged = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string accessprivileges = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? wizardpagewidth = default(int?), string titleresourcestring = default(string), System.Guid? webwizardid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string introducedversion = default(string), int? startpagesequencenumber = default(int?), System.Guid? solutionid = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMwebwizard(string name = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), int? componentstate = default(int?), string webwizardidunique = default(string), string _organizationidValue = default(string), int? wizardpageheight = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string versionnumber = default(string), bool? isstaticpagesequence = default(bool?), bool? ismanaged = default(bool?), string _modifiedbyValue = default(string), string _modifiedonbehalfbyValue = default(string), string accessprivileges = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? wizardpagewidth = default(int?), string titleresourcestring = default(string), string webwizardid = default(string), string _createdbyValue = default(string), string introducedversion = default(string), int? startpagesequencenumber = default(int?), string solutionid = default(string), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Name = name;
             Createdon = createdon;
@@ -77,7 +77,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,12 +87,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "webwizardidunique")]
-        public System.Guid? Webwizardidunique { get; set; }
+        public string Webwizardidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -122,12 +122,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -152,12 +152,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "webwizardid")]
-        public System.Guid? Webwizardid { get; set; }
+        public string Webwizardid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -172,7 +172,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

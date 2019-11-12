@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcompetitorproduct class.
         /// </summary>
-        public MicrosoftDynamicsCRMcompetitorproduct(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string versionnumber = default(string), System.Guid? productid = default(System.Guid?), System.Guid? competitorid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), int? timezoneruleversionnumber = default(int?), System.Guid? competitorproductid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> competitorproductAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitorproductMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitorproductBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitorproductPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcompetitorproduct(System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), string versionnumber = default(string), string productid = default(string), string competitorid = default(string), int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), int? timezoneruleversionnumber = default(int?), string competitorproductid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> competitorproductAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> competitorproductMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> competitorproductBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> competitorproductPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Overriddencreatedon = overriddencreatedon;
             Name = name;
@@ -70,12 +70,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "productid")]
-        public System.Guid? Productid { get; set; }
+        public string Productid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorid")]
-        public System.Guid? Competitorid { get; set; }
+        public string Competitorid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorproductid")]
-        public System.Guid? Competitorproductid { get; set; }
+        public string Competitorproductid { get; set; }
 
         /// <summary>
         /// </summary>

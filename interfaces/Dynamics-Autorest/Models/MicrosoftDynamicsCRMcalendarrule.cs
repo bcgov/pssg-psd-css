@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcalendarrule
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcalendarrule(string groupdesignator = default(string), int? rank = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? starttime = default(System.DateTimeOffset?), System.Guid? _serviceidValue = default(System.Guid?), System.Guid? organizationid = default(System.Guid?), bool? isselected = default(bool?), int? duration = default(int?), int? offset = default(int?), int? timecode = default(int?), System.Guid? _innercalendaridValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? extentcode = default(int?), int? subcode = default(int?), bool? isvaried = default(bool?), System.DateTimeOffset? effectiveintervalstart = default(System.DateTimeOffset?), string name = default(string), System.DateTimeOffset? endtime = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), bool? issimple = default(bool?), System.Guid? calendarruleid = default(System.Guid?), int? timezonecode = default(int?), string pattern = default(string), string effort = default(string), string description = default(string), bool? ismodified = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _calendaridValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string versionnumber = default(string), System.DateTimeOffset? effectiveintervalend = default(System.DateTimeOffset?), System.Guid? businessunitid = default(System.Guid?), MicrosoftDynamicsCRMservice serviceid = default(MicrosoftDynamicsCRMservice), MicrosoftDynamicsCRMcalendar calendarid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcalendar innercalendarid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMcalendarrule(string groupdesignator = default(string), int? rank = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? starttime = default(System.DateTimeOffset?), string _serviceidValue = default(string), string organizationid = default(string), bool? isselected = default(bool?), int? duration = default(int?), int? offset = default(int?), int? timecode = default(int?), string _innercalendaridValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? extentcode = default(int?), int? subcode = default(int?), bool? isvaried = default(bool?), System.DateTimeOffset? effectiveintervalstart = default(System.DateTimeOffset?), string name = default(string), System.DateTimeOffset? endtime = default(System.DateTimeOffset?), string _createdbyValue = default(string), bool? issimple = default(bool?), string calendarruleid = default(string), int? timezonecode = default(int?), string pattern = default(string), string effort = default(string), string description = default(string), bool? ismodified = default(bool?), string _modifiedbyValue = default(string), string _calendaridValue = default(string), string _modifiedonbehalfbyValue = default(string), string _createdonbehalfbyValue = default(string), string versionnumber = default(string), System.DateTimeOffset? effectiveintervalend = default(System.DateTimeOffset?), string businessunitid = default(string), MicrosoftDynamicsCRMservice serviceid = default(MicrosoftDynamicsCRMservice), MicrosoftDynamicsCRMcalendar calendarid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcalendar innercalendarid = default(MicrosoftDynamicsCRMcalendar), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Groupdesignator = groupdesignator;
             Rank = rank;
@@ -100,12 +100,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_serviceid_value")]
-        public System.Guid? _serviceidValue { get; set; }
+        public string _serviceidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "organizationid")]
-        public System.Guid? Organizationid { get; set; }
+        public string Organizationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -130,7 +130,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_innercalendarid_value")]
-        public System.Guid? _innercalendaridValue { get; set; }
+        public string _innercalendaridValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -170,7 +170,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -180,7 +180,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "calendarruleid")]
-        public System.Guid? Calendarruleid { get; set; }
+        public string Calendarruleid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -210,22 +210,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_calendarid_value")]
-        public System.Guid? _calendaridValue { get; set; }
+        public string _calendaridValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -240,7 +240,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "businessunitid")]
-        public System.Guid? Businessunitid { get; set; }
+        public string Businessunitid { get; set; }
 
         /// <summary>
         /// </summary>

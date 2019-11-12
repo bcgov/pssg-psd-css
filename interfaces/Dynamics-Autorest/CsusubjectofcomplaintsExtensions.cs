@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection Get(this ICsusubjectofcomplaints operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection Get(this ICsusubjectofcomplaints operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection> GetAsync(this ICsusubjectofcomplaints operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection> GetAsync(this ICsusubjectofcomplaints operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection> GetWithHttpMessages(this ICsusubjectofcomplaints operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSubjectofcomplaintCollection> GetWithHttpMessages(this ICsusubjectofcomplaints operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -165,9 +195,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuSubjectofcomplaint SubjectofcomplaintsByKey(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuSubjectofcomplaint GetByKey(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.SubjectofcomplaintsByKeyAsync(csuSubjectofcomplaintid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuSubjectofcomplaintid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -188,9 +218,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuSubjectofcomplaint> SubjectofcomplaintsByKeyAsync(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuSubjectofcomplaint> GetByKeyAsync(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.SubjectofcomplaintsByKeyWithHttpMessagesAsync(csuSubjectofcomplaintid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuSubjectofcomplaintid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -214,9 +244,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSubjectofcomplaint> SubjectofcomplaintsByKeyWithHttpMessages(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuSubjectofcomplaint> GetByKeyWithHttpMessages(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SubjectofcomplaintsByKeyWithHttpMessagesAsync(csuSubjectofcomplaintid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuSubjectofcomplaintid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -231,9 +261,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void SubjectofcomplaintsByKey1(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body)
+            public static void Update(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body)
             {
-                operations.SubjectofcomplaintsByKey1Async(csuSubjectofcomplaintid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuSubjectofcomplaintid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -251,9 +281,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task SubjectofcomplaintsByKey1Async(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.SubjectofcomplaintsByKey1WithHttpMessagesAsync(csuSubjectofcomplaintid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuSubjectofcomplaintid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -271,9 +301,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse SubjectofcomplaintsByKey1WithHttpMessages(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, MicrosoftDynamicsCRMcsuSubjectofcomplaint body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SubjectofcomplaintsByKey1WithHttpMessagesAsync(csuSubjectofcomplaintid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuSubjectofcomplaintid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -288,9 +318,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void SubjectofcomplaintsByKey2(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, string ifMatch = default(string))
+            public static void Delete(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, string ifMatch = default(string))
             {
-                operations.SubjectofcomplaintsByKey2Async(csuSubjectofcomplaintid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuSubjectofcomplaintid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -308,9 +338,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task SubjectofcomplaintsByKey2Async(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.SubjectofcomplaintsByKey2WithHttpMessagesAsync(csuSubjectofcomplaintid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuSubjectofcomplaintid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -328,9 +358,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse SubjectofcomplaintsByKey2WithHttpMessages(this ICsusubjectofcomplaints operations, System.Guid csuSubjectofcomplaintid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsusubjectofcomplaints operations, string csuSubjectofcomplaintid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.SubjectofcomplaintsByKey2WithHttpMessagesAsync(csuSubjectofcomplaintid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuSubjectofcomplaintid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

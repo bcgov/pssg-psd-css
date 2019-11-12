@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMtransformationmapping class.
         /// </summary>
-        public MicrosoftDynamicsCRMtransformationmapping(int? componentstate = default(int?), System.Guid? transformationmappingidunique = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), string targetentityname = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), bool? ismanaged = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), string transformationtypename = default(string), System.Guid? _importmapidValue = default(System.Guid?), System.Guid? transformationmappingid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string introducedversion = default(string), string sourceentityname = default(string), int? statuscode = default(int?), int? statecode = default(int?), int? processcode = default(int?), IList<MicrosoftDynamicsCRMtransformationparametermapping> transformationParameterMappingTransformationMapping = default(IList<MicrosoftDynamicsCRMtransformationparametermapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap))
+        public MicrosoftDynamicsCRMtransformationmapping(int? componentstate = default(int?), string transformationmappingidunique = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _createdbyValue = default(string), string solutionid = default(string), string targetentityname = default(string), string _createdonbehalfbyValue = default(string), bool? ismanaged = default(bool?), string _modifiedbyValue = default(string), string transformationtypename = default(string), string _importmapidValue = default(string), string transformationmappingid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string introducedversion = default(string), string sourceentityname = default(string), int? statuscode = default(int?), int? statecode = default(int?), int? processcode = default(int?), IList<MicrosoftDynamicsCRMtransformationparametermapping> transformationParameterMappingTransformationMapping = default(IList<MicrosoftDynamicsCRMtransformationparametermapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap))
         {
             Componentstate = componentstate;
             Transformationmappingidunique = transformationmappingidunique;
@@ -73,7 +73,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "transformationmappingidunique")]
-        public System.Guid? Transformationmappingidunique { get; set; }
+        public string Transformationmappingidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -83,12 +83,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -98,7 +98,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -108,7 +108,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -118,12 +118,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_importmapid_value")]
-        public System.Guid? _importmapidValue { get; set; }
+        public string _importmapidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "transformationmappingid")]
-        public System.Guid? Transformationmappingid { get; set; }
+        public string Transformationmappingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -138,7 +138,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

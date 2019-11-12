@@ -31,7 +31,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMsalesliterature class.
         /// </summary>
-        public MicrosoftDynamicsCRMsalesliterature(string versionnumber = default(string), long? entityimageTimestamp = default(long?), string traversedpath = default(string), System.Guid? _organizationidValue = default(System.Guid?), System.Guid? processid = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? expirationdate = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? literaturetypecode = default(int?), int? utcconversiontimezonecode = default(int?), System.Guid? entityimageid = default(System.Guid?), bool? iscustomerviewable = default(bool?), byte[] entityimage = default(byte[]), string keywords = default(string), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _employeecontactidValue = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? salesliteratureid = default(System.Guid?), decimal? exchangerate = default(decimal?), bool? hasattachments = default(bool?), string description = default(string), System.Guid? stageid = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _subjectidValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string name = default(string), string entityimageUrl = default(string), System.Guid? _transactioncurrencyidValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> salesLiteratureSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> salesLiteratureSharepointDocumentLocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> salesLiteratureAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> salesliteratureMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> salesLiteratureProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> salesLiteratureBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> salesliteraturePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMproduct> productsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMcompetitor> competitorsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcompetitor>), IList<MicrosoftDynamicsCRMsalesliteratureitem> salesLiteratureItems = default(IList<MicrosoftDynamicsCRMsalesliteratureitem>), MicrosoftDynamicsCRMsystemuser employeecontactid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitysalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaign> campaignsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject))
+        public MicrosoftDynamicsCRMsalesliterature(string versionnumber = default(string), long? entityimageTimestamp = default(long?), string traversedpath = default(string), string _organizationidValue = default(string), string processid = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? expirationdate = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? literaturetypecode = default(int?), int? utcconversiontimezonecode = default(int?), string entityimageid = default(string), bool? iscustomerviewable = default(bool?), byte[] entityimage = default(byte[]), string keywords = default(string), string _createdbyValue = default(string), string _employeecontactidValue = default(string), int? importsequencenumber = default(int?), string _modifiedonbehalfbyValue = default(string), string salesliteratureid = default(string), decimal? exchangerate = default(decimal?), bool? hasattachments = default(bool?), string description = default(string), string stageid = default(string), string _modifiedbyValue = default(string), string _subjectidValue = default(string), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string _createdonbehalfbyValue = default(string), string name = default(string), string entityimageUrl = default(string), string _transactioncurrencyidValue = default(string), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsyncerror> salesLiteratureSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), IList<MicrosoftDynamicsCRMsharepointdocumentlocation> salesLiteratureSharepointDocumentLocation = default(IList<MicrosoftDynamicsCRMsharepointdocumentlocation>), IList<MicrosoftDynamicsCRMasyncoperation> salesLiteratureAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> salesliteratureMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMprocesssession> salesLiteratureProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), IList<MicrosoftDynamicsCRMbulkdeletefailure> salesLiteratureBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> salesliteraturePrincipalobjectattributeaccess = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>), MicrosoftDynamicsCRMprocessstage stageidProcessstage = default(MicrosoftDynamicsCRMprocessstage), IList<MicrosoftDynamicsCRMproduct> productsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMproduct>), IList<MicrosoftDynamicsCRMcompetitor> competitorsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcompetitor>), IList<MicrosoftDynamicsCRMsalesliteratureitem> salesLiteratureItems = default(IList<MicrosoftDynamicsCRMsalesliteratureitem>), MicrosoftDynamicsCRMsystemuser employeecontactid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), IList<MicrosoftDynamicsCRMcampaignactivity> campaignactivitysalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcampaignactivity>), IList<MicrosoftDynamicsCRMcampaign> campaignsalesliteratureAssociation = default(IList<MicrosoftDynamicsCRMcampaign>), MicrosoftDynamicsCRMsubject subjectid = default(MicrosoftDynamicsCRMsubject))
         {
             Versionnumber = versionnumber;
             EntityimageTimestamp = entityimageTimestamp;
@@ -111,12 +111,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "processid")]
-        public System.Guid? Processid { get; set; }
+        public string Processid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -146,7 +146,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entityimageid")]
-        public System.Guid? Entityimageid { get; set; }
+        public string Entityimageid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -167,12 +167,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_employeecontactid_value")]
-        public System.Guid? _employeecontactidValue { get; set; }
+        public string _employeecontactidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -182,12 +182,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "salesliteratureid")]
-        public System.Guid? Salesliteratureid { get; set; }
+        public string Salesliteratureid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -207,17 +207,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "stageid")]
-        public System.Guid? Stageid { get; set; }
+        public string Stageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_subjectid_value")]
-        public System.Guid? _subjectidValue { get; set; }
+        public string _subjectidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -232,7 +232,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -247,7 +247,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>

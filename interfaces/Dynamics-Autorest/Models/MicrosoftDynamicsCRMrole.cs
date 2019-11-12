@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// Initializes a new instance of the MicrosoftDynamicsCRMrole class.
         /// </summary>
-        public MicrosoftDynamicsCRMrole(int? importsequencenumber = default(int?), int? componentstate = default(int?), System.Guid? solutionid = default(System.Guid?), System.Guid? _roletemplateidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _modifiedbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? organizationid = default(System.Guid?), string name = default(string), string canbedeleted = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _businessunitidValue = default(System.Guid?), System.Guid? roleid = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? ismanaged = default(bool?), string iscustomizable = default(string), System.Guid? _parentrootroleidValue = default(System.Guid?), System.Guid? roleidunique = default(System.Guid?), System.Guid? _parentroleidValue = default(System.Guid?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMsystemuser> systemuserrolesAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMprivilege> roleprivilegesAssociation = default(IList<MicrosoftDynamicsCRMprivilege>), IList<MicrosoftDynamicsCRMappmodule> appmodulerolesAssociation = default(IList<MicrosoftDynamicsCRMappmodule>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMrole parentroleid = default(MicrosoftDynamicsCRMrole), IList<MicrosoftDynamicsCRMrole> roleParentRole = default(IList<MicrosoftDynamicsCRMrole>), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMroletemplate roletemplateid = default(MicrosoftDynamicsCRMroletemplate), IList<MicrosoftDynamicsCRMasyncoperation> roleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> roleBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMorganization organizationidOrganization = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMteam> teamrolesAssociation = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMrole parentrootroleid = default(MicrosoftDynamicsCRMrole), IList<MicrosoftDynamicsCRMrole> roleParentRootRole = default(IList<MicrosoftDynamicsCRMrole>), IList<MicrosoftDynamicsCRMsyncerror> roleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>))
+        public MicrosoftDynamicsCRMrole(int? importsequencenumber = default(int?), int? componentstate = default(int?), string solutionid = default(string), string _roletemplateidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _modifiedbyValue = default(string), string _modifiedonbehalfbyValue = default(string), string organizationid = default(string), string name = default(string), string canbedeleted = default(string), string _createdonbehalfbyValue = default(string), string _createdbyValue = default(string), string _businessunitidValue = default(string), string roleid = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? ismanaged = default(bool?), string iscustomizable = default(string), string _parentrootroleidValue = default(string), string roleidunique = default(string), string _parentroleidValue = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMsystemuser> systemuserrolesAssociation = default(IList<MicrosoftDynamicsCRMsystemuser>), IList<MicrosoftDynamicsCRMprivilege> roleprivilegesAssociation = default(IList<MicrosoftDynamicsCRMprivilege>), IList<MicrosoftDynamicsCRMappmodule> appmodulerolesAssociation = default(IList<MicrosoftDynamicsCRMappmodule>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMrole parentroleid = default(MicrosoftDynamicsCRMrole), IList<MicrosoftDynamicsCRMrole> roleParentRole = default(IList<MicrosoftDynamicsCRMrole>), MicrosoftDynamicsCRMbusinessunit businessunitid = default(MicrosoftDynamicsCRMbusinessunit), MicrosoftDynamicsCRMroletemplate roletemplateid = default(MicrosoftDynamicsCRMroletemplate), IList<MicrosoftDynamicsCRMasyncoperation> roleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> roleBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMorganization organizationidOrganization = default(MicrosoftDynamicsCRMorganization), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMteam> teamrolesAssociation = default(IList<MicrosoftDynamicsCRMteam>), MicrosoftDynamicsCRMrole parentrootroleid = default(MicrosoftDynamicsCRMrole), IList<MicrosoftDynamicsCRMrole> roleParentRootRole = default(IList<MicrosoftDynamicsCRMrole>), IList<MicrosoftDynamicsCRMsyncerror> roleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>))
         {
             Importsequencenumber = importsequencenumber;
             Componentstate = componentstate;
@@ -91,12 +91,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_roletemplateid_value")]
-        public System.Guid? _roletemplateidValue { get; set; }
+        public string _roletemplateidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -106,17 +106,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "organizationid")]
-        public System.Guid? Organizationid { get; set; }
+        public string Organizationid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -131,22 +131,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businessunitid_value")]
-        public System.Guid? _businessunitidValue { get; set; }
+        public string _businessunitidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "roleid")]
-        public System.Guid? Roleid { get; set; }
+        public string Roleid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -166,17 +166,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentrootroleid_value")]
-        public System.Guid? _parentrootroleidValue { get; set; }
+        public string _parentrootroleidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "roleidunique")]
-        public System.Guid? Roleidunique { get; set; }
+        public string Roleidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_parentroleid_value")]
-        public System.Guid? _parentroleidValue { get; set; }
+        public string _parentroleidValue { get; set; }
 
         /// <summary>
         /// </summary>

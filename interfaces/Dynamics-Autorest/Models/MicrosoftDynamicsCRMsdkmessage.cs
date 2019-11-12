@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMsdkmessage
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMsdkmessage(System.Guid? _organizationidValue = default(System.Guid?), bool? isprivate = default(bool?), System.Guid? _modifiedbyValue = default(System.Guid?), string introducedversion = default(string), bool? workflowsdkstepenabled = default(bool?), bool? expand = default(bool?), int? availability = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), bool? template = default(bool?), bool? isvalidforexecuteasync = default(bool?), string categoryname = default(string), bool? autotransact = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? isactive = default(bool?), System.Guid? _createdbyValue = default(System.Guid?), string name = default(string), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), bool? ismanaged = default(bool?), int? customizationlevel = default(int?), System.Guid? sdkmessageid = default(System.Guid?), System.Guid? sdkmessageidunique = default(System.Guid?), string throttlesettings = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), int? componentstate = default(int?), string versionnumber = default(string), bool? isreadonly = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsdkmessageprocessingstep> sdkmessageidSdkmessageprocessingstep = default(IList<MicrosoftDynamicsCRMsdkmessageprocessingstep>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsdkmessagefilter> sdkmessageidSdkmessagefilter = default(IList<MicrosoftDynamicsCRMsdkmessagefilter>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMsdkmessage(string _organizationidValue = default(string), bool? isprivate = default(bool?), string _modifiedbyValue = default(string), string introducedversion = default(string), bool? workflowsdkstepenabled = default(bool?), bool? expand = default(bool?), int? availability = default(int?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), bool? template = default(bool?), bool? isvalidforexecuteasync = default(bool?), string categoryname = default(string), bool? autotransact = default(bool?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? isactive = default(bool?), string _createdbyValue = default(string), string name = default(string), string _modifiedonbehalfbyValue = default(string), bool? ismanaged = default(bool?), int? customizationlevel = default(int?), string sdkmessageid = default(string), string sdkmessageidunique = default(string), string throttlesettings = default(string), string _createdonbehalfbyValue = default(string), string solutionid = default(string), int? componentstate = default(int?), string versionnumber = default(string), bool? isreadonly = default(bool?), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMsdkmessageprocessingstep> sdkmessageidSdkmessageprocessingstep = default(IList<MicrosoftDynamicsCRMsdkmessageprocessingstep>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization), IList<MicrosoftDynamicsCRMsdkmessagefilter> sdkmessageidSdkmessagefilter = default(IList<MicrosoftDynamicsCRMsdkmessagefilter>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._organizationidValue = _organizationidValue;
             Isprivate = isprivate;
@@ -77,7 +77,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,7 +87,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -152,7 +152,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -177,12 +177,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sdkmessageid")]
-        public System.Guid? Sdkmessageid { get; set; }
+        public string Sdkmessageid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "sdkmessageidunique")]
-        public System.Guid? Sdkmessageidunique { get; set; }
+        public string Sdkmessageidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -192,12 +192,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

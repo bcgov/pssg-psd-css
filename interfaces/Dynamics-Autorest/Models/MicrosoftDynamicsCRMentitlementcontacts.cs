@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMentitlementcontacts class.
         /// </summary>
-        public MicrosoftDynamicsCRMentitlementcontacts(int? utcconversiontimezonecode = default(int?), System.Guid? entitlementcontactid = default(System.Guid?), System.Guid? entitlementid = default(System.Guid?), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), System.Guid? contactid = default(System.Guid?), string name = default(string), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> entitlementcontactsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> entitlementcontactsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> entitlementcontactsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> entitlementcontactsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMentitlementcontacts(int? utcconversiontimezonecode = default(int?), string entitlementcontactid = default(string), string entitlementid = default(string), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), string contactid = default(string), string name = default(string), int? importsequencenumber = default(int?), IList<MicrosoftDynamicsCRMasyncoperation> entitlementcontactsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> entitlementcontactsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> entitlementcontactsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> entitlementcontactsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Utcconversiontimezonecode = utcconversiontimezonecode;
             Entitlementcontactid = entitlementcontactid;
@@ -60,12 +60,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entitlementcontactid")]
-        public System.Guid? Entitlementcontactid { get; set; }
+        public string Entitlementcontactid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "entitlementid")]
-        public System.Guid? Entitlementid { get; set; }
+        public string Entitlementid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMfixedmonthlyfiscalcalendar class.
         /// </summary>
-        public MicrosoftDynamicsCRMfixedmonthlyfiscalcalendar(System.Guid? _transactioncurrencyidValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), decimal? period5 = default(decimal?), decimal? period6Base = default(decimal?), decimal? period5Base = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? userfiscalcalendarid = default(System.Guid?), System.Guid? _businessunitidValue = default(System.Guid?), decimal? period4Base = default(decimal?), System.Guid? _salespersonidValue = default(System.Guid?), decimal? period11 = default(decimal?), decimal? period12Base = default(decimal?), decimal? period9Base = default(decimal?), decimal? period12 = default(decimal?), decimal? period13 = default(decimal?), decimal? period10 = default(decimal?), decimal? period2Base = default(decimal?), int? utcconversiontimezonecode = default(int?), decimal? period6 = default(decimal?), decimal? period8Base = default(decimal?), decimal? period3 = default(decimal?), decimal? period2 = default(decimal?), decimal? exchangerate = default(decimal?), decimal? period11Base = default(decimal?), decimal? period1Base = default(decimal?), decimal? period8 = default(decimal?), decimal? period13Base = default(decimal?), int? fiscalperiodtype = default(int?), System.Guid? _createdbyValue = default(System.Guid?), decimal? period9 = default(decimal?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? effectiveon = default(System.DateTimeOffset?), decimal? period10Base = default(decimal?), decimal? period7 = default(decimal?), System.Guid? _modifiedbyValue = default(System.Guid?), int? timezoneruleversionnumber = default(int?), decimal? period3Base = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? period4 = default(decimal?), decimal? period7Base = default(decimal?), decimal? period1 = default(decimal?), IList<MicrosoftDynamicsCRMbulkdeletefailure> fixedMonthlyFiscalCalendarBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> fixedMonthlyFiscalCalendarAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMsystemuser salespersonid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMfixedmonthlyfiscalcalendar(string _transactioncurrencyidValue = default(string), string _modifiedonbehalfbyValue = default(string), decimal? period5 = default(decimal?), decimal? period6Base = default(decimal?), decimal? period5Base = default(decimal?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string userfiscalcalendarid = default(string), string _businessunitidValue = default(string), decimal? period4Base = default(decimal?), string _salespersonidValue = default(string), decimal? period11 = default(decimal?), decimal? period12Base = default(decimal?), decimal? period9Base = default(decimal?), decimal? period12 = default(decimal?), decimal? period13 = default(decimal?), decimal? period10 = default(decimal?), decimal? period2Base = default(decimal?), int? utcconversiontimezonecode = default(int?), decimal? period6 = default(decimal?), decimal? period8Base = default(decimal?), decimal? period3 = default(decimal?), decimal? period2 = default(decimal?), decimal? exchangerate = default(decimal?), decimal? period11Base = default(decimal?), decimal? period1Base = default(decimal?), decimal? period8 = default(decimal?), decimal? period13Base = default(decimal?), int? fiscalperiodtype = default(int?), string _createdbyValue = default(string), decimal? period9 = default(decimal?), string _createdonbehalfbyValue = default(string), System.DateTimeOffset? effectiveon = default(System.DateTimeOffset?), decimal? period10Base = default(decimal?), decimal? period7 = default(decimal?), string _modifiedbyValue = default(string), int? timezoneruleversionnumber = default(int?), decimal? period3Base = default(decimal?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), decimal? period4 = default(decimal?), decimal? period7Base = default(decimal?), decimal? period1 = default(decimal?), IList<MicrosoftDynamicsCRMbulkdeletefailure> fixedMonthlyFiscalCalendarBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), MicrosoftDynamicsCRMtransactioncurrency transactioncurrencyid = default(MicrosoftDynamicsCRMtransactioncurrency), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> fixedMonthlyFiscalCalendarAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), MicrosoftDynamicsCRMsystemuser salespersonid = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._transactioncurrencyidValue = _transactioncurrencyidValue;
             this._modifiedonbehalfbyValue = _modifiedonbehalfbyValue;
@@ -91,12 +91,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transactioncurrencyid_value")]
-        public System.Guid? _transactioncurrencyidValue { get; set; }
+        public string _transactioncurrencyidValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -121,12 +121,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "userfiscalcalendarid")]
-        public System.Guid? Userfiscalcalendarid { get; set; }
+        public string Userfiscalcalendarid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_businessunitid_value")]
-        public System.Guid? _businessunitidValue { get; set; }
+        public string _businessunitidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -136,7 +136,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_salespersonid_value")]
-        public System.Guid? _salespersonidValue { get; set; }
+        public string _salespersonidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -231,7 +231,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -241,7 +241,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -261,7 +261,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>

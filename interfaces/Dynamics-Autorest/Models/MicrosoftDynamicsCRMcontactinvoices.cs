@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMcontactinvoices class.
         /// </summary>
-        public MicrosoftDynamicsCRMcontactinvoices(int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), System.Guid? contactid = default(System.Guid?), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), int? timezoneruleversionnumber = default(int?), System.Guid? contactinvoiceid = default(System.Guid?), System.Guid? invoiceid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> contactinvoicesAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactinvoicesMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactinvoicesBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactinvoicesPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcontactinvoices(int? utcconversiontimezonecode = default(int?), int? importsequencenumber = default(int?), string contactid = default(string), string versionnumber = default(string), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string name = default(string), int? timezoneruleversionnumber = default(int?), string contactinvoiceid = default(string), string invoiceid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactinvoicesAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactinvoicesMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactinvoicesBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactinvoicesPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Utcconversiontimezonecode = utcconversiontimezonecode;
             Importsequencenumber = importsequencenumber;
@@ -65,7 +65,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -90,12 +90,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactinvoiceid")]
-        public System.Guid? Contactinvoiceid { get; set; }
+        public string Contactinvoiceid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "invoiceid")]
-        public System.Guid? Invoiceid { get; set; }
+        public string Invoiceid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -24,6 +24,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
+            /// </param>
             /// <param name='orderby'>
             /// Order items by property values
             /// </param>
@@ -33,9 +43,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection Get(this ICsucasebusinessandlocationdetailses operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection Get(this ICsucasebusinessandlocationdetailses operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.GetAsync(orderby, select, expand).GetAwaiter().GetResult();
+                return operations.GetAsync(top, skip, search, filter, count, orderby, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -43,6 +53,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -56,9 +76,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection> GetAsync(this ICsucasebusinessandlocationdetailses operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection> GetAsync(this ICsucasebusinessandlocationdetailses operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.GetWithHttpMessagesAsync(orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -69,6 +89,16 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
+            /// </param>
+            /// <param name='top'>
+            /// </param>
+            /// <param name='skip'>
+            /// </param>
+            /// <param name='search'>
+            /// </param>
+            /// <param name='filter'>
+            /// </param>
+            /// <param name='count'>
             /// </param>
             /// <param name='orderby'>
             /// Order items by property values
@@ -82,9 +112,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection> GetWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetailsCollection> GetWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, int? top = default(int?), int? skip = default(int?), string search = default(string), string filter = default(string), bool? count = default(bool?), IList<string> orderby = default(IList<string>), IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.GetWithHttpMessagesAsync(orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetWithHttpMessagesAsync(top, skip, search, filter, count, orderby, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -166,9 +196,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='expand'>
             /// Expand related entities
             /// </param>
-            public static MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails CasebusinessandlocationdetailsesByKey(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
+            public static MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails GetByKey(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>))
             {
-                return operations.CasebusinessandlocationdetailsesByKeyAsync(csuCasebusinessandlocationdetailsid, select, expand).GetAwaiter().GetResult();
+                return operations.GetByKeyAsync(csuCasebusinessandlocationdetailsid, select, expand).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -190,9 +220,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> CasebusinessandlocationdetailsesByKeyAsync(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> GetByKeyAsync(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), CancellationToken cancellationToken = default(CancellationToken))
             {
-                using (var _result = await operations.CasebusinessandlocationdetailsesByKeyWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, select, expand, null, cancellationToken).ConfigureAwait(false))
+                using (var _result = await operations.GetByKeyWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, select, expand, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
@@ -217,9 +247,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> CasebusinessandlocationdetailsesByKeyWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse<MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails> GetByKeyWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, IList<string> select = default(IList<string>), IList<string> expand = default(IList<string>), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CasebusinessandlocationdetailsesByKeyWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.GetByKeyWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, select, expand, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -235,9 +265,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='body'>
             /// New property values
             /// </param>
-            public static void CasebusinessandlocationdetailsesByKey1(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body)
+            public static void Update(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body)
             {
-                operations.CasebusinessandlocationdetailsesByKey1Async(csuCasebusinessandlocationdetailsid, body).GetAwaiter().GetResult();
+                operations.UpdateAsync(csuCasebusinessandlocationdetailsid, body).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -256,9 +286,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CasebusinessandlocationdetailsesByKey1Async(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task UpdateAsync(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body, CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CasebusinessandlocationdetailsesByKey1WithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.UpdateWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, body, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -277,9 +307,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CasebusinessandlocationdetailsesByKey1WithHttpMessages(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body, Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse UpdateWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, MicrosoftDynamicsCRMcsuCasebusinessandlocationdetails body, Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CasebusinessandlocationdetailsesByKey1WithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.UpdateWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, body, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -295,9 +325,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='ifMatch'>
             /// ETag
             /// </param>
-            public static void CasebusinessandlocationdetailsesByKey2(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, string ifMatch = default(string))
+            public static void Delete(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, string ifMatch = default(string))
             {
-                operations.CasebusinessandlocationdetailsesByKey2Async(csuCasebusinessandlocationdetailsid, ifMatch).GetAwaiter().GetResult();
+                operations.DeleteAsync(csuCasebusinessandlocationdetailsid, ifMatch).GetAwaiter().GetResult();
             }
 
             /// <summary>
@@ -316,9 +346,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task CasebusinessandlocationdetailsesByKey2Async(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task DeleteAsync(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, string ifMatch = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
-                (await operations.CasebusinessandlocationdetailsesByKey2WithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
+                (await operations.DeleteWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, ifMatch, null, cancellationToken).ConfigureAwait(false)).Dispose();
             }
 
             /// <summary>
@@ -337,9 +367,9 @@ namespace Gov.Jag.Pssg.Csa.Interfaces
             /// <param name='customHeaders'>
             /// Headers that will be added to request.
             /// </param>
-            public static HttpOperationResponse CasebusinessandlocationdetailsesByKey2WithHttpMessages(this ICsucasebusinessandlocationdetailses operations, System.Guid csuCasebusinessandlocationdetailsid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
+            public static HttpOperationResponse DeleteWithHttpMessages(this ICsucasebusinessandlocationdetailses operations, string csuCasebusinessandlocationdetailsid, string ifMatch = default(string), Dictionary<string, List<string>> customHeaders = null)
             {
-                return operations.CasebusinessandlocationdetailsesByKey2WithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
+                return operations.DeleteWithHttpMessagesAsync(csuCasebusinessandlocationdetailsid, ifMatch, customHeaders, CancellationToken.None).ConfigureAwait(false).GetAwaiter().GetResult();
             }
 
     }

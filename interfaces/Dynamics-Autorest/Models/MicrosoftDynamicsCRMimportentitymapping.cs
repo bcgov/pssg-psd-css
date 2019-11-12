@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMimportentitymapping class.
         /// </summary>
-        public MicrosoftDynamicsCRMimportentitymapping(int? statuscode = default(int?), System.Guid? solutionid = default(System.Guid?), string introducedversion = default(string), int? processcode = default(int?), System.Guid? importentitymappingid = default(System.Guid?), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? componentstate = default(int?), int? dedupe = default(int?), System.Guid? importentitymappingidunique = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), string targetentityname = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string sourceentityname = default(string), System.Guid? _modifiedbyValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.Guid? _importmapidValue = default(System.Guid?), int? statecode = default(int?), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMimportentitymapping(int? statuscode = default(int?), string solutionid = default(string), string introducedversion = default(string), int? processcode = default(int?), string importentitymappingid = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), int? componentstate = default(int?), int? dedupe = default(int?), string importentitymappingidunique = default(string), string _createdbyValue = default(string), string _modifiedonbehalfbyValue = default(string), string targetentityname = default(string), string _createdonbehalfbyValue = default(string), string sourceentityname = default(string), string _modifiedbyValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), string _importmapidValue = default(string), int? statecode = default(int?), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Statuscode = statuscode;
             Solutionid = solutionid;
@@ -70,7 +70,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "importentitymappingid")]
-        public System.Guid? Importentitymappingid { get; set; }
+        public string Importentitymappingid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -115,17 +115,17 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "importentitymappingidunique")]
-        public System.Guid? Importentitymappingidunique { get; set; }
+        public string Importentitymappingidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -135,7 +135,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -145,7 +145,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -155,7 +155,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_importmapid_value")]
-        public System.Guid? _importmapidValue { get; set; }
+        public string _importmapidValue { get; set; }
 
         /// <summary>
         /// </summary>

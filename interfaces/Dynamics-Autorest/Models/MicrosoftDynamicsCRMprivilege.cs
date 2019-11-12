@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMprivilege
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMprivilege(System.Guid? privilegerowid = default(System.Guid?), int? accessright = default(int?), bool? canbebasic = default(bool?), string versionnumber = default(string), int? componentstate = default(int?), System.Guid? privilegeid = default(System.Guid?), bool? canbeentityreference = default(bool?), bool? canbeglobal = default(bool?), bool? canbedeep = default(bool?), string name = default(string), bool? canbeparententityreference = default(bool?), bool? ismanaged = default(bool?), System.Guid? solutionid = default(System.Guid?), string introducedversion = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? canbelocal = default(bool?), IList<MicrosoftDynamicsCRMroletemplate> roletemplateprivilegesAssociation = default(IList<MicrosoftDynamicsCRMroletemplate>), IList<MicrosoftDynamicsCRMrole> roleprivilegesAssociation = default(IList<MicrosoftDynamicsCRMrole>), IList<MicrosoftDynamicsCRMasyncoperation> privilegeAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> privilegeBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
+        public MicrosoftDynamicsCRMprivilege(string privilegerowid = default(string), int? accessright = default(int?), bool? canbebasic = default(bool?), string versionnumber = default(string), int? componentstate = default(int?), string privilegeid = default(string), bool? canbeentityreference = default(bool?), bool? canbeglobal = default(bool?), bool? canbedeep = default(bool?), string name = default(string), bool? canbeparententityreference = default(bool?), bool? ismanaged = default(bool?), string solutionid = default(string), string introducedversion = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), bool? canbelocal = default(bool?), IList<MicrosoftDynamicsCRMroletemplate> roletemplateprivilegesAssociation = default(IList<MicrosoftDynamicsCRMroletemplate>), IList<MicrosoftDynamicsCRMrole> roleprivilegesAssociation = default(IList<MicrosoftDynamicsCRMrole>), IList<MicrosoftDynamicsCRMasyncoperation> privilegeAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMbulkdeletefailure> privilegeBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>))
         {
             Privilegerowid = privilegerowid;
             Accessright = accessright;
@@ -62,7 +62,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "privilegerowid")]
-        public System.Guid? Privilegerowid { get; set; }
+        public string Privilegerowid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,7 +87,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "privilegeid")]
-        public System.Guid? Privilegeid { get; set; }
+        public string Privilegeid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -122,7 +122,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>

@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMconnectionrole class.
         /// </summary>
-        public MicrosoftDynamicsCRMconnectionrole(System.Guid? _organizationidValue = default(System.Guid?), string versionnumber = default(string), int? statuscode = default(int?), int? componentstate = default(int?), int? importsequencenumber = default(int?), string description = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), System.Guid? solutionid = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), int? category = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? statecode = default(int?), string iscustomizable = default(string), System.Guid? connectionroleid = default(System.Guid?), System.Guid? connectionroleidunique = default(System.Guid?), bool? ismanaged = default(bool?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string introducedversion = default(string), System.Guid? _createdbyValue = default(System.Guid?), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMprocesssession> connectionRoleProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> connectionRoleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMconnection> connectionRoleConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMsyncerror> connectionRoleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMconnection> connectionRoleConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnectionrole> connectionroleassociationAssociation = default(IList<MicrosoftDynamicsCRMconnectionrole>), IList<MicrosoftDynamicsCRMconnectionrole> connectionroleassociationAssociationReferenced = default(IList<MicrosoftDynamicsCRMconnectionrole>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
+        public MicrosoftDynamicsCRMconnectionrole(string _organizationidValue = default(string), string versionnumber = default(string), int? statuscode = default(int?), int? componentstate = default(int?), int? importsequencenumber = default(int?), string description = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string name = default(string), string solutionid = default(string), string _modifiedonbehalfbyValue = default(string), int? category = default(int?), string _modifiedbyValue = default(string), int? statecode = default(int?), string iscustomizable = default(string), string connectionroleid = default(string), string connectionroleidunique = default(string), bool? ismanaged = default(bool?), string _createdonbehalfbyValue = default(string), string introducedversion = default(string), string _createdbyValue = default(string), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMprocesssession> connectionRoleProcessSessions = default(IList<MicrosoftDynamicsCRMprocesssession>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMasyncoperation> connectionRoleAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMconnection> connectionRoleConnections2 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMsyncerror> connectionRoleSyncErrors = default(IList<MicrosoftDynamicsCRMsyncerror>), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMconnection> connectionRoleConnections1 = default(IList<MicrosoftDynamicsCRMconnection>), IList<MicrosoftDynamicsCRMconnectionrole> connectionroleassociationAssociation = default(IList<MicrosoftDynamicsCRMconnectionrole>), IList<MicrosoftDynamicsCRMconnectionrole> connectionroleassociationAssociationReferenced = default(IList<MicrosoftDynamicsCRMconnectionrole>), MicrosoftDynamicsCRMorganization organizationid = default(MicrosoftDynamicsCRMorganization))
         {
             this._organizationidValue = _organizationidValue;
             Versionnumber = versionnumber;
@@ -76,7 +76,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_organizationid_value")]
-        public System.Guid? _organizationidValue { get; set; }
+        public string _organizationidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -126,12 +126,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -141,7 +141,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -156,12 +156,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "connectionroleid")]
-        public System.Guid? Connectionroleid { get; set; }
+        public string Connectionroleid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "connectionroleidunique")]
-        public System.Guid? Connectionroleidunique { get; set; }
+        public string Connectionroleidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -171,7 +171,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -181,7 +181,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>

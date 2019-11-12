@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMtransformationparametermapping class.
         /// </summary>
-        public MicrosoftDynamicsCRMtransformationparametermapping(System.Guid? _transformationmappingidValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? parametersequence = default(int?), int? parameterarrayindex = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), string introducedversion = default(string), int? componentstate = default(int?), string data = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? datatypecode = default(int?), System.Guid? transformationparametermappingidunique = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), int? parametertypecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? transformationparametermappingid = default(System.Guid?), System.Guid? _createdonbehalfbyValue = default(System.Guid?), MicrosoftDynamicsCRMtransformationmapping transformationmappingid = default(MicrosoftDynamicsCRMtransformationmapping), IList<MicrosoftDynamicsCRMlookupmapping> lookUpMappingTransformationParameterMapping = default(IList<MicrosoftDynamicsCRMlookupmapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMtransformationparametermapping(string _transformationmappingidValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? parametersequence = default(int?), int? parameterarrayindex = default(int?), string _modifiedbyValue = default(string), string introducedversion = default(string), int? componentstate = default(int?), string data = default(string), bool? ismanaged = default(bool?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), int? datatypecode = default(int?), string transformationparametermappingidunique = default(string), string _modifiedonbehalfbyValue = default(string), string _createdbyValue = default(string), string solutionid = default(string), int? parametertypecode = default(int?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string transformationparametermappingid = default(string), string _createdonbehalfbyValue = default(string), MicrosoftDynamicsCRMtransformationmapping transformationmappingid = default(MicrosoftDynamicsCRMtransformationmapping), IList<MicrosoftDynamicsCRMlookupmapping> lookUpMappingTransformationParameterMapping = default(IList<MicrosoftDynamicsCRMlookupmapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser))
         {
             this._transformationmappingidValue = _transformationmappingidValue;
             Overwritetime = overwritetime;
@@ -67,7 +67,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transformationmappingid_value")]
-        public System.Guid? _transformationmappingidValue { get; set; }
+        public string _transformationmappingidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -87,7 +87,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -122,22 +122,22 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "transformationparametermappingidunique")]
-        public System.Guid? Transformationparametermappingidunique { get; set; }
+        public string Transformationparametermappingidunique { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -152,12 +152,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "transformationparametermappingid")]
-        public System.Guid? Transformationparametermappingid { get; set; }
+        public string Transformationparametermappingid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

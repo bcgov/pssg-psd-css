@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the
         /// MicrosoftDynamicsCRMopportunitycompetitors class.
         /// </summary>
-        public MicrosoftDynamicsCRMopportunitycompetitors(string versionnumber = default(string), string name = default(string), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), System.Guid? competitorid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), System.Guid? opportunityid = default(System.Guid?), int? importsequencenumber = default(int?), System.Guid? opportunitycompetitorid = default(System.Guid?), IList<MicrosoftDynamicsCRMasyncoperation> opportunitycompetitorsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> opportunitycompetitorsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> opportunitycompetitorsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> opportunitycompetitorsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMopportunitycompetitors(string versionnumber = default(string), string name = default(string), int? timezoneruleversionnumber = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string competitorid = default(string), int? utcconversiontimezonecode = default(int?), string opportunityid = default(string), int? importsequencenumber = default(int?), string opportunitycompetitorid = default(string), IList<MicrosoftDynamicsCRMasyncoperation> opportunitycompetitorsAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> opportunitycompetitorsMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> opportunitycompetitorsBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> opportunitycompetitorsPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Versionnumber = versionnumber;
             Name = name;
@@ -75,7 +75,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "competitorid")]
-        public System.Guid? Competitorid { get; set; }
+        public string Competitorid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -85,7 +85,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "opportunityid")]
-        public System.Guid? Opportunityid { get; set; }
+        public string Opportunityid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -95,7 +95,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "opportunitycompetitorid")]
-        public System.Guid? Opportunitycompetitorid { get; set; }
+        public string Opportunitycompetitorid { get; set; }
 
         /// <summary>
         /// </summary>

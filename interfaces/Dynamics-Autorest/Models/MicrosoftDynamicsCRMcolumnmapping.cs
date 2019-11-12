@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcolumnmapping
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcolumnmapping(int? processcode = default(int?), System.Guid? _modifiedbyValue = default(System.Guid?), int? statuscode = default(int?), string sourceattributename = default(string), System.Guid? solutionid = default(System.Guid?), string introducedversion = default(string), int? componentstate = default(int?), System.Guid? _createdbyValue = default(System.Guid?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? statecode = default(int?), bool? ismanaged = default(bool?), System.Guid? columnmappingidunique = default(System.Guid?), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.Guid? columnmappingid = default(System.Guid?), System.Guid? _importmapidValue = default(System.Guid?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string targetattributename = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), string sourceentityname = default(string), string targetentityname = default(string), IList<MicrosoftDynamicsCRMpicklistmapping> pickListMappingColumnMapping = default(IList<MicrosoftDynamicsCRMpicklistmapping>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMlookupmapping> lookUpMappingColumnMapping = default(IList<MicrosoftDynamicsCRMlookupmapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
+        public MicrosoftDynamicsCRMcolumnmapping(int? processcode = default(int?), string _modifiedbyValue = default(string), int? statuscode = default(int?), string sourceattributename = default(string), string solutionid = default(string), string introducedversion = default(string), int? componentstate = default(int?), string _createdbyValue = default(string), string _modifiedonbehalfbyValue = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), int? statecode = default(int?), bool? ismanaged = default(bool?), string columnmappingidunique = default(string), System.DateTimeOffset? createdon = default(System.DateTimeOffset?), string columnmappingid = default(string), string _importmapidValue = default(string), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string targetattributename = default(string), string _createdonbehalfbyValue = default(string), string sourceentityname = default(string), string targetentityname = default(string), IList<MicrosoftDynamicsCRMpicklistmapping> pickListMappingColumnMapping = default(IList<MicrosoftDynamicsCRMpicklistmapping>), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMimportmap importmapid = default(MicrosoftDynamicsCRMimportmap), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), IList<MicrosoftDynamicsCRMlookupmapping> lookUpMappingColumnMapping = default(IList<MicrosoftDynamicsCRMlookupmapping>), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser))
         {
             Processcode = processcode;
             this._modifiedbyValue = _modifiedbyValue;
@@ -75,7 +75,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -90,7 +90,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -105,12 +105,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -130,7 +130,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "columnmappingidunique")]
-        public System.Guid? Columnmappingidunique { get; set; }
+        public string Columnmappingidunique { get; set; }
 
         /// <summary>
         /// </summary>
@@ -140,12 +140,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "columnmappingid")]
-        public System.Guid? Columnmappingid { get; set; }
+        public string Columnmappingid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_importmapid_value")]
-        public System.Guid? _importmapidValue { get; set; }
+        public string _importmapidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -160,7 +160,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>

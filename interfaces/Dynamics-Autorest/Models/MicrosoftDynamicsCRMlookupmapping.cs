@@ -27,7 +27,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMlookupmapping
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMlookupmapping(System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), System.Guid? _modifiedonbehalfbyValue = default(System.Guid?), System.Guid? solutionid = default(System.Guid?), bool? ismanaged = default(bool?), int? processcode = default(int?), System.Guid? _columnmappingidValue = default(System.Guid?), int? statecode = default(int?), int? statuscode = default(int?), System.Guid? lookupmappingid = default(System.Guid?), System.Guid? _createdbyValue = default(System.Guid?), string lookupattributename = default(string), System.Guid? _transformationparametermappingidValue = default(System.Guid?), string lookupentityname = default(string), System.Guid? _createdonbehalfbyValue = default(System.Guid?), System.Guid? _modifiedbyValue = default(System.Guid?), int? lookupsourcecode = default(int?), string introducedversion = default(string), int? componentstate = default(int?), System.Guid? lookupmappingidunique = default(System.Guid?), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransformationparametermapping transformationparametermappingid = default(MicrosoftDynamicsCRMtransformationparametermapping), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcolumnmapping columnmappingid = default(MicrosoftDynamicsCRMcolumnmapping))
+        public MicrosoftDynamicsCRMlookupmapping(System.DateTimeOffset? createdon = default(System.DateTimeOffset?), System.DateTimeOffset? modifiedon = default(System.DateTimeOffset?), string _modifiedonbehalfbyValue = default(string), string solutionid = default(string), bool? ismanaged = default(bool?), int? processcode = default(int?), string _columnmappingidValue = default(string), int? statecode = default(int?), int? statuscode = default(int?), string lookupmappingid = default(string), string _createdbyValue = default(string), string lookupattributename = default(string), string _transformationparametermappingidValue = default(string), string lookupentityname = default(string), string _createdonbehalfbyValue = default(string), string _modifiedbyValue = default(string), int? lookupsourcecode = default(int?), string introducedversion = default(string), int? componentstate = default(int?), string lookupmappingidunique = default(string), System.DateTimeOffset? overwritetime = default(System.DateTimeOffset?), MicrosoftDynamicsCRMsystemuser modifiedby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMtransformationparametermapping transformationparametermappingid = default(MicrosoftDynamicsCRMtransformationparametermapping), MicrosoftDynamicsCRMsystemuser createdby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser modifiedonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMsystemuser createdonbehalfby = default(MicrosoftDynamicsCRMsystemuser), MicrosoftDynamicsCRMcolumnmapping columnmappingid = default(MicrosoftDynamicsCRMcolumnmapping))
         {
             Createdon = createdon;
             Modifiedon = modifiedon;
@@ -77,12 +77,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedonbehalfby_value")]
-        public System.Guid? _modifiedonbehalfbyValue { get; set; }
+        public string _modifiedonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "solutionid")]
-        public System.Guid? Solutionid { get; set; }
+        public string Solutionid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -97,7 +97,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_columnmappingid_value")]
-        public System.Guid? _columnmappingidValue { get; set; }
+        public string _columnmappingidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -112,12 +112,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "lookupmappingid")]
-        public System.Guid? Lookupmappingid { get; set; }
+        public string Lookupmappingid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdby_value")]
-        public System.Guid? _createdbyValue { get; set; }
+        public string _createdbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -127,7 +127,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_transformationparametermappingid_value")]
-        public System.Guid? _transformationparametermappingidValue { get; set; }
+        public string _transformationparametermappingidValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -137,12 +137,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_createdonbehalfby_value")]
-        public System.Guid? _createdonbehalfbyValue { get; set; }
+        public string _createdonbehalfbyValue { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "_modifiedby_value")]
-        public System.Guid? _modifiedbyValue { get; set; }
+        public string _modifiedbyValue { get; set; }
 
         /// <summary>
         /// </summary>
@@ -162,7 +162,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "lookupmappingidunique")]
-        public System.Guid? Lookupmappingidunique { get; set; }
+        public string Lookupmappingidunique { get; set; }
 
         /// <summary>
         /// </summary>

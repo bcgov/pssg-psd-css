@@ -29,7 +29,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// Initializes a new instance of the MicrosoftDynamicsCRMcontactquotes
         /// class.
         /// </summary>
-        public MicrosoftDynamicsCRMcontactquotes(int? timezoneruleversionnumber = default(int?), System.Guid? quoteid = default(System.Guid?), System.Guid? contactid = default(System.Guid?), int? importsequencenumber = default(int?), string name = default(string), System.Guid? contactquoteid = default(System.Guid?), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactquotesAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactquotesMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactquotesBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactquotesPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
+        public MicrosoftDynamicsCRMcontactquotes(int? timezoneruleversionnumber = default(int?), string quoteid = default(string), string contactid = default(string), int? importsequencenumber = default(int?), string name = default(string), string contactquoteid = default(string), int? utcconversiontimezonecode = default(int?), System.DateTimeOffset? overriddencreatedon = default(System.DateTimeOffset?), string versionnumber = default(string), IList<MicrosoftDynamicsCRMasyncoperation> contactquotesAsyncOperations = default(IList<MicrosoftDynamicsCRMasyncoperation>), IList<MicrosoftDynamicsCRMmailboxtrackingfolder> contactquotesMailboxTrackingFolders = default(IList<MicrosoftDynamicsCRMmailboxtrackingfolder>), IList<MicrosoftDynamicsCRMbulkdeletefailure> contactquotesBulkDeleteFailures = default(IList<MicrosoftDynamicsCRMbulkdeletefailure>), IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess> contactquotesPrincipalObjectAttributeAccesses = default(IList<MicrosoftDynamicsCRMprincipalobjectattributeaccess>))
         {
             Timezoneruleversionnumber = timezoneruleversionnumber;
             Quoteid = quoteid;
@@ -60,12 +60,12 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "quoteid")]
-        public System.Guid? Quoteid { get; set; }
+        public string Quoteid { get; set; }
 
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactid")]
-        public System.Guid? Contactid { get; set; }
+        public string Contactid { get; set; }
 
         /// <summary>
         /// </summary>
@@ -80,7 +80,7 @@ namespace Gov.Jag.Pssg.Csa.Interfaces.Models
         /// <summary>
         /// </summary>
         [JsonProperty(PropertyName = "contactquoteid")]
-        public System.Guid? Contactquoteid { get; set; }
+        public string Contactquoteid { get; set; }
 
         /// <summary>
         /// </summary>
