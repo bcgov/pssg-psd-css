@@ -29,23 +29,20 @@ namespace Gov.Pssg.Css.Public
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            
             if (!string.IsNullOrEmpty(Configuration["DYNAMICS_ODATA_URI"]))
             {
                 // Add Dynamics
-                services.AddTransient(new Func<IServiceProvider, IDynamicsClient>((serviceProvider) =>
+                services.AddTransient(serviceProvider =>
                 {
-                    IDynamicsClient client = DynamicsSetupUtil.SetupDynamics(Configuration);
+                    var client = DynamicsSetupUtil.SetupDynamics(Configuration);
                     return client;
-                }));
-
+                });
             }
 
             if (!string.IsNullOrEmpty(Configuration["SHAREPOINT_ODATA_URI"]))
             { 
-                // add SharePoint.
-
-                services.AddTransient<SharePointFileManager>(_ => new SharePointFileManager(Configuration));
+                // Add SharePoint
+                services.AddTransient(_ => new SharePointFileManager(Configuration));
             }
         }
 
