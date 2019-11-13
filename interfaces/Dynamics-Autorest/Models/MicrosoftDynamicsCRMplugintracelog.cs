@@ -4,7 +4,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Gov.Jag.Pssg.Csa.Interfaces.Models
+namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models
 {
     using Newtonsoft.Json;
     using System.Linq;

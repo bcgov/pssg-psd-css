@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Newtonsoft.Json;
 
-namespace Gov.Jag.Pssg.Csa.Interfaces
+namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 {
     public static class DynamicsSetupUtil
     {

@@ -73,6 +73,6 @@ csharp:
   use-datetimeoffset: true 
   sync-methods: all 
   generate-empty-classes: true
-  namespace: Gov.Jag.Pssg.Csa.Interfaces
+  namespace: Gov.Pssg.Css.Interfaces.DynamicsAutorest
   azure-arm: false
 ```

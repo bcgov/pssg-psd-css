@@ -1,4 +1,4 @@
-using Gov.Jag.Pssg.Csa.Interfaces;
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.SharePoint;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

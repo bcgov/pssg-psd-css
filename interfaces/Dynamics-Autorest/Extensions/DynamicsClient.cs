@@ -1,4 +1,4 @@
-namespace Gov.Jag.Pssg.Csa.Interfaces
+namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 {
     using Microsoft.Rest;
     using Microsoft.Rest.Serialization;

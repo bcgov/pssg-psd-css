@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>Gov.Jag.Spice.Interfaces.SharePoint</RootNamespace>
+    <RootNamespace>Gov.Pssg.Css.Interfaces.SharePoint</RootNamespace>
 	
   </PropertyGroup>
  <ItemGroup>
