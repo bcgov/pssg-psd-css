@@ -1,9 +1,12 @@
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+using Gov.Pssg.Css.Interfaces.SharePoint;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Gov.Pssg.Css.Public
 {
@@ -25,6 +28,22 @@ namespace Gov.Pssg.Css.Public
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            if (!string.IsNullOrEmpty(Configuration["DYNAMICS_ODATA_URI"]))
+            {
+                // Add Dynamics
+                services.AddTransient(serviceProvider =>
+                {
+                    var client = DynamicsSetupUtil.SetupDynamics(Configuration);
+                    return client;
+                });
+            }
+
+            if (!string.IsNullOrEmpty(Configuration["SHAREPOINT_ODATA_URI"]))
+            { 
+                // Add SharePoint
+                services.AddTransient(_ => new SharePointFileManager(Configuration));
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
