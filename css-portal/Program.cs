@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Serilog;
 
 namespace Gov.Pssg.Css.Public
@@ -17,21 +15,27 @@ namespace Gov.Pssg.Css.Public
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseSerilog((hostingContext, loggerConfiguration) =>
+                .ConfigureAppConfiguration((hostingContext, config) =>
                 {
-                    loggerConfiguration
-                        .ReadFrom.Configuration(hostingContext.Configuration)
-                        .Enrich.FromLogContext();
+                    var env = hostingContext.HostingEnvironment;
 
-                    string splunkCollectorUrl = hostingContext.Configuration["SPLUNK_COLLECTOR_URL"];
-                    string splunkToken = hostingContext.Configuration["SPLUNK_TOKEN"];
-
-                    if (!string.IsNullOrEmpty(splunkCollectorUrl) && !string.IsNullOrEmpty(splunkToken))
-                    {
-                        loggerConfiguration
-                            .WriteTo.EventCollector(splunkCollectorUrl, splunkToken, batchIntervalInSeconds: 5, batchSizeLimit: 10);
-                    }
+                    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                    config.AddEnvironmentVariables();
                 })
+                .ConfigureLogging((hostingContext, logging) =>
+                {
+                    logging.ClearProviders();
+                    logging.AddConsole(x =>
+                    {
+                        x.TimestampFormat = "yyyy-MM-dd HH:mm:ss ";
+                        x.IncludeScopes = true;
+                    });
+                    logging.SetMinimumLevel(LogLevel.Debug);
+                    logging.AddDebug();
+                    logging.AddEventSourceLogger();
+                })
+                .UseSerilog()
                 .UseStartup<Startup>();
     }
 }
