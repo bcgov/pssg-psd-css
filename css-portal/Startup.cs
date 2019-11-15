@@ -31,16 +31,7 @@ namespace Gov.Pssg.Css.Public
             {
                 configuration.RootPath = "ClientApp/dist";
             });
-
-            if (!string.IsNullOrEmpty(Configuration["DYNAMICS_ODATA_URI"]))
-            {
-                // Add Dynamics
-                services.AddTransient(serviceProvider =>
-                {
-                    var client = DynamicsSetupUtil.SetupDynamics(Configuration);
-                    return client;
-                });
-            }
+        }
 
             if (!string.IsNullOrEmpty(Configuration["SHAREPOINT_ODATA_URI"]))
             { 
