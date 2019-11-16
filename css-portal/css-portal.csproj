@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -11,6 +11,11 @@
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
     <RootNamespace>Gov.Pssg.Css.Public</RootNamespace>
+    <packageSources>
+      <add key="nexus" value="http://nexus-sxluez-tools.pathfinder.gov.bc.ca/nexus/content/repositories/nuget/" protocolVersion="2"/>
+      <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+
+    </packageSources>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +25,7 @@
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.Splunk" Version="3.3.0" />
+    
   </ItemGroup>
 
   <ItemGroup>
