@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:ssr": "ng run css_portal:server:dev",
+    "build": "ng build --base-href /communitysafety/ --deploy-url /communitysafety/",
+    "build:ssr": "ng run css_portal:server:dev --base-href /communitysafety/ --deploy-url /communitysafety/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
