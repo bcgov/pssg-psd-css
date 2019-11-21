@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Gov.Pssg.Css.Public.Utility;
@@ -9,36 +8,40 @@ namespace Gov.Pssg.Css.Public.ViewModels
 {
     public class Complaint
     {
+        public int? LegislationType { get; set; }
+
         public ComplaintDetails Details { get; set; }
 
         public Complainant Complainant { get; set; }
 
-        public async Task<bool> Validate(ComplaintType type)
+        public async Task<bool> Validate()
         {
+            if (LegislationType != Constants.LegislationTypeCCLA && LegislationType != Constants.LegislationTypeCSA)
+            {
+                return false;
+            }
+
             if (Details == null)
             {
                 return false;
             }
 
-            bool valid = true;
-
-            valid &= await Details.Validate(type);
-
-            if (Complainant != null)
+            if (!await Details.Validate(LegislationType.Value))
             {
-                bool complainantValid = await Complainant.Validate(type);
-                if (!complainantValid)
-                {
-                    Complainant = null;
-                }
+                return false;
             }
 
-            if (Complainant == null && type == ComplaintType.CSA)
+            if (Complainant != null && !Complainant.Validate(LegislationType.Value))
             {
-                valid = false;
+                return false;
             }
 
-            return valid;
+            if (Complainant == null && LegislationType == Constants.LegislationTypeCSA)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

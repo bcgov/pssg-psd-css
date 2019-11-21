@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Gov.Pssg.Css.Public.Utility;
@@ -13,7 +12,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Address Address { get; set; }
 
-        public string PropertyType { get; set; }
+        public int? PropertyType { get; set; }
 
         public string OtherPropertyType { get; set; }
 
@@ -25,10 +24,10 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public string OwnerName { get; set; }
 
-        public async Task<bool> Validate(ComplaintType type)
+        public async Task<bool> Validate(int legislationType)
         {
             var propertyTypes = await ViewModels.PropertyType.GetPropertyTypesAsync();
-            if (!string.IsNullOrEmpty(PropertyType) && propertyTypes.All(a => a.Value != PropertyType))
+            if (PropertyType != null && propertyTypes.All(a => a.Value != PropertyType))
             {
                 return false;
             }
@@ -38,7 +37,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
                 return false;
             }
 
-            if (type == ComplaintType.CSA && string.IsNullOrWhiteSpace(Description))
+            if (legislationType == Constants.LegislationTypeCSA && string.IsNullOrWhiteSpace(Description))
             {
                 return false;
             }

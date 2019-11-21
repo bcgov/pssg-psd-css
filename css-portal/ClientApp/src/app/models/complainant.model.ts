@@ -4,8 +4,9 @@ export class Complainant {
     firstName: string;
     middleName: string;
     lastName: string;
-    phone: string;
     fax: string;
+    governmentAgency: string;
+    phone: string;
     email: string;
     address: Address;
 }
