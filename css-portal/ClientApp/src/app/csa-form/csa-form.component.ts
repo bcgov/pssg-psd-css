@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, AbstractControl } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 import { Observable, Subject, Subscription } from 'rxjs';
-import { NgbDateAdapter, NgbDateNativeAdapter } from '@ng-bootstrap/ng-bootstrap';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 import { setPropertyTypes } from '@actions/property-types.actions';
@@ -15,10 +14,7 @@ import { FormBase } from '@shared/form-base';
 @Component({
   selector: 'app-csa-form',
   templateUrl: './csa-form.component.html',
-  styleUrls: ['./csa-form.component.scss'],
-  providers: [
-    { provide: NgbDateAdapter, useClass: NgbDateNativeAdapter },
-  ]
+  styleUrls: ['./csa-form.component.scss']
 })
 export class CsaFormComponent extends FormBase implements OnInit {
   public propertyTypes: Observable<PropertyType[]>;
@@ -26,6 +22,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
   submissionResult: Subject<boolean>;
   loaded: Boolean;
   faCalendar = faCalendar;
+  propertyTypeOther = 862570008;
 
   constructor(
     private formDataService: ComplaintService,
@@ -41,7 +38,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
 
     this.form = this.formBuilder.group({
       complaintDetails: this.formBuilder.group({
-        propertyType: [''],
+        propertyType: [null],
         otherPropertyType: [''],
         name: [''],
         address: this.formBuilder.group({

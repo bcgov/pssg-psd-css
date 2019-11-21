@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.Utility;
 using Gov.Pssg.Css.Public.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -15,10 +17,12 @@ namespace Gov.Pssg.Css.Public.Controllers
     public class ComplaintsController : ControllerBase
     {
         private readonly ILogger<ComplaintsController> _logger;
+        private readonly IDynamicsClient _dynamicsClient;
 
-        public ComplaintsController(ILogger<ComplaintsController> logger)
+        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient)
         {
             _logger = logger;
+            _dynamicsClient = dynamicsClient;
         }
 
         // GET: complaints/property-types
@@ -46,16 +50,18 @@ namespace Gov.Pssg.Css.Public.Controllers
         {
             try
             {
+                complaint.LegislationType = Constants.LegislationTypeCSA;
+
                 // validate complaint
-                bool validationResult = await complaint.Validate(ComplaintType.CSA);
+                bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
-                // TODO: submit complaint to Dynamics
-                return StatusCode(StatusCodes.Status200OK);
+                await SubmitComplaintToDynamicsAsync(complaint);
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -71,21 +77,37 @@ namespace Gov.Pssg.Css.Public.Controllers
         {
             try
             {
+                complaint.LegislationType = Constants.LegislationTypeCCLA;
+
                 // validate complaint
-                bool validationResult = await complaint.Validate(ComplaintType.CCLA);
+                bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
-                // TODO: submit complaint to Dynamics
-                return StatusCode(StatusCodes.Status200OK);
+                await SubmitComplaintToDynamicsAsync(complaint);
+                return Ok();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Failed to submit complaint {@Complaint}", complaint);
                 return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        private async Task SubmitComplaintToDynamicsAsync(Complaint complaint)
+        {
+            try
+            {
+                var result = await DynamicsUtility.CreateComplaintAsync(_dynamicsClient, complaint);
+                _logger.LogInformation("Successfully created complaint {ComplaintNumber} from view model {@Complaint}", result.CsuName, complaint);
+            }
+            catch (OdataerrorException ex)
+            {
+                _logger.LogError(ex, string.Join(Environment.NewLine, "Failed to create complaint", "{@ErrorBody}"), ex.Body);
+                throw;
             }
         }
     }

@@ -18,11 +18,11 @@
         <div class="col-sm-6">
           <label class="control-label" for="propertyPropertyType">Property Type</label>
           <select id="propertyPropertyType" class="form-control" formControlName="propertyType">
-            <option value="">Select a Property Type&hellip;</option>
-            <option *ngFor="let propertyType of propertyTypes | async" [value]="propertyType.value">{{propertyType.name}}</option>
+            <option [ngValue]="null">Select a Property Type&hellip;</option>
+            <option *ngFor="let propertyType of propertyTypes | async" [ngValue]="propertyType.value">{{propertyType.name}}</option>
           </select>
         </div>
-        <div class="col-sm-6" [class.d-none]="this.form.get('complaintDetails.propertyType').value !== 'other'">
+        <div class="col-sm-6" [class.d-none]="this.form.get('complaintDetails.propertyType').value !== this.propertyTypeOther">
           <label class="control-label" for="propertyOtherPropertyType">'Other' Property Type</label>
           <input id="propertyOtherPropertyType" class="form-control" type="text" formControlName="otherPropertyType" />
         </div>
