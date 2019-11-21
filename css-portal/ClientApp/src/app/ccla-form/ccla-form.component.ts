@@ -52,10 +52,10 @@ export class CclaFormComponent extends FormBase implements OnInit {
       }),
       complainantMailingAddress: this.formBuilder.group({
         unit: [''],
-        line1: ['', Validators.required],
-        city: ['', Validators.required],
-        provinceState: ['BC', Validators.required],
-        country: ['Canada', Validators.required],
+        line1: [''],
+        city: [''],
+        provinceState: [],
+        country: [],
         zipPostalCode: [''],
       }),
     });

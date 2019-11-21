@@ -19,6 +19,10 @@
     <em>Cannabis Control and Licensing Act</em> or its associated regulations.
   </p>
 
+  <div class="clearfix">
+    <p class="text-danger float-right"><em>* Required</em></p>
+  </div>
+
   <fieldset formGroupName="complaintDetails">
     <legend>Complaint Details</legend>
     <div class="form-group">
@@ -173,11 +177,8 @@
     <div class="form-group">
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="Address" [required]="true"
-            [invalid]="checkInputInvalid('complainantMailingAddress.line1')"
-            errorMessage="Please provide an address">
-            <input id="complainantAddressLine1" class="form-control" type="text" formControlName="line1" required
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.line1')">
+          <app-field label="Address">
+            <input id="complainantAddressLine1" class="form-control" type="text" formControlName="line1">
           </app-field>
         </div>
         <div class="col-sm-6">
@@ -188,29 +189,20 @@
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="City" [required]="true"
-            [invalid]="checkInputInvalid('complainantMailingAddress.city')"
-            errorMessage="Please provide a city">
-            <input id="complainantAddressCity" class="form-control" type="text" formControlName="city" required
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.city')">
+          <app-field label="City">
+            <input id="complainantAddressCity" class="form-control" type="text" formControlName="city">
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Province/State" [required]="true"
-            [invalid]="checkInputInvalid('complainantMailingAddress.provinceState')"
-            errorMessage="Please provide a province or state">
-            <input id="complainantAddressProvinceState" class="form-control" type="text" formControlName="provinceState" required
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.provinceState')">
+          <app-field label="Province/State">
+            <input id="complainantAddressProvinceState" class="form-control" type="text" formControlName="provinceState">
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="Country" [required]="true"
-            [invalid]="checkInputInvalid('complainantMailingAddress.country')"
-            errorMessage="Please provide a country">
-            <input id="complainantAddressCountry" class="form-control" type="text" formControlName="country" required 
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.country')">
+          <app-field label="Country">
+            <input id="complainantAddressCountry" class="form-control" type="text" formControlName="country">
           </app-field>
         </div>
         <div class="col-sm-6">
