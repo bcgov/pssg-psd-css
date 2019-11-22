@@ -99,6 +99,8 @@ namespace Gov.Pssg.Css.Public.Utility
             {
                 entity.CsuPropertytype = complaint.Details.PropertyType;
                 entity.CsuOtherpropertytype = complaint.Details.OtherPropertyType;
+                entity.CsuNameofoccupants = complaint.Details.OccupantName;
+                entity.CsuNameofowners = complaint.Details.OwnerName;
 
                 if (complaint.Details.PropertyType == Constants.PropertyTypeCommercial)
                 {
