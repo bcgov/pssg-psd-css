@@ -159,8 +159,12 @@
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Fax">
-            <input id="complainantFax" class="form-control" type="text" maxlength="50" formControlName="fax">
+          <app-field label="Fax"
+            [invalid]="checkInputInvalid('complainantContactInfo.fax')"
+            errorMessage="Please provide a complete fax number">
+            <input id="complainantFax" class="form-control" type="tel" maxlength="50" formControlName="fax"
+              [textMask]="{ mask: this.telephoneMask }" placeholder="(___)-___-____"
+              [class.is-invalid]="checkInputInvalid('complainantContactInfo.fax')">
           </app-field>
         </div>
       </div>
@@ -172,14 +176,15 @@
                 [invalid]="checkTelephoneInvalid()"
                 errorMessage="Please provide a telephone number or an email address">
                 <input id="complainantPhone" class="form-control" type="tel" maxlength="50" formControlName="phone"
-                [class.is-invalid]="checkTelephoneInvalid()">
+                  [textMask]="{ mask: this.telephoneMask}" placeholder="(___)-___-____"
+                  [class.is-invalid]="checkTelephoneInvalid()"> 
               </app-field>
             </div>
             <div class="col-sm-6 mb-0">
               <app-field label="Email Address"
                 [invalid]="checkInputInvalid('complainantContactInfo.email')"
                 errorMessage="Please provide a valid email address">
-                <input id="complainantPhone" class="form-control" type="text" maxlength="100" formControlName="email"
+                <input id="complainantEmail" class="form-control" type="text" maxlength="100" formControlName="email"
                   [class.is-invalid]="checkTelephoneInvalid() || checkInputInvalid('complainantContactInfo.email')">
               </app-field>
             </div>

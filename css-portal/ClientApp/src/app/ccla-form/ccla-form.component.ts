@@ -45,7 +45,7 @@ export class CclaFormComponent extends FormBase implements OnInit {
         firstName: ['', Validators.required],
         middleName: [''],
         lastName: ['', Validators.required],
-        fax: [''],
+        fax: ['', this.maskedTelephoneValidator],
         governmentAgency: [''],
         phone: [''],
         email: ['', Validators.email],
@@ -63,7 +63,7 @@ export class CclaFormComponent extends FormBase implements OnInit {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
     const complainantEmail = this.form.get('complainantContactInfo.email');
     const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-    complainantPhone.setValidators(phoneEmailValidator);
+    complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
     complainantEmail.valueChanges.subscribe(email => {
       complainantPhone.updateValueAndValidity();
     });

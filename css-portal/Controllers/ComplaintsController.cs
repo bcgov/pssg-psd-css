@@ -53,6 +53,7 @@ namespace Gov.Pssg.Css.Public.Controllers
                 complaint.LegislationType = Constants.LegislationTypeCSA;
 
                 // validate complaint
+                complaint.Sanitize();
                 bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
@@ -80,6 +81,7 @@ namespace Gov.Pssg.Css.Public.Controllers
                 complaint.LegislationType = Constants.LegislationTypeCCLA;
 
                 // validate complaint
+                complaint.Sanitize();
                 bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {

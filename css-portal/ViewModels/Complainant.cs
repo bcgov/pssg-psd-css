@@ -32,6 +32,12 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Address Address { get; set; }
 
+        public void Sanitize()
+        {
+            Phone = PhoneNumberUtility.Sanitize(Phone);
+            Fax = PhoneNumberUtility.Sanitize(Fax);
+        }
+
         public bool Validate(int legislationType)
         {
             if (string.IsNullOrWhiteSpace(FirstName) ||
@@ -41,6 +47,11 @@ namespace Gov.Pssg.Css.Public.ViewModels
             }
 
             if (string.IsNullOrWhiteSpace(Phone) && string.IsNullOrWhiteSpace(Email))
+            {
+                return false;
+            }
+
+            if (!PhoneNumberUtility.Validate(Phone) || !PhoneNumberUtility.Validate(Fax))
             {
                 return false;
             }
