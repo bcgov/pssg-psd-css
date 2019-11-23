@@ -14,6 +14,11 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Complainant Complainant { get; set; }
 
+        public void Sanitize()
+        {
+            Complainant?.Sanitize();
+        }
+
         public async Task<bool> Validate()
         {
             if (LegislationType != Constants.LegislationTypeCCLA && LegislationType != Constants.LegislationTypeCSA)

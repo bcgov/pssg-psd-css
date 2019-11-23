@@ -28,13 +28,13 @@
         </div>
         <div class="col-sm-6" [class.d-none]="this.form.get('complaintDetails.propertyType').value !== this.propertyTypeOther">
           <label class="control-label" for="propertyOtherPropertyType">'Other' Property Type</label>
-          <input id="propertyOtherPropertyType" class="form-control" type="text" formControlName="otherPropertyType" />
+          <input id="propertyOtherPropertyType" class="form-control" type="text" maxlength="100" formControlName="otherPropertyType" />
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
           <app-field label="Property Name (If Applicable)">
-            <input id="propertyName" class="form-control" type="text" formControlName="name">
+            <input id="propertyName" class="form-control" type="text" maxlength="250" formControlName="name">
           </app-field>
         </div>
       </div>
@@ -42,21 +42,21 @@
         <div class="row">
           <div class="col-sm-12">
             <app-field label="Property Address">
-              <input id="propertyAddressLine1" class="form-control" type="text" formControlName="line1">
+              <input id="propertyAddressLine1" class="form-control" type="text" maxlength="250" formControlName="line1">
             </app-field>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <app-field label="Property Apt/Suite/Unit">
-              <input id="propertyAddressUnit" class="form-control" type="text" formControlName="unit">
+              <input id="propertyAddressUnit" class="form-control" type="text" maxlength="250" formControlName="unit">
             </app-field>
           </div>
           <div class="col-sm-6">
             <app-field label="Property City" [required]="true"
               [invalid]="checkInputInvalid('complaintDetails.address.city')"
               errorMessage="Please provide a city">
-              <input id="propertyAddressCity" class="form-control" type="text" formControlName="city" required
+              <input id="propertyAddressCity" class="form-control" type="text" maxlength="80" formControlName="city" required
                 [class.is-invalid]="checkInputInvalid('complaintDetails.address.city')">
             </app-field>
           </div>
@@ -64,19 +64,19 @@
         <div class="row">
           <div class="col-sm-6">
             <app-field label="Property Province">
-              <input id="propertyAddressProvinceState" class="form-control" type="text" formControlName="provinceState">
+              <input id="propertyAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState">
             </app-field>
           </div>
           <div class="col-sm-6">
             <app-field label="Property Country">
-              <input id="propertyAddressCountry" class="form-control" type="text" formControlName="country">
+              <input id="propertyAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country">
             </app-field>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <app-field label="Property Postal Code">
-              <input id="propertyAddressZipPostalCode" class="form-control" type="text" formControlName="zipPostalCode">
+              <input id="propertyAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode">
             </app-field>
           </div>
         </div>
@@ -85,12 +85,12 @@
     <div class="row">
       <div class="col-sm-6">
         <app-field label="Name of Occupant(s) (If Known)">
-          <input id="propertyOccupantName" class="form-control" type="text" formControlName="occupantName">
+          <input id="propertyOccupantName" class="form-control" type="text" maxlength="150" formControlName="occupantName">
         </app-field>
       </div>
       <div class="col-sm-6">
         <app-field label="Name of Owner(s) (If Known)">
-          <input id="propertyOwnerName" class="form-control" type="text" formControlName="ownerName">
+          <input id="propertyOwnerName" class="form-control" type="text" maxlength="100" formControlName="ownerName">
         </app-field>
       </div>
     </div>
@@ -139,13 +139,13 @@
           <app-field label="First Name" [required]="true"
             [invalid]="checkInputInvalid('complainantContactInfo.firstName')"
             errorMessage="Please provide a first name">
-            <input id="complainantFirstName" class="form-control" type="text" formControlName="firstName" required
+            <input id="complainantFirstName" class="form-control" type="text" maxlength="50" formControlName="firstName" required
               [class.is-invalid]="checkInputInvalid('complainantContactInfo.firstName')">
           </app-field>
         </div>
         <div class="col-sm-6">
           <app-field label="Middle Name">
-            <input id="complainantMiddleName" class="form-control" type="text" formControlName="middleName">
+            <input id="complainantMiddleName" class="form-control" type="text" maxlength="50" formControlName="middleName">
           </app-field>
         </div>
       </div>
@@ -154,13 +154,17 @@
           <app-field label="Last Name" [required]="true"
             [invalid]="checkInputInvalid('complainantContactInfo.lastName')"
             errorMessage="Please provide a last name">
-            <input id="complainantLastName" class="form-control" type="text" formControlName="lastName"
+            <input id="complainantLastName" class="form-control" type="text" maxlength="50" formControlName="lastName"
               [class.is-invalid]="checkInputInvalid('complainantContactInfo.lastName')">
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Fax">
-            <input id="complainantFax" class="form-control" type="text" formControlName="fax">
+          <app-field label="Fax"
+            [invalid]="checkInputInvalid('complainantContactInfo.fax')"
+            errorMessage="Please provide a complete fax number">
+            <input id="complainantFax" class="form-control" type="tel" maxlength="50" formControlName="fax"
+              [textMask]="{ mask: this.telephoneMask }" placeholder="(___)-___-____"
+              [class.is-invalid]="checkInputInvalid('complainantContactInfo.fax')">
           </app-field>
         </div>
       </div>
@@ -171,15 +175,16 @@
               <app-field label="Telephone"
                 [invalid]="checkTelephoneInvalid()"
                 errorMessage="Please provide a telephone number or an email address">
-                <input id="complainantPhone" class="form-control" type="tel" formControlName="phone"
-                [class.is-invalid]="checkTelephoneInvalid()">
+                <input id="complainantPhone" class="form-control" type="tel" maxlength="50" formControlName="phone"
+                  [textMask]="{ mask: this.telephoneMask}" placeholder="(___)-___-____"
+                  [class.is-invalid]="checkTelephoneInvalid()"> 
               </app-field>
             </div>
             <div class="col-sm-6 mb-0">
               <app-field label="Email Address"
                 [invalid]="checkInputInvalid('complainantContactInfo.email')"
                 errorMessage="Please provide a valid email address">
-                <input id="complainantPhone" class="form-control" type="text" formControlName="email"
+                <input id="complainantEmail" class="form-control" type="text" maxlength="100" formControlName="email"
                   [class.is-invalid]="checkTelephoneInvalid() || checkInputInvalid('complainantContactInfo.email')">
               </app-field>
             </div>
@@ -196,13 +201,13 @@
           <app-field label="Address" [required]="true"
             [invalid]="checkInputInvalid('complainantMailingAddress.line1')"
             errorMessage="Please provide an address">
-            <input id="complainantAddressLine1" class="form-control" type="text" formControlName="line1" required
+            <input id="complainantAddressLine1" class="form-control" type="text" maxlength="250" formControlName="line1" required
               [class.is-invalid]="checkInputInvalid('complainantMailingAddress.line1')">
           </app-field>
         </div>
         <div class="col-sm-6">
           <app-field label="Apt/Suite/Unit">
-            <input id="complainantAddressUnit" class="form-control" type="text" formControlName="unit">
+            <input id="complainantAddressUnit" class="form-control" type="text" maxlength="250" formControlName="unit">
           </app-field>
         </div>
       </div>
@@ -211,7 +216,7 @@
           <app-field label="City" [required]="true"
             [invalid]="checkInputInvalid('complainantMailingAddress.city')"
             errorMessage="Please provide a city">
-            <input id="complainantAddressCity" class="form-control" type="text" formControlName="city" required
+            <input id="complainantAddressCity" class="form-control" type="text" maxlength="80" formControlName="city" required
               [class.is-invalid]="checkInputInvalid('complainantMailingAddress.city')">
           </app-field>
         </div>
@@ -219,7 +224,7 @@
           <app-field label="Province/State" [required]="true"
             [invalid]="checkInputInvalid('complainantMailingAddress.provinceState')"
             errorMessage="Please provide a province or state">
-            <input id="complainantAddressProvinceState" class="form-control" type="text" formControlName="provinceState" required
+            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState" required
               [class.is-invalid]="checkInputInvalid('complainantMailingAddress.provinceState')">
           </app-field>
         </div>
@@ -229,14 +234,13 @@
           <app-field label="Country" [required]="true"
             [invalid]="checkInputInvalid('complainantMailingAddress.country')"
             errorMessage="Please provide a country">
-            <input id="complainantAddressCountry" class="form-control" type="text" formControlName="country" required 
+            <input id="complainantAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country" required 
               [class.is-invalid]="checkInputInvalid('complainantMailingAddress.country')">
           </app-field>
         </div>
         <div class="col-sm-6">
           <app-field label="Postal Code/Zip Code">
-            <input id="complainantAddressZipPostalCode" class="form-control"
-              type="text" formControlName="zipPostalCode">
+            <input id="complainantAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode">
           </app-field>
         </div>
       </div>

@@ -58,8 +58,8 @@ export class CsaFormComponent extends FormBase implements OnInit {
         firstName: ['', Validators.required],
         middleName: [''],
         lastName: ['', Validators.required],
+        fax: ['', this.maskedTelephoneValidator],
         phone: [''],
-        fax: [''],
         email: ['', Validators.email],
       }),
       complainantMailingAddress: this.formBuilder.group({
@@ -76,7 +76,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
     const complainantEmail = this.form.get('complainantContactInfo.email');
     const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-    complainantPhone.setValidators(phoneEmailValidator);
+    complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
     complainantEmail.valueChanges.subscribe(email => {
       complainantPhone.updateValueAndValidity();
     });

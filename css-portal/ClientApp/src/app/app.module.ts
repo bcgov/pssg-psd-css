@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StoreModule } from '@ngrx/store';
 import { NgBusyModule } from 'ng-busy';
+import { TextMaskModule } from 'angular2-text-mask';
 
 import { propertyTypesReducer } from '@reducers/property-types.reducer';
 import { ComplaintService } from '@services/form-data.service';
@@ -41,6 +42,7 @@ import { ErrorComponent } from './error/error.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     NgBusyModule,
+    TextMaskModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'ccla-form', component: CclaFormComponent },
