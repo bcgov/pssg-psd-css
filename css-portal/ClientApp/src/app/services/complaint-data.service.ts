@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -8,7 +8,7 @@ import { DataService } from './data.service';
 import { PropertyType } from '@models/property-type.model';
 
 @Injectable()
-export class ComplaintService extends DataService {
+export class ComplaintDataService extends DataService {
 
   constructor(private http: HttpClient) {
     super();

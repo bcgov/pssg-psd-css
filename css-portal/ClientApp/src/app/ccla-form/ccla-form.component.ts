@@ -1,26 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Subject, Subscription } from 'rxjs';
+import { Store, select } from '@ngrx/store';
+import { Subject, Subscription, forkJoin } from 'rxjs';
+import { first, filter } from 'rxjs/operators';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 import { Complaint } from '@models/complaint.model';
-import { ComplaintService } from '@services/form-data.service';
+import { Status } from '@models/status.model';
+import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
 
 @Component({
   selector: 'app-ccla-form',
   templateUrl: './ccla-form.component.html'
 })
-export class CclaFormComponent extends FormBase implements OnInit {
+export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   submittingForm: Subscription;
+  statusSubscription: Subscription;
+  loadingSubscription: Subscription;
   submissionResult: Subject<boolean>;
   loaded: Boolean;
   faCalendar = faCalendar;
+  authorizationToken : string;
+  captchaApiBaseUrl : string;
 
   constructor(
-    private formDataService: ComplaintService,
+    private formDataService: ComplaintDataService,
     private router: Router,
+    private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder
   ) {
     super();
@@ -70,7 +78,25 @@ export class CclaFormComponent extends FormBase implements OnInit {
 
     this.updateAnonymousComplainant();
 
-    this.loaded = true;
+    // retrieve valid status from store
+    const statusObservable =  this.statusStore.pipe(
+      select(state => state.status),
+      filter(status => Boolean(status && status.captchaApiUrl))
+    );
+
+    // retrieve captcha api URL from status
+    this.statusSubscription = statusObservable.subscribe(status => {
+      this.captchaApiBaseUrl = status.captchaApiUrl;
+    });
+
+    // set page as loaded once a valid status has been retrieved
+    statusObservable.pipe(first()).subscribe(() => {
+      this.loaded = true;
+    });
+  }
+
+  ngOnDestroy() {
+    this.statusSubscription.unsubscribe();
   }
 
   updateAnonymousComplainant() {
@@ -113,6 +139,7 @@ export class CclaFormComponent extends FormBase implements OnInit {
           ...formData.complainantContactInfo,
           address: formData.complainantMailingAddress,
         },
+        authorizationToken: this.authorizationToken,
       };
 
       this.save(data).subscribe({

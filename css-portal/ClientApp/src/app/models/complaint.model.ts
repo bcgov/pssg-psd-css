@@ -4,4 +4,5 @@ import { ComplaintDetails } from './complaint-details.model';
 export class Complaint {
     details: ComplaintDetails;
     complainant: Complainant;
+    authorizationToken: string;
 }
