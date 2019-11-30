@@ -12,15 +12,16 @@
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
     <RootNamespace>Gov.Pssg.Css.Public</RootNamespace>
     <packageSources>
-      <add key="nexus" value="http://nexus-sxluez-tools.pathfinder.gov.bc.ca/nexus/content/repositories/nuget/" protocolVersion="2"/>
+      <add key="nexus" value="http://nexus-sxluez-tools.pathfinder.gov.bc.ca/nexus/content/repositories/nuget/" protocolVersion="2" />
       <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
 
     </packageSources>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="JWT" Version="5.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.0.0" />
-    <PackageReference Include="Serilog.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
     <PackageReference Include="Serilog.Exceptions" Version="5.3.1" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />

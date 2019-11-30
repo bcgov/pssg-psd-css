@@ -14,6 +14,8 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Complainant Complainant { get; set; }
 
+        public string AuthorizationToken { get; set; }
+
         public void Sanitize()
         {
             Complainant?.Sanitize();

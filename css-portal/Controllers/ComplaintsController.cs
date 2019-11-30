@@ -8,7 +8,9 @@ using Gov.Pssg.Css.Public.Utility;
 using Gov.Pssg.Css.Public.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
 
 namespace Gov.Pssg.Css.Public.Controllers
 {
@@ -18,11 +20,15 @@ namespace Gov.Pssg.Css.Public.Controllers
     {
         private readonly ILogger<ComplaintsController> _logger;
         private readonly IDynamicsClient _dynamicsClient;
+        private readonly IConfiguration _configuration;
 
-        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient)
+        private readonly string CaptchaNonce = "submit-complaint";
+
+        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient, IConfiguration configuration)
         {
             _logger = logger;
             _dynamicsClient = dynamicsClient;
+            _configuration = configuration;
         }
 
         // GET: complaints/property-types
@@ -51,13 +57,19 @@ namespace Gov.Pssg.Css.Public.Controllers
             try
             {
                 complaint.LegislationType = Constants.LegislationTypeCSA;
-
-                // validate complaint
                 complaint.Sanitize();
+
                 bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
+                    return BadRequest();
+                }
+
+                bool authenticationResult = AuthenticateCaptchaToken(complaint.AuthorizationToken, _configuration["CAPTCHA_SECRET"]);
+                if (authenticationResult == false)
+                {
+                    _logger.LogWarning("Captcha token authentication failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
@@ -79,13 +91,19 @@ namespace Gov.Pssg.Css.Public.Controllers
             try
             {
                 complaint.LegislationType = Constants.LegislationTypeCCLA;
-
-                // validate complaint
                 complaint.Sanitize();
+
                 bool validationResult = await complaint.Validate();
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
+                    return BadRequest();
+                }
+
+                bool authenticationResult = AuthenticateCaptchaToken(complaint.AuthorizationToken, _configuration["CAPTCHA_SECRET"]);
+                if (authenticationResult == false)
+                {
+                    _logger.LogWarning("Captcha token authentication failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
@@ -110,6 +128,26 @@ namespace Gov.Pssg.Css.Public.Controllers
             {
                 _logger.LogError(ex, string.Join(Environment.NewLine, "Failed to create complaint", "{@ErrorBody}"), ex.Body);
                 throw;
+            }
+        }
+
+        private bool AuthenticateCaptchaToken(string token, string secret)
+        {
+            try
+            {
+                var payload = JwtUtility.TryDecode(token, secret, _logger);
+                string nonce = payload.SelectToken("data.nonce")?.Value<string>();
+                if (nonce == CaptchaNonce)
+                {
+                    return true;
+                }
+
+                _logger.LogWarning("Could not match expected captcha {Nonce} in {Payload}", CaptchaNonce, payload.ToString());
+                return false;
+            }
+            catch
+            {
+                return false;
             }
         }
     }

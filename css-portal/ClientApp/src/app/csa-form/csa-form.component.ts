@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import { Observable, Subject, Subscription } from 'rxjs';
+import { Observable, Subject, Subscription, forkJoin } from 'rxjs';
+import { filter, first } from 'rxjs/operators';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 import { setPropertyTypes } from '@actions/property-types.actions';
 import { Complaint } from '@models/complaint.model';
 import { PropertyType } from '@models/property-type.model';
-import { ComplaintService } from '@services/form-data.service';
+import { Status } from '@models/status.model';
+import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
 
 @Component({
@@ -16,26 +18,28 @@ import { FormBase } from '@shared/form-base';
   templateUrl: './csa-form.component.html',
   styleUrls: ['./csa-form.component.scss']
 })
-export class CsaFormComponent extends FormBase implements OnInit {
+export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   public propertyTypes: Observable<PropertyType[]>;
   submittingForm: Subscription;
+  statusSubscription: Subscription;
   submissionResult: Subject<boolean>;
   loaded: Boolean;
   faCalendar = faCalendar;
   propertyTypeOther = 862570008;
+  authorizationToken : string;
+  captchaApiBaseUrl : string;
 
   constructor(
-    private formDataService: ComplaintService,
+    private formDataService: ComplaintDataService,
     private router: Router,
     private propertyTypesStore: Store<{ properyTypes: PropertyType[] }>,
+    private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder
   ) {
     super();
   }
 
   ngOnInit() {
-    this.propertyTypes = this.propertyTypesStore.pipe(select('propertyTypes'));
-
     this.form = this.formBuilder.group({
       complaintDetails: this.formBuilder.group({
         propertyType: [null],
@@ -81,10 +85,39 @@ export class CsaFormComponent extends FormBase implements OnInit {
       complainantPhone.updateValueAndValidity();
     });
 
-    this.formDataService.getPropertyTypes().subscribe(result => {
+    // fetch property types from back-end and update store
+     this.formDataService.getPropertyTypes().subscribe(result => {
       this.propertyTypesStore.dispatch(setPropertyTypes({ propertyTypes: result }));
+    });
+
+    // retrieve valid property types from store
+    this.propertyTypes = this.propertyTypesStore.pipe(
+      select('propertyTypes'),
+      filter(propertyTypes => Array.isArray(propertyTypes))
+    );
+
+    // retrieve valid status from store
+    const statusObservable =  this.statusStore.pipe(
+      select(state => state.status),
+      filter(status => Boolean(status && status.captchaApiUrl))
+    );
+
+    // retrieve captcha api URL from status
+    this.statusSubscription = statusObservable.subscribe(status => {
+      this.captchaApiBaseUrl = status.captchaApiUrl;
+    });
+
+    // set page as loaded once valid property types and status have been retrieved
+    forkJoin([
+      this.propertyTypes.pipe(first()),
+      statusObservable.pipe(first()),
+    ]).subscribe(() => {
       this.loaded = true;
     });
+  }
+
+  ngOnDestroy() {
+    this.statusSubscription.unsubscribe();
   }
 
   checkTelephoneInvalid() {
@@ -112,6 +145,7 @@ export class CsaFormComponent extends FormBase implements OnInit {
           ...formData.complainantContactInfo,
           address: formData.complainantMailingAddress,
         },
+        authorizationToken: this.authorizationToken,
       };
 
       this.save(data).subscribe({

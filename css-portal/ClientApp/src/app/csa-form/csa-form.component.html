@@ -308,6 +308,14 @@
     </app-field>
   </fieldset>
 
+  <captcha [apiBaseUrl]="captchaApiBaseUrl" 
+    nonce="submit-complaint"
+    (onValidToken)="authorizationToken = $event"
+    successMessage="You can submit the complaint now."
+    language="en"
+    eagerFetchAudio = "false">
+  </captcha>
+
   <div class="float-right">
     <button (click)="submit()" class="btn btn-primary mt-4">Submit Complaint</button>
   </div>

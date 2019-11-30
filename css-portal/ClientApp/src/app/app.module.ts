@@ -11,9 +11,14 @@ import { NgBusyModule } from 'ng-busy';
 import { TextMaskModule } from 'angular2-text-mask';
 
 import { propertyTypesReducer } from '@reducers/property-types.reducer';
-import { ComplaintService } from '@services/form-data.service';
+import { statusReducer } from '@reducers/status.reducer';
+
+import { CaptchaDataService } from '@services/captcha-data.service';
+import { ComplaintDataService } from '@services/complaint-data.service';
+import { StatusDataService } from '@services/status-data.service';
 
 import { FieldComponent } from '@shared/app-field/field.component';
+import { CaptchaComponent } from '@shared/captcha/captcha.component';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +30,7 @@ import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
+    CaptchaComponent,
     AppComponent,
     HomeComponent,
     CclaFormComponent,
@@ -51,10 +57,12 @@ import { ErrorComponent } from './error/error.component';
       { path: 'error', component: ErrorComponent },
       { path: '**', redirectTo: '' },
     ]),
-    StoreModule.forRoot({ propertyTypes: propertyTypesReducer })
+    StoreModule.forRoot({ propertyTypes: propertyTypesReducer, status: statusReducer })
   ],
   providers: [
-    ComplaintService,
+    CaptchaDataService,
+    ComplaintDataService,
+    StatusDataService,
     Title
   ],
   bootstrap: [AppComponent]
