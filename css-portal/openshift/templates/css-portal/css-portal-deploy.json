@@ -6,6 +6,28 @@
     "creationTimestamp": null
   },
   "objects": [
+  {
+  "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
+  "kind": "NetworkSecurityPolicy",
+  "metadata": {
+    "creationTimestamp": "2019-11-19T20:06:22Z",
+    "finalizers": [
+      "finalizer.secops.pathfinder.gov.bc.ca"
+    ],
+    "generation": 1,
+    "name": "custom-allow-tools-to-${TAG_NAME}",
+    "namespace": "${PROJECT_PREFIX}-${TAG_NAME}"
+  },
+  "spec": {
+    "description": "Allow Tools to communicate with ${TAG_NAME} to verify deployment\n",
+    "destination": [
+      "- $namespace=${PROJECT_PREFIX}-${TAG_NAME}"
+    ],
+    "source": [
+      "- $namespace=${PROJECT_PREFIX}-tools"
+    ]
+  }  
+},
     {
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
@@ -391,6 +413,14 @@
     }
   ],
   "parameters": [
+  {
+	  "name": "PROJECT_PREFIX",
+      "displayName": "Name",
+      "description": "The project prefix",
+      "required": true,
+      "value": "sxluez"
+	},
+    
     {
       "name": "NAME",
       "displayName": "Name",
@@ -454,7 +484,7 @@
       "description": "The exposed hostname that will route to the service, e.g., myappname.pathfinder.gov.bc.ca, if left blank a value will be defaulted.",
       "displayName": "Application Domain",
       "name": "APPLICATION_DOMAIN",
-      "value": "lclb-cllc-dev.pathfinder.gov.bc.ca"
+      "value": "css-portal-dev.pathfinder.gov.bc.ca"
     },
     {
       "description": "Webname for Sharepoint, e.g., cannabisdev, if left blank a value will be defaulted.",
@@ -477,51 +507,11 @@
       "required": false
     },
     {
-      "description": "Sharepoint Certificate Password",
-      "displayName": "Sharepoint Certificate Password",
-      "name": "SHAREPOINT_CERTIFICATE_PASSWORD",
-      "required": false
-    },
-    {
-      "description": "Filename for BCGovTrial.pfx, e.g., /sharepointcert/BCGovTrial.pfx, if left blank a value will be defaulted.",
-      "displayName": "Sharepoint Certificate Filename",
-      "name": "SHAREPOINT_CERTIFICATE_FILENAME",
-      "required": false,
-      "value": "/sharepointcert/BCGovTrial.pfx"
-    },
-    {
-      "description": "Boolean that shows login, e.g., true, if left blank a value will be defaulted.",
-      "displayName": "Show login",
-      "name": "SHOW_LOGIN",
-      "required": true,
-      "value": "true"
-    },
-    {
-      "description": "Boolean that shows CARLA Lite, e.g., false, if left blank a value will be defaulted.",
-      "displayName": "Is lite version",
-      "name": "IS_LITE_VERSION",
-      "required": true,
-      "value": "false"
-    },
-    {
-      "description": "Boolean that shows Dashboard Lite for CARLA lite, e.g., false, if left blank a value will be defaulted.",
-      "displayName": "Dashboard lite",
-      "name": "DASHBOARD_LITE",
-      "required": true,
-      "value": "false"
-    },
-    {
-      "name": "DATABASE_SERVICE_NAME",
-      "displayName": "Database service name",
-      "description": "Database service name",
-      "value": "mssql"
-    },
-    {
       "name": "SECRET_RESOURCE_NAME",
       "displayName": "Secret resource name",
       "description": "Secret resource name",
       "required": true,
-      "value": "cllc-public-preprod"
+      "value": "csa-portal"
     },
     {
       "name": "SITEMINDER_LOGOUT_URL",
