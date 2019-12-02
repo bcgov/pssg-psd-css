@@ -18,7 +18,7 @@ export class StatusDataService extends DataService {
    * Retrieve status from back-end
    */
   getStatus(): Observable<Status> {
-    const path = `${this.apiPath}/status/`;
+    const path = this.apiPath + 'status';
     return this.http.get<Status>(path, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }

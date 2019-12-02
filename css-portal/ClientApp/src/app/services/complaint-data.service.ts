@@ -18,7 +18,7 @@ export class ComplaintDataService extends DataService {
    * Retrieve property types from back-end
    */
   getPropertyTypes(): Observable<PropertyType[]> {
-    const path = `${this.apiPath}/complaints/property-types`;
+    const path = this.apiPath + 'complaints/property-types';
     return this.http.get<PropertyType[]>(path, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
@@ -28,7 +28,7 @@ export class ComplaintDataService extends DataService {
    * @param data - form data
    */
   submitCsaForm(data: any) {
-    const path = `${this.apiPath}/complaints/csa`;
+    const path = this.apiPath + 'complaints/csa';
     return this.http.post<any>(path, data, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
@@ -38,7 +38,7 @@ export class ComplaintDataService extends DataService {
    * @param data - form data
    */
   submitCclaForm(data: any) {
-    const path = `${this.apiPath}/complaints/ccla`;
+    const path = this.apiPath + 'complaints/ccla';
     return this.http.post<any>(path, data, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
