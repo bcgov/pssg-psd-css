@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
+using Gov.Pssg.Css.Public.Attributes;
 using Gov.Pssg.Css.Public.Utility;
 using Gov.Pssg.Css.Public.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -16,6 +17,7 @@ namespace Gov.Pssg.Css.Public.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [UnavailableDuringMaintenance]
     public class ComplaintsController : ControllerBase
     {
         private readonly ILogger<ComplaintsController> _logger;

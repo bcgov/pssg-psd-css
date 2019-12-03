@@ -29,7 +29,7 @@ export class FormBase {
     } else if (telephoneMaskRegex.test(control.value)) {
       return null;
     } else {
-      return { maksedTelephone: true };
+      return { maskedTelephone: true };
     }
   }
 }
