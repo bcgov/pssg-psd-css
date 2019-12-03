@@ -20,12 +20,15 @@ import { StatusDataService } from '@services/status-data.service';
 import { FieldComponent } from '@shared/app-field/field.component';
 import { CaptchaComponent } from '@shared/captcha/captcha.component';
 
+import { MaintenanceGuard } from './guards/maintenance.guard';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CclaFormComponent } from './ccla-form/ccla-form.component';
 import { CsaFormComponent } from './csa-form/csa-form.component';
 import { ComplaintSubmittedComponent } from './complaint-submitted/complaint-submitted.component';
 import { ErrorComponent } from './error/error.component';
+import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance.component';
 
 
 @NgModule({
@@ -37,6 +40,7 @@ import { ErrorComponent } from './error/error.component';
     CsaFormComponent,
     ComplaintSubmittedComponent,
     ErrorComponent,
+    UnderMaintenanceComponent,
     FieldComponent
   ],
   imports: [
@@ -50,11 +54,12 @@ import { ErrorComponent } from './error/error.component';
     NgBusyModule,
     TextMaskModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'ccla-form', component: CclaFormComponent },
-      { path: 'csa-form', component: CsaFormComponent },
-      { path: 'complaint-submitted', component: ComplaintSubmittedComponent },
-      { path: 'error', component: ErrorComponent },
+      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [ MaintenanceGuard ] },
+      { path: 'ccla-form', component: CclaFormComponent, canActivate: [ MaintenanceGuard ] },
+      { path: 'csa-form', component: CsaFormComponent, canActivate: [ MaintenanceGuard ] },
+      { path: 'complaint-submitted', component: ComplaintSubmittedComponent, canActivate: [ MaintenanceGuard ] },
+      { path: 'error', component: ErrorComponent, canActivate: [ MaintenanceGuard ] },
+      { path: 'under-maintenance', component: UnderMaintenanceComponent },
       { path: '**', redirectTo: '' },
     ]),
     StoreModule.forRoot({ propertyTypes: propertyTypesReducer, status: statusReducer })
@@ -63,7 +68,8 @@ import { ErrorComponent } from './error/error.component';
     CaptchaDataService,
     ComplaintDataService,
     StatusDataService,
-    Title
+    Title,
+    MaintenanceGuard
   ],
   bootstrap: [AppComponent]
 })
