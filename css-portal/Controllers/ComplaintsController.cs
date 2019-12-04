@@ -34,8 +34,8 @@ namespace Gov.Pssg.Css.Public.Controllers
         }
 
         // GET: complaints/property-types
-        [Route("property-types")]
         [HttpGet]
+        [Route("property-types")]
         public async Task<IActionResult> GetPropertyTypes()
         {
             try
@@ -54,6 +54,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         // POST: complaints/csa
         [HttpPost]
         [Route("csa")]
+        [RequiresCSAEnabled]
         public async Task<IActionResult> PostCSA([FromBody] Complaint complaint)
         {
             try
