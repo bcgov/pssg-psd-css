@@ -20,6 +20,7 @@ import { StatusDataService } from '@services/status-data.service';
 import { FieldComponent } from '@shared/app-field/field.component';
 import { CaptchaComponent } from '@shared/captcha/captcha.component';
 
+import { CsaDisabledGuard } from './guards/csa-disabled.guard';
 import { MaintenanceGuard } from './guards/maintenance.guard';
 
 import { AppComponent } from './app.component';
@@ -56,7 +57,7 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [ MaintenanceGuard ] },
       { path: 'ccla-form', component: CclaFormComponent, canActivate: [ MaintenanceGuard ] },
-      { path: 'csa-form', component: CsaFormComponent, canActivate: [ MaintenanceGuard ] },
+      { path: 'csa-form', component: CsaFormComponent, canActivate: [ MaintenanceGuard, CsaDisabledGuard ] },
       { path: 'complaint-submitted', component: ComplaintSubmittedComponent, canActivate: [ MaintenanceGuard ] },
       { path: 'error', component: ErrorComponent, canActivate: [ MaintenanceGuard ] },
       { path: 'under-maintenance', component: UnderMaintenanceComponent },
@@ -69,6 +70,7 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
     ComplaintDataService,
     StatusDataService,
     Title,
+    CsaDisabledGuard,
     MaintenanceGuard
   ],
   bootstrap: [AppComponent]

@@ -3,14 +3,14 @@
   Welcome to the Community Safety Unit's Complaint Portal.
   The Community Safety Unit delivers a province-wide compliance and enforcement program to enhance public safety.
   The Community Safety Unit operates under the <em>Cannabis Control and Licensing Act</em>
-  and the <em>Community Safety Act</em>.
-  Its focus is on illegal unlicensed cannabis retailers and other related illegal operations,
-  and properties regularly used for illegal activities.
+  <span *ngIf="csaEnabled">and the <em>Community Safety Act</em></span>.
+  Its focus is on illegal unlicensed cannabis retailers and other related illegal
+  operations<span *ngIf="csaEnabled">, and properties regularly used for illegal activities</span>.
 </p>
 <p>
   The portal may be used to submit complaints to the Community Safety Unit under the
-  <em>Cannabis Control and Licensing Act</em> and the <em>Community Safety Act</em>.
-  The nature of your complaint will determine the complaint form that you will use.
+  <em>Cannabis Control and Licensing Act</em> <span *ngIf="csaEnabled">and the <em>Community Safety Act</em></span>.
+  <span *ngIf="csaEnabled">The nature of your complaint will determine the complaint form that you will use.</span>
 </p>
 
 <section class="my-5">
@@ -39,7 +39,7 @@
   </div>
 </section>
 
-<section class="my-5">
+<section class="my-5" *ngIf="csaEnabled">
   <h2>Community Safety Act</h2>
   <hr />
   <div class="row">

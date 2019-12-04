@@ -1,4 +1,5 @@
 export class Status {
     captchaApiUrl: string;
-    underMaintenance: Boolean;
+    csaEnabled: boolean;
+    underMaintenance: boolean;
 }
