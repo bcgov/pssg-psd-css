@@ -20,7 +20,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   statusSubscription: Subscription;
   loadingSubscription: Subscription;
   submissionResult: Subject<boolean>;
-  loaded: Boolean;
+  loaded: boolean;
   faCalendar = faCalendar;
   authorizationToken : string;
   captchaApiBaseUrl : string;

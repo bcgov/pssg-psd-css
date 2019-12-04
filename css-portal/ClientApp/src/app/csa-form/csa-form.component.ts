@@ -23,7 +23,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   submittingForm: Subscription;
   statusSubscription: Subscription;
   submissionResult: Subject<boolean>;
-  loaded: Boolean;
+  loaded: boolean;
   faCalendar = faCalendar;
   propertyTypeOther = 862570008;
   authorizationToken : string;
