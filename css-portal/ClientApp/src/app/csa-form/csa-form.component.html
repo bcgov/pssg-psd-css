@@ -317,6 +317,6 @@
   </captcha>
 
   <div class="float-right">
-    <button (click)="submit()" class="btn btn-primary mt-4">Submit Complaint</button>
+    <button (click)="submit()" [disabled]="!authorizationToken" class="btn btn-primary mt-4">Submit Complaint</button>
   </div>
 </section>
