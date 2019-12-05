@@ -31,12 +31,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         {
             try
             {
-                var status = new Status
-                {
-                    CaptchaApiUrl = _configuration["CAPTCHA_API_URL"],
-                    UnderMaintenance = StatusUtility.IsUnderMaintenance(_configuration),
-                };
-
+                var status = StatusUtility.GetStatus(_configuration);
                 _logger.LogInformation("Successfully retrieved {@Status}", status);
                 return new JsonResult(status);
             }
