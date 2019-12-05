@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
@@ -29,7 +29,8 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     private formDataService: ComplaintDataService,
     private router: Router,
     private statusStore: Store<{ status: Status }>,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private elementRef: ElementRef
   ) {
     super();
   }
@@ -153,7 +154,27 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       });
     } else {
       this.form.markAllAsTouched();
+      this.scrollToInvalidField();
     }
+  }
+
+  scrollToInvalidField() {
+    // find invalid input
+    let element = this.elementRef.nativeElement.querySelector('.form-control.ng-invalid, .form-check-input.ng-invalid');
+    if (!element) {
+      return;
+    }
+
+    // locate app-field ancestor of input if possible, so label will be visible on screen
+    if (Element.prototype.closest) {
+      const appField = element.closest('.app-field');
+      if (appField) {
+        element = appField;
+      }
+    }
+
+    // scroll to element
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 
   onBusyStop() {
