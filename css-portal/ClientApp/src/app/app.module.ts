@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -51,6 +52,7 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
     ReactiveFormsModule,
     NgbModule,
     FontAwesomeModule,
+    MatSnackBarModule,
     BrowserAnimationsModule,
     NgBusyModule,
     TextMaskModule,
