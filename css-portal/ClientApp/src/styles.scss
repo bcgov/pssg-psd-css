@@ -1,5 +1,10 @@
+// include bcgov bootstrap theme
 $bcgov-font-path: '../node_modules/@bcgov/bootstrap-theme/dist/fonts/';
 @import '../node_modules/@bcgov/bootstrap-theme/dist/scss/bootstrap-theme';
+
+// include material theming to support snackbar
+@import '../node_modules/@angular/material/theming';
+@include mat-core();
 
 // set background colour for margins
 body {
@@ -30,4 +35,12 @@ legend {
 
 .ng-busy-backdrop {
     position: fixed !important;
+}
+
+// style snackbar for error message
+.alert-danger-snackbar {
+    color: #712024;
+    background-color: #f7d8da;
+    border: 1px solid #eeaaad;
+    font-weight: bold;
 }

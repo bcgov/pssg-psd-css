@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 import { Observable, Subject, Subscription, forkJoin } from 'rxjs';
@@ -35,7 +36,8 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     private propertyTypesStore: Store<{ properyTypes: PropertyType[] }>,
     private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    private snackBar: MatSnackBar
   ) {
     super();
   }
@@ -160,6 +162,12 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
       });
     } else {
       this.form.markAllAsTouched();
+      this.snackBar.open('Please Fill All Required Fields', '', {
+        duration: 5000,
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        panelClass: ['alert-danger-snackbar']
+      });
       this.scrollToInvalidField();
     }
   }
