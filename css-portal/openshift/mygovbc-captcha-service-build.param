@@ -1,0 +1,8 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: css-portal
+# Template File: ../css-portal/openshift/templates/mygovbc-captcha-service-build.json
+#=========================================================
+APPLICATION_NAME=mygovbc-captcha-service
+SOURCE_REPOSITORY_URL=https://github.com/bcgov/MyGovBC-CAPTCHA-Service.git
+GIT_REFERENCE=v7.4.0

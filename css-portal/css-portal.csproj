@@ -31,8 +31,12 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="openshift\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="openshift\**" />
+    <EmbeddedResource Remove="openshift\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="openshift\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 

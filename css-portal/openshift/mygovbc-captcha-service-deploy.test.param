@@ -1,0 +1,18 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: css-portal
+# Template File: ../css-portal/openshift/templates/mygovbc-captcha-service-deploy.json
+#=========================================================
+NAME=mygovbc-captcha-service
+APPLICATION_DOMAIN=css-portal-captcha-test.pathfinder.gov.bc.ca
+# IMAGE_NAMESPACE=sxluez-tools
+TAG_NAME=test
+# SECRET_RESOURCE_NAME=css-portal
+# WINSTON_HOST=
+# WINSTON_PORT=
+# LOG_LEVEL=error
+# SERVICE_PORT=8080
+# CAPTCHA_SIGN_EXPIRY=15
+# JWT_SIGN_EXPIRY=15
+# AUDIO_ENABLED=true
+# CORS_ALLOW_ALL=false
