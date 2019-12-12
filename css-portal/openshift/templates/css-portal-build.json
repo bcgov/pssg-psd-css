@@ -24,10 +24,10 @@
       "spec": {
         "description": "${PROJECT_PREFIX}-tools to talk to the internet\n",
         "destination": [
-          "- 'ext:network=any'"
+          "ext:network=any"
         ],
         "source": [
-          "- $namespace=${PROJECT_PREFIX}-tools"
+          "$namespace=${PROJECT_PREFIX}-tools"
         ]
       }
     },
@@ -172,7 +172,7 @@
       "displayName": "Source Image Kind",
       "description": "The 'kind' (type) of the  source image; typically ImageStreamTag, or DockerImage.",
       "required": true,
-      "value": "DockerImage"
+      "value": "ImageStreamTag"
     },
     {
       "name": "SOURCE_IMAGE_NAME",
