@@ -1,0 +1,21 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: css-portal
+# Template File: ../css-portal/openshift/templates/css-portal-build.json
+#=========================================================
+NAME=css-portal
+PROJECT_PREFIX=sxluez
+GIT_REPO_URL=https://github.com/bcgov/pssg-psd-csa.git
+GIT_REF=master
+SOURCE_CONTEXT_DIR=
+SOURCE_IMAGE_KIND=DockerImage
+SOURCE_IMAGE_NAME=dotnet-30-rhel7
+SOURCE_IMAGE_TAG=latest
+DOTNET_STARTUP_PROJECT=css-portal/css-portal.csproj
+OUTPUT_IMAGE_TAG=latest
+CPU_LIMIT=1
+MEMORY_LIMIT=6Gi
+CPU_REQUEST=1
+MEMORY_REQUEST=4Gi
+UAT_BUILD=
+PROD_BUILD=

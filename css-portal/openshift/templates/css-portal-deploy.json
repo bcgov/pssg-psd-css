@@ -6,28 +6,28 @@
     "creationTimestamp": null
   },
   "objects": [
-  {
-  "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
-  "kind": "NetworkSecurityPolicy",
-  "metadata": {
-    "creationTimestamp": "2019-11-19T20:06:22Z",
-    "finalizers": [
-      "finalizer.secops.pathfinder.gov.bc.ca"
-    ],
-    "generation": 1,
-    "name": "custom-allow-tools-to-${TAG_NAME}",
-    "namespace": "${PROJECT_PREFIX}-${TAG_NAME}"
-  },
-  "spec": {
-    "description": "Allow Tools to communicate with ${TAG_NAME} to verify deployment\n",
-    "destination": [
-      "- $namespace=${PROJECT_PREFIX}-${TAG_NAME}"
-    ],
-    "source": [
-      "- $namespace=${PROJECT_PREFIX}-tools"
-    ]
-  }  
-},
+    {
+      "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
+      "kind": "NetworkSecurityPolicy",
+      "metadata": {
+        "creationTimestamp": "2019-11-19T20:06:22Z",
+        "finalizers": [
+          "finalizer.secops.pathfinder.gov.bc.ca"
+        ],
+        "generation": 1,
+        "name": "custom-allow-tools-to-${TAG_NAME}",
+        "namespace": "${PROJECT_PREFIX}-${TAG_NAME}"
+      },
+      "spec": {
+        "description": "Allow Tools to communicate with ${TAG_NAME} to verify deployment\n",
+        "destination": [
+          "- $namespace=${PROJECT_PREFIX}-${TAG_NAME}"
+        ],
+        "source": [
+          "- $namespace=${PROJECT_PREFIX}-tools"
+        ]
+      }
+    },
     {
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
@@ -90,47 +90,50 @@
                     "name": "ASPNETCORE_ENVIRONMENT",
                     "value": "${ASPNETCORE_ENVIRONMENT}"
                   },
-				  				  {
+                  {
+                    "name": "UNDER_MAINTENANCE",
+                    "value": "${UNDER_MAINTENANCE}"
+                  },
+                  {
+                    "name": "CSA_ENABLED",
+                    "value": "${CSA_ENABLED}"
+                  },
+                  {
+                    "name": "BASE_PATH",
+                    "value": "${BASE_PATH}"
+                  },
+                  {
+                    "name": "SITEMINDER_LOGOUT_URL",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SITEMINDER_LOGOUT_URL",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "CAPTCHA_API_URL",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "CAPTCHA_URL",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "CAPTCHA_SECRET",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "CAPTCHA_SECRET",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
                     "name": "ADFS_OAUTH2_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "adfs-oauth2-uri",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-				  {
-                    "name": "DYNAMICS_APP_GROUP_CLIENT_ID",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "dynamics-app-group-client-id",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DYNAMICS_APP_GROUP_RESOURCE",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "dynamics-app-group-resource",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DYNAMICS_APP_GROUP_SECRET",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "dynamics-app-group-secret",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "DYNAMICS_NATIVE_ODATA_URI",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "dynamics-native-odata-uri",
+                        "key": "ADFS_OATH2_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -139,7 +142,7 @@
                     "name": "DYNAMICS_ODATA_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "dynamics-odata-uri",
+                        "key": "DYNAMICS_ODATA_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -148,16 +151,34 @@
                     "name": "DYNAMICS_NATIVE_ODATA_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "dynamics-native-odata-uri",
+                        "key": "DYNAMICS_NATIVE_ODATA_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
                   },
                   {
-                    "name": "DYNAMICS_PASSWORD",
+                    "name": "DYNAMICS_APP_GROUP_RESOURCE",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "dynamics-password",
+                        "key": "DYNAMICS_APP_GROUP_RESOURCE",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_APP_GROUP_CLIENT_ID",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_APP_GROUP_CLIENT_ID",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_APP_GROUP_SECRET",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_APP_GROUP_SECRET",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -166,7 +187,25 @@
                     "name": "DYNAMICS_USERNAME",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "dynamics-username",
+                        "key": "DYNAMICS_USERNAME",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_PASSWORD",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_PASSWORD",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "SHAREPOINT_ODATA_URI",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SHAREPOINT_ODATA_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -175,34 +214,7 @@
                     "name": "SHAREPOINT_NATIVE_BASE_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "sharepoint-native-base-uri",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },                  
-                  {
-                    "name": "SHAREPOINT_ODATA_URI",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "sharepoint-odata-uri",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },                  
-                  {
-                    "name": "SHAREPOINT_PASSWORD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "sharepoint-password",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },               
-                  {
-                    "name": "SHAREPOINT_RELYING_PARTY_IDENTIFIER",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "sharepoint-relying-party-identifier",
+                        "key": "SHAREPOINT_NATIVE_BASE_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -211,55 +223,46 @@
                     "name": "SHAREPOINT_STS_TOKEN_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "sharepoint-sts-token-uri",
-                        "name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },				  
-                  {
-                    "name": "SHAREPOINT_USERNAME",
-					"valueFrom": {
-                      "secretKeyRef": {
-                        "key": "sharepoint-username",
-						"name": "${SECRET_RESOURCE_NAME}"
-                      }
-                    }
-                  },
-                  
-                  {
-                    "name": "BASE_PATH",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "key": "base-path",
+                        "key": "SHAREPOINT_STS_TOKEN_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
                   },
                   {
-                    "name": "BASE_URI",
+                    "name": "SHAREPOINT_RELYING_PARTY_IDENTIFIER",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "base-uri",
+                        "key": "SHAREPOINT_RELYING_PARTY_IDENTIFIER",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
-                  },                  
+                  },
                   {
                     "name": "SHAREPOINT_WEBNAME",
-                    "value": "${SHAREPOINT_WEBNAME}"
-                  },
-                  {
-                    "name": "SHAREPOINT_ODATA_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "sharepoint-odata-uri",
+                        "key": "SHAREPOINT_WEBNAME",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
-                  },                  
+                  },
                   {
-                    "name": "SITEMINDER_LOGOUT_URL",
-                    "value": "${SITEMINDER_LOGOUT_URL}"
+                    "name": "SHAREPOINT_USERNAME",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SHAREPOINT_USERNAME",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "SHAREPOINT_PASSWORD",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SHAREPOINT_PASSWORD",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
                   }
                 ],
                 "resources": {
@@ -356,27 +359,6 @@
       }
     },
     {
-      "apiVersion": "v1",
-      "kind": "Route",
-      "metadata": {
-        "name": "${NAME}-siteminder-route",
-        "labels": {
-          "app": "${NAME}-siteminder-route"
-        }
-      },
-      "spec": {
-        "host": "${SITEMINDER_APPLICATION_DOMAIN}",
-        "port": {
-          "targetPort": "8080-tcp"
-        },
-        "to": {
-          "kind": "Service",
-          "name": "${NAME}",
-          "weight": 100
-        }
-      }
-    },
-    {
       "kind": "HorizontalPodAutoscaler",
       "apiVersion": "autoscaling/v1",
       "metadata": {
@@ -393,34 +375,16 @@
         "minReplicas": 2,
         "maxReplicas": 6
       }
-    },
-    {
-        "apiVersion": "v1",
-        "kind": "PersistentVolumeClaim",
-        "metadata": {
-            "name": "${KEY_RING_STORAGE_NAME}"
-        },
-        "spec": {
-            "accessModes": [
-                "ReadWriteOnce"
-            ],
-            "resources": {
-                "requests": {
-                    "storage": "5Gi"
-                }
-            }
-        }
     }
   ],
   "parameters": [
-  {
-	  "name": "PROJECT_PREFIX",
+    {
+      "name": "PROJECT_PREFIX",
       "displayName": "Name",
       "description": "The project prefix",
       "required": true,
       "value": "sxluez"
-	},
-    
+    },
     {
       "name": "NAME",
       "displayName": "Name",
@@ -479,7 +443,7 @@
       "displayName": "Memory Request",
       "description": "Starting amount of memory the container can use.",
       "value": "2Gi"
-    },    
+    },
     {
       "description": "The exposed hostname that will route to the service, e.g., myappname.pathfinder.gov.bc.ca, if left blank a value will be defaulted.",
       "displayName": "Application Domain",
@@ -487,52 +451,32 @@
       "value": "css-portal-dev.pathfinder.gov.bc.ca"
     },
     {
-      "description": "Webname for Sharepoint, e.g., cannabisdev, if left blank a value will be defaulted.",
-      "displayName": "Sharepoint Webname",
-      "name": "SHAREPOINT_WEBNAME",
-      "required": false,
-      "value": ""
-    },
-    {
-      "description": "Sharepoint Tenant ID and Dynamics Tenant ID, e.g., bcgovtrial.onmicrosoft.com, if left blank a value will be defaulted.",
-      "displayName": "AAD Tennant ID",
-      "name": "SHAREPOINT_AAD_TENANTID",
-      "required": false,
-      "value": "bcgovtrial.onmicrosoft.com"
-    },
-    {
-      "description": "Sharepoint Clien ID",
-      "displayName": "Sharepoint Client ID",
-      "name": "SHAREPOINT_CLIENT_ID",
-      "required": false
-    },
-    {
       "name": "SECRET_RESOURCE_NAME",
       "displayName": "Secret resource name",
       "description": "Secret resource name",
       "required": true,
-      "value": "csa-portal"
+      "value": "css-portal"
     },
     {
-      "name": "SITEMINDER_LOGOUT_URL",
-      "displayName": "Siteminder logout URL",
-      "description": "Siteminder logout URL, e.g., https://logon.gov.bc.ca/clp-cgi/logoff.cgi, if left blank a value will be defaulted. Note this url is for prod and should be changed for dev and test.",
+      "name": "UNDER_MAINTENANCE",
+      "displayName": "Under maintenance",
+      "description": "Site maintenance toggle",
       "required": true,
-      "value": "https://logon.gov.bc.ca/clp-cgi/logoff.cgi"
+      "value": "false"
     },
     {
-      "name": "KEY_RING_DIRECTORY",
-      "displayName": "Key Ring Directory",
-      "description": "Persistent storage directory for key ring, e.g., /key-ring, if left blank a value will be defaulted.",
+      "name": "CSA_ENABLED",
+      "displayName": "CSA enabled",
+      "description": "CSA functionality toggle",
       "required": true,
-      "value": "/key-ring"
+      "value": "true"
     },
     {
-      "name": "KEY_RING_STORAGE_NAME",
-      "displayName": "Key Ring Directory Name",
-      "description": "Persistent storage directory name for key ring, e.g., key-ring, if left blank a value will be defaulted.",
+      "name": "BASE_PATH",
+      "displayName": "Base path",
+      "description": "Base path",
       "required": true,
-      "value": "key-ring"
+      "value": "/communitysafety"
     }
   ]
 }

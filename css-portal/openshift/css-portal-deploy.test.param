@@ -1,0 +1,20 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: css-portal
+# Template File: ../css-portal/openshift/templates/css-portal-deploy.json
+#=========================================================
+# PROJECT_PREFIX=sxluez
+NAME=css-portal
+# SOURCE_IMAGE_NAME=css-portal
+# IMAGE_NAMESPACE=sxluez-tools
+TAG_NAME=test
+ASPNETCORE_ENVIRONMENT=Staging
+# CPU_LIMIT=1
+# MEMORY_LIMIT=4Gi
+# CPU_REQUEST=100m
+# MEMORY_REQUEST=2Gi
+APPLICATION_DOMAIN=css-portal-test.pathfinder.gov.bc.ca
+# SECRET_RESOURCE_NAME=css-portal
+UNDER_MAINTENANCE=false
+CSA_ENABLED=true
+# BASE_PATH=/communitysafety

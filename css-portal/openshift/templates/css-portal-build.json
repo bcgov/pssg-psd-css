@@ -1,58 +1,53 @@
 {
   "kind": "Template",
   "apiVersion": "v1",
-  "metadata":
-  {
+  "metadata": {
     "name": "${NAME}-build-template",
     "creationTimestamp": null
   },
   "objects": [
     {
-  "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
-  "kind": "NetworkSecurityPolicy",
-  "metadata": {
-    "annotations": {
-      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"secops.pathfinder.gov.bc.ca/v1alpha1\",\"kind\":\"NetworkSecurityPolicy\",\"metadata\":{\"annotations\":{},\"name\":\"egress-internet-sxluez-tools\",\"namespace\":\"sxluez-tools\"},\"spec\":{\"description\":\"allow sxluez-tools to talk to the internet\\n\",\"destination\":[[\"ext:network=any\"]],\"source\":[[\"$namespace=sxluez-tools\"]]}}\n"
+      "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
+      "kind": "NetworkSecurityPolicy",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"secops.pathfinder.gov.bc.ca/v1alpha1\",\"kind\":\"NetworkSecurityPolicy\",\"metadata\":{\"annotations\":{},\"name\":\"egress-internet-sxluez-tools\",\"namespace\":\"sxluez-tools\"},\"spec\":{\"description\":\"allow sxluez-tools to talk to the internet\\n\",\"destination\":[[\"ext:network=any\"]],\"source\":[[\"$namespace=sxluez-tools\"]]}}\n"
+        },
+        "creationTimestamp": "2019-11-19T19:38:36Z",
+        "finalizers": [
+          "finalizer.secops.pathfinder.gov.bc.ca"
+        ],
+        "generation": 1,
+        "name": "egress-internet-${PROJECT_PREFIX}-tools",
+        "namespace": "${PROJECT_PREFIX}-tools"
+      },
+      "spec": {
+        "description": "${PROJECT_PREFIX}-tools to talk to the internet\n",
+        "destination": [
+          "- 'ext:network=any'"
+        ],
+        "source": [
+          "- $namespace=${PROJECT_PREFIX}-tools"
+        ]
+      }
     },
-    "creationTimestamp": "2019-11-19T19:38:36Z",
-    "finalizers": [
-      "finalizer.secops.pathfinder.gov.bc.ca"
-    ],
-    "generation": 1,
-    "name": "egress-internet-${PROJECT_PREFIX}-tools",
-    "namespace": "${PROJECT_PREFIX}-tools"
-  },
-  "spec": {
-    "description": "${PROJECT_PREFIX}-tools to talk to the internet\n",
-    "destination": [
-      "- 'ext:network=any'"
-    ],
-    "source": [
-      "- $namespace=${PROJECT_PREFIX}-tools"
-    ]
-   }
-  },
     {
       "kind": "ImageStream",
       "apiVersion": "v1",
-      "metadata":
-      {
+      "metadata": {
         "name": "${NAME}"
       }
     },
     {
       "kind": "BuildConfig",
       "apiVersion": "v1",
-      "metadata":
-      {
+      "metadata": {
         "name": "${NAME}",
-        "labels":
-        {
+        "labels": {
           "app": "${NAME}"
         }
       },
-      "spec":
-      {
+      "spec": {
         "triggers": [
           {
             "type": "ImageChange"
@@ -62,70 +57,63 @@
           }
         ],
         "runPolicy": "Serial",
-        "source":
-        {
+        "source": {
           "type": "Git",
-          "git":
-          {
+          "git": {
             "uri": "${GIT_REPO_URL}",
             "ref": "${GIT_REF}"
           },
-          "contextDir": "${SOURCE_CONTEXT_DIR}"          
+          "contextDir": "${SOURCE_CONTEXT_DIR}"
         },
-        "strategy":
-        {
+        "strategy": {
           "type": "Source",
-          "sourceStrategy":
-          {
-            "from":
-            {
+          "sourceStrategy": {
+            "from": {
               "kind": "${SOURCE_IMAGE_KIND}",
-              "name": "${SOURCE_IMAGE_NAME}:${SOURCE_IMAGE_TAG}"              
+              "name": "${SOURCE_IMAGE_NAME}:${SOURCE_IMAGE_TAG}"
             },
             "env": [
               {
                 "name": "DOTNET_STARTUP_PROJECT",
                 "value": "${DOTNET_STARTUP_PROJECT}"
               },
-			  {
+              {
                 "name": "UAT_BUILD",
                 "value": "${UAT_BUILD}"
               },
-			  {
+              {
                 "name": "PROD_BUILD",
                 "value": "${PROD_BUILD}"
               },
-			  {
+              {
                 "name": "DOTNET_SDK_VERSION",
                 "value": "latest"
-              },			  
-			  {
+              },
+              {
                 "name": "MSBuildEmitSolution",
                 "value": "1"
-              },			  
-			  {
+              },
+              {
                 "name": "VERSION_PREFIX",
                 "value": "0.01.0"
               },
-			  {
+              {
                 "name": "DOTNET_CONFIGURATION",
                 "value": "Debug"
               },
-			  {
+              {
                 "name": "MSBuildEmitSolution",
                 "value": "1"
               },
-			  {
+              {
                 "name": "DOTNET_INCREMENTAL",
                 "value": "true"
               }
             ]
           }
         },
-        "output":
-        {
-          "to":
-          {
+        "output": {
+          "to": {
             "kind": "ImageStreamTag",
             "name": "${NAME}:${OUTPUT_IMAGE_TAG}"
           }
@@ -151,13 +139,13 @@
       "required": true,
       "value": "css-portal"
     },
-	{
-	  "name": "PROJECT_PREFIX",
+    {
+      "name": "PROJECT_PREFIX",
       "displayName": "Name",
       "description": "The project prefix",
       "required": true,
       "value": "sxluez"
-	},
+    },
     {
       "name": "GIT_REPO_URL",
       "displayName": "Git Repo URL",
@@ -227,7 +215,7 @@
       "description": "The resources Memory limit (in Mi, Gi, etc) for this build.",
       "required": true,
       "value": "6Gi"
-    },   
+    },
     {
       "name": "CPU_REQUEST",
       "displayName": "Resources CPU Request",
@@ -242,17 +230,17 @@
       "required": true,
       "value": "4Gi"
     },
-	{
+    {
       "name": "UAT_BUILD",
       "displayName": "UAT Build",
-      "description": "1 if true",      
+      "description": "1 if true",
       "value": ""
     },
-	{
+    {
       "name": "PROD_BUILD",
       "displayName": "Prod Build",
-      "description": "1 if true",      
+      "description": "1 if true",
       "value": ""
-    }     
+    }
   ]
 }
