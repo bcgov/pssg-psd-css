@@ -21,10 +21,10 @@
       "spec": {
         "description": "Allow Tools to communicate with ${TAG_NAME} to verify deployment\n",
         "destination": [
-          "- $namespace=${PROJECT_PREFIX}-${TAG_NAME}"
+          [ "$namespace=${PROJECT_PREFIX}-${TAG_NAME}" ]
         ],
         "source": [
-          "- $namespace=${PROJECT_PREFIX}-tools"
+          [ "$namespace=${PROJECT_PREFIX}-tools" ]
         ]
       }
     },

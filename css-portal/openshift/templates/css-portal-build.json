@@ -24,10 +24,10 @@
       "spec": {
         "description": "${PROJECT_PREFIX}-tools to talk to the internet\n",
         "destination": [
-          "ext:network=any"
+          [ "ext:network=any" ]
         ],
         "source": [
-          "$namespace=${PROJECT_PREFIX}-tools"
+          [ "$namespace=${PROJECT_PREFIX}-tools" ]
         ]
       }
     },
@@ -43,17 +43,13 @@
       "finalizer.secops.pathfinder.gov.bc.ca"
     ],
     "generation": 1,
-    "name": "int-cluster-k8s-api-permit-sxluez-tools",
+    "name": "int-cluster-k8s-api-permit-${PROJECT_PREFIX}-tools",
     "namespace": "${PROJECT_PREFIX}-tools"    
   },
   "spec": {
     "description": "allow ${PROJECT_PREFIX}-tools pods to talk to the k8s api\n",
-    "destination": [
-      "- 'int:network=internal-cluster-api-endpoint'"
-    ],
-    "source": [
-      "- $namespace=${PROJECT_PREFIX}-tools"
-    ]
+    "destination": [ ["int:network=internal-cluster-api-endpoint" ] ],
+    "source": [ [ "- $namespace=${PROJECT_PREFIX}-tools" ] ]   
   }
 },
     {
