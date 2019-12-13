@@ -21,10 +21,10 @@
       "spec": {
         "description": "Allow Tools to communicate with ${TAG_NAME} to verify deployment\n",
         "destination": [
-          "- $namespace=${PROJECT_PREFIX}-${TAG_NAME}"
+          [ "$namespace=${PROJECT_PREFIX}-${TAG_NAME}" ]
         ],
         "source": [
-          "- $namespace=${PROJECT_PREFIX}-tools"
+          [ "$namespace=${PROJECT_PREFIX}-tools" ]
         ]
       }
     },
@@ -133,7 +133,7 @@
                     "name": "ADFS_OAUTH2_URI",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "key": "ADFS_OATH2_URI",
+                        "key": "ADFS_OAUTH2_URI",
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
@@ -477,6 +477,15 @@
       "description": "Base path",
       "required": true,
       "value": "/communitysafety"
-    }
+    },
+	
+	
+	{
+	  "name": "SITEMINDER_APPLICATION_DOMAIN",
+      "displayName": "Siteminder application domain",
+      "description": "Siteminder application domain",
+      "required": false,
+      "value": ""
+	}
   ]
 }
