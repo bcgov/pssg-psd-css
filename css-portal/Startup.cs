@@ -80,6 +80,8 @@ namespace Gov.Pssg.Css.Public
                 app.UseSpaStaticFiles();
             }
 
+            app.UseSerilogRequestLogging();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
