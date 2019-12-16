@@ -1,8 +1,9 @@
+using System.Net.Http;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 using Serilog;
+using Serilog.Events;
 
 namespace Gov.Pssg.Css.Public
 {
@@ -23,19 +24,36 @@ namespace Gov.Pssg.Css.Public
                             .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
                     config.AddEnvironmentVariables();
                 })
-                .ConfigureLogging((hostingContext, logging) =>
+                .UseSerilog((hostingContext, loggerConfiguration) =>
                 {
-                    logging.ClearProviders();
-                    logging.AddConsole(x =>
+                    loggerConfiguration
+                        .ReadFrom.Configuration(hostingContext.Configuration)
+                        .Enrich.FromLogContext();
+
+                    string splunkCollectorUrl = hostingContext.Configuration["SPLUNK_COLLECTOR_URL"];
+                    string splunkToken = hostingContext.Configuration["SPLUNK_TOKEN"];
+
+                    if (!string.IsNullOrEmpty(splunkCollectorUrl) && !string.IsNullOrEmpty(splunkToken))
                     {
-                        x.TimestampFormat = "yyyy-MM-dd HH:mm:ss ";
-                        x.IncludeScopes = true;
-                    });
-                    logging.SetMinimumLevel(LogLevel.Debug);
-                    logging.AddDebug();
-                    logging.AddEventSourceLogger();
+                        // enable Splunk logger using Serilog
+                        var fields = new Serilog.Sinks.Splunk.CustomFields();
+                        if (!string.IsNullOrEmpty(hostingContext.Configuration["SPLUNK_CHANNEL"]))
+                        {
+                            fields.CustomFieldList.Add(new Serilog.Sinks.Splunk.CustomField("channel", hostingContext.Configuration["SPLUNK_CHANNEL"]));
+                        }
+
+                        loggerConfiguration.WriteTo.EventCollector(
+                            splunkCollectorUrl,
+                            splunkToken,
+                            sourceType: "manual",
+                            restrictedToMinimumLevel: LogEventLevel.Information,
+                            messageHandler: new HttpClientHandler
+                            {
+                                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+                            }
+                        );
+                    }
                 })
-                .UseSerilog()
                 .UseStartup<Startup>();
     }
 }
