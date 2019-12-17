@@ -38,6 +38,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         [Route("property-types")]
         public async Task<IActionResult> GetPropertyTypes()
         {
+            _logger.LogInformation("Attempting to retrieve property types");
             try
             {
                 var data = await PropertyType.GetPropertyTypesAsync();
@@ -57,6 +58,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         [RequiresCSAEnabled]
         public async Task<IActionResult> PostCSA([FromBody] Complaint complaint)
         {
+            _logger.LogInformation("Attempting to submit CSA complaint {@Complaint}", complaint);
             try
             {
                 complaint.LegislationType = Constants.LegislationTypeCSA;
@@ -91,6 +93,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         [Route("ccla")]
         public async Task<IActionResult> PostCCLA([FromBody] Complaint complaint)
         {
+            _logger.LogInformation("Attempting to submit CCLA complaint {@Complaint}", complaint);
             try
             {
                 complaint.LegislationType = Constants.LegislationTypeCCLA;
