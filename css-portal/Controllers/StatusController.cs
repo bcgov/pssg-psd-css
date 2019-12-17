@@ -29,6 +29,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            _logger.LogInformation("Attempting to retrieve status");
             try
             {
                 var status = StatusUtility.GetStatus(_configuration);
