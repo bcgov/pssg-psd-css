@@ -340,7 +340,10 @@
         "labels": {
           "app": "${NAME}"
         },
-        "name": "${NAME}"
+        "name": "${NAME}",
+        "annotations": {
+          "haproxy.router.openshift.io/timeout": "200s"
+        }
       },
       "spec": {
         "host": "${APPLICATION_DOMAIN}",
