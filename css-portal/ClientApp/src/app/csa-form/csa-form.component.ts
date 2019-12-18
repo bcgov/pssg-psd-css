@@ -67,7 +67,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
         lastName: ['', Validators.required],
         fax: ['', this.maskedTelephoneValidator],
         phone: [''],
-        email: ['', Validators.email],
+        email: ['', [Validators.email, this.additionalEmailValidator]],
       }),
       complainantMailingAddress: this.formBuilder.group({
         unit: [''],

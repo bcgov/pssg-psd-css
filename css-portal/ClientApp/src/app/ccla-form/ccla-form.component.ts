@@ -59,7 +59,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
         fax: ['', this.maskedTelephoneValidator],
         governmentAgency: [''],
         phone: [''],
-        email: ['', Validators.email],
+        email: ['', [Validators.email, this.additionalEmailValidator]],
       }),
       complainantMailingAddress: this.formBuilder.group({
         unit: [''],

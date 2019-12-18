@@ -3,6 +3,7 @@ import { FormGroup, ValidatorFn, ValidationErrors, AbstractControl, Validators }
 export class FormBase {
   form: FormGroup;
   telephoneMask = ['(', /[2-9]/, /\d/, /\d/, ')', '-', /[2-9]/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+  additionalEmailValidator = Validators.pattern(/^.+@.+\..+$/); // ensure domain has dot
   
   checkInputInvalid(controlName: string) {
     let control = this.form.get(controlName);
