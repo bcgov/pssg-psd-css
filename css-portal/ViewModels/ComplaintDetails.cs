@@ -31,6 +31,16 @@ namespace Gov.Pssg.Css.Public.ViewModels
         [StringLength(100)]
         public string OwnerName { get; set; }
 
+        public void Sanitize()
+        {
+            if (Address != null)
+            {
+                Address.ProvinceState = "British Columbia";
+                Address.Country = "Canada";
+                Address.Sanitize();
+            }
+        }
+
         public async Task<bool> Validate(int legislationType)
         {
             var propertyTypes = await ViewModels.PropertyType.GetPropertyTypesAsync();
@@ -39,7 +49,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
                 return false;
             }
 
-            if (Address == null || string.IsNullOrWhiteSpace(Address.City))
+            if (Address == null || !Address.ValidateForProperty())
             {
                 return false;
             }

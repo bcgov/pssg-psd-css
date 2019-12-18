@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Threading.Tasks;
 using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
@@ -36,6 +35,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
         {
             Phone = PhoneNumberUtility.Sanitize(Phone);
             Fax = PhoneNumberUtility.Sanitize(Fax);
+            Address?.Sanitize();
         }
 
         public bool Validate(int legislationType)
@@ -56,20 +56,9 @@ namespace Gov.Pssg.Css.Public.ViewModels
                 return false;
             }
 
-            if (Address == null)
+            if (Address == null || !Address.ValidateForComplainant(legislationType))
             {
                 return false;
-            }
-
-            if (legislationType == Constants.LegislationTypeCSA)
-            {
-                if (string.IsNullOrWhiteSpace(Address.Line1) ||
-                    string.IsNullOrWhiteSpace(Address.City) ||
-                    string.IsNullOrWhiteSpace(Address.ProvinceState) ||
-                    string.IsNullOrWhiteSpace(Address.Country))
-                {
-                    return false;
-                }
             }
 
             return true;

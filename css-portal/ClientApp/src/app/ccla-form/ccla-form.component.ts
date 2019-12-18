@@ -25,6 +25,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   faCalendar = faCalendar;
   authorizationToken : string;
   captchaApiBaseUrl : string;
+  zipPostalCodeMask: ((string | RegExp)[] | boolean) = false;
 
   constructor(
     private formDataService: ComplaintDataService,
@@ -47,7 +48,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
           city: ['', Validators.required],
           provinceState: [{ value: 'BC', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
-          zipPostalCode: [''],
+          zipPostalCode: ['', this.postalCodeValidator],
         }),
         problems: ['', Validators.required],
       }),
@@ -79,6 +80,8 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       complainantPhone.updateValueAndValidity();
     });
 
+    this.setZipPostalCodeValidator();
+
     this.updateAnonymousComplainant();
 
     // retrieve valid status from store
@@ -100,6 +103,24 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.statusSubscription.unsubscribe();
+  }
+
+  setZipPostalCodeValidator() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
+
+    if (countryControl && zipPostalCodeControl) {
+      countryControl.valueChanges.subscribe(country => {
+        if (country === 'Canada') {
+          zipPostalCodeControl.setValidators(this.postalCodeValidator);
+          this.zipPostalCodeMask = this.postalCodeMask;
+        } else {
+          zipPostalCodeControl.setValidators(null);
+          this.zipPostalCodeMask = false;
+        }
+        zipPostalCodeControl.updateValueAndValidity();
+      });
+    }
   }
 
   updateAnonymousComplainant() {

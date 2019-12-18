@@ -18,6 +18,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public void Sanitize()
         {
+            Details?.Sanitize();
             Complainant?.Sanitize();
         }
 

@@ -29,6 +29,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   propertyTypeOther = 862570008;
   authorizationToken : string;
   captchaApiBaseUrl : string;
+  zipPostalCodeMask: ((string | RegExp)[] | boolean) = this.postalCodeMask;
 
   constructor(
     private formDataService: ComplaintDataService,
@@ -54,7 +55,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
           city: ['', Validators.required],
           provinceState: [{ value: 'BC', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
-          zipPostalCode: [''],
+          zipPostalCode: ['', this.postalCodeValidator],
         }),
         occupantName: [''],
         ownerName: [''],
@@ -75,7 +76,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
         city: ['', Validators.required],
         provinceState: ['BC', Validators.required],
         country: ['Canada', Validators.required],
-        zipPostalCode: [''],
+        zipPostalCode: ['', this.postalCodeValidator],
       }),
       acceptTerms: [''],
     });
@@ -87,6 +88,8 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     complainantEmail.valueChanges.subscribe(email => {
       complainantPhone.updateValueAndValidity();
     });
+
+    this.setZipPostalCodeValidator();
 
     // fetch property types from back-end and update store
      this.formDataService.getPropertyTypes().subscribe(result => {
@@ -121,6 +124,24 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.statusSubscription.unsubscribe();
+  }
+
+  setZipPostalCodeValidator() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
+
+    if (countryControl && zipPostalCodeControl) {
+      countryControl.valueChanges.subscribe(country => {
+        if (country === 'Canada') {
+          zipPostalCodeControl.setValidators(this.postalCodeValidator);
+          this.zipPostalCodeMask = this.postalCodeMask;
+        } else {
+          zipPostalCodeControl.setValidators(null);
+          this.zipPostalCodeMask = false;
+        }
+        zipPostalCodeControl.updateValueAndValidity();
+      });
+    }
   }
 
   checkTelephoneInvalid() {
