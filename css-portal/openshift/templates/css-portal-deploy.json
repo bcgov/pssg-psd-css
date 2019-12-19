@@ -29,6 +29,27 @@
       }
     },
     {
+      "apiVersion": "secops.pathfinder.gov.bc.ca/v1alpha1",
+      "kind": "NetworkSecurityPolicy",
+      "metadata": {
+        "name": "egress-internet-${PROJECT_PREFIX}-${TAG_NAME}",
+        "namespace": "${PROJECT_PREFIX}-${TAG_NAME}"
+      },
+      "spec": {
+        "description": "allow ${PROJECT_PREFIX}-${TAG_NAME} to talk to the internet\n",
+        "destination": [
+          [
+            "ext:network=any"
+          ]
+        ],
+        "source": [
+          [
+            "$namespace=${PROJECT_PREFIX}-${TAG_NAME}"
+          ]
+        ]
+      }
+    },
+    {
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
       "metadata": {
