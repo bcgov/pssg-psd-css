@@ -51,7 +51,7 @@ namespace Gov.Pssg.Css.Public.Utility
                 entity.CsuLastname = complainant.LastName;
                 entity.CsuFax = complainant.Fax;
                 entity.CsuPrimaryphone = complainant.Phone;
-                entity.Emailaddress = complainant.Email;
+                entity.CsuEmail = complainant.Email;
 
                 entity.CsuAddress1 = complainant.Address.Line1;
                 entity.CsuAddress2 = complainant.Address.Unit;
