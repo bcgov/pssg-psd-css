@@ -51,7 +51,7 @@ namespace Gov.Pssg.Css.Public.Utility
                 entity.CsuLastname = complainant.LastName;
                 entity.CsuFax = complainant.Fax;
                 entity.CsuPrimaryphone = complainant.Phone;
-                entity.Emailaddress = complainant.Email;
+                entity.CsuEmail = complainant.Email;
 
                 entity.CsuAddress1 = complainant.Address.Line1;
                 entity.CsuAddress2 = complainant.Address.Unit;
@@ -90,8 +90,8 @@ namespace Gov.Pssg.Css.Public.Utility
                 CsuAddress1 = address.Line1,
                 CsuAddress2 = address.Unit,
                 CsuCity = address.City,
-                CsuProvince = "British Columbia", // address.ProvinceState
-                CsuCountry = "Canada", // address.Country
+                CsuProvince = address.ProvinceState,
+                CsuCountry = address.Country,
                 CsuZippostalcode = address.ZipPostalCode,
             };
 

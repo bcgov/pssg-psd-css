@@ -70,8 +70,12 @@
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <app-field label="Postal Code">
-              <input id="propertyAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode">
+            <app-field label="Postal Code"
+              [invalid]="checkInputInvalid('complaintDetails.address.zipPostalCode')"
+              errorMessage="Please provide a valid postal code">
+              <input id="propertyAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode"
+                [textMask]="{ mask: this.postalCodeMask, pipe: this.uppercaseMaskPipe }"
+                [class.is-invalid]="checkInputInvalid('complaintDetails.address.zipPostalCode')">
             </app-field>
           </div>
         </div>
@@ -211,8 +215,12 @@
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Postal Code/Zip Code">
-            <input id="complainantAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode">
+          <app-field label="Postal Code/Zip Code"
+            [invalid]="checkInputInvalid('complainantMailingAddress.zipPostalCode')"
+            errorMessage="Please provide a valid postal code">
+            <input id="complainantAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode"
+              [textMask]="{ mask: this.zipPostalCodeMask, pipe: this.uppercaseMaskPipe }"
+              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.zipPostalCode')">
           </app-field>
         </div>
       </div>

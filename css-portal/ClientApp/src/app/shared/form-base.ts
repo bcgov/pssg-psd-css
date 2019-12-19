@@ -3,6 +3,9 @@ import { FormGroup, ValidatorFn, ValidationErrors, AbstractControl, Validators }
 export class FormBase {
   form: FormGroup;
   telephoneMask = ['(', /[2-9]/, /\d/, /\d/, ')', '-', /[2-9]/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+  postalCodeMask = [/[a-zA-Z]/, /\d/, /[a-zA-Z]/, ' ', /\d/, /[a-zA-Z]/, /\d/];
+  postalCodeValidator = Validators.pattern(/^[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d$/);
+  additionalEmailValidator = Validators.pattern(/^.+@.+\..+$/); // ensure domain has dot
   
   checkInputInvalid(controlName: string) {
     let control = this.form.get(controlName);
@@ -31,5 +34,9 @@ export class FormBase {
     } else {
       return { maskedTelephone: true };
     }
+  }
+
+  uppercaseMaskPipe(conformedValue: string) {
+    return conformedValue.toUpperCase();
   }
 }
