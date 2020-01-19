@@ -203,15 +203,24 @@
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Province/State">
-            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState">
+          <app-field label="Country"
+            [invalid]="checkCountryInvalid()"
+            errorMessage="Please provide a country">
+            <input id="complainantAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country" 
+              [class.is-invalid]="checkCountryInvalid()">
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="Country">
-            <input id="complainantAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country">
+          <app-field label="Province" *ngIf="this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)">
+            <select id="complainantAddressProvince" class="form-control" formControlName="province">
+              <option [ngValue]="null">Select a Province&hellip;</option>
+              <option *ngFor="let province of provinces | async" [ngValue]="province.value">{{province.name}}</option>
+            </select>
+          </app-field>
+          <app-field label="Province/State" *ngIf="!this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)">
+            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState">
           </app-field>
         </div>
         <div class="col-sm-6">

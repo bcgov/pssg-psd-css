@@ -57,9 +57,9 @@ namespace Gov.Pssg.Css.Public.Utility
                 entity.CsuAddress2 = complainant.Address.Unit;
                 entity.CsuCity = complainant.Address.City;
                 entity.CsuCountry = complainant.Address.Country;
-                if (string.Equals(complainant.Address.Country, "Canada"))
+                if (string.Equals(complainant.Address.Country, "Canada", StringComparison.InvariantCultureIgnoreCase))
                 {
-                    entity.CsuProvince = complainant.Address.ProvinceState;
+                    entity.CsuProvince = complainant.Address.Province;
                 }
                 else
                 {

@@ -225,21 +225,30 @@
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Province/State" [required]="true"
-            [invalid]="checkInputInvalid('complainantMailingAddress.provinceState')"
-            errorMessage="Please provide a province or state">
-            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState" required
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.provinceState')">
-          </app-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
           <app-field label="Country" [required]="true"
             [invalid]="checkInputInvalid('complainantMailingAddress.country')"
             errorMessage="Please provide a country">
             <input id="complainantAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country" required 
               [class.is-invalid]="checkInputInvalid('complainantMailingAddress.country')">
+          </app-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <app-field label="Province" [required]="true" *ngIf="this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)"
+            [invalid]="checkInputInvalid('complainantMailingAddress.province')"
+            errorMessage="Please select a province">
+            <select id="complainantAddressProvince" class="form-control" formControlName="province" required
+              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.province')">
+              <option [ngValue]="null">Select a Province&hellip;</option>
+              <option *ngFor="let province of provinces | async" [ngValue]="province.value">{{province.name}}</option>
+            </select>
+          </app-field>
+          <app-field label="Province/State" [required]="true" *ngIf="!this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)"
+            [invalid]="checkInputInvalid('complainantMailingAddress.provinceState')"
+            errorMessage="Please provide a province or state">
+            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState" required
+              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.provinceState')">
           </app-field>
         </div>
         <div class="col-sm-6">

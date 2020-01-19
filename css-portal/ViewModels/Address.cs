@@ -19,6 +19,9 @@ namespace Gov.Pssg.Css.Public.ViewModels
         public string Country { get; set; }
 
         [StringLength(50)]
+        public string Province { get; set; }
+
+        [StringLength(50)]
         public string ProvinceState { get; set; }
 
         [StringLength(80)]
@@ -29,7 +32,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public void Sanitize()
         {
-            if (Country == "Canada")
+            if (string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase))
             {
                 ZipPostalCode = ZipPostalCode?.ToUpperInvariant();
                 if (ZipPostalCode?.Length == 6)
@@ -58,11 +61,35 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public bool ValidateForComplainant(int legislationType)
         {
+            bool countryIsCanada = string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase);
+
+            // validate all required fields are present for CSA
             if (legislationType == Constants.LegislationTypeCSA &&
                 (string.IsNullOrWhiteSpace(Line1) ||
                  string.IsNullOrWhiteSpace(City) ||
-                 string.IsNullOrWhiteSpace(ProvinceState) ||
-                 string.IsNullOrWhiteSpace(Country)))
+                 string.IsNullOrWhiteSpace(Country) ||
+                 countryIsCanada && string.IsNullOrWhiteSpace(Province) || 
+                 !countryIsCanada && string.IsNullOrWhiteSpace(ProvinceState)))
+            {
+                return false;
+            }
+
+            // validate that country is present if any other address fields are present for CCLA
+            if (legislationType == Constants.LegislationTypeCCLA &&
+                string.IsNullOrWhiteSpace(Country) &&
+                (!string.IsNullOrWhiteSpace(Unit) ||
+                 !string.IsNullOrWhiteSpace(Line1) ||
+                 !string.IsNullOrWhiteSpace(Province) ||
+                 !string.IsNullOrWhiteSpace(ProvinceState) ||
+                 !string.IsNullOrWhiteSpace(City) ||
+                 !string.IsNullOrWhiteSpace(ZipPostalCode)))
+            {
+                return false;
+            }
+
+            // validate province matches one of the specified values
+            var provinces = ViewModels.Province.GetProvinces();
+            if (countryIsCanada && provinces.All(p => p.Value != Province))
             {
                 return false;
             }
@@ -77,7 +104,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         private bool ValidateZipPostalCode()
         {
-            return Country != "Canada" ||
+            return !string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase) ||
                    string.IsNullOrWhiteSpace(ZipPostalCode) ||
                    Regex.Match(ZipPostalCode, @"^[A-Z]\d[A-Z] \d[A-Z]\d$").Success;
         }

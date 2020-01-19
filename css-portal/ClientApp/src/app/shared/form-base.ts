@@ -23,6 +23,17 @@ export class FormBase {
     };
   }
 
+  requiredIfAnyPopulated(...controls: AbstractControl[]): ValidatorFn {
+    return (thisControl: AbstractControl): ValidationErrors | null => {
+      for (const control of controls) {
+        if (!Validators.required(control) && control.enabled) { // if any are non-empty, this field is required
+          return Validators.required(thisControl);
+        }
+      }
+      return null;
+    };
+  }
+
   maskedTelephoneValidator(control: AbstractControl): ValidationErrors | null  {
     const telephoneMaskRegex = /^\([2-9]\d\d\)-[2-9]\d\d-\d\d\d\d$/;
     
@@ -38,5 +49,9 @@ export class FormBase {
 
   uppercaseMaskPipe(conformedValue: string) {
     return conformedValue.toUpperCase();
+  }
+
+  countryIsCanada(country: string): boolean {
+    return country && country.toUpperCase() === "CANADA";
   }
 }
