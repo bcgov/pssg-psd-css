@@ -8,8 +8,10 @@ import { filter, first } from 'rxjs/operators';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 import { setPropertyTypes } from '@actions/property-types.actions';
+import { setProvinces } from '@actions/provinces.actions';
 import { Complaint } from '@models/complaint.model';
 import { PropertyType } from '@models/property-type.model';
+import { Province } from '@models/province.model';
 import { Status } from '@models/status.model';
 import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
@@ -21,6 +23,7 @@ import { FormBase } from '@shared/form-base';
 })
 export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   public propertyTypes: Observable<PropertyType[]>;
+  public provinces: Observable<Province[]>;
   submittingForm: Subscription;
   statusSubscription: Subscription;
   submissionResult: Subject<boolean>;
@@ -35,6 +38,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     private formDataService: ComplaintDataService,
     private router: Router,
     private propertyTypesStore: Store<{ properyTypes: PropertyType[] }>,
+    private provincesTypesStore: Store<{ provinces: Province[] }>,
     private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,
     private elementRef: ElementRef,
@@ -53,7 +57,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
           unit: [''],
           line1: [''],
           city: ['', Validators.required],
-          provinceState: [{ value: 'BC', disabled: true }],
+          provinceState: [{ value: 'British Columbia', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
           zipPostalCode: ['', this.postalCodeValidator],
         }),
@@ -74,22 +78,17 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
         unit: [''],
         line1: ['', Validators.required],
         city: ['', Validators.required],
-        provinceState: ['BC', Validators.required],
+        province: ['British Columbia', Validators.required],
+        provinceState: [{value: '', disabled: true}, Validators.required],
         country: ['Canada', Validators.required],
         zipPostalCode: ['', this.postalCodeValidator],
       }),
       acceptTerms: [''],
     });
 
-    const complainantPhone = this.form.get('complainantContactInfo.phone');
-    const complainantEmail = this.form.get('complainantContactInfo.email');
-    const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-    complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
-    complainantEmail.valueChanges.subscribe(email => {
-      complainantPhone.updateValueAndValidity();
-    });
-
-    this.setZipPostalCodeValidator();
+    this.setComplainantPhoneEmailValidator();
+    this.setComplainantZipPostalCodeValidator();
+    this.setComplainantProvinceStateEnabled();
 
     // fetch property types from back-end and update store
      this.formDataService.getPropertyTypes().subscribe(result => {
@@ -100,6 +99,17 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.propertyTypes = this.propertyTypesStore.pipe(
       select('propertyTypes'),
       filter(propertyTypes => Array.isArray(propertyTypes))
+    );
+
+    // fetch provinces from back-end and update store
+     this.formDataService.getProvinces().subscribe(result => {
+      this.provincesTypesStore.dispatch(setProvinces({ provinces: result }));
+    });
+
+    // retrieve valid provinces from store
+    this.provinces = this.provincesTypesStore.pipe(
+      select('provinces'),
+      filter(provinces => Array.isArray(provinces))
     );
 
     // retrieve valid status from store
@@ -113,9 +123,10 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
       this.captchaApiBaseUrl = status.captchaApiUrl;
     });
 
-    // set page as loaded once valid property types and status have been retrieved
+    // set page as loaded once valid property types, provinces, and status have been retrieved
     forkJoin([
       this.propertyTypes.pipe(first()),
+      this.provinces.pipe(first()),
       statusObservable.pipe(first()),
     ]).subscribe(() => {
       this.loaded = true;
@@ -126,7 +137,20 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.statusSubscription.unsubscribe();
   }
 
-  setZipPostalCodeValidator() {
+  setComplainantPhoneEmailValidator() {
+    const complainantPhone = this.form.get('complainantContactInfo.phone');
+    const complainantEmail = this.form.get('complainantContactInfo.email');
+
+    if (complainantPhone && complainantEmail) {
+      const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
+      complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
+      complainantEmail.valueChanges.subscribe(email => {
+        complainantPhone.updateValueAndValidity();
+      });
+    }
+  }
+
+  setComplainantZipPostalCodeValidator() {
     const countryControl = this.form.get('complainantMailingAddress.country');
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
@@ -140,6 +164,24 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
           this.zipPostalCodeMask = false;
         }
         zipPostalCodeControl.updateValueAndValidity();
+      });
+    }
+  }
+
+  setComplainantProvinceStateEnabled() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const provinceControl = this.form.get('complainantMailingAddress.province');
+    const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
+
+    if (countryControl && provinceControl && provinceStateControl) {
+      countryControl.valueChanges.subscribe(country => {
+        if (this.countryIsCanada(country)) {
+          provinceControl.enable();
+          provinceStateControl.disable();
+        } else {
+          provinceControl.disable();
+          provinceStateControl.enable();
+        }
       });
     }
   }

@@ -52,6 +52,25 @@ namespace Gov.Pssg.Css.Public.Controllers
             }
         }
 
+        // GET: complaints/provinces
+        [HttpGet]
+        [Route("provinces")]
+        public IActionResult GetProvinces()
+        {
+            _logger.LogInformation("Attempting to retrieve provinces");
+            try
+            {
+                var data = Province.GetProvinces();
+                _logger.LogInformation("Successfully retrieved {@Provinces}", data);
+                return new JsonResult(data);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to retrieve provinces");
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
         // POST: complaints/csa
         [HttpPost]
         [Route("csa")]

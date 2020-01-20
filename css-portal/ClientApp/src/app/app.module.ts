@@ -12,6 +12,7 @@ import { NgBusyModule } from 'ng-busy';
 import { TextMaskModule } from 'angular2-text-mask';
 
 import { propertyTypesReducer } from '@reducers/property-types.reducer';
+import { provincesReducer } from '@reducers/provinces.reducer';
 import { statusReducer } from '@reducers/status.reducer';
 
 import { CaptchaDataService } from '@services/captcha-data.service';
@@ -65,7 +66,7 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
       { path: 'under-maintenance', component: UnderMaintenanceComponent },
       { path: '**', redirectTo: '' },
     ]),
-    StoreModule.forRoot({ propertyTypes: propertyTypesReducer, status: statusReducer })
+    StoreModule.forRoot({ propertyTypes: propertyTypesReducer, provinces: provincesReducer, status: statusReducer })
   ],
   providers: [
     CaptchaDataService,

@@ -6,6 +6,7 @@ import { catchError } from 'rxjs/operators';
 import { DataService } from './data.service';
 
 import { PropertyType } from '@models/property-type.model';
+import { Province } from '@models/province.model';
 
 @Injectable()
 export class ComplaintDataService extends DataService {
@@ -20,6 +21,15 @@ export class ComplaintDataService extends DataService {
   getPropertyTypes(): Observable<PropertyType[]> {
     const path = this.apiPath + 'complaints/property-types';
     return this.http.get<PropertyType[]>(path, { headers: this.headers })
+      .pipe(catchError(this.handleError));
+  }
+
+  /**
+   * Retrieve provinces from back-end
+   */
+  getProvinces(): Observable<Province[]> {
+    const path = this.apiPath + 'complaints/provinces';
+    return this.http.get<Province[]>(path, { headers: this.headers })
       .pipe(catchError(this.handleError));
   }
 

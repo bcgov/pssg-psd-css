@@ -32,5 +32,19 @@ namespace Gov.Pssg.Css.Public.Utility
         public static int SubjectTypeResidence = 862570001;
         public static int SubjectTypeBusiness = 862570002;
         public static int SubjectTypeLocation = 862570004;
+
+        public static string ProvinceAlberta = "Alberta";
+        public static string ProvinceBritishColumbia = "British Columbia";
+        public static string ProvinceManitoba = "Manitoba";
+        public static string ProvinceNewBrunswick = "New Brunswick";
+        public static string ProvinceNewfoundland = "Newfoundland";
+        public static string ProvinceNorthwestTerritories = "Northwest Territory";
+        public static string ProvinceNovaScotia = "Nova Scotia";
+        public static string ProvinceNunavut = "Nunavut";
+        public static string ProvinceOntario = "Ontario";
+        public static string ProvincePrinceEdwardIsland = "Prince Edward Island";
+        public static string ProvinceQuebec = "Quebec";
+        public static string ProvinceSaskatchewan = "Saskatchewan";
+        public static string ProvinceYukon = "Yukon Territory";
     }
 }

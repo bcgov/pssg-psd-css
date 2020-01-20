@@ -3,11 +3,13 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import { Subject, Subscription, forkJoin } from 'rxjs';
+import { Observable, Subject, Subscription, forkJoin } from 'rxjs';
 import { first, filter } from 'rxjs/operators';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
+import { setProvinces } from '@actions/provinces.actions';
 import { Complaint } from '@models/complaint.model';
+import { Province } from '@models/province.model';
 import { Status } from '@models/status.model';
 import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
@@ -17,6 +19,7 @@ import { FormBase } from '@shared/form-base';
   templateUrl: './ccla-form.component.html'
 })
 export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
+  public provinces: Observable<Province[]>;
   submittingForm: Subscription;
   statusSubscription: Subscription;
   loadingSubscription: Subscription;
@@ -30,6 +33,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   constructor(
     private formDataService: ComplaintDataService,
     private router: Router,
+    private provincesTypesStore: Store<{ provinces: Province[] }>,
     private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,
     private elementRef: ElementRef,
@@ -46,7 +50,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
           unit: [''],
           line1: [''],
           city: ['', Validators.required],
-          provinceState: [{ value: 'BC', disabled: true }],
+          provinceState: [{ value: 'British Columbia', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
           zipPostalCode: ['', this.postalCodeValidator],
         }),
@@ -66,23 +70,30 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
         unit: [''],
         line1: [''],
         city: [''],
-        provinceState: [],
-        country: [],
+        province: [{value: 'British Columbia', disabled: true}, Validators.required],
+        provinceState: ['', Validators.required],
+        country: [''],
         zipPostalCode: [''],
       }),
     });
 
-    const complainantPhone = this.form.get('complainantContactInfo.phone');
-    const complainantEmail = this.form.get('complainantContactInfo.email');
-    const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-    complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
-    complainantEmail.valueChanges.subscribe(email => {
-      complainantPhone.updateValueAndValidity();
-    });
-
-    this.setZipPostalCodeValidator();
+    this.setComplainantPhoneEmailValidator();
+    this.setComplainantZipPostalCodeValidator();
+    this.setComplainantProvinceStateEnabled();
+    this.setComplainantCountryValidator();
 
     this.updateAnonymousComplainant();
+
+    // fetch provinces from back-end and update store
+     this.formDataService.getProvinces().subscribe(result => {
+      this.provincesTypesStore.dispatch(setProvinces({ provinces: result }));
+    });
+
+    // retrieve valid provinces from store
+    this.provinces = this.provincesTypesStore.pipe(
+      select('provinces'),
+      filter(provinces => Array.isArray(provinces))
+    );
 
     // retrieve valid status from store
     const statusObservable =  this.statusStore.pipe(
@@ -95,8 +106,11 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       this.captchaApiBaseUrl = status.captchaApiUrl;
     });
 
-    // set page as loaded once a valid status has been retrieved
-    statusObservable.pipe(first()).subscribe(() => {
+    // set page as loaded once valid provinces and status have been retrieved
+    forkJoin([
+      this.provinces.pipe(first()),
+      statusObservable.pipe(first()),
+    ]).subscribe(() => {
       this.loaded = true;
     });
   }
@@ -105,7 +119,20 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.statusSubscription.unsubscribe();
   }
 
-  setZipPostalCodeValidator() {
+  setComplainantPhoneEmailValidator() {
+    const complainantPhone = this.form.get('complainantContactInfo.phone');
+    const complainantEmail = this.form.get('complainantContactInfo.email');
+    
+    if (complainantPhone && complainantEmail) {
+      const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
+      complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
+      complainantEmail.valueChanges.subscribe(email => {
+        complainantPhone.updateValueAndValidity();
+      });
+    }
+  }
+
+  setComplainantZipPostalCodeValidator() {
     const countryControl = this.form.get('complainantMailingAddress.country');
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
@@ -121,6 +148,56 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
         zipPostalCodeControl.updateValueAndValidity();
       });
     }
+  }
+
+  setComplainantProvinceStateEnabled() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const provinceControl = this.form.get('complainantMailingAddress.province');
+    const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
+
+    if (countryControl && provinceControl && provinceStateControl) {
+      countryControl.valueChanges.subscribe(country => {
+        if (this.countryIsCanada(country)) {
+          provinceControl.enable();
+          provinceStateControl.disable();
+        } else {
+          provinceControl.disable();
+          provinceStateControl.enable();
+        }
+      });
+    }
+  }
+
+  setComplainantCountryValidator() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const line1Control = this.form.get('complainantMailingAddress.line1');
+    const unitControl = this.form.get('complainantMailingAddress.unit');
+    const cityControl = this.form.get('complainantMailingAddress.city');
+    const provinceControl = this.form.get('complainantMailingAddress.province');
+    const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
+    const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
+    
+    countryControl.setValidators(this.requiredIfAnyPopulated(line1Control, unitControl, cityControl, provinceControl, provinceStateControl, zipPostalCodeControl));
+
+    line1Control.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+    unitControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+    cityControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+    provinceControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+    provinceStateControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+    zipPostalCodeControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
+  }
+
+  checkCountryInvalid() {
+    const countryControl = this.form.get('complainantMailingAddress.country');
+    const line1Control = this.form.get('complainantMailingAddress.line1');
+    const unitControl = this.form.get('complainantMailingAddress.unit');
+    const cityControl = this.form.get('complainantMailingAddress.city');
+    const provinceControl = this.form.get('complainantMailingAddress.province');
+    const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
+    const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
+
+    return (countryControl.touched || line1Control.touched || unitControl.touched || cityControl.touched ||
+      provinceControl.touched || provinceStateControl.touched || zipPostalCodeControl.touched) && !countryControl.valid;
   }
 
   updateAnonymousComplainant() {
