@@ -3,6 +3,11 @@
   [ngBusy]="{ busy: [ submittingForm ], message: 'Submitting Complaint&hellip;', minDuration: 1500 }" (busyStop)="onBusyStop()">
   <h1>CSA Complaint Form</h1>
   <p>
+    This form may be used to submit a complaint to the Community Safety Unit about a problem
+    property that is regularly used for unlawful activity in a way that adversely affects
+    your neighbourhood or community.
+  </p>
+  <p>
     Please fill out all applicable fields and press the submit button at the bottom of this form.
   </p>
   <p>
@@ -10,6 +15,29 @@
     604-502-5493 (lower mainland) or 1-855-502-5494 (toll free) or by email at CSU@gov.bc.ca.
   </p>
   <p>You will be contacted if the Community Safety Unit requires additional information.</p>
+  <p>
+    Note: The Community Safety Unit is NOT able to provide reasons for decisions made throughout the
+    complaint review process or investigation.
+    However, you will be notified if your complaint is not acted on or if your complaint is acted on,
+    if the Community Safety Unit does not apply for a Community Safety Order.
+  </p>
+  <p>
+    The information requested on this form is collected by the Community Safety Unit under
+    Section 26(c) of the <em>Freedom of Information and Protection of Privacy Act</em> and will be used
+    for the purpose of compliance and enforcement matters in accordance with the <em>Community Safety Act</em>.
+  </p>
+  <p>
+    Should you have any questions about the collection, use, or disclosure of personal information,
+    please contact the Freedom of Information Office at:
+  </p>
+  <p>
+    PO Box 9292, STN PROV GVT
+    <br />
+    Victoria, BC, V8W 9J8
+  </p>
+  <p>
+    Or by phone toll free at 1-866-209-2111.
+  </p>
 
   <div class="clearfix">
     <p class="text-danger float-right"><em>* Required</em></p>
@@ -267,7 +295,7 @@
     <app-field label="Terms & Conditions" [required]="true"
       [invalid]="checkInputInvalid('acceptTerms')"
       errorMessage="Please indicate your agreement to the Terms & Conditions">
-      <div id="termsAndConditions" class="overflow-auto card card-body bg-light"> 
+      <div id="termsAndConditions" class="card card-body bg-light"> 
         <p>
           As set out in section 8 of the <em>Community Safety Act</em>, a complainant's identity, their complaint,
           and any information by which a complainant may be identified must be kept confidential, unless 
@@ -294,29 +322,6 @@
             under section 10 of the <em>Community Safety Act</em>.
           </li>
         </ul>
-        <p>
-          Note: The Community Safety Unit is NOT able to provide reasons for decisions made throughout the
-          complaint review process or investigation.
-          However, you will be notified if your complaint is not acted on or if your complaint is acted on,
-          if the Community Safety Unit does not apply for a Community Safety Order.
-        </p>
-        <p>
-            The information requested on this form is collected by the Community Safety Unit under
-            Section 26 (b) and (c) of the <em>Freedom of Information and Protection of Privacy Act</em> and will be used
-            for the purpose of compliance and enforcement matters in accordance with the <em>Community Safety Act</em>.
-        </p>
-        <p>
-          Should you have any questions about the collection, use, or disclosure of personal information,
-          please contact the Freedom of Information Office at:
-        </p>
-        <p>
-            PO Box 9292, STN PROV GVT
-            <br />
-            Victoria, BC, V8W 9J8
-        </p>
-        <p class="mb-0">
-          Or by phone toll free at 1-866-209-2111.
-        </p>
       </div>
       <div class="form-check mt-3">
         <input id="acceptTerms" class="form-check-input" type="checkbox" formControlName="acceptTerms" required>

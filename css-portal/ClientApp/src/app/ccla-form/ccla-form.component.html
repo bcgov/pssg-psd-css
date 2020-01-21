@@ -3,9 +3,11 @@
   [ngBusy]="{ busy: [ submittingForm ], message: 'Submitting Complaint&hellip;', minDuration: 1500 }" (busyStop)="onBusyStop()">
   <h1>CCLA Complaint Form</h1>
   <p>
-    Please fill out all applicable fields and press the submit button at the bottom of this form.
+    This form may be used to submit a complaint to the Community Safety Unit about an illegal
+    unlicensed cannabis retailer or other seller.
   </p>
   <p>
+    Please fill out all applicable fields and press the submit button at the bottom of this form.
     If you have any questions about this form, please contact the Community Safety Unit at
     604-502-5493 (lower mainland) or 1-855-502-5494 (toll free) or by email at CSU@gov.bc.ca.
   </p>
@@ -17,6 +19,23 @@
     For example, the information may be disclosed to a law enforcement agency, in a proceeding before
     a court or tribunal, or for the purpose of the administration or enforcement of the
     <em>Cannabis Control and Licensing Act</em> or its associated regulations.
+  </p>
+  <p>
+    The information requested on this form is collected by the Community Safety Unit under
+    Section 26(c) of the <em>Freedom of Information and Protection of Privacy Act</em> and will be used
+    for the purpose of compliance and enforcement matters in accordance with the <em>Cannabis Control and Licensing Act</em>.
+  </p>
+  <p>
+    Should you have any questions about the collection, use, or disclosure of personal information,
+    please contact the Freedom of Information Office at:
+  </p>
+  <p>
+    PO Box 9292, STN PROV GVT
+    <br />
+    Victoria, BC, V8W 9J8
+  </p>
+  <p>
+    Or by phone toll free at 1-866-209-2111.
   </p>
 
   <div class="clearfix">
@@ -104,12 +123,12 @@
         <div class="card card-body bg-light">
           <p>
             Occasionally the CSU requires additional information and may need to contact you.
-            If you wish to remain anonymous, please select the check box "I wish to remain anonymous".
+            If you wish to remain anonymous, please select the check box "I do not wish to provide my name or contact information".
           </p>
           <div class="form-check mt-3">
             <input id="anonymousComplainant" class="form-check-input" type="checkbox" formControlName="anonymousComplainant"
               (change)="updateAnonymousComplainant()">
-            <label class="form-check-label" for="anonymousComplainant">I wish to remain anonymous</label>
+            <label class="form-check-label" for="anonymousComplainant">I do not wish to provide my name or contact information</label>
           </div>
         </div>
       </div>
@@ -235,25 +254,6 @@
       </div>
     </div>
   </fieldset>
-  <div>
-    <p>
-        The information requested on this form is collected by the Community Safety Unit under
-        Section 26 (a) and (c) of the <em>Freedom of Information and Protection of Privacy Act</em> and will be used
-        for the purpose of compliance and enforcement matters in accordance with the <em>Cannabis Control and Licensing Act</em>.
-    </p>
-    <p>
-      Should you have any questions about the collection, use, or disclosure of personal information,
-      please contact the Freedom of Information Office at:
-    </p>
-    <p>
-        PO Box 9292, STN PROV GVT
-        <br />
-        Victoria, BC, V8W 9J8
-    </p>
-    <p>
-      Or by phone toll free at 1-866-209-2111.
-    </p>
-  </div>
 
   <captcha [apiBaseUrl]="captchaApiBaseUrl" 
     nonce="submit-complaint"
