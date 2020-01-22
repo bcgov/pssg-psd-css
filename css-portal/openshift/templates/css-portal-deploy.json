@@ -469,10 +469,10 @@
       "value": "2Gi"
     },
     {
-      "description": "The exposed hostname that will route to the service, e.g., myappname.pathfinder.gov.bc.ca, if left blank a value will be defaulted.",
+      "description": "The exposed hostname that will route to the service, e.g., myappname.pathfinder.bcgov, if left blank a value will be defaulted.",
       "displayName": "Application Domain",
       "name": "APPLICATION_DOMAIN",
-      "value": "css-portal-dev.pathfinder.gov.bc.ca"
+      "value": "css-portal-dev.pathfinder.bcgov"
     },
     {
       "name": "SECRET_RESOURCE_NAME",
