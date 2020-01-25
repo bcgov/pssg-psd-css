@@ -363,7 +363,8 @@
         },
         "name": "${NAME}",
         "annotations": {
-          "haproxy.router.openshift.io/timeout": "200s"
+          "haproxy.router.openshift.io/timeout": "200s",
+          "haproxy.router.openshift.io/ip_whitelist": "${IP_WHITELIST}"
         }
       },
       "spec": {
@@ -502,14 +503,19 @@
       "required": true,
       "value": "/communitysafety"
     },
-	
-	
-	{
-	  "name": "SITEMINDER_APPLICATION_DOMAIN",
+    {
+      "name": "SITEMINDER_APPLICATION_DOMAIN",
       "displayName": "Siteminder application domain",
       "description": "Siteminder application domain",
       "required": false,
       "value": ""
-	}
+    },
+    {
+      "name": "IP_WHITELIST",
+      "displayName": "IP Whitelist",
+      "description": "List of IP addresses and/or CIDRs allowed to access route",
+      "required": false,
+      "value": ""
+    }
   ]
 }
