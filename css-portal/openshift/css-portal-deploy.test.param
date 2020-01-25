@@ -18,3 +18,4 @@ APPLICATION_DOMAIN=css-portal-test.pathfinder.bcgov
 UNDER_MAINTENANCE=false
 CSA_ENABLED=true
 # BASE_PATH=/communitysafety
+IP_WHITELIST=142.34.44.0/24

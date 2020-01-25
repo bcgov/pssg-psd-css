@@ -206,7 +206,11 @@
         "labels": {
           "app": "${NAME}"
         },
-        "name": "${NAME}"
+        "name": "${NAME}",
+        "annotations": {
+          "haproxy.router.openshift.io/timeout": "200s",
+          "haproxy.router.openshift.io/ip_whitelist": "${IP_WHITELIST}"
+        }
       },
       "spec": {
         "host": "${APPLICATION_DOMAIN}",
@@ -313,6 +317,13 @@
       "name": "CORS_ALLOW_ALL",
       "value": "false",
       "required": false
+    },
+    {
+      "name": "IP_WHITELIST",
+      "displayName": "IP Whitelist",
+      "description": "List of IP addresses and/or CIDRs allowed to access route",
+      "required": false,
+      "value": ""
     }
   ]
 }

@@ -4,7 +4,7 @@
 # Template File: ../css-portal/openshift/templates/mygovbc-captcha-service-deploy.json
 #=========================================================
 NAME=mygovbc-captcha-service
-APPLICATION_DOMAIN=css-portal-captcha.pathfinder.bcgov
+APPLICATION_DOMAIN=css-portal-captcha-prod.pathfinder.bcgov
 # IMAGE_NAMESPACE=sxluez-tools
 TAG_NAME=prod
 # SECRET_RESOURCE_NAME=css-portal
@@ -16,3 +16,4 @@ TAG_NAME=prod
 # JWT_SIGN_EXPIRY=15
 # AUDIO_ENABLED=true
 # CORS_ALLOW_ALL=false
+IP_WHITELIST=142.34.133.0/24
