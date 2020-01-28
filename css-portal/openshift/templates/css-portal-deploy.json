@@ -284,6 +284,33 @@
                         "name": "${SECRET_RESOURCE_NAME}"
                       }
                     }
+                  },
+                  {
+                    "name": "SPLUNK_COLLECTOR_URL",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SPLUNK_COLLECTOR_URL",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "SPLUNK_TOKEN",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SPLUNK_TOKEN",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "SPLUNK_CHANNEL",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "SPLUNK_CHANNEL",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
                   }
                 ],
                 "resources": {
