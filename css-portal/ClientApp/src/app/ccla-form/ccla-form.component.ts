@@ -206,11 +206,11 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const complainantMailingAddressControl = this.form.get('complainantMailingAddress');
     if (includeComplainantControl && complainantContactInfoControl && complainantMailingAddressControl) {
       if (includeComplainantControl.value === true) {
-        complainantContactInfoControl.disable();
-        complainantMailingAddressControl.disable();
+        complainantContactInfoControl.disable({ emitEvent: false });
+        complainantMailingAddressControl.disable({ emitEvent: false });
       } else {
-        complainantContactInfoControl.enable();
-        complainantMailingAddressControl.enable();
+        complainantContactInfoControl.enable({ emitEvent: false });
+        complainantMailingAddressControl.enable({ emitEvent: false });
       }
     }
   }
