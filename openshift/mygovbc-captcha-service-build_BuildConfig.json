@@ -1,0 +1,105 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {},
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "name": "mygovbc-captcha-service"
+            }
+        },
+        {
+            "apiVersion": "build.openshift.io/v1",
+            "kind": "BuildConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "mygovbc-captcha-service"
+                },
+                "name": "mygovbc-captcha-service"
+            },
+            "spec": {
+                "nodeSelector": null,
+                "output": {
+                    "to": {
+                        "kind": "ImageStreamTag",
+                        "name": "mygovbc-captcha-service:latest"
+                    }
+                },
+                "postCommit": {},
+                "resources": {},
+                "runPolicy": "Serial",
+                "source": {
+                    "git": {
+                        "ref": "v7.4.0",
+                        "uri": "https://github.com/bcgov/MyGovBC-CAPTCHA-Service.git"
+                    },
+                    "type": "Git"
+                },
+                "strategy": {
+                    "sourceStrategy": {
+                        "from": {
+                            "kind": "ImageStreamTag",
+                            "name": "nodejs:8",
+                            "namespace": "openshift"
+                        }
+                    },
+                    "type": "Source"
+                },
+                "triggers": [
+                    {
+                        "imageChange": {},
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            },
+            "status": {
+                "lastVersion": 0
+            }
+        },
+        {
+            "apiVersion": "build.openshift.io/v1",
+            "kind": "BuildConfig",
+            "metadata": {
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "mygovbc-captcha-service-pipeline",
+                    "name": "mygovbc-captcha-service-pipeline",
+                    "template": "mygovbc-captcha-service-pipeline"
+                },
+                "name": "mygovbc-captcha-service-pipeline"
+            },
+            "spec": {
+                "nodeSelector": null,
+                "output": {},
+                "postCommit": {},
+                "resources": {},
+                "runPolicy": "Parallel",
+                "source": {
+                    "git": {
+                        "ref": "v7.4.0",
+                        "uri": "https://github.com/bcgov/MyGovBC-CAPTCHA-Service.git"
+                    },
+                    "type": "Git"
+                },
+                "strategy": {
+                    "jenkinsPipelineStrategy": {
+                        "jenkinsfilePath": "Jenkinsfile"
+                    },
+                    "type": "JenkinsPipeline"
+                }
+            },
+            "status": {
+                "lastVersion": 0
+            }
+        }
+    ]
+}
