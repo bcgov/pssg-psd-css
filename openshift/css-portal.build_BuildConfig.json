@@ -1,0 +1,106 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {},
+    "items": [
+        {
+            "apiVersion": "image.openshift.io/v1",
+            "kind": "ImageStream",
+            "metadata": {
+                "name": "css-portal"
+            }
+        },
+        {
+            "apiVersion": "build.openshift.io/v1",
+            "kind": "BuildConfig",
+            "metadata": {
+                "labels": {
+                    "app": "css-portal"
+                },
+                "name": "css-portal"
+            },
+            "spec": {
+                "output": {
+                    "to": {
+                        "kind": "ImageStreamTag",
+                        "name": "css-portal:latest"
+                    }
+                },
+                "resources": {
+                    "limits": {
+                        "cpu": "1",
+                        "memory": "6Gi"
+                    },
+                    "requests": {
+                        "cpu": "1",
+                        "memory": "4Gi"
+                    }
+                },
+                "runPolicy": "Serial",
+                "source": {
+                    "contextDir": "",
+                    "git": {
+                        "ref": "master",
+                        "uri": "https://github.com/bcgov/pssg-psd-csa.git"
+                    },
+                    "type": "Git"
+                },
+                "strategy": {
+                    "sourceStrategy": {
+                        "env": [
+                            {
+                                "name": "DOTNET_STARTUP_PROJECT",
+                                "value": "css-portal/css-portal.csproj"
+                            },
+                            {
+                                "name": "UAT_BUILD",
+                                "value": ""
+                            },
+                            {
+                                "name": "PROD_BUILD",
+                                "value": ""
+                            },
+                            {
+                                "name": "DOTNET_SDK_VERSION",
+                                "value": "latest"
+                            },
+                            {
+                                "name": "MSBuildEmitSolution",
+                                "value": "1"
+                            },
+                            {
+                                "name": "VERSION_PREFIX",
+                                "value": "0.01.0"
+                            },
+                            {
+                                "name": "DOTNET_CONFIGURATION",
+                                "value": "Debug"
+                            },
+                            {
+                                "name": "MSBuildEmitSolution",
+                                "value": "1"
+                            },
+                            {
+                                "name": "DOTNET_INCREMENTAL",
+                                "value": "true"
+                            }
+                        ],
+                        "from": {
+                            "kind": "DockerImage",
+                            "name": "dotnet-30-rhel7:latest"
+                        }
+                    },
+                    "type": "Source"
+                },
+                "triggers": [
+                    {
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            }
+        }
+    ]
+}
