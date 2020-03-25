@@ -98,6 +98,7 @@ namespace Gov.Pssg.Css.Public.Controllers
                 }
 
                 await SubmitComplaintToDynamicsAsync(complaint);
+                _logger.LogInformation("Added CSA complaint to dynamics");
                 return Ok();
             }
             catch (Exception ex)
@@ -133,6 +134,7 @@ namespace Gov.Pssg.Css.Public.Controllers
                 }
 
                 await SubmitComplaintToDynamicsAsync(complaint);
+                _logger.LogInformation("Added CCLA complaint to dynamics");
                 return Ok();
             }
             catch (Exception ex)
