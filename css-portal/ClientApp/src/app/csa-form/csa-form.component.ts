@@ -96,11 +96,11 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     });
 
     // retrieve valid property types from store
-    this.propertyTypes = this.propertyTypesStore.pipe(
+/**    this.propertyTypes = this.propertyTypesStore.pipe(
       select('propertyTypes'),
       filter(propertyTypes => Array.isArray(propertyTypes))
     );
-
+ */
     // fetch provinces from back-end and update store
      this.formDataService.getProvinces().subscribe(result => {
       this.provincesTypesStore.dispatch(setProvinces({ provinces: result }));
