@@ -37,7 +37,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   constructor(
     private formDataService: ComplaintDataService,
     private router: Router,
-    private propertyTypesStore: Store<{ properyTypes: PropertyType[] }>,
+    private propertyTypesStore: Store<{ propertyTypes: PropertyType[] }>,
     private provincesTypesStore: Store<{ provinces: Province[] }>,
     private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,

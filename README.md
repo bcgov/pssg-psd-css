@@ -8,7 +8,7 @@ Technology Stack
 
 | Layer   | Technology | 
 | ------- | ------------ |
-| Presentation | Angular 8 |
+| Presentation | Angular 13.3 | Nodejs 14.20 |
 | Business Logic | C Sharp - Dotnet Core 3.1 |
 | Application Server | Kestrel |
 | Data Storage | MS Dynamics On Premise V9 |
@@ -29,7 +29,7 @@ Developer Prerequisites
 
 **Public Application**
 - .Net Core SDK (3.1)
-- Node.js version 10.21 
+- Node.js version 14.20 
 - .NET Core IDE such as Visual Studio or VS Code
 - JAG VPN with access to MS Dynamics
 
