@@ -1,9 +1,8 @@
+using Gov.Pssg.Css.Public.Utility;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
@@ -68,7 +67,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
                 (string.IsNullOrWhiteSpace(Line1) ||
                  string.IsNullOrWhiteSpace(City) ||
                  string.IsNullOrWhiteSpace(Country) ||
-                 countryIsCanada && string.IsNullOrWhiteSpace(Province) || 
+                 countryIsCanada && string.IsNullOrWhiteSpace(Province) ||
                  !countryIsCanada && string.IsNullOrWhiteSpace(ProvinceState)))
             {
                 return false;

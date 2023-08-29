@@ -1,10 +1,5 @@
 namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 {
-    using Microsoft.Rest;
-    using Newtonsoft.Json;
-    using System.Threading.Tasks;
-    using System;
-
     /// <summary>
     /// Auto Generated
     /// </summary>
@@ -16,7 +11,7 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
         System.Uri NativeBaseUri { get; set; }
 
         string GetEntityURI(string entityType, string id);
-        
+
 
     }
 }

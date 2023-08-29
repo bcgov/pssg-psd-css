@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
-using Gov.Pssg.Css.Public.Utility;
-using Gov.Pssg.Css.Public.ViewModels;
+﻿using Gov.Pssg.Css.Public.Utility;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System;
 
 namespace Gov.Pssg.Css.Public.Controllers
 {
@@ -16,10 +11,10 @@ namespace Gov.Pssg.Css.Public.Controllers
     [Route("[controller]")]
     public class StatusController : ControllerBase
     {
-        private readonly ILogger<ComplaintsController> _logger;
+        private readonly ILogger<StatusController> _logger;
         private readonly IConfiguration _configuration;
 
-        public StatusController(ILogger<ComplaintsController> logger, IConfiguration configuration)
+        public StatusController(ILogger<StatusController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;

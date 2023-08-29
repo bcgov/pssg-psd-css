@@ -105,7 +105,6 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.statusSubscription = statusObservable.subscribe(status => {
       this.captchaApiBaseUrl = status.captchaApiUrl;
     });
-
     // set page as loaded once valid provinces and status have been retrieved
     forkJoin([
       this.provinces.pipe(first()),

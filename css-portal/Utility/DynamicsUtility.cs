@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+﻿using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.ViewModels;
+using System;
+using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.Utility
 {
@@ -16,7 +14,7 @@ namespace Gov.Pssg.Css.Public.Utility
             {
                 Statuscode = Constants.ComplaintStatusTypeReceived,
                 CsuReportdataandtime = DateTimeOffset.UtcNow,
-                CsuSourcetype =  Constants.SourceTypeWebPortal,
+                CsuSourcetype = Constants.SourceTypeWebPortal,
                 CsuComplaintreportdetail = complaint.Details.Problems,
             };
 
@@ -119,7 +117,7 @@ namespace Gov.Pssg.Css.Public.Utility
             {
                 entity.CsuSubjecttype = Constants.SubjectTypeResidence;
             }
-            
+
             entity = await dynamicsClient.Csusubjectofcomplaints.CreateAsync(entity);
             return entity;
         }

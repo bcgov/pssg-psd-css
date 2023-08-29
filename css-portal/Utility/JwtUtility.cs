@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using JWT;
+﻿using JWT;
 using JWT.Builder;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;

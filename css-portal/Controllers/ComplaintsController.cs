@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+﻿using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.Attributes;
 using Gov.Pssg.Css.Public.Utility;
@@ -12,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.Controllers
 {
@@ -172,8 +170,9 @@ namespace Gov.Pssg.Css.Public.Controllers
                 _logger.LogWarning("Could not match expected captcha {Nonce} in {Payload}", CaptchaNonce, payload.ToString());
                 return false;
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError("Failed to process captcha: ", ex);
                 return false;
             }
         }

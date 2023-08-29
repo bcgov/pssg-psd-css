@@ -2,8 +2,6 @@ using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.SharePoint;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -87,7 +85,7 @@ namespace Gov.Pssg.Css.Public
             {
 
                 Serilog.Sinks.Splunk.CustomFields fields = new Serilog.Sinks.Splunk.CustomFields();
-                if (!string.IsNullOrEmpty (_configuration["SPLUNK_CHANNEL"]))
+                if (!string.IsNullOrEmpty(_configuration["SPLUNK_CHANNEL"]))
                 {
                     fields.CustomFieldList.Add(new Serilog.Sinks.Splunk.CustomField("channel", _configuration["SPLUNK_CHANNEL"]));
                 }
@@ -101,8 +99,8 @@ namespace Gov.Pssg.Css.Public
                     .Enrich.FromLogContext()
                     .Enrich.WithExceptionDetails()
                     .WriteTo.Console()
-                    .WriteTo.EventCollector( splunkHost: _configuration["SPLUNK_COLLECTOR_URL"],
-                       sourceType: "manual", eventCollectorToken: _configuration["SPLUNK_TOKEN"], 
+                    .WriteTo.EventCollector(splunkHost: _configuration["SPLUNK_COLLECTOR_URL"],
+                       sourceType: "manual", eventCollectorToken: _configuration["SPLUNK_TOKEN"],
                        restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information,
 #pragma warning disable CA2000 // Dispose objects before losing scope
                        messageHandler: new HttpClientHandler()
@@ -110,13 +108,13 @@ namespace Gov.Pssg.Css.Public
                            ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
                        }
 #pragma warning restore CA2000 // Dispose objects before losing scope
-                     )                    
+                     )
                     .CreateLogger();
 
                 Serilog.Debugging.SelfLog.Enable(Console.Error);
 
                 Log.Logger.Information("CSA Portal Container Started");
-                
+
             }
             else
             {
