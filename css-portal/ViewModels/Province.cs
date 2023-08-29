@@ -1,7 +1,5 @@
-﻿using System;
+﻿using Gov.Pssg.Css.Public.Utility;
 using System.Collections.Generic;
-using System.Linq;
-using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {

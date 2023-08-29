@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Gov.Pssg.Css.Public.Utility;
+using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
