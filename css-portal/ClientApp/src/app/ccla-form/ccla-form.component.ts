@@ -13,7 +13,6 @@ import { Province } from '@models/province.model';
 import { Status } from '@models/status.model';
 import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
-import { RenderToStringCallback } from 'aspnet-prerendering';
 
 @Component({
   selector: 'app-ccla-form',
@@ -44,7 +43,6 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    window.console.info("init is called is loaded? " + this.provinces);
     this.form = this.formBuilder.group({
       complaintDetails: this.formBuilder.group({
         name: [''],
@@ -96,9 +94,6 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       select('provinces'),
       filter(provinces => Array.isArray(provinces))
     );
-    window.console.info("now provinces are set? " + this.provinces.pipe(first()).forEach((ap: Province[]) => ap[0].name));
-
-    this.statusStore.pipe(select(state => state.status)).forEach((val: Status) => window.console.info("status: " + val));
 
     // retrieve valid status from store
     const statusObservable =  this.statusStore.pipe(
@@ -110,7 +105,6 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.statusSubscription = statusObservable.subscribe(status => {
       this.captchaApiBaseUrl = status.captchaApiUrl;
     });
-    this.loaded = true;
     // set page as loaded once valid provinces and status have been retrieved
     forkJoin([
       this.provinces.pipe(first()),
@@ -118,7 +112,6 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     ]).subscribe(() => {
       this.loaded = true;
     });
-    window.console.info("loaded is: " + this.loaded + " and status: " + statusObservable.pipe(first()));
   }
 
   ngOnDestroy() {
