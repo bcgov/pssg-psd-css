@@ -170,8 +170,9 @@ namespace Gov.Pssg.Css.Public.Controllers
                 _logger.LogWarning("Could not match expected captcha {Nonce} in {Payload}", CaptchaNonce, payload.ToString());
                 return false;
             }
-            catch
+            catch(Exception ex) 
             {
+                _logger.LogError("Failed to process captcha: ", ex);
                 return false;
             }
         }
