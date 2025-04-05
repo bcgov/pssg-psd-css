@@ -223,6 +223,42 @@
                     }
                   },
                   {
+                    "name": "DYNAMICS_AAD_TENANT_ID",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_AAD_TENANT_ID",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_APP_REG_CLIENT_ID",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_APP_REG_CLIENT_ID",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_APP_REG_CLIENT_KEY",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_APP_REG_CLIENT_KEY",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "DYNAMICS_SERVER_APP_ID_URI",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "DYNAMICS_SERVER_APP_ID_URI",
+                        "name": "${SECRET_RESOURCE_NAME}"
+                      }
+                    }
+                  },
+                  {
                     "name": "SHAREPOINT_ODATA_URI",
                     "valueFrom": {
                       "secretKeyRef": {
