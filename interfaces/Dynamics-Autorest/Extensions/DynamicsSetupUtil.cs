@@ -13,14 +13,6 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
     {
         /// <summary>
         /// Retrieves <see cref="ServiceClientCredentials"/> for the Dynamics client using Dataverse authentication.
-        ///
-        /// <para><b>Required configuration settings:</b></para>
-        /// <list type="bullet">
-        ///   <item><description>DYNAMICS_AAD_TENANT_ID</description></item>
-        ///   <item><description>DYNAMICS_SERVER_APP_ID_URI</description></item>
-        ///   <item><description>DYNAMICS_APP_REG_CLIENT_KEY</description></item>
-        ///   <item><description>DYNAMICS_APP_REG_CLIENT_ID</description></item>
-        /// </list>
         /// </summary>
         /// <param name="Configuration">The application configuration (IConfiguration).</param>
         /// <returns>ServiceClientCredentials or null if credentials could not be resolved.</returns>
@@ -74,16 +66,6 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 
         /// <summary>
         /// Get the ServiceClientCredentials for the Dynamics client using the ADFS 2016 (for On Prem) authentication method.
-        ///
-        /// <para><b>Required configuration settings:</b></para>
-        /// <list type="bullet">
-        ///   <item><description>ADFS_OAUTH2_URI</description></item>
-        ///   <item><description>DYNAMICS_APP_GROUP_RESOURCE</description></item>
-        ///   <item><description>DYNAMICS_APP_GROUP_CLIENT_ID</description></item>
-        ///   <item><description>DYNAMICS_APP_GROUP_SECRET</description></item>
-        ///   <item><description>DYNAMICS_USERNAME</description></item>
-        ///   <item><description>DYNAMICS_PASSWORD</description></item>
-        /// </list>
         /// </summary>
         /// <param name="Configuration">The application configuration (IConfiguration).</param>
         /// <returns>ServiceClientCredentials or null if credentials could not be resolved.</returns>
@@ -165,12 +147,6 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 
         /// <summary>
         /// Get the ServiceClientCredentials for the Dynamics client using the BASIC authentication method.
-        ///
-        /// <para><b>Required configuration settings:</b></para>
-        /// <list type="bullet">
-        ///   <item><description>SSG_USERNAME</description></item>
-        ///   <item><description>SSG_PASSWORD</description></item>
-        /// </list>
         /// </summary>
         /// <param name="Configuration">The application configuration (IConfiguration).</param>
         /// <returns>ServiceClientCredentials or null if credentials could not be resolved.</returns>
@@ -197,9 +173,6 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
 
         /// <summary>
         /// Get the ServiceClientCredentials for the Dynamics client.
-        ///
-        /// Will use the DYNAMICS_MODE setting to determine which authentication method to use.
-        /// DYNAMICS_MODE can be set to "dataverse", "onprem", or "" (empty).
         /// </summary>
         /// <param name="Configuration">The application configuration (IConfiguration).</param>
         /// <returns>ServiceClientCredentials</returns>
