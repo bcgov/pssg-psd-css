@@ -353,7 +353,7 @@ namespace Gov.Pssg.Css.Interfaces.DynamicsAutorest
                 else {
                     _responseContent = string.Empty;
                 }
-                var ex = new HttpOperationException(string.Format("Operation returned an invalid status code '{0} '" + _responseContent, _statusCode));
+                var ex = new HttpOperationException(string.Format("Operation returned an invalid status code '{0} '" + _requestContent + " " + _responseContent, _statusCode));
                 ex.Request = new HttpRequestMessageWrapper(_httpRequest, _requestContent);
                 ex.Response = new HttpResponseMessageWrapper(_httpResponse, _responseContent);
                 if (_shouldTrace)
