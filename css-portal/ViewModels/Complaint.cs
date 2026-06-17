@@ -1,4 +1,5 @@
 using Gov.Pssg.Css.Public.Utility;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.ViewModels
@@ -11,7 +12,8 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public Complainant Complainant { get; set; }
 
-        public string AuthorizationToken { get; set; }
+        [Required]
+        public string Captcha { get; set; }
 
         public void Sanitize()
         {

@@ -12,7 +12,6 @@ import { setProvinces } from '@actions/provinces.actions';
 import { Complaint } from '@models/complaint.model';
 import { PropertyType } from '@models/property-type.model';
 import { Province } from '@models/province.model';
-import { Status } from '@models/status.model';
 import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
 
@@ -25,13 +24,11 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   public propertyTypes: Observable<PropertyType[]>;
   public provinces: Observable<Province[]>;
   submittingForm: Subscription;
-  statusSubscription: Subscription;
   submissionResult: Subject<boolean>;
   loaded: boolean;
   faCalendar = faCalendar;
   propertyTypeOther = 862570008;
-  authorizationToken : string;
-  captchaApiBaseUrl : string;
+  captchaToken: string | null = null;
   zipPostalCodeMask: ((string | RegExp)[] | boolean) = this.postalCodeMask;
 
   constructor(
@@ -39,7 +36,6 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     private router: Router,
     private propertyTypesStore: Store<{ propertyTypes: PropertyType[] }>,
     private provincesTypesStore: Store<{ provinces: Province[] }>,
-    private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,
     private elementRef: ElementRef,
     private snackBar: MatSnackBar
@@ -112,30 +108,16 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
       filter(provinces => Array.isArray(provinces))
     );
 
-    // retrieve valid status from store
-    const statusObservable =  this.statusStore.pipe(
-      select(state => state.status),
-      filter(status => Boolean(status && status.captchaApiUrl))
-    );
-
-    // retrieve captcha api URL from status
-    this.statusSubscription = statusObservable.subscribe(status => {
-      this.captchaApiBaseUrl = status.captchaApiUrl;
-    });
-
-    // set page as loaded once valid property types, provinces, and status have been retrieved
+    // set page as loaded once valid property types and provinces have been retrieved
     forkJoin([
       this.propertyTypes.pipe(first()),
       this.provinces.pipe(first()),
-      statusObservable.pipe(first()),
     ]).subscribe(() => {
       this.loaded = true;
     });
   }
 
-  ngOnDestroy() {
-    this.statusSubscription.unsubscribe();
-  }
+  ngOnDestroy() {}
 
   setComplainantPhoneEmailValidator() {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
@@ -203,7 +185,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   }
 
   submit() {
-    if (this.form.valid) {
+    if (this.form.valid || !this.captchaToken) {
       const formData = this.form.value;
       const data = <Complaint>{
         details: { ...formData.complaintDetails },
@@ -211,7 +193,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
           ...formData.complainantContactInfo,
           address: formData.complainantMailingAddress,
         },
-        authorizationToken: this.authorizationToken,
+        captcha: this.captchaToken
       };
 
       this.save(data).subscribe({
@@ -256,5 +238,13 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
 
   onBusyStop() {
     this.submissionResult.complete();
+  }
+
+  handleCaptchaResponse(event: any) {
+    if (event.type === 'SUCCESS') {
+      this.captchaToken = event.resolved;
+    } else {
+      this.captchaToken = null;
+    }
   }
 }

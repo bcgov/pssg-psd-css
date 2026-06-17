@@ -10,7 +10,6 @@ namespace Gov.Pssg.Css.Public.Utility
         {
             return new Status
             {
-                CaptchaApiUrl = configuration["CAPTCHA_API_URL"],
                 CsaEnabled = IsCSAEnabled(configuration),
                 UnderMaintenance = IsUnderMaintenance(configuration),
             };

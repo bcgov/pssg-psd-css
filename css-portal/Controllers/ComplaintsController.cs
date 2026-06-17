@@ -1,4 +1,5 @@
-﻿using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+﻿using EMBC.Suppliers.API.Services;
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.Attributes;
 using Gov.Pssg.Css.Public.Utility;
@@ -9,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.Controllers
@@ -21,14 +24,14 @@ namespace Gov.Pssg.Css.Public.Controllers
         private readonly ILogger<ComplaintsController> _logger;
         private readonly IDynamicsClient _dynamicsClient;
         private readonly IConfiguration _configuration;
+        private readonly ICaptchaVerificationService _captchaVerificationService;
 
-        private readonly string CaptchaNonce = "submit-complaint";
-
-        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient, IConfiguration configuration)
+        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient, IConfiguration configuration, ICaptchaVerificationService captchaVerificationService)
         {
             _logger = logger;
             _dynamicsClient = dynamicsClient;
             _configuration = configuration;
+            _captchaVerificationService = captchaVerificationService;
         }
 
         // GET: complaints/property-types
@@ -73,11 +76,19 @@ namespace Gov.Pssg.Css.Public.Controllers
         [HttpPost]
         [Route("csa")]
         [RequiresCSAEnabled]
-        public async Task<IActionResult> PostCSA([FromBody] Complaint complaint)
+        public async Task<IActionResult> PostCSA([FromBody] Complaint complaint, CancellationToken ct)
         {
-            _logger.LogInformation("Attempting to submit CSA complaint {@Complaint}", complaint);
             try
             {
+                _logger.LogInformation("Attempting to submit CSA complaint {@Complaint}", complaint);
+            
+                var isValidCaptcha = await _captchaVerificationService.VerifyAsync(complaint.Captcha, ct);
+                if (!isValidCaptcha)
+                {
+                    _logger.LogWarning("Captcha verification failed for complaint {@Complaint}", complaint);
+                    return BadRequest();
+                }
+
                 complaint.LegislationType = Constants.LegislationTypeCSA;
                 complaint.Sanitize();
 
@@ -85,13 +96,6 @@ namespace Gov.Pssg.Css.Public.Controllers
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
-                    return BadRequest();
-                }
-
-                bool authenticationResult = AuthenticateCaptchaToken(complaint.AuthorizationToken, _configuration["CAPTCHA_SECRET"]);
-                if (authenticationResult == false)
-                {
-                    _logger.LogWarning("Captcha token authentication failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
@@ -109,11 +113,19 @@ namespace Gov.Pssg.Css.Public.Controllers
         // POST: complaints/ccla
         [HttpPost]
         [Route("ccla")]
-        public async Task<IActionResult> PostCCLA([FromBody] Complaint complaint)
+        public async Task<IActionResult> PostCCLA([FromBody] Complaint complaint, CancellationToken ct)
         {
-            _logger.LogInformation("Attempting to submit CCLA complaint {@Complaint}", complaint);
             try
             {
+                _logger.LogInformation("Attempting to submit CCLA complaint {@Complaint}", complaint, ct);
+
+                var isValidCaptcha = await _captchaVerificationService.VerifyAsync(complaint.Captcha, ct);
+                if (!isValidCaptcha)
+                {
+                    _logger.LogWarning("Captcha verification failed for complaint {@Complaint}", complaint);
+                    return BadRequest();
+                }
+
                 complaint.LegislationType = Constants.LegislationTypeCCLA;
                 complaint.Sanitize();
 
@@ -121,13 +133,6 @@ namespace Gov.Pssg.Css.Public.Controllers
                 if (validationResult == false)
                 {
                     _logger.LogWarning("Validation failed for complaint {@Complaint}", complaint);
-                    return BadRequest();
-                }
-
-                bool authenticationResult = AuthenticateCaptchaToken(complaint.AuthorizationToken, _configuration["CAPTCHA_SECRET"]);
-                if (authenticationResult == false)
-                {
-                    _logger.LogWarning("Captcha token authentication failed for complaint {@Complaint}", complaint);
                     return BadRequest();
                 }
 
@@ -153,27 +158,6 @@ namespace Gov.Pssg.Css.Public.Controllers
             {
                 _logger.LogError(ex, string.Join(Environment.NewLine, "Failed to create complaint", "{@ErrorBody}"), ex.Body);
                 throw;
-            }
-        }
-
-        private bool AuthenticateCaptchaToken(string token, string secret)
-        {
-            try
-            {
-                var payload = JwtUtility.TryDecode(token, secret, _logger);
-                string nonce = payload.SelectToken("data.nonce")?.Value<string>();
-                if (nonce == CaptchaNonce)
-                {
-                    return true;
-                }
-
-                _logger.LogWarning("Could not match expected captcha {Nonce} in {Payload}", CaptchaNonce, payload.ToString());
-                return false;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError("Failed to process captcha: ", ex);
-                return false;
             }
         }
     }
