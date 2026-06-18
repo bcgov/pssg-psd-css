@@ -3,14 +3,13 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import { Observable, Subject, Subscription, forkJoin } from 'rxjs';
+import { Observable, Subject, Subscription } from 'rxjs';
 import { first, filter } from 'rxjs/operators';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 import { setProvinces } from '@actions/provinces.actions';
 import { Complaint } from '@models/complaint.model';
 import { Province } from '@models/province.model';
-import { Status } from '@models/status.model';
 import { ComplaintDataService } from '@services/complaint-data.service';
 import { FormBase } from '@shared/form-base';
 
@@ -21,20 +20,17 @@ import { FormBase } from '@shared/form-base';
 export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   public provinces: Observable<Province[]>;
   submittingForm: Subscription;
-  statusSubscription: Subscription;
   loadingSubscription: Subscription;
   submissionResult: Subject<boolean>;
   loaded: boolean;
   faCalendar = faCalendar;
-  authorizationToken : string;
-  captchaApiBaseUrl : string;
+  captchaToken: string | null = null;
   zipPostalCodeMask: ((string | RegExp)[] | boolean) = false;
 
   constructor(
     private formDataService: ComplaintDataService,
     private router: Router,
     private provincesTypesStore: Store<{ provinces: Province[] }>,
-    private statusStore: Store<{ status: Status }>,
     private formBuilder: FormBuilder,
     private elementRef: ElementRef,
     private snackBar: MatSnackBar
@@ -95,33 +91,18 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       filter(provinces => Array.isArray(provinces))
     );
 
-    // retrieve valid status from store
-    const statusObservable =  this.statusStore.pipe(
-      select(state => state.status),
-      filter(status => Boolean(status && status.captchaApiUrl))
-    );
-
-    // retrieve captcha api URL from status
-    this.statusSubscription = statusObservable.subscribe(status => {
-      this.captchaApiBaseUrl = status.captchaApiUrl;
-    });
-    // set page as loaded once valid provinces and status have been retrieved
-    forkJoin([
-      this.provinces.pipe(first()),
-      statusObservable.pipe(first()),
-    ]).subscribe(() => {
+    // set page as loaded once provinces have been retrieved
+    this.provinces.pipe(first()).subscribe(() => {
       this.loaded = true;
     });
   }
 
-  ngOnDestroy() {
-    this.statusSubscription.unsubscribe();
-  }
+  ngOnDestroy() {}
 
   setComplainantPhoneEmailValidator() {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
     const complainantEmail = this.form.get('complainantContactInfo.email');
-    
+
     if (complainantPhone && complainantEmail) {
       const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
       complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
@@ -175,7 +156,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const provinceControl = this.form.get('complainantMailingAddress.province');
     const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
-    
+
     countryControl.setValidators(this.requiredIfAnyPopulated(line1Control, unitControl, cityControl, provinceControl, provinceStateControl, zipPostalCodeControl));
 
     line1Control.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
@@ -231,7 +212,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   }
 
   submit() {
-    if (this.form.valid) {
+    if (this.form.valid && !!this.captchaToken) {
       const formData = this.form.value;
       const data = <Complaint>{
         details: { ...formData.complaintDetails },
@@ -239,7 +220,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
           ...formData.complainantContactInfo,
           address: formData.complainantMailingAddress,
         },
-        authorizationToken: this.authorizationToken,
+        captcha: this.captchaToken
       };
 
       this.save(data).subscribe({
@@ -284,5 +265,18 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
 
   onBusyStop() {
     this.submissionResult.complete();
+  }
+
+  /**
+   * Handle the response from the captcha-v2 component.
+   *
+   * @param {*} event
+   */
+  handleCaptchaResponse(event: any) {
+    if (event.type === 'SUCCESS') {
+      this.captchaToken = event.resolved;
+    } else {
+      this.captchaToken = null;
+    }
   }
 }

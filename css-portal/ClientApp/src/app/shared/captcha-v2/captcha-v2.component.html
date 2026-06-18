@@ -1,0 +1,11 @@
+<div *ngIf="captchaKey" class="row">
+  <div class="col-md-12">
+    <re-captcha
+      id="recaptcha"
+      name="recaptcha"
+      [siteKey]="captchaKey"
+      (resolved)="resolved($event)"
+      (error)="errored($event)"
+    ></re-captcha>
+  </div>
+</div>

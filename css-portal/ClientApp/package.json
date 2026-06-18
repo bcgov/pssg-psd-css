@@ -36,6 +36,7 @@
     "handlebars": "^4.7.7",
     "jquery": "^3.6.0",
     "ng-busy": "13.1.0",
+    "ng-recaptcha": "^9.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "^6.6.7",
     "zone.js": "~0.11.4"

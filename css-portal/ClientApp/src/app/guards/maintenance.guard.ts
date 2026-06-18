@@ -3,22 +3,22 @@ import { CanActivate, Router } from "@angular/router";
 import { Store, select } from "@ngrx/store";
 import { filter, take, map } from "rxjs/operators";
 
-import { Status } from "@models/status.model";
+import { ServerConfig } from "@services/config-data.service";
 
 @Injectable()
 export class MaintenanceGuard implements CanActivate {
     constructor (
         private router: Router,
-        private statusStore: Store<{ status: Status }>
+        private configStore: Store<{ config: ServerConfig | null }>
     ) { }
-    
+
     canActivate() {
-        return this.statusStore.pipe(
-            select(state => state.status),
-            filter(status => Boolean(status)),
+        return this.configStore.pipe(
+            select(state => state.config),
+            filter(config => Boolean(config)),
             take(1),
-            map(status => {
-                if (status.underMaintenance) {
+            map(config => {
+                if (config?.underMaintenance) {
                     return this.router.parseUrl('/under-maintenance');
                 }
                 else {

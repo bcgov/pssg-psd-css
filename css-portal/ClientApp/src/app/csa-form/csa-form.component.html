@@ -330,15 +330,9 @@
     </app-field>
   </fieldset>
 
-  <captcha [apiBaseUrl]="captchaApiBaseUrl"
-           nonce="submit-complaint"
-           (onValidToken)="authorizationToken = $event"
-           successMessage="You can submit the complaint now."
-           language="en"
-           eagerFetchAudio="false">
-  </captcha>
+  <app-captcha-v2 (captchaResponse)="handleCaptchaResponse($event)"></app-captcha-v2>
 
   <div class="float-right">
-    <button (click)="submit()" [disabled]="!authorizationToken" class="btn btn-primary mt-4">Submit Complaint</button>
+    <button (click)="submit()" [disabled]="!captchaToken" class="btn btn-primary mt-4">Submit Complaint</button>
   </div>
 </section>

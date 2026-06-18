@@ -3,34 +3,33 @@ import { Title } from '@angular/platform-browser';
 import { Store, select } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-
-import { Status } from '@models/status.model';
+import { ServerConfig } from '@services/config-data.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  configSubscription: Subscription | null = null;
   csaEnabled = false;
-  statusSubscription: Subscription;
 
   constructor(
     private titleService: Title,
-    private statusStore: Store<{ status: Status }>,
+    private configStore: Store<{ config: ServerConfig | null }>,
   ) {
     this.titleService.setTitle('Community Safety Unit Complaint Portal');
    }
 
   ngOnInit(): void {
-    this.statusSubscription = this.statusStore.pipe(
-      select(state => state.status),
-      map(status => status && status.csaEnabled),
+    this.configSubscription = this.configStore.pipe(
+      select(state => state.config),
+      map(config => config?.csaEnabled),
     ).subscribe(value => {
-      this.csaEnabled = value;
+      this.csaEnabled = value ?? false;
     });
   }
-  
+
   ngOnDestroy(): void {
-    this.statusSubscription.unsubscribe();
+    this.configSubscription?.unsubscribe();
   }
 }

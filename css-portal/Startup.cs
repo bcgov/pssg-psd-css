@@ -1,3 +1,4 @@
+using EMBC.Suppliers.API.Services;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.SharePoint;
 using Microsoft.AspNetCore.Builder;
@@ -50,6 +51,13 @@ namespace Gov.Pssg.Css.Public
 
                 services.AddTransient<SharePointFileManager>(_ => new SharePointFileManager(_configuration));
             }
+
+            services.AddHttpClient("captcha");
+            services.Configure<CaptchaVerificationServiceOptions>(options =>
+            {
+                _configuration.GetSection("captcha").Bind(options);
+            });
+            services.AddTransient<ICaptchaVerificationService, CaptchaVerificationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
