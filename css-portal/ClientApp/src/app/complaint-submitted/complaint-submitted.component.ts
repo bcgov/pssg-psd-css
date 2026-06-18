@@ -6,6 +6,5 @@ import { Router } from '@angular/router';
   templateUrl: './complaint-submitted.component.html'
 })
 export class ComplaintSubmittedComponent {
-  constructor(private router: Router,
-  ) { }
+  constructor(private router: Router) {}
 }

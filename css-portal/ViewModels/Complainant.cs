@@ -1,5 +1,5 @@
-using Gov.Pssg.Css.Public.Utility;
 using System.ComponentModel.DataAnnotations;
+using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
@@ -37,8 +37,7 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public bool Validate(int legislationType)
         {
-            if (string.IsNullOrWhiteSpace(FirstName) ||
-                string.IsNullOrWhiteSpace(LastName))
+            if (string.IsNullOrWhiteSpace(FirstName) || string.IsNullOrWhiteSpace(LastName))
             {
                 return false;
             }

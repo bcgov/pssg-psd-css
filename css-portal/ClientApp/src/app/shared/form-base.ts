@@ -1,4 +1,4 @@
-import { FormGroup, ValidatorFn, ValidationErrors, AbstractControl, Validators } from "@angular/forms";
+import { FormGroup, ValidatorFn, ValidationErrors, AbstractControl, Validators } from '@angular/forms';
 
 export class FormBase {
   form: FormGroup;
@@ -6,7 +6,7 @@ export class FormBase {
   postalCodeMask = [/[a-zA-Z]/, /\d/, /[a-zA-Z]/, ' ', /\d/, /[a-zA-Z]/, /\d/];
   postalCodeValidator = Validators.pattern(/^[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d$/);
   additionalEmailValidator = Validators.pattern(/^.+@.+\..+$/); // ensure domain has dot
-  
+
   checkInputInvalid(controlName: string) {
     let control = this.form.get(controlName);
     return control.touched && !control.valid;
@@ -15,7 +15,8 @@ export class FormBase {
   atLeastOneRequired(...controls: AbstractControl[]): ValidatorFn {
     return (thisControl: AbstractControl): ValidationErrors | null => {
       for (const control of controls) {
-        if (!Validators.required(control)) { // if any are non-empty, validation succeeds
+        if (!Validators.required(control)) {
+          // if any are non-empty, validation succeeds
           return null;
         }
       }
@@ -26,7 +27,8 @@ export class FormBase {
   requiredIfAnyPopulated(...controls: AbstractControl[]): ValidatorFn {
     return (thisControl: AbstractControl): ValidationErrors | null => {
       for (const control of controls) {
-        if (!Validators.required(control) && control.enabled) { // if any are non-empty, this field is required
+        if (!Validators.required(control) && control.enabled) {
+          // if any are non-empty, this field is required
           return Validators.required(thisControl);
         }
       }
@@ -34,9 +36,9 @@ export class FormBase {
     };
   }
 
-  maskedTelephoneValidator(control: AbstractControl): ValidationErrors | null  {
+  maskedTelephoneValidator(control: AbstractControl): ValidationErrors | null {
     const telephoneMaskRegex = /^\([2-9]\d\d\)-[2-9]\d\d-\d\d\d\d$/;
-    
+
     const value = control.value;
     if (value === '') {
       return null;
@@ -52,6 +54,6 @@ export class FormBase {
   }
 
   countryIsCanada(country: string): boolean {
-    return country && country.toUpperCase() === "CANADA";
+    return country && country.toUpperCase() === 'CANADA';
   }
 }

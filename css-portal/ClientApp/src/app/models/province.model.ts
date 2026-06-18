@@ -1,4 +1,4 @@
 export class Province {
-    name: string;
-    value: string;
+  name: string;
+  value: string;
 }

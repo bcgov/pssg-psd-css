@@ -5,6 +5,7 @@ namespace Gov.Pssg.Css.Public.Attributes
 {
     public class RequiresCSAEnabledAttribute : TypeFilterAttribute
     {
-        public RequiresCSAEnabledAttribute() : base(typeof(RequiresCSAEnabledFilter)) { }
+        public RequiresCSAEnabledAttribute()
+            : base(typeof(RequiresCSAEnabledFilter)) { }
     }
 }

@@ -1,4 +1,4 @@
 export class PropertyType {
-    name: string;
-    value: number;
+  name: string;
+  value: number;
 }

@@ -36,10 +36,7 @@ namespace Gov.Pssg.Css.Public.Utility
 
         private static string Decode(string token, string secret)
         {
-            return new JwtBuilder()
-                .WithSecret(secret)
-                .MustVerifySignature()
-                .Decode(token);
+            return new JwtBuilder().WithSecret(secret).MustVerifySignature().Decode(token);
         }
     }
 }

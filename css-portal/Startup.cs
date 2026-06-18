@@ -1,3 +1,5 @@
+using System;
+using System.Net.Http;
 using EMBC.Suppliers.API.Services;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.SharePoint;
@@ -9,8 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Exceptions;
-using System;
-using System.Net.Http;
 
 namespace Gov.Pssg.Css.Public
 {
@@ -33,16 +33,18 @@ namespace Gov.Pssg.Css.Public
                 configuration.RootPath = "ClientApp/dist";
             });
 
-
             if (!string.IsNullOrEmpty(_configuration["DYNAMICS_ODATA_URI"]))
             {
                 // Add Dynamics
-                services.AddTransient(new Func<IServiceProvider, IDynamicsClient>((serviceProvider) =>
-                {
-                    IDynamicsClient client = DynamicsSetupUtil.SetupDynamics(_configuration);
-                    return client;
-                }));
-
+                services.AddTransient(
+                    new Func<IServiceProvider, IDynamicsClient>(
+                        (serviceProvider) =>
+                        {
+                            IDynamicsClient client = DynamicsSetupUtil.SetupDynamics(_configuration);
+                            return client;
+                        }
+                    )
+                );
             }
 
             if (!string.IsNullOrEmpty(_configuration["SHAREPOINT_ODATA_URI"]))
@@ -87,42 +89,47 @@ namespace Gov.Pssg.Css.Public
             }
 
             // enable Splunk logger using Serilog
-            if (!string.IsNullOrEmpty(_configuration["SPLUNK_COLLECTOR_URL"]) &&
-                !string.IsNullOrEmpty(_configuration["SPLUNK_TOKEN"])
-                )
+            if (
+                !string.IsNullOrEmpty(_configuration["SPLUNK_COLLECTOR_URL"])
+                && !string.IsNullOrEmpty(_configuration["SPLUNK_TOKEN"])
+            )
             {
-
                 Serilog.Sinks.Splunk.CustomFields fields = new Serilog.Sinks.Splunk.CustomFields();
                 if (!string.IsNullOrEmpty(_configuration["SPLUNK_CHANNEL"]))
                 {
-                    fields.CustomFieldList.Add(new Serilog.Sinks.Splunk.CustomField("channel", _configuration["SPLUNK_CHANNEL"]));
+                    fields.CustomFieldList.Add(
+                        new Serilog.Sinks.Splunk.CustomField("channel", _configuration["SPLUNK_CHANNEL"])
+                    );
                 }
                 var splunkUri = new Uri(_configuration["SPLUNK_COLLECTOR_URL"]);
                 var upperSplunkHost = splunkUri.Host?.ToUpperInvariant() ?? string.Empty;
 
-                // Fix for bad SSL issues 
-
+                // Fix for bad SSL issues
 
                 Log.Logger = new LoggerConfiguration()
                     .Enrich.FromLogContext()
                     .Enrich.WithExceptionDetails()
                     .WriteTo.Console()
-                    .WriteTo.EventCollector(splunkHost: _configuration["SPLUNK_COLLECTOR_URL"],
-                       sourceType: "manual", eventCollectorToken: _configuration["SPLUNK_TOKEN"],
-                       restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information,
+                    .WriteTo.EventCollector(
+                        splunkHost: _configuration["SPLUNK_COLLECTOR_URL"],
+                        sourceType: "manual",
+                        eventCollectorToken: _configuration["SPLUNK_TOKEN"],
+                        restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Information,
 #pragma warning disable CA2000 // Dispose objects before losing scope
-                       messageHandler: new HttpClientHandler()
-                       {
-                           ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
-                       }
+                        messageHandler: new HttpClientHandler()
+                        {
+                            ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
+                            {
+                                return true;
+                            },
+                        }
 #pragma warning restore CA2000 // Dispose objects before losing scope
-                     )
+                    )
                     .CreateLogger();
 
                 Serilog.Debugging.SelfLog.Enable(Console.Error);
 
                 Log.Logger.Information("CSA Portal Container Started");
-
             }
             else
             {
@@ -137,9 +144,7 @@ namespace Gov.Pssg.Css.Public
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(name: "default", pattern: "{controller}/{action=Index}/{id?}");
             });
 
             app.UseSpa(spa =>

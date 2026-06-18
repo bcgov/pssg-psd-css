@@ -6,9 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './error.component.html'
 })
 export class ErrorComponent {
-  constructor(
-    private titleService: Title
-  ) {
+  constructor(private titleService: Title) {
     this.titleService.setTitle('Community Safety Unit Complaint Portal Error');
-   }
+  }
 }

@@ -1,7 +1,9 @@
 <div class="app-field form-group">
-  <label class="control-label" [class.mb-0]="description" *ngIf="label">{{label}} <span class="text-danger ml-1" *ngIf="required">*</span></label>
+  <label class="control-label" [class.mb-0]="description" *ngIf="label"
+    >{{ label }} <span class="text-danger ml-1" *ngIf="required">*</span></label
+  >
 
   <ng-content></ng-content>
-  
-  <div *ngIf="invalid" class="invalid-feedback d-block">{{errorMessage}}</div>
+
+  <div *ngIf="invalid" class="invalid-feedback d-block">{{ errorMessage }}</div>
 </div>

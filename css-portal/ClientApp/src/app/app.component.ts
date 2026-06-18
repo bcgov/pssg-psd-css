@@ -15,10 +15,10 @@ export class AppComponent implements OnInit {
   constructor(
     private configDataService: ConfigDataService,
     private configStore: Store<{ config: ServerConfig | null }>
-  ) { }
+  ) {}
 
   ngOnInit(): void {
-    this.configDataService.getServerConfig().subscribe(serverConfig => {
+    this.configDataService.getServerConfig().subscribe((serverConfig) => {
       this.configStore.dispatch(setConfig({ config: serverConfig }));
     });
   }

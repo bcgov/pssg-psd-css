@@ -1,8 +1,8 @@
-﻿import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { Observable, of } from "rxjs";
-import { catchError, shareReplay } from "rxjs/operators";
-import { DataService } from "@services/data.service";
+﻿import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { catchError, shareReplay } from 'rxjs/operators';
+import { DataService } from '@services/data.service';
 
 export interface ServerConfig {
   captcha?: {
@@ -20,7 +20,7 @@ export interface ServerConfig {
  * @extends {DataService}
  */
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root'
 })
 export class ConfigDataService extends DataService {
   private config$: Observable<ServerConfig | null> | null = null;
@@ -32,15 +32,15 @@ export class ConfigDataService extends DataService {
   getServerConfig(): Observable<ServerConfig | null> {
     if (!this.config$) {
       this.config$ = this.http
-        .get<ServerConfig>(this.apiPath + "configuration", {
-          headers: this.headers,
+        .get<ServerConfig>(this.apiPath + 'configuration', {
+          headers: this.headers
         })
         .pipe(
           shareReplay(1),
           catchError((error) => {
-            console.error("Error fetching server configuration", error);
+            console.error('Error fetching server configuration', error);
             return of(null);
-          }),
+          })
         );
     }
 

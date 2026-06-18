@@ -54,11 +54,7 @@ namespace EMBC.Suppliers.API.Services
 
             using var client = httpClientFactory.CreateClient("captcha");
 
-            var response = await client.PostAsync(
-                options.Url.AbsoluteUri,
-                new FormUrlEncodedContent(content),
-                ct
-            );
+            var response = await client.PostAsync(options.Url.AbsoluteUri, new FormUrlEncodedContent(content), ct);
 
             response.EnsureSuccessStatusCode();
 

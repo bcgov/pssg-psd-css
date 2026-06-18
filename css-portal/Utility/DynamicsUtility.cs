@@ -1,14 +1,17 @@
-﻿using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
+﻿using System;
+using System.Threading.Tasks;
+using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.ViewModels;
-using System;
-using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.Utility
 {
     public static class DynamicsUtility
     {
-        public static async Task<MicrosoftDynamicsCRMcsuComplaints> CreateComplaintAsync(IDynamicsClient dynamicsClient, Complaint complaint)
+        public static async Task<MicrosoftDynamicsCRMcsuComplaints> CreateComplaintAsync(
+            IDynamicsClient dynamicsClient,
+            Complaint complaint
+        )
         {
             var entity = new MicrosoftDynamicsCRMcsuComplaints
             {
@@ -74,7 +77,10 @@ namespace Gov.Pssg.Css.Public.Utility
         }
 
         public static async Task<MicrosoftDynamicsCRMcsuSubjectofcomplaint> CreateSubjectOfComplaintAsync(
-            IDynamicsClient dynamicsClient, Complaint complaint, string complaintId)
+            IDynamicsClient dynamicsClient,
+            Complaint complaint,
+            string complaintId
+        )
         {
             string dynamicsComplaint = dynamicsClient.GetEntityURI("csu_complaintses", complaintId);
 

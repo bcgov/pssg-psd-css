@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
@@ -17,7 +17,7 @@ import { FormBase } from '@shared/form-base';
   selector: 'app-ccla-form',
   templateUrl: './ccla-form.component.html'
 })
-export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
+export class CclaFormComponent extends FormBase implements OnInit {
   public provinces: Observable<Province[]>;
   submittingForm: Subscription;
   loadingSubscription: Subscription;
@@ -25,7 +25,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
   loaded: boolean;
   faCalendar = faCalendar;
   captchaToken: string | null = null;
-  zipPostalCodeMask: ((string | RegExp)[] | boolean) = false;
+  zipPostalCodeMask: (string | RegExp)[] | boolean = false;
 
   constructor(
     private formDataService: ComplaintDataService,
@@ -48,9 +48,9 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
           city: ['', Validators.required],
           provinceState: [{ value: 'British Columbia', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
-          zipPostalCode: ['', this.postalCodeValidator],
+          zipPostalCode: ['', this.postalCodeValidator]
         }),
-        problems: ['', Validators.required],
+        problems: ['', Validators.required]
       }),
       anonymousComplainant: [false],
       complainantContactInfo: this.formBuilder.group({
@@ -60,17 +60,17 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
         fax: ['', this.maskedTelephoneValidator],
         governmentAgency: [''],
         phone: [''],
-        email: ['', [Validators.email, this.additionalEmailValidator]],
+        email: ['', [Validators.email, this.additionalEmailValidator]]
       }),
       complainantMailingAddress: this.formBuilder.group({
         unit: [''],
         line1: [''],
         city: [''],
-        province: [{value: 'British Columbia', disabled: true}, Validators.required],
+        province: [{ value: 'British Columbia', disabled: true }, Validators.required],
         provinceState: ['', Validators.required],
         country: [''],
-        zipPostalCode: [''],
-      }),
+        zipPostalCode: ['']
+      })
     });
 
     this.setComplainantPhoneEmailValidator();
@@ -81,14 +81,14 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.updateAnonymousComplainant();
 
     // fetch provinces from back-end and update store
-     this.formDataService.getProvinces().subscribe(result => {
+    this.formDataService.getProvinces().subscribe((result) => {
       this.provincesTypesStore.dispatch(setProvinces({ provinces: result }));
     });
 
     // retrieve valid provinces from store
     this.provinces = this.provincesTypesStore.pipe(
       select('provinces'),
-      filter(provinces => Array.isArray(provinces))
+      filter((provinces) => Array.isArray(provinces))
     );
 
     // set page as loaded once provinces have been retrieved
@@ -97,16 +97,14 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     });
   }
 
-  ngOnDestroy() {}
-
   setComplainantPhoneEmailValidator() {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
     const complainantEmail = this.form.get('complainantContactInfo.email');
 
     if (complainantPhone && complainantEmail) {
       const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-      complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
-      complainantEmail.valueChanges.subscribe(email => {
+      complainantPhone.setValidators([phoneEmailValidator, this.maskedTelephoneValidator]);
+      complainantEmail.valueChanges.subscribe((email) => {
         complainantPhone.updateValueAndValidity();
       });
     }
@@ -117,7 +115,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
     if (countryControl && zipPostalCodeControl) {
-      countryControl.valueChanges.subscribe(country => {
+      countryControl.valueChanges.subscribe((country) => {
         if (country === 'Canada') {
           zipPostalCodeControl.setValidators(this.postalCodeValidator);
           this.zipPostalCodeMask = this.postalCodeMask;
@@ -136,7 +134,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
 
     if (countryControl && provinceControl && provinceStateControl) {
-      countryControl.valueChanges.subscribe(country => {
+      countryControl.valueChanges.subscribe((country) => {
         if (this.countryIsCanada(country)) {
           provinceControl.enable();
           provinceStateControl.disable();
@@ -157,7 +155,16 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
-    countryControl.setValidators(this.requiredIfAnyPopulated(line1Control, unitControl, cityControl, provinceControl, provinceStateControl, zipPostalCodeControl));
+    countryControl.setValidators(
+      this.requiredIfAnyPopulated(
+        line1Control,
+        unitControl,
+        cityControl,
+        provinceControl,
+        provinceStateControl,
+        zipPostalCodeControl
+      )
+    );
 
     line1Control.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
     unitControl.valueChanges.subscribe(() => countryControl.updateValueAndValidity({ emitEvent: false }));
@@ -176,8 +183,16 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
-    return (countryControl.touched || line1Control.touched || unitControl.touched || cityControl.touched ||
-      provinceControl.touched || provinceStateControl.touched || zipPostalCodeControl.touched) && !countryControl.valid;
+    return (
+      (countryControl.touched ||
+        line1Control.touched ||
+        unitControl.touched ||
+        cityControl.touched ||
+        provinceControl.touched ||
+        provinceStateControl.touched ||
+        zipPostalCodeControl.touched) &&
+      !countryControl.valid
+    );
   }
 
   updateAnonymousComplainant() {
@@ -205,7 +220,7 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.submissionResult = new Subject<boolean>();
 
     this.submittingForm = this.formDataService.submitCclaForm(data).subscribe({
-      error: err => this.submissionResult.error(err)
+      error: (err) => this.submissionResult.error(err)
     });
 
     return this.submissionResult;
@@ -216,10 +231,12 @@ export class CclaFormComponent extends FormBase implements OnInit, OnDestroy {
       const formData = this.form.value;
       const data = <Complaint>{
         details: { ...formData.complaintDetails },
-        complainant: formData.anonymousComplainant ? null : {
-          ...formData.complainantContactInfo,
-          address: formData.complainantMailingAddress,
-        },
+        complainant: formData.anonymousComplainant
+          ? null
+          : {
+              ...formData.complainantContactInfo,
+              address: formData.complainantMailingAddress
+            },
         captcha: this.captchaToken
       };
 
