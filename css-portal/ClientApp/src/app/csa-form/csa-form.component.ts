@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
@@ -20,7 +20,7 @@ import { FormBase } from '@shared/form-base';
   templateUrl: './csa-form.component.html',
   styleUrls: ['./csa-form.component.scss']
 })
-export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
+export class CsaFormComponent extends FormBase implements OnInit {
   public propertyTypes: Observable<PropertyType[]>;
   public provinces: Observable<Province[]>;
   submittingForm: Subscription;
@@ -29,7 +29,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
   faCalendar = faCalendar;
   propertyTypeOther = 862570008;
   captchaToken: string | null = null;
-  zipPostalCodeMask: ((string | RegExp)[] | boolean) = this.postalCodeMask;
+  zipPostalCodeMask: (string | RegExp)[] | boolean = this.postalCodeMask;
 
   constructor(
     private formDataService: ComplaintDataService,
@@ -55,12 +55,12 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
           city: ['', Validators.required],
           provinceState: [{ value: 'British Columbia', disabled: true }],
           country: [{ value: 'Canada', disabled: true }],
-          zipPostalCode: ['', this.postalCodeValidator],
+          zipPostalCode: ['', this.postalCodeValidator]
         }),
         occupantName: [''],
         ownerName: [''],
         description: ['', Validators.required],
-        problems: ['', Validators.required],
+        problems: ['', Validators.required]
       }),
       complainantContactInfo: this.formBuilder.group({
         firstName: ['', Validators.required],
@@ -68,18 +68,18 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
         lastName: ['', Validators.required],
         fax: ['', this.maskedTelephoneValidator],
         phone: [''],
-        email: ['', [Validators.email, this.additionalEmailValidator]],
+        email: ['', [Validators.email, this.additionalEmailValidator]]
       }),
       complainantMailingAddress: this.formBuilder.group({
         unit: [''],
         line1: ['', Validators.required],
         city: ['', Validators.required],
         province: ['British Columbia', Validators.required],
-        provinceState: [{value: '', disabled: true}, Validators.required],
+        provinceState: [{ value: '', disabled: true }, Validators.required],
         country: ['Canada', Validators.required],
-        zipPostalCode: ['', this.postalCodeValidator],
+        zipPostalCode: ['', this.postalCodeValidator]
       }),
-      acceptTerms: [''],
+      acceptTerms: ['']
     });
 
     this.setComplainantPhoneEmailValidator();
@@ -87,37 +87,32 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.setComplainantProvinceStateEnabled();
 
     // fetch property types from back-end and update store
-     this.formDataService.getPropertyTypes().subscribe(result => {
+    this.formDataService.getPropertyTypes().subscribe((result) => {
       this.propertyTypesStore.dispatch(setPropertyTypes({ propertyTypes: result }));
     });
 
     // retrieve valid property types from store
     this.propertyTypes = this.propertyTypesStore.pipe(
       select('propertyTypes'),
-      filter(propertyTypes => Array.isArray(propertyTypes))
+      filter((propertyTypes) => Array.isArray(propertyTypes))
     );
 
     // fetch provinces from back-end and update store
-     this.formDataService.getProvinces().subscribe(result => {
+    this.formDataService.getProvinces().subscribe((result) => {
       this.provincesTypesStore.dispatch(setProvinces({ provinces: result }));
     });
 
     // retrieve valid provinces from store
     this.provinces = this.provincesTypesStore.pipe(
       select('provinces'),
-      filter(provinces => Array.isArray(provinces))
+      filter((provinces) => Array.isArray(provinces))
     );
 
     // set page as loaded once valid property types and provinces have been retrieved
-    forkJoin([
-      this.propertyTypes.pipe(first()),
-      this.provinces.pipe(first()),
-    ]).subscribe(() => {
+    forkJoin([this.propertyTypes.pipe(first()), this.provinces.pipe(first())]).subscribe(() => {
       this.loaded = true;
     });
   }
-
-  ngOnDestroy() {}
 
   setComplainantPhoneEmailValidator() {
     const complainantPhone = this.form.get('complainantContactInfo.phone');
@@ -125,8 +120,8 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
 
     if (complainantPhone && complainantEmail) {
       const phoneEmailValidator = this.atLeastOneRequired(complainantPhone, complainantEmail);
-      complainantPhone.setValidators([ phoneEmailValidator, this.maskedTelephoneValidator ]);
-      complainantEmail.valueChanges.subscribe(email => {
+      complainantPhone.setValidators([phoneEmailValidator, this.maskedTelephoneValidator]);
+      complainantEmail.valueChanges.subscribe((email) => {
         complainantPhone.updateValueAndValidity();
       });
     }
@@ -137,7 +132,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     const zipPostalCodeControl = this.form.get('complainantMailingAddress.zipPostalCode');
 
     if (countryControl && zipPostalCodeControl) {
-      countryControl.valueChanges.subscribe(country => {
+      countryControl.valueChanges.subscribe((country) => {
         if (country === 'Canada') {
           zipPostalCodeControl.setValidators(this.postalCodeValidator);
           this.zipPostalCodeMask = this.postalCodeMask;
@@ -156,7 +151,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     const provinceStateControl = this.form.get('complainantMailingAddress.provinceState');
 
     if (countryControl && provinceControl && provinceStateControl) {
-      countryControl.valueChanges.subscribe(country => {
+      countryControl.valueChanges.subscribe((country) => {
         if (this.countryIsCanada(country)) {
           provinceControl.enable();
           provinceStateControl.disable();
@@ -178,7 +173,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
     this.submissionResult = new Subject<boolean>();
 
     this.submittingForm = this.formDataService.submitCsaForm(data).subscribe({
-      error: err => this.submissionResult.error(err)
+      error: (err) => this.submissionResult.error(err)
     });
 
     return this.submissionResult;
@@ -191,7 +186,7 @@ export class CsaFormComponent extends FormBase implements OnInit, OnDestroy {
         details: { ...formData.complaintDetails },
         complainant: {
           ...formData.complainantContactInfo,
-          address: formData.complainantMailingAddress,
+          address: formData.complainantMailingAddress
         },
         captcha: this.captchaToken
       };

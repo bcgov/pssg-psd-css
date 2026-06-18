@@ -6,9 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './under-maintenance.component.html'
 })
 export class UnderMaintenanceComponent {
-  constructor(
-    private titleService: Title
-  ) {
+  constructor(private titleService: Title) {
     this.titleService.setTitle('Community Safety Unit Complaint Portal Under Maintenance');
-   }
+  }
 }

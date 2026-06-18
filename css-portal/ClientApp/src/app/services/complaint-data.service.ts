@@ -10,7 +10,6 @@ import { Province } from '@models/province.model';
 
 @Injectable()
 export class ComplaintDataService extends DataService {
-
   constructor(private http: HttpClient) {
     super();
   }
@@ -20,8 +19,7 @@ export class ComplaintDataService extends DataService {
    */
   getPropertyTypes(): Observable<PropertyType[]> {
     const path = this.apiPath + 'complaints/property-types';
-    return this.http.get<PropertyType[]>(path, { headers: this.headers })
-      .pipe(catchError(this.handleError));
+    return this.http.get<PropertyType[]>(path, { headers: this.headers }).pipe(catchError(this.handleError));
   }
 
   /**
@@ -29,8 +27,7 @@ export class ComplaintDataService extends DataService {
    */
   getProvinces(): Observable<Province[]> {
     const path = this.apiPath + 'complaints/provinces';
-    return this.http.get<Province[]>(path, { headers: this.headers })
-      .pipe(catchError(this.handleError));
+    return this.http.get<Province[]>(path, { headers: this.headers }).pipe(catchError(this.handleError));
   }
 
   /**
@@ -39,8 +36,7 @@ export class ComplaintDataService extends DataService {
    */
   submitCsaForm(data: any) {
     const path = this.apiPath + 'complaints/csa';
-    return this.http.post<any>(path, data, { headers: this.headers })
-      .pipe(catchError(this.handleError));
+    return this.http.post<any>(path, data, { headers: this.headers }).pipe(catchError(this.handleError));
   }
 
   /**
@@ -49,7 +45,6 @@ export class ComplaintDataService extends DataService {
    */
   submitCclaForm(data: any) {
     const path = this.apiPath + 'complaints/ccla';
-    return this.http.post<any>(path, data, { headers: this.headers })
-      .pipe(catchError(this.handleError));
+    return this.http.post<any>(path, data, { headers: this.headers }).pipe(catchError(this.handleError));
   }
 }

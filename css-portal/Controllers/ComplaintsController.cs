@@ -1,4 +1,8 @@
-﻿using EMBC.Suppliers.API.Services;
+﻿using System;
+using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
+using EMBC.Suppliers.API.Services;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest;
 using Gov.Pssg.Css.Interfaces.DynamicsAutorest.Models;
 using Gov.Pssg.Css.Public.Attributes;
@@ -9,10 +13,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Net;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Gov.Pssg.Css.Public.Controllers
 {
@@ -26,7 +26,12 @@ namespace Gov.Pssg.Css.Public.Controllers
         private readonly IConfiguration _configuration;
         private readonly ICaptchaVerificationService _captchaVerificationService;
 
-        public ComplaintsController(ILogger<ComplaintsController> logger, IDynamicsClient dynamicsClient, IConfiguration configuration, ICaptchaVerificationService captchaVerificationService)
+        public ComplaintsController(
+            ILogger<ComplaintsController> logger,
+            IDynamicsClient dynamicsClient,
+            IConfiguration configuration,
+            ICaptchaVerificationService captchaVerificationService
+        )
         {
             _logger = logger;
             _dynamicsClient = dynamicsClient;
@@ -81,7 +86,7 @@ namespace Gov.Pssg.Css.Public.Controllers
             try
             {
                 _logger.LogInformation("Attempting to submit CSA complaint {@Complaint}", complaint);
-            
+
                 var isValidCaptcha = await _captchaVerificationService.VerifyAsync(complaint.Captcha, ct);
                 if (!isValidCaptcha)
                 {
@@ -152,11 +157,19 @@ namespace Gov.Pssg.Css.Public.Controllers
             try
             {
                 var result = await DynamicsUtility.CreateComplaintAsync(_dynamicsClient, complaint);
-                _logger.LogInformation("Successfully created complaint {ComplaintNumber} from view model {@Complaint}", result.CsuName, complaint);
+                _logger.LogInformation(
+                    "Successfully created complaint {ComplaintNumber} from view model {@Complaint}",
+                    result.CsuName,
+                    complaint
+                );
             }
             catch (OdataerrorException ex)
             {
-                _logger.LogError(ex, string.Join(Environment.NewLine, "Failed to create complaint", "{@ErrorBody}"), ex.Body);
+                _logger.LogError(
+                    ex,
+                    string.Join(Environment.NewLine, "Failed to create complaint", "{@ErrorBody}"),
+                    ex.Body
+                );
                 throw;
             }
         }

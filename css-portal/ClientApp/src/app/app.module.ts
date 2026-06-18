@@ -58,26 +58,19 @@ import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance
     NgBusyModule,
     TextMaskModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [ MaintenanceGuard ] },
-      { path: 'ccla-form', component: CclaFormComponent, canActivate: [ MaintenanceGuard ] },
-      { path: 'csa-form', component: CsaFormComponent, canActivate: [ MaintenanceGuard, CsaDisabledGuard ] },
-      { path: 'complaint-submitted', component: ComplaintSubmittedComponent, canActivate: [ MaintenanceGuard ] },
-      { path: 'error', component: ErrorComponent, canActivate: [ MaintenanceGuard ] },
+      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [MaintenanceGuard] },
+      { path: 'ccla-form', component: CclaFormComponent, canActivate: [MaintenanceGuard] },
+      { path: 'csa-form', component: CsaFormComponent, canActivate: [MaintenanceGuard, CsaDisabledGuard] },
+      { path: 'complaint-submitted', component: ComplaintSubmittedComponent, canActivate: [MaintenanceGuard] },
+      { path: 'error', component: ErrorComponent, canActivate: [MaintenanceGuard] },
       { path: 'under-maintenance', component: UnderMaintenanceComponent },
-      { path: '**', redirectTo: '' },
+      { path: '**', redirectTo: '' }
     ]),
     StoreModule.forRoot({ propertyTypes: propertyTypesReducer, provinces: provincesReducer, config: configReducer }),
     RecaptchaModule,
-    RecaptchaFormsModule,
+    RecaptchaFormsModule
   ],
-  providers: [
-    CaptchaDataService,
-    ComplaintDataService,
-    ConfigDataService,
-    Title,
-    CsaDisabledGuard,
-    MaintenanceGuard
-  ],
+  providers: [CaptchaDataService, ComplaintDataService, ConfigDataService, Title, CsaDisabledGuard, MaintenanceGuard],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,8 +1,8 @@
-using Gov.Pssg.Css.Public.Utility;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Gov.Pssg.Css.Public.Utility;
 
 namespace Gov.Pssg.Css.Public.ViewModels
 {
@@ -43,9 +43,11 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         public bool ValidateForProperty()
         {
-            if (string.IsNullOrWhiteSpace(City) ||
-                string.IsNullOrWhiteSpace(ProvinceState) ||
-                string.IsNullOrWhiteSpace(Country))
+            if (
+                string.IsNullOrWhiteSpace(City)
+                || string.IsNullOrWhiteSpace(ProvinceState)
+                || string.IsNullOrWhiteSpace(Country)
+            )
             {
                 return false;
             }
@@ -63,25 +65,33 @@ namespace Gov.Pssg.Css.Public.ViewModels
             bool countryIsCanada = string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase);
 
             // validate all required fields are present for CSA
-            if (legislationType == Constants.LegislationTypeCSA &&
-                (string.IsNullOrWhiteSpace(Line1) ||
-                 string.IsNullOrWhiteSpace(City) ||
-                 string.IsNullOrWhiteSpace(Country) ||
-                 countryIsCanada && string.IsNullOrWhiteSpace(Province) ||
-                 !countryIsCanada && string.IsNullOrWhiteSpace(ProvinceState)))
+            if (
+                legislationType == Constants.LegislationTypeCSA
+                && (
+                    string.IsNullOrWhiteSpace(Line1)
+                    || string.IsNullOrWhiteSpace(City)
+                    || string.IsNullOrWhiteSpace(Country)
+                    || countryIsCanada && string.IsNullOrWhiteSpace(Province)
+                    || !countryIsCanada && string.IsNullOrWhiteSpace(ProvinceState)
+                )
+            )
             {
                 return false;
             }
 
             // validate that country is present if any other address fields are present for CCLA
-            if (legislationType == Constants.LegislationTypeCCLA &&
-                string.IsNullOrWhiteSpace(Country) &&
-                (!string.IsNullOrWhiteSpace(Unit) ||
-                 !string.IsNullOrWhiteSpace(Line1) ||
-                 !string.IsNullOrWhiteSpace(Province) ||
-                 !string.IsNullOrWhiteSpace(ProvinceState) ||
-                 !string.IsNullOrWhiteSpace(City) ||
-                 !string.IsNullOrWhiteSpace(ZipPostalCode)))
+            if (
+                legislationType == Constants.LegislationTypeCCLA
+                && string.IsNullOrWhiteSpace(Country)
+                && (
+                    !string.IsNullOrWhiteSpace(Unit)
+                    || !string.IsNullOrWhiteSpace(Line1)
+                    || !string.IsNullOrWhiteSpace(Province)
+                    || !string.IsNullOrWhiteSpace(ProvinceState)
+                    || !string.IsNullOrWhiteSpace(City)
+                    || !string.IsNullOrWhiteSpace(ZipPostalCode)
+                )
+            )
             {
                 return false;
             }
@@ -103,9 +113,9 @@ namespace Gov.Pssg.Css.Public.ViewModels
 
         private bool ValidateZipPostalCode()
         {
-            return !string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase) ||
-                   string.IsNullOrWhiteSpace(ZipPostalCode) ||
-                   Regex.Match(ZipPostalCode, @"^[A-Z]\d[A-Z] \d[A-Z]\d$").Success;
+            return !string.Equals(Country, "Canada", StringComparison.InvariantCultureIgnoreCase)
+                || string.IsNullOrWhiteSpace(ZipPostalCode)
+                || Regex.Match(ZipPostalCode, @"^[A-Z]\d[A-Z] \d[A-Z]\d$").Success;
         }
     }
 }

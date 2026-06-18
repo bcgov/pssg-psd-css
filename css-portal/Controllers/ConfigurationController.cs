@@ -14,10 +14,7 @@ namespace Gov.Pssg.Css.Public.Controllers
         private readonly ILogger<ConfigurationController> _logger;
         private readonly IConfiguration _configuration;
 
-        public ConfigurationController(
-            ILogger<ConfigurationController> logger,
-            IConfiguration configuration
-        )
+        public ConfigurationController(ILogger<ConfigurationController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;

@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
@@ -12,9 +11,12 @@
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
     <RootNamespace>Gov.Pssg.Css.Public</RootNamespace>
     <packageSources>
-      <add key="nexus" value="http://nexus-sxluez-tools.pathfinder.gov.bc.ca/nexus/content/repositories/nuget/" protocolVersion="2" />
+      <add
+        key="nexus"
+        value="http://nexus-sxluez-tools.pathfinder.gov.bc.ca/nexus/content/repositories/nuget/"
+        protocolVersion="2"
+      />
       <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-
     </packageSources>
     <UserSecretsId>26bdd852-1f88-48c9-97ab-4e1526e7f61f</UserSecretsId>
   </PropertyGroup>
@@ -26,7 +28,6 @@
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
     <PackageReference Include="Serilog.Exceptions" Version="5.3.1" />
     <PackageReference Include="Serilog.Sinks.Splunk" Version="3.3.0" />
-    
   </ItemGroup>
 
   <ItemGroup>
@@ -45,12 +46,24 @@
     <ProjectReference Include="..\interfaces\SharePoint\SharePoint.csproj" />
   </ItemGroup>
 
-  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+  <Target Name="Format" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
+    <Exec Command="dotnet tool restore" />
+    <Exec Command="dotnet csharpier format ." />
+  </Target>
+
+  <Target
+    Name="DebugEnsureNodeEnv"
+    BeforeTargets="Build"
+    Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') "
+  >
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
       <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
     </Exec>
-    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Error
+      Condition="'$(ErrorCode)' != '0'"
+      Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE."
+    />
     <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
   </Target>
@@ -59,7 +72,11 @@
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
     <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --configuration production" />
-    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --configuration production" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+    <Exec
+      WorkingDirectory="$(SpaRoot)"
+      Command="npm run build:ssr -- --configuration production"
+      Condition=" '$(BuildServerSideRenderer)' == 'true' "
+    />
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
@@ -72,5 +89,4 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
-
 </Project>

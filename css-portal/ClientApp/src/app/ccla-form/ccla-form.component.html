@@ -1,36 +1,41 @@
-
-<section [formGroup]="form" *ngIf="loaded"
-  [ngBusy]="{ busy: [ submittingForm ], message: 'Submitting Complaint&hellip;', minDuration: 1500 }" (busyStop)="onBusyStop()">
+<section
+  [formGroup]="form"
+  *ngIf="loaded"
+  [ngBusy]="{ busy: [submittingForm], message: 'Submitting Complaint&hellip;', minDuration: 1500 }"
+  (busyStop)="onBusyStop()"
+>
   <h1>CCLA Complaint Form</h1>
   <p>
-    This form may be used to submit a complaint to the Community Safety Unit about an illegal unlicensed cannabis retailer or other related illegal operations.
+    This form may be used to submit a complaint to the Community Safety Unit about an illegal unlicensed cannabis
+    retailer or other related illegal operations.
   </p>
   <p>
-    Please fill out all applicable fields and press the submit button at the bottom of this form.
-    If you have any questions about this form, please contact the Community Safety Unit at 604-502-5493 (lower mainland) or 1-855-502-5494 (toll free) or by email at CSU@gov.bc.ca.
+    Please fill out all applicable fields and press the submit button at the bottom of this form. If you have any
+    questions about this form, please contact the Community Safety Unit at 604-502-5493 (lower mainland) or
+    1-855-502-5494 (toll free) or by email at CSU@gov.bc.ca.
   </p>
   <p>
-    If you provide your name and contact information, you may be contacted by the Community Safety Unit for additional information.
-    The information that you provide may be disclosed in certain circumstances, as set out in sections 11 and 12 of the <em>Cannabis Control and Licensing Act</em>.
-    For example, the information may be disclosed to a law enforcement agency, in a proceeding before a court or tribunal, or for the purpose of the administration or enforcement of the
-    <em>Cannabis Control and Licensing Act</em> or its associated regulations.
+    If you provide your name and contact information, you may be contacted by the Community Safety Unit for additional
+    information. The information that you provide may be disclosed in certain circumstances, as set out in sections 11
+    and 12 of the <em>Cannabis Control and Licensing Act</em>. For example, the information may be disclosed to a law
+    enforcement agency, in a proceeding before a court or tribunal, or for the purpose of the administration or
+    enforcement of the <em>Cannabis Control and Licensing Act</em> or its associated regulations.
   </p>
   <p>
-    The information requested on this form is collected by the Community Safety Unit under
-    Section 26(c) of the <em>Freedom of Information and Protection of Privacy Act</em> and will be used
-    for the purpose of compliance and enforcement matters in accordance with the <em>Cannabis Control and Licensing Act</em>.
+    The information requested on this form is collected by the Community Safety Unit under Section 26(c) of the
+    <em>Freedom of Information and Protection of Privacy Act</em> and will be used for the purpose of compliance and
+    enforcement matters in accordance with the <em>Cannabis Control and Licensing Act</em>.
   </p>
   <p>
-    Should you have any questions about the collection, use, or disclosure of personal information, please contact the Freedom of Information Officer at:
+    Should you have any questions about the collection, use, or disclosure of personal information, please contact the
+    Freedom of Information Officer at:
   </p>
   <p>
     PO Box 9292, STN PROV GVT
     <br />
     Victoria, BC, V8W 9J8
   </p>
-  <p>
-    Or by phone toll free at 1-866-209-2111.
-  </p>
+  <p>Or by phone toll free at 1-866-209-2111.</p>
 
   <div class="clearfix">
     <p class="text-danger float-right"><em>* Required</em></p>
@@ -42,7 +47,7 @@
       <div class="row">
         <div class="col-sm-12">
           <app-field label="Establishment Name (If Applicable)">
-            <input id="propertyName" class="form-control" type="text" maxlength="250" formControlName="name">
+            <input id="propertyName" class="form-control" type="text" maxlength="250" formControlName="name" />
           </app-field>
         </div>
       </div>
@@ -50,45 +55,81 @@
         <div class="row">
           <div class="col-sm-12">
             <app-field label="Establishment Address">
-              <input id="propertyAddressLine1" class="form-control" type="text" maxlength="250" formControlName="line1">
+              <input
+                id="propertyAddressLine1"
+                class="form-control"
+                type="text"
+                maxlength="250"
+                formControlName="line1"
+              />
             </app-field>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <app-field label="Apt/Suite/Unit">
-              <input id="propertyAddressUnit" class="form-control" type="text" maxlength="250" formControlName="unit">
+              <input id="propertyAddressUnit" class="form-control" type="text" maxlength="250" formControlName="unit" />
             </app-field>
           </div>
           <div class="col-sm-6">
-            <app-field label="City" [required]="true"
+            <app-field
+              label="City"
+              [required]="true"
               [invalid]="checkInputInvalid('complaintDetails.address.city')"
-              errorMessage="Please provide a city">
-              <input id="propertyAddressCity" class="form-control" type="text" maxlength="80" formControlName="city" required
-                [class.is-invalid]="checkInputInvalid('complaintDetails.address.city')">
+              errorMessage="Please provide a city"
+            >
+              <input
+                id="propertyAddressCity"
+                class="form-control"
+                type="text"
+                maxlength="80"
+                formControlName="city"
+                required
+                [class.is-invalid]="checkInputInvalid('complaintDetails.address.city')"
+              />
             </app-field>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <app-field label="Province">
-              <input id="propertyAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState">
+              <input
+                id="propertyAddressProvinceState"
+                class="form-control"
+                type="text"
+                maxlength="50"
+                formControlName="provinceState"
+              />
             </app-field>
           </div>
           <div class="col-sm-6">
             <app-field label="Country">
-              <input id="propertyAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country">
+              <input
+                id="propertyAddressCountry"
+                class="form-control"
+                type="text"
+                maxlength="80"
+                formControlName="country"
+              />
             </app-field>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <app-field label="Postal Code"
+            <app-field
+              label="Postal Code"
               [invalid]="checkInputInvalid('complaintDetails.address.zipPostalCode')"
-              errorMessage="Please provide a valid postal code">
-              <input id="propertyAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode"
+              errorMessage="Please provide a valid postal code"
+            >
+              <input
+                id="propertyAddressZipPostalCode"
+                class="form-control"
+                type="text"
+                maxlength="20"
+                formControlName="zipPostalCode"
                 [textMask]="{ mask: this.postalCodeMask, pipe: this.uppercaseMaskPipe }"
-                [class.is-invalid]="checkInputInvalid('complaintDetails.address.zipPostalCode')">
+                [class.is-invalid]="checkInputInvalid('complaintDetails.address.zipPostalCode')"
+              />
             </app-field>
           </div>
         </div>
@@ -96,16 +137,26 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <app-field label="Complaint Details" [required]="true"
+        <app-field
+          label="Complaint Details"
+          [required]="true"
           [invalid]="checkInputInvalid('complaintDetails.problems')"
-          errorMessage="Details about the complaint are required">
+          errorMessage="Details about the complaint are required"
+        >
           <div id="propertyProblemsDescription" class="control-text text-muted mb-2">
             Please provide as much detail about your complaint as possible.
           </div>
-          <textarea id="propertyProblems" class="form-control" type="text" maxlength="2000" formControlName="problems" required
+          <textarea
+            id="propertyProblems"
+            class="form-control"
+            type="text"
+            maxlength="2000"
+            formControlName="problems"
+            required
             placeholder="Enter details&hellip; (2000 Characters Max)"
             aria-describedby="propertyProblemsDescription"
-            [class.is-invalid]="checkInputInvalid('complaintDetails.problems')"></textarea>
+            [class.is-invalid]="checkInputInvalid('complaintDetails.problems')"
+          ></textarea>
         </app-field>
       </div>
     </div>
@@ -116,56 +167,107 @@
       <div class="col-sm-12">
         <div class="card card-body bg-light">
           <p>
-            Occasionally the CSU requires additional information and may need to contact you.
-            However, if you don’t wish to be contacted OR provide your name or contact information you may tick the box below.
+            Occasionally the CSU requires additional information and may need to contact you. However, if you don’t wish
+            to be contacted OR provide your name or contact information you may tick the box below.
           </p>
           <div class="form-check mt-3">
-            <input id="anonymousComplainant" class="form-check-input" type="checkbox" formControlName="anonymousComplainant"
-              (change)="updateAnonymousComplainant()">
-            <label class="form-check-label" for="anonymousComplainant">I do not wish to provide my name or contact information</label>
+            <input
+              id="anonymousComplainant"
+              class="form-check-input"
+              type="checkbox"
+              formControlName="anonymousComplainant"
+              (change)="updateAnonymousComplainant()"
+            />
+            <label class="form-check-label" for="anonymousComplainant"
+              >I do not wish to provide my name or contact information</label
+            >
           </div>
         </div>
       </div>
     </div>
-    <div formGroupName="complainantContactInfo" class="form-group" [class.d-none]="this.form.get('anonymousComplainant').value === true">
+    <div
+      formGroupName="complainantContactInfo"
+      class="form-group"
+      [class.d-none]="this.form.get('anonymousComplainant').value === true"
+    >
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="First Name" [required]="true"
+          <app-field
+            label="First Name"
+            [required]="true"
             [invalid]="checkInputInvalid('complainantContactInfo.firstName')"
-            errorMessage="Please provide a first name">
-            <input id="complainantFirstName" class="form-control" type="text" maxlength="50" formControlName="firstName" required
-              [class.is-invalid]="checkInputInvalid('complainantContactInfo.firstName')">
+            errorMessage="Please provide a first name"
+          >
+            <input
+              id="complainantFirstName"
+              class="form-control"
+              type="text"
+              maxlength="50"
+              formControlName="firstName"
+              required
+              [class.is-invalid]="checkInputInvalid('complainantContactInfo.firstName')"
+            />
           </app-field>
         </div>
         <div class="col-sm-6">
           <app-field label="Middle Name">
-            <input id="complainantMiddleName" class="form-control" type="text" maxlength="50" formControlName="middleName">
+            <input
+              id="complainantMiddleName"
+              class="form-control"
+              type="text"
+              maxlength="50"
+              formControlName="middleName"
+            />
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="Last Name" [required]="true"
+          <app-field
+            label="Last Name"
+            [required]="true"
             [invalid]="checkInputInvalid('complainantContactInfo.lastName')"
-            errorMessage="Please provide a last name">
-            <input id="complainantLastName" class="form-control" type="text" maxlength="50" formControlName="lastName"
-              [class.is-invalid]="checkInputInvalid('complainantContactInfo.lastName')">
+            errorMessage="Please provide a last name"
+          >
+            <input
+              id="complainantLastName"
+              class="form-control"
+              type="text"
+              maxlength="50"
+              formControlName="lastName"
+              [class.is-invalid]="checkInputInvalid('complainantContactInfo.lastName')"
+            />
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Fax"
+          <app-field
+            label="Fax"
             [invalid]="checkInputInvalid('complainantContactInfo.fax')"
-            errorMessage="Please provide a complete fax number">
-            <input id="complainantFax" class="form-control" type="tel" maxlength="50" formControlName="fax"
-              [textMask]="{ mask: this.telephoneMask }" placeholder="(___)-___-____"
-              [class.is-invalid]="checkInputInvalid('complainantContactInfo.fax')">
+            errorMessage="Please provide a complete fax number"
+          >
+            <input
+              id="complainantFax"
+              class="form-control"
+              type="tel"
+              maxlength="50"
+              formControlName="fax"
+              [textMask]="{ mask: this.telephoneMask }"
+              placeholder="(___)-___-____"
+              [class.is-invalid]="checkInputInvalid('complainantContactInfo.fax')"
+            />
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
           <app-field label="If applicable, please provide the name of your Government Organization or Department">
-            <input id="governmentAgency" class="form-control" type="text" maxlength="100" formControlName="governmentAgency">
+            <input
+              id="governmentAgency"
+              class="form-control"
+              type="text"
+              maxlength="100"
+              formControlName="governmentAgency"
+            />
           </app-field>
         </div>
       </div>
@@ -173,20 +275,37 @@
         <div class="card card-body bg-light">
           <div class="row">
             <div class="col-sm-6 mb-0">
-              <app-field label="Telephone"
+              <app-field
+                label="Telephone"
                 [invalid]="checkTelephoneInvalid()"
-                errorMessage="Please provide a telephone number or an email address">
-                <input id="complainantPhone" class="form-control" type="tel" maxlength="50" formControlName="phone"
-                  [textMask]="{ mask: this.telephoneMask}" placeholder="(___)-___-____"
-                  [class.is-invalid]="checkTelephoneInvalid()">
+                errorMessage="Please provide a telephone number or an email address"
+              >
+                <input
+                  id="complainantPhone"
+                  class="form-control"
+                  type="tel"
+                  maxlength="50"
+                  formControlName="phone"
+                  [textMask]="{ mask: this.telephoneMask }"
+                  placeholder="(___)-___-____"
+                  [class.is-invalid]="checkTelephoneInvalid()"
+                />
               </app-field>
             </div>
             <div class="col-sm-6 mb-0">
-              <app-field label="Email Address"
+              <app-field
+                label="Email Address"
                 [invalid]="checkInputInvalid('complainantContactInfo.email')"
-                errorMessage="Please provide a valid email address">
-                <input id="complainantEmail" class="form-control" type="text" maxlength="100" formControlName="email"
-                  [class.is-invalid]="checkTelephoneInvalid() || checkInputInvalid('complainantContactInfo.email')">
+                errorMessage="Please provide a valid email address"
+              >
+                <input
+                  id="complainantEmail"
+                  class="form-control"
+                  type="text"
+                  maxlength="100"
+                  formControlName="email"
+                  [class.is-invalid]="checkTelephoneInvalid() || checkInputInvalid('complainantContactInfo.email')"
+                />
               </app-field>
             </div>
           </div>
@@ -194,55 +313,94 @@
       </app-field>
     </div>
   </fieldset>
-  <fieldset formGroupName="complainantMailingAddress" [class.d-none]="this.form.get('anonymousComplainant').value === true">
+  <fieldset
+    formGroupName="complainantMailingAddress"
+    [class.d-none]="this.form.get('anonymousComplainant').value === true"
+  >
     <legend>Complainant Mailing Address</legend>
     <div class="form-group">
       <div class="row">
         <div class="col-sm-6">
           <app-field label="Address">
-            <input id="complainantAddressLine1" class="form-control" type="text" maxlength="250" formControlName="line1">
+            <input
+              id="complainantAddressLine1"
+              class="form-control"
+              type="text"
+              maxlength="250"
+              formControlName="line1"
+            />
           </app-field>
         </div>
         <div class="col-sm-6">
           <app-field label="Apt/Suite/Unit">
-            <input id="complainantAddressUnit" class="form-control" type="text" maxlength="250" formControlName="unit">
+            <input
+              id="complainantAddressUnit"
+              class="form-control"
+              type="text"
+              maxlength="250"
+              formControlName="unit"
+            />
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <app-field label="City">
-            <input id="complainantAddressCity" class="form-control" type="text" maxlength="80" formControlName="city">
+            <input id="complainantAddressCity" class="form-control" type="text" maxlength="80" formControlName="city" />
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Country"
-            [invalid]="checkCountryInvalid()"
-            errorMessage="Please provide a country">
-            <input id="complainantAddressCountry" class="form-control" type="text" maxlength="80" formControlName="country"
-              [class.is-invalid]="checkCountryInvalid()">
+          <app-field label="Country" [invalid]="checkCountryInvalid()" errorMessage="Please provide a country">
+            <input
+              id="complainantAddressCountry"
+              class="form-control"
+              type="text"
+              maxlength="80"
+              formControlName="country"
+              [class.is-invalid]="checkCountryInvalid()"
+            />
           </app-field>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <app-field label="Province" *ngIf="this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)">
+          <app-field
+            label="Province"
+            *ngIf="this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)"
+          >
             <select id="complainantAddressProvince" class="form-control" formControlName="province">
               <option [ngValue]="null">Select a Province&hellip;</option>
-              <option *ngFor="let province of provinces | async" [ngValue]="province.value">{{province.name}}</option>
+              <option *ngFor="let province of provinces | async" [ngValue]="province.value">{{ province.name }}</option>
             </select>
           </app-field>
-          <app-field label="Province/State" *ngIf="!this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)">
-            <input id="complainantAddressProvinceState" class="form-control" type="text" maxlength="50" formControlName="provinceState">
+          <app-field
+            label="Province/State"
+            *ngIf="!this.countryIsCanada(this.form.get('complainantMailingAddress.country').value)"
+          >
+            <input
+              id="complainantAddressProvinceState"
+              class="form-control"
+              type="text"
+              maxlength="50"
+              formControlName="provinceState"
+            />
           </app-field>
         </div>
         <div class="col-sm-6">
-          <app-field label="Postal Code/Zip Code"
+          <app-field
+            label="Postal Code/Zip Code"
             [invalid]="checkInputInvalid('complainantMailingAddress.zipPostalCode')"
-            errorMessage="Please provide a valid postal code">
-            <input id="complainantAddressZipPostalCode" class="form-control" type="text" maxlength="20" formControlName="zipPostalCode"
+            errorMessage="Please provide a valid postal code"
+          >
+            <input
+              id="complainantAddressZipPostalCode"
+              class="form-control"
+              type="text"
+              maxlength="20"
+              formControlName="zipPostalCode"
               [textMask]="{ mask: this.zipPostalCodeMask, pipe: this.uppercaseMaskPipe }"
-              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.zipPostalCode')">
+              [class.is-invalid]="checkInputInvalid('complainantMailingAddress.zipPostalCode')"
+            />
           </app-field>
         </div>
       </div>

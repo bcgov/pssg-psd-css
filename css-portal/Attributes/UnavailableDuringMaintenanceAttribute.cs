@@ -5,6 +5,7 @@ namespace Gov.Pssg.Css.Public.Attributes
 {
     public class UnavailableDuringMaintenanceAttribute : TypeFilterAttribute
     {
-        public UnavailableDuringMaintenanceAttribute() : base(typeof(UnavailableDuringMaintenanceFilter)) { }
+        public UnavailableDuringMaintenanceAttribute()
+            : base(typeof(UnavailableDuringMaintenanceFilter)) { }
     }
 }

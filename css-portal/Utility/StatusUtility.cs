@@ -1,6 +1,6 @@
-﻿using Gov.Pssg.Css.Public.ViewModels;
+﻿using System;
+using Gov.Pssg.Css.Public.ViewModels;
 using Microsoft.Extensions.Configuration;
-using System;
 
 namespace Gov.Pssg.Css.Public.Utility
 {
@@ -22,7 +22,11 @@ namespace Gov.Pssg.Css.Public.Utility
 
         public static bool IsUnderMaintenance(IConfiguration configuration)
         {
-            return string.Equals(configuration["UNDER_MAINTENANCE"], "true", StringComparison.InvariantCultureIgnoreCase);
+            return string.Equals(
+                configuration["UNDER_MAINTENANCE"],
+                "true",
+                StringComparison.InvariantCultureIgnoreCase
+            );
         }
     }
 }
