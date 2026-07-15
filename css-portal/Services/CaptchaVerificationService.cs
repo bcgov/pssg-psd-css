@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace EMBC.Suppliers.API.Services
@@ -34,14 +35,17 @@ namespace EMBC.Suppliers.API.Services
     {
         private readonly IHttpClientFactory httpClientFactory;
         private readonly CaptchaVerificationServiceOptions options;
+        private readonly ILogger<CaptchaVerificationService> _logger;
 
         public CaptchaVerificationService(
             IHttpClientFactory httpClientFactory,
-            IOptions<CaptchaVerificationServiceOptions> options
+            IOptions<CaptchaVerificationServiceOptions> options,
+            ILogger<CaptchaVerificationService> logger
         )
         {
             this.httpClientFactory = httpClientFactory;
             this.options = options.Value;
+            _logger = logger;
         }
 
         public async Task<bool> VerifyAsync(string clientResponse, CancellationToken ct)
@@ -61,6 +65,11 @@ namespace EMBC.Suppliers.API.Services
             );
 
             response.EnsureSuccessStatusCode();
+
+            _logger.LogInformation(
+                "Captcha verification response: {ResponseBody}",
+                await response.Content.ReadAsStringAsync(ct)
+            );
 
             var responseData = await response.Content.ReadFromJsonAsync<CaptchaResponse>();
 
